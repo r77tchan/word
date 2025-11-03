@@ -1,0 +1,2979 @@
+[
+    {
+        "id": "6995",
+        "english": "be good at",
+        "translation": "～が得意だ",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 969,
+        "example": "He |is| |good| |at| painting.",
+        "example_translation": "彼は絵を描くのが得意だ。",
+        "sound": "be good at",
+        "json": {
+            "english": "be good at",
+            "pronunciation": "bíː-gúd-ət",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "She |is| |good| |at| math.",
+                    "translation": "彼女は数学が得意です。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To have a skill or talent in a particular area or activity."
+        }
+    },
+    {
+        "id": "13958",
+        "english": "speak to",
+        "translation": "～に話しかける",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 978,
+        "example": "Please |speak| |to| the teacher politely.",
+        "example_translation": "先生に丁寧に話しかけてください。",
+        "sound": "speak to",
+        "json": {
+            "english": "speak to",
+            "pronunciation": "spik-túː",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To talk to someone, especially to address a problem or issue they have caused, often with the intention of giving advice or a warning."
+        }
+    },
+    {
+        "id": "15166",
+        "english": "want to do",
+        "translation": "～したいと思う",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1023,
+        "example": "I |want| |to| |play| video games.",
+        "example_translation": "私はビデオゲームがしたい。",
+        "sound": "want to do",
+        "json": {
+            "english": "want to do",
+            "pronunciation": "wɑnt-túː-du",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I |want| |to| learn how to cook.",
+                    "translation": "料理の仕方を学びたい。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "wish to do",
+                    "description": "「want to do」と「wish to do」は共に「〜したいと思う」という意味を持つが、前者は具体的な欲求や希望を表し、日常的な使い方が多いのに対し、後者はより丁寧で控えめな表現であり、実現が難しい願望や理想を示すことが多い。"
+                }
+            ],
+            "english_meaning": "To have a desire or wish to perform a specific action or activity."
+        }
+    },
+    {
+        "id": "11235",
+        "english": "look for",
+        "translation": "～を探す",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1029,
+        "example": "She is |looking| |for| books.",
+        "example_translation": "彼女は本を探している。",
+        "sound": "look for",
+        "json": {
+            "english": "look for",
+            "pronunciation": "lúk-fər",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "search for",
+                    "description": "「look for」と「search for」は共に「〜を探す」という意味を持つが、前者は一般的に何かを見つけようとする日常的な行為を指し、後者はより徹底的で体系的な探し方を示すことが多い。"
+                }
+            ],
+            "english_meaning": "To attempt to find something that is missing or someone who is not present, or to search for a specific type of thing or person."
+        }
+    },
+    {
+        "id": "6220",
+        "english": "a member of",
+        "translation": "～の一員",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1034,
+        "example": "I am |a| |member| |of| the basketball team.",
+        "example_translation": "私はバスケットボールチームのメンバーです。",
+        "sound": "a member of",
+        "json": {
+            "english": "a member of",
+            "pronunciation": "ə-mémbər-əv",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I am |a| |member| |of| the school choir.",
+                    "translation": "私は学校の合唱団の一員です。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A person who belongs to a group or organization."
+        }
+    },
+    {
+        "id": "11948",
+        "english": "on vacation",
+        "translation": "休暇で",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1037,
+        "example": "We are |on| |vacation| from school.",
+        "example_translation": "学校は休みなんだ。",
+        "sound": "on vacation",
+        "json": {
+            "english": "on vacation",
+            "pronunciation": "ɑn-veikéiʃən",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "We are |on| |vacation| at the beach this week.",
+                    "translation": "今週、私たちはビーチで休暇を過ごしています。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Taking a break from work or school to relax or travel."
+        }
+    },
+    {
+        "id": "14465",
+        "english": "talk to",
+        "translation": "～に話をする",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1038,
+        "example": "I |talked| |to| my friend yesterday.",
+        "example_translation": "昨日、友人と話したんだ。",
+        "sound": "talk to",
+        "json": {
+            "english": "talk to",
+            "pronunciation": "tɔk-túː",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To communicate with someone by sharing information or explaining something you know."
+        }
+    },
+    {
+        "id": "6984",
+        "english": "be careful",
+        "translation": "気を付ける",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1039,
+        "example": "Please |be| |careful| when crossing the street.",
+        "example_translation": "横断歩道を渡る際はご注意ください。",
+        "sound": "be careful",
+        "json": {
+            "english": "be careful",
+            "pronunciation": "bíː-kέərfl",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "|Be| |careful| not to touch the hot stove.",
+                    "translation": "熱いストーブに触れないように気を付けてください。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "ignore",
+                    "part_of_speech": "verb",
+                    "translation": "無視する"
+                },
+                {
+                    "english": "pay no attention to",
+                    "part_of_speech": "idiom",
+                    "translation": "注意を払わない"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Think about your actions to avoid problems or danger."
+        }
+    },
+    {
+        "id": "9923",
+        "english": "go around",
+        "translation": "～のまわりを回る",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1041,
+        "example": "I like to |go| |around| the pond with my dog.",
+        "example_translation": "私は犬と池の周りを一回りするのが好きだ。",
+        "sound": "go around",
+        "json": {
+            "english": "go around",
+            "pronunciation": "góu-əráund",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|go| |around| doing something",
+                    "translation": "〜して回る"
+                },
+                {
+                    "english": "|go| |around| in something",
+                    "translation": "〈衣服など〉をいつも着て[身につけて]いる"
+                },
+                {
+                    "english": "|go| |around| to something",
+                    "translation": "〜にちょっと寄る"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To move in a circular path around something or someone, or to visit many places or people in a particular area."
+        }
+    },
+    {
+        "id": "11959",
+        "english": "one of",
+        "translation": "～の一つ",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1042,
+        "example": "She is |one| |of| my friends.",
+        "example_translation": "彼女は友達の1人だ。",
+        "sound": "one of",
+        "json": {
+            "english": "one of",
+            "pronunciation": "wʌ́n-əv",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The book is |one| |of| my favorites.",
+                    "translation": "その本は私のお気に入りの一つです。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A phrase used to indicate that something is part of a larger group or category, suggesting that there are other similar items or options."
+        }
+    },
+    {
+        "id": "15165",
+        "english": "want to be",
+        "translation": "～になりたいと思う",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1043,
+        "example": "I |want| |to| |be| a police officer.",
+        "example_translation": "私は警察官になりたい。",
+        "sound": "want to be",
+        "json": {
+            "english": "want to be",
+            "pronunciation": "wɑnt-túː-bíː",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I |want| |to| |be| a doctor when I grow up.",
+                    "translation": "大きくなったら医者になりたい。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To have a desire or wish to become something or to achieve a certain role or status."
+        }
+    },
+    {
+        "id": "7009",
+        "english": "be late for",
+        "translation": "～に遅れる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1044,
+        "example": "I don't want to |be| |late| |for| the bus!",
+        "example_translation": "私はバスに乗り遅れたくないんだ！",
+        "sound": "be late for",
+        "json": {
+            "english": "be late for",
+            "pronunciation": "bíː-léit-fər",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To arrive after the expected or scheduled time for something."
+        }
+    },
+    {
+        "id": "9615",
+        "english": "for free",
+        "translation": "無料で",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1045,
+        "example": "I got it |for| |free|.",
+        "example_translation": "無料で手に入れた。",
+        "sound": "for free",
+        "json": {
+            "english": "for free",
+            "pronunciation": "fər-fríː",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The concert tickets were given to me |for| |free|.",
+                    "translation": "コンサートのチケットは無料でもらった。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "for nothing",
+                    "description": "「for free」と「for nothing」は共に「無料で」という意味を持つが、「for free」はカジュアルで一般的な表現で、特にサービスや商品が無償で提供される場合に使われる。一方、「for nothing」はやや否定的なニュアンスを含むことがあり、何かの価値がない、または無駄であることを暗示することがある。"
+                }
+            ],
+            "english_meaning": "Without requiring any payment or cost."
+        }
+    },
+    {
+        "id": "9929",
+        "english": "go back to",
+        "translation": "～へ帰る",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1046,
+        "example": "I |go| |back| |to| my house.",
+        "example_translation": "家に帰る。",
+        "sound": "go back to",
+        "json": {
+            "english": "go back to",
+            "pronunciation": "góu-bǽk-túː",
+            "other_translations": [
+                {
+                    "translation": "戻る",
+                    "part_of_speech": "idiom"
+                },
+                {
+                    "translation": "〈元の状態〉に戻る",
+                    "part_of_speech": "idiom"
+                },
+                {
+                    "translation": "〈元の話題など〉に戻る",
+                    "part_of_speech": "idiom"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "She |went| |back| |to| her studies after the break.",
+                    "translation": "彼女は休憩の後、再び勉強に戻った。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|go| |back| |to| doing something",
+                    "translation": "再び〜し始める"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "to return to a place or situation where you were before after being away for a while"
+        }
+    },
+    {
+        "id": "10184",
+        "english": "hear about",
+        "translation": "～について聞く",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1047,
+        "example": "She wanted to |hear| |about| me.",
+        "example_translation": "彼女は私のことについて聞きたがった。",
+        "sound": "hear about",
+        "json": {
+            "english": "hear about",
+            "pronunciation": "hir-əbáut",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To learn or be informed about something through communication or news."
+        }
+    },
+    {
+        "id": "15348",
+        "english": "worry about",
+        "translation": "～のことを心配する",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1048,
+        "example": "Don't |worry| |about| the test tomorrow.",
+        "example_translation": "明日のテストのことは心配しなくていい。",
+        "sound": "worry about",
+        "json": {
+            "english": "worry about",
+            "pronunciation": "wə́(ː)ri-əbáut",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To feel anxious or concerned about something or someone."
+        }
+    },
+    {
+        "id": "6702",
+        "english": "arrive in",
+        "translation": "～に着く",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1049,
+        "example": "I will |arrive| |in| Tokyo tomorrow.",
+        "example_translation": "私は明日には東京に着くでしょう。",
+        "sound": "arrive in",
+        "json": {
+            "english": "arrive in",
+            "pronunciation": "əráiv-in",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I hope to |arrive| |in| Kyoto by noon.",
+                    "translation": "昼までに京都に着くことを願っています。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "arrive at",
+                    "description": "「arrive in」と「arrive at」は共に「〜に着く」という意味を持つが、「arrive in」は広い地域や国、都市などの大きな場所に到着する際に使われ、「arrive at」は特定の地点や建物、イベントなどの具体的な場所に到着する際に使われる。"
+                }
+            ],
+            "english_meaning": "To reach a place after traveling, especially when you get to a specific location or destination."
+        }
+    },
+    {
+        "id": "9652",
+        "english": "forget to",
+        "translation": "～するのを忘れる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1050,
+        "example": "I don't |forget| |to| feed the cat.",
+        "example_translation": "猫に餌をやるのを忘れていないよ。",
+        "sound": "forget to",
+        "json": {
+            "english": "forget to",
+            "pronunciation": "fərgét-túː",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To fail to remember to do something."
+        }
+    },
+    {
+        "id": "10151",
+        "english": "have a seat",
+        "translation": "すわる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1051,
+        "example": "Please |have| |a| |seat|.",
+        "example_translation": "どうぞお座りください。",
+        "sound": "have a seat",
+        "json": {
+            "english": "have a seat",
+            "pronunciation": "həv-ə-síːt",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "stand",
+                    "part_of_speech": "verb",
+                    "translation": "立つ"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "sit down",
+                    "description": "「have a seat」と「sit down」は共に「すわる」という意味を持つが、前者は相手に座ることを促す丁寧な表現であり、後者は単に座る動作を指すカジュアルな表現である。"
+                }
+            ],
+            "english_meaning": "To sit down, especially in a place where you are invited or expected to sit."
+        }
+    },
+    {
+        "id": "11614",
+        "english": "most of",
+        "translation": "～のほとんど",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1052,
+        "example": "August is when |most| |of| my schedule is filled.",
+        "example_translation": "8月は私のスケジュールのほとんどが埋まっている。",
+        "sound": "most of",
+        "json": {
+            "english": "most of",
+            "pronunciation": "móust-əv",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A large number or the majority of something, but not all of it."
+        }
+    },
+    {
+        "id": "11942",
+        "english": "on sale",
+        "translation": "特売で",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1053,
+        "example": "The TV is |on| |sale| today.",
+        "example_translation": "テレビは本日特売です。",
+        "sound": "on sale",
+        "json": {
+            "english": "on sale",
+            "pronunciation": "ɑn-séil",
+            "other_translations": [
+                {
+                    "translation": "特売(中)で",
+                    "part_of_speech": "idiom"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Available for purchase in a store, often at a reduced price compared to the regular price."
+        }
+    },
+    {
+        "id": "7023",
+        "english": "be ready for",
+        "translation": "～の準備ができている",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1054,
+        "example": "I |am| |ready| |for| my test.",
+        "example_translation": "テストの準備はできている。",
+        "sound": "be ready for",
+        "json": {
+            "english": "be ready for",
+            "pronunciation": "bíː-rédi-fər",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To be prepared and able to do something when it is needed."
+        }
+    },
+    {
+        "id": "9865",
+        "english": "get to",
+        "translation": "～に着く",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1055,
+        "example": "I need to |get| |to| school by 9.",
+        "example_translation": "9時までに学校に到着しないといけない。",
+        "sound": "get to",
+        "json": {
+            "english": "get to",
+            "pronunciation": "get-túː",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "What time do you think we will |get| |to| the airport?",
+                    "translation": "何時に空港に着くと思う？"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "depart",
+                    "part_of_speech": "verb",
+                    "translation": "出発する, 去る"
+                },
+                {
+                    "english": "leave",
+                    "part_of_speech": "verb",
+                    "translation": "去る, 離れる"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "arrive at",
+                    "description": "「get to」と「arrive at」は共に「〜に着く」という意味を持つが、「get to」は目的地に到達する過程や手段に焦点を当てるのに対し、「arrive at」は特定の地点に到着した瞬間や結果に焦点を当てる。"
+                }
+            ],
+            "english_meaning": "To arrive at a place or to reach a destination."
+        }
+    },
+    {
+        "id": "10322",
+        "english": "how long",
+        "translation": "どれくらいの長さ",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1056,
+        "example": "|How| |long| is the movie?",
+        "example_translation": "映画の上映時間はどれくらいですか？",
+        "sound": "how long",
+        "json": {
+            "english": "how long",
+            "pronunciation": "háu-lɑ́ːŋ",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The phrase asks about the duration of time something lasts or will last. It is used to inquire about the length of time until a certain event occurs or how long something continues."
+        }
+    },
+    {
+        "id": "11231",
+        "english": "look around",
+        "translation": "あたりを見回す",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1057,
+        "example": "I |look| |around| before crossing the street.",
+        "example_translation": "私は道路を渡る前に周囲を見渡す。",
+        "sound": "look around",
+        "json": {
+            "english": "look around",
+            "pronunciation": "lúk-əráund",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|look| |around| for something",
+                    "translation": "〜を探し回る"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To look at different things in a place, like a building or a town, while you are moving around."
+        }
+    },
+    {
+        "id": "14445",
+        "english": "take care of",
+        "translation": "～の世話をする",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1058,
+        "example": "I know how to |take| |care| |of| my dog.",
+        "example_translation": "私は犬の世話の仕方を知っている。",
+        "sound": "take care of",
+        "json": {
+            "english": "take care of",
+            "pronunciation": "téik-kέər-əv",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "look after",
+                    "description": "「take care of」と「look after」は共に「〜の世話をする」という意味を持つが、前者は責任を持って何かを管理したり処理したりするニュアンスが強く、後者は主に日常的な世話や監視をすることに焦点を当てている。"
+                }
+            ],
+            "english_meaning": "To look after someone or something and make sure they are safe, healthy, or happy."
+        }
+    },
+    {
+        "id": "7423",
+        "english": "call back",
+        "translation": "電話をかけ直す",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1059,
+        "example": "Please |call| |back| in 5 minutes.",
+        "example_translation": "5分後にかけ直してください。",
+        "sound": "call back",
+        "json": {
+            "english": "call back",
+            "pronunciation": "kɔl-bǽk",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "He is in a meeting right now. Could he |call| you |back| after it ends?",
+                    "translation": "彼は今会議中です。会議が終わったら折り返しお電話を差し上げてもよろしいでしょうか。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To make a phone call to someone again, usually because they were not available during the first call."
+        }
+    },
+    {
+        "id": "9927",
+        "english": "go back",
+        "translation": "帰っていく",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1060,
+        "example": "He always |goes| |back| from the office at five.",
+        "example_translation": "彼はいつも５時になったら職場から帰る。",
+        "sound": "go back",
+        "json": {
+            "english": "go back",
+            "pronunciation": "góu-bǽk",
+            "other_translations": [
+                {
+                    "translation": "帰る",
+                    "part_of_speech": "idiom"
+                },
+                {
+                    "translation": "戻る",
+                    "part_of_speech": "idiom"
+                },
+                {
+                    "translation": "学校[大学]に戻る",
+                    "part_of_speech": "idiom"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "I need to |go| |back| home before it gets dark.",
+                    "translation": "暗くなる前に家に帰らなければならない。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "depart",
+                    "part_of_speech": "verb",
+                    "translation": "出発する, 去る"
+                },
+                {
+                    "english": "leave",
+                    "part_of_speech": "verb",
+                    "translation": "去る, 離れる"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|go| |back| for something",
+                    "translation": "〜を取りに戻る"
+                },
+                {
+                    "english": "|go| |back| to something",
+                    "translation": "〈過去の時代など〉にさかのぼる"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To return to a place you have just left."
+        }
+    },
+    {
+        "id": "10967",
+        "english": "kind of",
+        "translation": "種類の～",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1061,
+        "example": "What |kind| |of| music do you like?",
+        "example_translation": "どんな音楽が好きですか？",
+        "sound": "kind of",
+        "json": {
+            "english": "kind of",
+            "pronunciation": "káind-əv",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A way to describe something that is similar to a particular type, but not completely the same."
+        }
+    },
+    {
+        "id": "11258",
+        "english": "lots of",
+        "translation": "多くの～",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1062,
+        "example": "There are |lots| |of| books on the shelf.",
+        "example_translation": "本棚にはたくさんの本が並んでいる。",
+        "sound": "lots of",
+        "json": {
+            "english": "lots of",
+            "pronunciation": "lɔts əv",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "There are |lots| |of| students in the classroom.",
+                    "translation": "教室には多くの生徒がいます。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A large number or a great amount of something."
+        }
+    },
+    {
+        "id": "14467",
+        "english": "talk with",
+        "translation": "～と話をする",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1063,
+        "example": "I will |talk| |with| the teacher after class.",
+        "example_translation": "授業が終わったら先生と話をします。",
+        "sound": "talk with",
+        "json": {
+            "english": "talk with",
+            "pronunciation": "tɔk-wíð",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I need to |talk| |with| my friend about the project.",
+                    "translation": "プロジェクトについて友達と話をする必要がある。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "talk to",
+                    "description": "「talk with」と「talk to」は共に「〜と話をする」という意味を持つが、「talk with」は相手との対話や意見交換を強調し、より双方向的なコミュニケーションを示すのに対し、「talk to」は一方的に話しかけることを強調し、相手が聞いているかどうかに関わらず話すニュアンスがある。"
+                }
+            ],
+            "english_meaning": "To have a conversation or exchange ideas with someone."
+        }
+    },
+    {
+        "id": "6423",
+        "english": "after work",
+        "translation": "仕事のあとで",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1064,
+        "example": "|After| |work|, I will go home.",
+        "example_translation": "仕事が終わったら家に帰る。",
+        "sound": "after work",
+        "json": {
+            "english": "after work",
+            "pronunciation": "ǽftər-wərk",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "|After| |work|, I often meet my friends for dinner.",
+                    "translation": "仕事のあと、私はよく友達と夕食を食べます。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The time following the end of a person's job or workday."
+        }
+    },
+    {
+        "id": "6701",
+        "english": "arrive at",
+        "translation": "～に着く",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1065,
+        "example": "I will |arrive| |at| school on time.",
+        "example_translation": "時間通りに学校に着きます。",
+        "sound": "arrive at",
+        "json": {
+            "english": "arrive at",
+            "pronunciation": "əráiv-ət",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "arrive in",
+                    "description": "「arrive at」と「arrive in」は共に「〜に着く」という意味を持つが、「arrive at」は特定の地点や場所(例：会議、目的地)に到着することを指し、「arrive in」は広い地域や都市(例：国、都市)に到着することを指す。"
+                }
+            ],
+            "english_meaning": "To reach a place or destination after traveling."
+        }
+    },
+    {
+        "id": "10150",
+        "english": "have a sale",
+        "translation": "セールを行う",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1066,
+        "example": "We will |have| |a| |sale| tomorrow.",
+        "example_translation": "明日、セールを行います。",
+        "sound": "have a sale",
+        "json": {
+            "english": "have a sale",
+            "pronunciation": "həv-ə-séil",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The store will |have| |a| |sale| next week.",
+                    "translation": "その店は来週セールを行います。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To offer products at reduced prices for a limited time to attract customers."
+        }
+    },
+    {
+        "id": "11238",
+        "english": "look like",
+        "translation": "～に似ている",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1067,
+        "example": "She |looks| |like| her mother.",
+        "example_translation": "母親に似ている。",
+        "sound": "look like",
+        "json": {
+            "english": "look like",
+            "pronunciation": "lúk-láik",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "He |looks| |like| his older brother.",
+                    "translation": "彼は兄に似ている。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "take after",
+                    "description": "「look like」と「take after」は共に「〜に似ている」という意味を持つが、前者は主に外見や見た目の類似を指し、後者は主に性格や行動、遺伝的な特徴の類似を指す。"
+                }
+            ],
+            "english_meaning": "To have a similar appearance to someone or something; to resemble."
+        }
+    },
+    {
+        "id": "13285",
+        "english": "ride on",
+        "translation": "～に乗る",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1068,
+        "example": "He likes to |ride| |on| his bike.",
+        "example_translation": "彼は自転車に乗るのが好きなんだ。",
+        "sound": "ride on",
+        "json": {
+            "english": "ride on",
+            "pronunciation": "ráid-ɑn",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "get on",
+                    "description": "「ride on」と「get on」は共に「〜に乗る」という意味を持つが、「ride on」は主に乗り物に乗ることを指し、特に動物やバイクなどの移動手段に使われることが多い。一方、「get on」は乗り物に乗り込む行為を強調し、バスや電車などの公共交通機関に乗る際によく使われる。"
+                }
+            ],
+            "english_meaning": "One thing depends on another for support or success."
+        }
+    },
+    {
+        "id": "6745",
+        "english": "ask for",
+        "translation": "～を求める",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1070,
+        "example": "My sons always |ask| me |for| some money.",
+        "example_translation": "息子たちはいつも私にお金を要求する。",
+        "sound": "ask for",
+        "json": {
+            "english": "ask for",
+            "pronunciation": "ǽsk-fər",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "She often |asks| her friends |for| help with their homework.",
+                    "translation": "彼女はよく友達に宿題の手伝いを求める。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To want to speak to someone or to request something from them."
+        }
+    },
+    {
+        "id": "10159",
+        "english": "have no idea",
+        "translation": "全くわからない",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1071,
+        "example": "I |have| |no| |idea| what to do.",
+        "example_translation": "どうすればいいのか見当もつかない。",
+        "sound": "have no idea",
+        "json": {
+            "english": "have no idea",
+            "pronunciation": "həv-nóu-aidíːə",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I |have| |no| |idea| where she went.",
+                    "translation": "彼女がどこに行ったのかわからない。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To not know anything about a situation or topic; to be completely unsure or unaware."
+        }
+    },
+    {
+        "id": "11023",
+        "english": "last week",
+        "translation": "先週",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1072,
+        "example": "I went hiking |last| |week|.",
+        "example_translation": "先週、私はハイキングに行ったんだ。",
+        "sound": "last week",
+        "json": {
+            "english": "last week",
+            "pronunciation": "læst-wíːk",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I visited my grandparents |last| |week|.",
+                    "translation": "先週、祖父母を訪ねました。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The period of seven days that comes before the current week."
+        }
+    },
+    {
+        "id": "14156",
+        "english": "stop doing",
+        "translation": "～することをやめる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1073,
+        "example": "Please |stop| |doing| that right now.",
+        "example_translation": "今すぐやめてください。",
+        "sound": "stop doing",
+        "json": {
+            "english": "stop doing",
+            "pronunciation": "stɔp dúːiŋ",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I wish you would |stop| making excuses.",
+                    "translation": "もう言い訳をするのはやめてほしい。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To cease or discontinue an action or behavior that one has been doing."
+        }
+    },
+    {
+        "id": "6482",
+        "english": "all day",
+        "translation": "一日中",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1074,
+        "example": "He worked |all| |day| on homework.",
+        "example_translation": "彼は一日中宿題に取り組んでいた。",
+        "sound": "all day",
+        "json": {
+            "english": "all day",
+            "pronunciation": "ɔl-déi",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "all day long",
+                    "description": "「all day」と「all day long」は共に「一日中」という意味を持つが、「all day」は単に時間の長さを示すのに対し、「all day long」はその時間が途切れることなく続く印象を与える。"
+                }
+            ],
+            "english_meaning": "Throughout the entire day, from morning until night, without stopping or taking a break."
+        }
+    },
+    {
+        "id": "9846",
+        "english": "get back to",
+        "translation": "～に帰ってくる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1075,
+        "example": "|Get| |back| |to| your house before it gets dark.",
+        "example_translation": "暗くなる前に家に戻りなさい。",
+        "sound": "get back to",
+        "json": {
+            "english": "get back to",
+            "pronunciation": "get-bǽk-túː",
+            "other_translations": [
+                {
+                    "translation": "〜に戻る",
+                    "part_of_speech": "idiom"
+                },
+                {
+                    "translation": "〈以前の状態〉に戻る",
+                    "part_of_speech": "idiom"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To contact someone again later to provide information or answer a question that was discussed before."
+        }
+    },
+    {
+        "id": "10185",
+        "english": "hear from",
+        "translation": "～から便りがある",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1076,
+        "example": "The old man waits to |hear| |from| his grandchildren.",
+        "example_translation": "おじいさんは孫たちからの連絡を待っている。",
+        "sound": "hear from",
+        "json": {
+            "english": "hear from",
+            "pronunciation": "hir-frəm",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "to receive news or information from someone"
+        }
+    },
+    {
+        "id": "11717",
+        "english": "need to",
+        "translation": "～する必要がある",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1077,
+        "example": "You |need| |to| study for exams.",
+        "example_translation": "試験のために勉強をする必要がある。",
+        "sound": "need to",
+        "json": {
+            "english": "need to",
+            "pronunciation": "níːd-túː",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "You |need| |to| finish your homework before dinner.",
+                    "translation": "夕食の前に宿題を終わらせる必要があります。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To have a requirement or necessity to do something."
+        }
+    },
+    {
+        "id": "15138",
+        "english": "wait for",
+        "translation": "～を待つ",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1078,
+        "example": "Please |wait| |for| the bus.",
+        "example_translation": "バスをお待ちください。",
+        "sound": "wait for",
+        "json": {
+            "english": "wait for",
+            "pronunciation": "wéit-fər",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "Please |wait| |for| your turn to speak.",
+                    "translation": "話す順番を待ってください。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To stay in one place or remain inactive until something happens or someone arrives."
+        }
+    },
+    {
+        "id": "6994",
+        "english": "be going to",
+        "translation": "～するつもりだ",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1079,
+        "example": "I |am| |going| |to| study hard for the next exam.",
+        "example_translation": "私は次の試験に向けて一生懸命勉強するつもりだ。",
+        "sound": "be going to",
+        "json": {
+            "english": "be going to",
+            "pronunciation": "biː góuiŋ tə",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I |am| |going| |to| visit my grandparents this weekend.",
+                    "translation": "今週末に祖父母を訪ねるつもりです。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "intend to do",
+                    "description": "「be going to」と「intend to do」は共に「〜するつもりだ」という意味を持つが、「be going to」は未来の計画や予測を示すことが多く、すでに決まっていることや自然な流れで起こることに使われる。一方、「intend to do」は意図や目的を強調し、具体的な計画や意思を持って行動することを示す。"
+                }
+            ],
+            "english_meaning": "This phrase is used to express a plan or intention to do something in the future."
+        }
+    },
+    {
+        "id": "9845",
+        "english": "get back",
+        "translation": "戻る",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1080,
+        "example": "Please |get| |back| to your seat.",
+        "example_translation": "席に戻って下さい。",
+        "sound": "get back",
+        "json": {
+            "english": "get back",
+            "pronunciation": "get-bǽk",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "be back",
+                    "description": "「get back」と「be back」は共に「戻る」という意味を持つが、「get back」は「戻るために移動する」というアクションを強調し、「be back」は「戻った状態にある」という結果を強調する。"
+                }
+            ],
+            "english_meaning": "To return to a place or a previous state, to start doing something again, or to regain something that was lost."
+        }
+    },
+    {
+        "id": "11633",
+        "english": "move to",
+        "translation": "～に引っ越す",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1081,
+        "example": "I will |move| |to| a new house.",
+        "example_translation": "新しい家に引っ越します。",
+        "sound": "move to",
+        "json": {
+            "english": "move to",
+            "pronunciation": "múːv-túː",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I decided to |move| |to| a bigger apartment.",
+                    "translation": "私はもっと大きなアパートに引っ越すことに決めました。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "depart from",
+                    "part_of_speech": "idiom",
+                    "translation": "〜から離れる"
+                },
+                {
+                    "english": "leave",
+                    "part_of_speech": "verb",
+                    "translation": "去る"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To change your home to a different place or location."
+        }
+    },
+    {
+        "id": "14105",
+        "english": "stay in",
+        "translation": "～に泊まる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1082,
+        "example": "I will |stay| |in| a hotel.",
+        "example_translation": "ホテルに泊まるよ。",
+        "sound": "stay in",
+        "json": {
+            "english": "stay in",
+            "pronunciation": "stéi-in",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "stay at",
+                    "description": "「stay in」と「stay at」は共に「〜に泊まる」という意味を持つが、「stay in」は特定の場所に留まることを強調し、主に自宅や特定の施設内で過ごすことを指す。一方、「stay at」は宿泊する場所を示し、ホテルや友人の家など、外部の場所に泊まることを指す。"
+                }
+            ],
+            "english_meaning": "to spend the night at a place instead of going somewhere else."
+        }
+    },
+    {
+        "id": "15154",
+        "english": "walk to",
+        "translation": "～まで歩いて行く",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1083,
+        "example": "The children |walk| |to| school everyday.",
+        "example_translation": "子供達は毎日学校まで歩いていく。",
+        "sound": "walk to",
+        "json": {
+            "english": "walk to",
+            "pronunciation": "wɔk-túː",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To go on foot to a specific place or destination."
+        }
+    },
+    {
+        "id": "8867",
+        "english": "each other",
+        "translation": "お互い",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1084,
+        "example": "We help |each| |other| in class.",
+        "example_translation": "クラスではお互いに助け合っている。",
+        "sound": "each other",
+        "json": {
+            "english": "each other",
+            "pronunciation": "íːtʃ-ʌ́ðər",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The students often support |each| |other| during group projects.",
+                    "translation": "生徒たちはグループプロジェクトの際にお互いをよく支え合う。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|each| |other|'s",
+                    "translation": "お互いの"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Two or more people doing something to one another."
+        }
+    },
+    {
+        "id": "9891",
+        "english": "give up",
+        "translation": "あきらめる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1085,
+        "example": "A white flag is a sign of |giving| |up|.",
+        "example_translation": "白い旗は諦めることのサインだ。",
+        "sound": "give up",
+        "json": {
+            "english": "give up",
+            "pronunciation": "gív-ʌ́p",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I decided to |give| |up| my plans for the weekend.",
+                    "translation": "週末の計画をあきらめることにした。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|give| somebody |up| (to somebody)",
+                    "translation": "〈人〉を(〈警察など〉に)引き渡す"
+                },
+                {
+                    "english": "|give| |up| doing something",
+                    "translation": "〜するのをやめる"
+                },
+                {
+                    "english": "|give| yourself |up| (to somebody)",
+                    "translation": "(〈警察〉に)自首する, (〈敵〉に)投降する"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To stop trying to do something or to stop doing something that you usually do, often because it is too difficult or you feel it is not worth it."
+        }
+    },
+    {
+        "id": "11937",
+        "english": "on foot",
+        "translation": "歩いて",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1086,
+        "example": "I went to the park |on| |foot|.",
+        "example_translation": "私は歩いて公園に行った。",
+        "sound": "on foot",
+        "json": {
+            "english": "on foot",
+            "pronunciation": "ɑn-fút",
+            "other_translations": [
+                {
+                    "translation": "徒歩で",
+                    "part_of_speech": "idiom"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "I walked to school |on| |foot| every day.",
+                    "translation": "私は毎日歩いて学校に行った。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To travel to a place by walking instead of using a vehicle."
+        }
+    },
+    {
+        "id": "14463",
+        "english": "talk about",
+        "translation": "～について話す",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1087,
+        "example": "Let's |talk| |about| the future.",
+        "example_translation": "将来について話しましょう。",
+        "sound": "talk about",
+        "json": {
+            "english": "talk about",
+            "pronunciation": "tɔk-əbáut",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To discuss or mention a particular subject or topic."
+        }
+    },
+    {
+        "id": "14836",
+        "english": "turn off",
+        "translation": "～を消す",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1088,
+        "example": "She |turns| |off| the light when leaving the room.",
+        "example_translation": "彼女は部屋を出るときに明かりを消す。",
+        "sound": "turn off",
+        "json": {
+            "english": "turn off",
+            "pronunciation": "tə́ːrn-ɔf",
+            "other_translations": [
+                {
+                    "translation": "〈人〉に興味を失わせる",
+                    "part_of_speech": "idiom"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Don't forget to |turn| |off| the TV before you go to bed.",
+                    "translation": "寝る前にテレビを消すのを忘れないでね。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "turn on",
+                    "part_of_speech": "idiom",
+                    "translation": "～のスイッチを入れる"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "put out",
+                    "description": "「turn off」と「put out」は共に「〜を消す」という意味を持つが、「turn off」は主に電気や機械を停止させる際に使われるのに対し、「put out」は火や光を消すことに特化して使われる。"
+                }
+            ],
+            "english_meaning": "To stop a machine or device from working by pressing a button or turning a switch; to cause someone to lose interest or attraction towards something or someone."
+        }
+    },
+    {
+        "id": "9507",
+        "english": "finish doing",
+        "translation": "～し終える",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1089,
+        "example": "I |finished| |doing| my homework.",
+        "example_translation": "宿題をやり終えた。",
+        "sound": "finish doing",
+        "json": {
+            "english": "finish doing",
+            "pronunciation": "fíniʃ dúːiŋ",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To complete an activity or task that you have been working on."
+        }
+    },
+    {
+        "id": "9942",
+        "english": "go out",
+        "translation": "外出する",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1090,
+        "example": "My daughter |went| |out| soon after school.",
+        "example_translation": "学校の後すぐ、私の娘は出かけて行った。",
+        "sound": "go out",
+        "json": {
+            "english": "go out",
+            "pronunciation": "góu-áut",
+            "other_translations": [
+                {
+                    "translation": "出かける",
+                    "part_of_speech": "idiom"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "I decided to |go| |out| for a walk in the park.",
+                    "translation": "公園に散歩に出かけることにした。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|go| |out| for something",
+                    "translation": "〈食事・飲み〉に行く"
+                },
+                {
+                    "english": "|go| |out| together",
+                    "translation": "つきあう"
+                },
+                {
+                    "english": "|go| |out| with somebody",
+                    "translation": "〈人〉とつきあう"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To leave your home, usually for enjoyment or social activities."
+        }
+    },
+    {
+        "id": "10352",
+        "english": "hurry up",
+        "translation": "急ぐ",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1091,
+        "example": "Please |hurry| |up|. We're running late.",
+        "example_translation": "急いでください、遅れそうなんです。",
+        "sound": "hurry up",
+        "json": {
+            "english": "hurry up",
+            "pronunciation": "hə́ːri-ʌ́p",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "dally",
+                    "part_of_speech": "verb",
+                    "translation": "ぐずぐずする"
+                },
+                {
+                    "english": "dawdle",
+                    "part_of_speech": "verb",
+                    "translation": "だらだらする"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To tell someone to do something faster or to make something happen sooner."
+        }
+    },
+    {
+        "id": "14594",
+        "english": "think of",
+        "translation": "～のことを考える",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1092,
+        "example": "I always |think| |of| my dog.",
+        "example_translation": "私はいつも愛犬のことを考えている。",
+        "sound": "think of",
+        "json": {
+            "english": "think of",
+            "pronunciation": "θíŋk-əv",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I often |think| |of| my childhood friends.",
+                    "translation": "私はよく子供の頃の友達のことを考えます。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "think about",
+                    "description": "「think of」と「think about」は共に「〜のことを考える」という意味を持つが、「think of」は特定のアイデアや印象を思い浮かべることに焦点を当てるのに対し、「think about」はより深く考えたり、熟考することを指す。"
+                }
+            ],
+            "english_meaning": "To consider or remember someone or something in your mind."
+        }
+    },
+    {
+        "id": "15373",
+        "english": "write back",
+        "translation": "返事を書く",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1093,
+        "example": "Please |write| |back| to my email.",
+        "example_translation": "私のメールに返信してください。",
+        "sound": "write back",
+        "json": {
+            "english": "write back",
+            "pronunciation": "rait-bǽk",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I sent her a message, but she didn't |write| |back|.",
+                    "translation": "彼女にメッセージを送ったが、返事をくれなかった。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|write| |back| to somebody",
+                    "translation": "〈人〉に返事を出す[書く]"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To respond to a letter by sending another letter back to the person who wrote to you."
+        }
+    },
+    {
+        "id": "6803",
+        "english": "at once",
+        "translation": "すぐに",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1094,
+        "example": "Get here |at| |once|!",
+        "example_translation": "すぐに来て！",
+        "sound": "at once",
+        "json": {
+            "english": "at once",
+            "pronunciation": "ət-wʌ́ns",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "later",
+                    "part_of_speech": "adverb",
+                    "translation": "後で"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "in a minute",
+                    "description": "「at once」と「in a minute」は共に「すぐに」という意味を持つが、「at once」は即座に行動することを強調し、緊急性や重要性がある場合に使われる。一方、「in a minute」は少しの時間を要するが、すぐに行う意志があることを示し、カジュアルな場面で使われることが多い。"
+                }
+            ],
+            "english_meaning": "Immediately or without delay; happening together or at the same time."
+        }
+    },
+    {
+        "id": "6813",
+        "english": "at work",
+        "translation": "仕事中で",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1095,
+        "example": "I'm busy |at| |work| right now.",
+        "example_translation": "仕事中で今は忙しい。",
+        "sound": "at work",
+        "json": {
+            "english": "at work",
+            "pronunciation": "ət-wərk",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "idle",
+                    "part_of_speech": "adjective",
+                    "translation": "仕事をしていない, 怠けている"
+                },
+                {
+                    "english": "out of work",
+                    "part_of_speech": "idiom",
+                    "translation": "仕事がない, 失業中"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Engaged in your job or a specific task, often implying that you are focused on work-related activities."
+        }
+    },
+    {
+        "id": "10509",
+        "english": "in front of",
+        "translation": "～の前に",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1096,
+        "example": "The cat sat |in| |front| |of| me.",
+        "example_translation": "猫は私の前に座った。",
+        "sound": "in front of",
+        "json": {
+            "english": "in front of",
+            "pronunciation": "in-frʌ́nt-əv",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The dog waited |in| |front| |of| the door.",
+                    "translation": "犬はドアの前で待っていた。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A position that is located ahead of something or someone, facing towards it."
+        }
+    },
+    {
+        "id": "14082",
+        "english": "start doing",
+        "translation": "～し始める",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1097,
+        "example": "He |started| |doing| his homework.",
+        "example_translation": "彼は宿題を始めた。",
+        "sound": "start doing",
+        "json": {
+            "english": "start doing",
+            "pronunciation": "stɑːrt dúːiŋ",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "She |started| |doing| yoga to relax her mind.",
+                    "translation": "彼女は心をリラックスさせるためにヨガをし始めた。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "begin doing",
+                    "description": "「start doing」と「begin doing」は共に「〜し始める」という意味を持つが、前者はカジュアルで日常的な場面でよく使われ、後者はよりフォーマルで文学的な文脈で使われることが多い。"
+                }
+            ],
+            "english_meaning": "To begin an action or activity that you have not done before."
+        }
+    },
+    {
+        "id": "15164",
+        "english": "want to",
+        "translation": "～したい",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1098,
+        "example": "I |want| |to| eat something sweet.",
+        "example_translation": "何か甘いものが食べたいな。",
+        "sound": "want to",
+        "json": {
+            "english": "want to",
+            "pronunciation": "wɑnt-túː",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I |want| |to| go to the concert this weekend.",
+                    "translation": "今週末のコンサートに行きたい。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "prefer to do",
+                    "description": "「want to」と「prefer to do」は共に「〜したい」という意味を持つが、「want to」は単にその行動を望むことを示し、「prefer to do」は他の選択肢と比較してその行動をより好むことを示す。"
+                }
+            ],
+            "english_meaning": "To have a desire or wish to do something."
+        }
+    },
+    {
+        "id": "9851",
+        "english": "get home",
+        "translation": "帰宅する",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1100,
+        "example": "I just |got| |home|.",
+        "example_translation": "私は今家についたところだ。",
+        "sound": "get home",
+        "json": {
+            "english": "get home",
+            "pronunciation": "get-hóum",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I will |get| |home| before dinner.",
+                    "translation": "夕食前に帰宅します。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "come home",
+                    "description": "「get home」と「come home」は共に「帰宅する」という意味を持つが、「get home」は帰宅するまでの過程や到達を強調し、「come home」は帰る行為そのものや、帰る場所に向かうことを強調するニュアンスがある。"
+                }
+            ],
+            "english_meaning": "To arrive at one's house or place of residence after being away."
+        }
+    },
+    {
+        "id": "12420",
+        "english": "play catch",
+        "translation": "キャッチボールをする",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1101,
+        "example": "The father and his son |played| |catch| at a park.",
+        "example_translation": "父と息子は公園でキャッチボールをした。",
+        "sound": "play catch",
+        "json": {
+            "english": "play catch",
+            "pronunciation": "pléi-kætʃ",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The children enjoyed |playing| |catch| in the backyard.",
+                    "translation": "子供たちは裏庭でキャッチボールを楽しんだ。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To throw a ball back and forth between two people, usually for fun or exercise."
+        }
+    },
+    {
+        "id": "14110",
+        "english": "stay up late",
+        "translation": "夜更かしする",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1102,
+        "example": "Don't |stay| |up| |late|.",
+        "example_translation": "夜更かしはするな。",
+        "sound": "stay up late",
+        "json": {
+            "english": "stay up late",
+            "pronunciation": "stéi-ʌ́p-léit",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I often |stay| |up| |late| to finish my homework.",
+                    "translation": "私は宿題を終わらせるためによく夜更かしをします。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To remain awake and active during the night for a longer time than usual, often beyond the normal bedtime."
+        }
+    },
+    {
+        "id": "15376",
+        "english": "write to",
+        "translation": "～に手紙を書く",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1103,
+        "example": "I |wrote| |to| my friend.",
+        "example_translation": "私は友人に手紙を書いた。",
+        "sound": "write to",
+        "json": {
+            "english": "write to",
+            "pronunciation": "rait-túː",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To send a letter or message to someone, usually to communicate or share information."
+        }
+    },
+    {
+        "id": "6216",
+        "english": "a kind of",
+        "translation": "～の一種",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1104,
+        "example": "Cherry is |a| |kind| |of| fruit.",
+        "example_translation": "さくらんぼは果物の一種である。",
+        "sound": "a kind of",
+        "json": {
+            "english": "a kind of",
+            "pronunciation": "ə-káind-əv",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "Dogs are |a| |kind| |of| pet that many people love.",
+                    "translation": "犬は多くの人が愛するペットの一種です。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "a type of",
+                    "description": "「a kind of」と「a type of」は共に「〜の一種」という意味を持つが、前者はよりカジュアルで日常的な表現であり、後者はより正式で分類的なニュアンスを持つ。"
+                }
+            ],
+            "english_meaning": "This phrase is used to describe something that belongs to a specific category or type, often suggesting that it is similar to other things in that category."
+        }
+    },
+    {
+        "id": "9858",
+        "english": "get off",
+        "translation": "～から降りる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1105,
+        "example": "Those women have just |gotten| |off| the bus.",
+        "example_translation": "その女性たちはちょうどバスを降りたところだ。",
+        "sound": "get off",
+        "json": {
+            "english": "get off",
+            "pronunciation": "get-ɔf",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "He |got| |off| the subway at the last station.",
+                    "translation": "彼は終点で地下鉄を降りた。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To leave a vehicle or a place, or to help someone leave a vehicle or a place."
+        }
+    },
+    {
+        "id": "11753",
+        "english": "next to",
+        "translation": "～の隣に",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1106,
+        "example": "I had boys and girls sit |next| |to| each other.",
+        "example_translation": "私は男子と女子がお互い隣になるよう座らせた。",
+        "sound": "next to",
+        "json": {
+            "english": "next to",
+            "pronunciation": "nékst-túː",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The dog slept |next| |to| its owner on the couch.",
+                    "translation": "犬はソファの上で飼い主の隣に寝ていた。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Very close to someone or something, with nothing in between."
+        }
+    },
+    {
+        "id": "14816",
+        "english": "try to",
+        "translation": "～しようとする",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1107,
+        "example": "I'm |trying| |to| finish my homework by tomorrow.",
+        "example_translation": "私は明日までに宿題を終わらせようとしている。",
+        "sound": "try to",
+        "json": {
+            "english": "try to",
+            "pronunciation": "trái-túː",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I'm |trying| |to| learn how to play the guitar.",
+                    "translation": "ギターの弾き方を学ぼうとしています。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To make an effort to do something or to attempt to achieve a goal."
+        }
+    },
+    {
+        "id": "15385",
+        "english": "years old",
+        "translation": "～歳",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1108,
+        "example": "How many |years| |old| is this child?",
+        "example_translation": "この子は何歳ですか？",
+        "sound": "years old",
+        "json": {
+            "english": "years old",
+            "pronunciation": "jirz ould",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "This dog is five |years| |old|.",
+                    "translation": "この犬は5歳です。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A way to describe how many years someone has lived since they were born."
+        }
+    },
+    {
+        "id": "6731",
+        "english": "as well as",
+        "translation": "～と同じくらい上手に",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1109,
+        "example": "She can dance |as| |well| |as| her boyfriend can.",
+        "example_translation": "彼女は恋人と同じくらい上手に踊ることができる。",
+        "sound": "as well as",
+        "json": {
+            "english": "as well as",
+            "pronunciation": "əz-wél-əz",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "He plays the guitar |as| |well| |as| his sister does.",
+                    "translation": "彼は妹と同じくらい上手にギターを弾く。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|as| |well| |as| doing something",
+                    "translation": "〜するだけでなく"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "In addition to something else, indicating that two things are equally good or important."
+        }
+    },
+    {
+        "id": "7077",
+        "english": "believe in",
+        "translation": "～の存在を信じる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1110,
+        "example": "I |believe| |in| magic.",
+        "example_translation": "私は魔法を信じている。",
+        "sound": "believe in",
+        "json": {
+            "english": "believe in",
+            "pronunciation": "bilíːv-in",
+            "other_translations": [
+                {
+                    "translation": "〜の良さ[正しさ]を信じる",
+                    "part_of_speech": "idiom"
+                },
+                {
+                    "translation": "信用する",
+                    "part_of_speech": "idiom"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Do you |believe| |in| ghosts?",
+                    "translation": "あなたは幽霊の存在を信じますか。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|believe| |in| doing something",
+                    "translation": "〜することがよい[正しい]と信じる"
+                },
+                {
+                    "english": "|believe| |in| yourself",
+                    "translation": "自分(の力)を信じる"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To be certain that someone or something is real or exists; to have confidence in the effectiveness or correctness of something; to trust someone and feel sure they will succeed."
+        }
+    },
+    {
+        "id": "9612",
+        "english": "for example",
+        "translation": "例えば",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1111,
+        "example": "I like sweets, |for| |example|, cakes.",
+        "example_translation": "甘いものが好きなんだ、例えばケーキとか。",
+        "sound": "for example",
+        "json": {
+            "english": "for example",
+            "pronunciation": "fər-igzǽmpl",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Used to introduce a specific case, person, or thing that helps to clarify or support what you are saying."
+        }
+    },
+    {
+        "id": "12815",
+        "english": "put on",
+        "translation": "～身に着ける",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1112,
+        "example": "The boy |put| |on| his cloth by himself.",
+        "example_translation": "男の子は自分で服を身に着けた。",
+        "sound": "put on",
+        "json": {
+            "english": "put on",
+            "pronunciation": "pút-ɑn",
+            "other_translations": [
+                {
+                    "translation": "〈服〉を着る",
+                    "part_of_speech": "idiom"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "She |put| |on| her warm jacket before going outside.",
+                    "translation": "彼女は外に出る前に暖かいジャケットを着た。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "take off",
+                    "part_of_speech": "idiom",
+                    "translation": "脱ぐ"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To wear clothing or accessories on your body; to apply cosmetics or creams to your skin; to pretend to have a certain feeling or opinion, often to attract attention."
+        }
+    },
+    {
+        "id": "13822",
+        "english": "slow down",
+        "translation": "速度を落とす",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1113,
+        "example": "Please, |slow| |down| your running speed.",
+        "example_translation": "走るスピードを落としてください。",
+        "sound": "slow down",
+        "json": {
+            "english": "slow down",
+            "pronunciation": "slóu-dáun",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "accelerate",
+                    "part_of_speech": "verb",
+                    "translation": "加速する"
+                },
+                {
+                    "english": "speed up",
+                    "part_of_speech": "idiom",
+                    "translation": "速度を上げる"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To reduce speed or activity; to take things more easily and not rush."
+        }
+    },
+    {
+        "id": "6793",
+        "english": "at first",
+        "translation": "最初は",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1114,
+        "example": "I did not like carrots |at| |first|, but now I like it.",
+        "example_translation": "最初はニンジンが嫌いだったけれど、今は好きだ。",
+        "sound": "at first",
+        "json": {
+            "english": "at first",
+            "pronunciation": "ət-fə́ːrst",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "finally",
+                    "part_of_speech": "adverb",
+                    "translation": "最終的に"
+                },
+                {
+                    "english": "in the end",
+                    "part_of_speech": "idiom",
+                    "translation": "結局"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Used to describe the beginning of a situation, particularly when it has changed over time."
+        }
+    },
+    {
+        "id": "7515",
+        "english": "catch a cold",
+        "translation": "風邪を引く",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1115,
+        "example": "I |caught| |a| |cold| yesterday.",
+        "example_translation": "昨日、風邪を引いたんだ。",
+        "sound": "catch a cold",
+        "json": {
+            "english": "catch a cold",
+            "pronunciation": "kætʃ-ə-kould",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To become sick with a common illness that causes a runny nose, sneezing, and a sore throat, usually caused by a virus."
+        }
+    },
+    {
+        "id": "11958",
+        "english": "one day",
+        "translation": "ある日",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1116,
+        "example": "|One| |day|, I dreamed of having a family.",
+        "example_translation": "ある日私は家族を持つ夢を見た。",
+        "sound": "one day",
+        "json": {
+            "english": "one day",
+            "pronunciation": "wʌ́n-déi",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "At some unspecified time in the future or past, often used to refer to a moment that may be significant or memorable."
+        }
+    },
+    {
+        "id": "12031",
+        "english": "out of",
+        "translation": "～から外へ",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1117,
+        "example": "They went |out| |of| the house.",
+        "example_translation": "彼女たちは家から出ていった。",
+        "sound": "out of",
+        "json": {
+            "english": "out of",
+            "pronunciation": "áut-əv",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The cat jumped |out| |of| the box.",
+                    "translation": "猫は箱から飛び出した。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Not inside or within something; away from a particular place or situation."
+        }
+    },
+    {
+        "id": "14104",
+        "english": "stay home",
+        "translation": "家にいる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1118,
+        "example": "Please |stay| |home| during the storm.",
+        "example_translation": "嵐の間は家にいてください。",
+        "sound": "stay home",
+        "json": {
+            "english": "stay home",
+            "pronunciation": "stéi-hóum",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "be home",
+                    "description": "「stay home」と「be home」は共に「家にいる」という意味を持つが、「stay home」は外出せずに家に留まることを強調し、特に何かの理由(例えば、病気や天候)で外出を控える場合に使われる。一方、「be home」は単に家にいる状態を表し、外出していないことを特に強調しない。"
+                }
+            ],
+            "english_meaning": "To remain in one's house instead of going out, often for rest or safety."
+        }
+    },
+    {
+        "id": "6972",
+        "english": "be able to",
+        "translation": "～することができる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1119,
+        "example": "I |am| |able| |to| swim.",
+        "example_translation": "私は泳げる。",
+        "sound": "be able to",
+        "json": {
+            "english": "be able to",
+            "pronunciation": "bíː-éibl-túː",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I |am| |able| |to| solve this math problem.",
+                    "translation": "私はこの数学の問題を解くことができる。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To have the skill, power, or opportunity to do something."
+        }
+    },
+    {
+        "id": "9059",
+        "english": "enjoy doing",
+        "translation": "～するのを楽しむ",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1120,
+        "example": "I |enjoy| |doing| homework after school.",
+        "example_translation": "私は放課後に楽しく宿題をしている。",
+        "sound": "enjoy doing",
+        "json": {
+            "english": "enjoy doing",
+            "pronunciation": "indʒɔ́i dúːiŋ",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To take pleasure in an activity or find it enjoyable to do something."
+        }
+    },
+    {
+        "id": "9440",
+        "english": "feel better",
+        "translation": "気分がよくなる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1121,
+        "example": "I |felt| |better| after taking medicine.",
+        "example_translation": "薬を飲んだら気分が良くなりました。",
+        "sound": "feel better",
+        "json": {
+            "english": "feel better",
+            "pronunciation": "fíːl-bétər",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I always |feel| |better| after talking to my friends.",
+                    "translation": "友達と話すと、いつも気分がよくなる。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To experience an improvement in one's mood or health, leading to a more positive or comfortable state."
+        }
+    },
+    {
+        "id": "13384",
+        "english": "run away",
+        "translation": "逃げる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1122,
+        "example": "He had to |run| |away| quickly.",
+        "example_translation": "彼はすぐに逃げなければならなかった。",
+        "sound": "run away",
+        "json": {
+            "english": "run away",
+            "pronunciation": "rʌ́n-əwéi",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|run| |away| from something",
+                    "translation": "〜から逃げる"
+                },
+                {
+                    "english": "|run| |away| from/to something",
+                    "translation": "〈場所〉から[へ]逃げる"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "make off",
+                    "description": "「run away」と「make off」は共に「逃げる」という意味を持つが、前者は主に危険や不快な状況から逃げることを指し、後者は特に何かを持って逃げる、または急いで立ち去るニュアンスが強い。"
+                }
+            ],
+            "english_meaning": "To leave a place quietly or secretly to escape from someone or something, often to avoid a problem or difficult situation."
+        }
+    },
+    {
+        "id": "15144",
+        "english": "wake up",
+        "translation": "目が覚める",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1123,
+        "example": "I |wake| |up| at seven o'clock.",
+        "example_translation": "7時に目が覚める。",
+        "sound": "wake up",
+        "json": {
+            "english": "wake up",
+            "pronunciation": "wéik-ʌ́p",
+            "other_translations": [
+                {
+                    "translation": "〈人〉の目を覚まさせる",
+                    "part_of_speech": "idiom"
+                },
+                {
+                    "translation": "目を覚ます",
+                    "part_of_speech": "idiom"
+                },
+                {
+                    "translation": "起きる",
+                    "part_of_speech": "idiom"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "go to sleep",
+                    "part_of_speech": "idiom",
+                    "translation": "眠る"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|wake| |up| to (find) something",
+                    "translation": "目を覚まして〜に気づく"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To stop sleeping or to cause someone to stop sleeping; to begin to pay attention or realize the truth about a situation."
+        }
+    },
+    {
+        "id": "6746",
+        "english": "ask for help",
+        "translation": "～に助けを求める",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1124,
+        "example": "You can |ask| |for| |help| to me anytime.",
+        "example_translation": "私にいつでも助けを求めてください。",
+        "sound": "ask for help",
+        "json": {
+            "english": "ask for help",
+            "pronunciation": "ǽsk-fər-hélp",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "If you are struggling with your homework, don't hesitate to |ask| |for| |help|.",
+                    "translation": "宿題に苦労しているなら、遠慮せずに助けを求めてください。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To request assistance or support from someone when you need it."
+        }
+    },
+    {
+        "id": "9390",
+        "english": "far away",
+        "translation": "遠くに",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1125,
+        "example": "We live |far| |away| from the city.",
+        "example_translation": "私たちは街から遠く離れたところに住んでいる。",
+        "sound": "far away",
+        "json": {
+            "english": "far away",
+            "pronunciation": "fɑ́ːrəwèɪ",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The mountains are |far| |away| from our house.",
+                    "translation": "山は私たちの家から遠くにあります。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "close",
+                    "part_of_speech": "adjective",
+                    "translation": "近くに, 接近している"
+                },
+                {
+                    "english": "near",
+                    "part_of_speech": "adjective",
+                    "translation": "近くに"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "At a great distance from a particular place or person."
+        }
+    },
+    {
+        "id": "10147",
+        "english": "have a fever",
+        "translation": "熱がある",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1126,
+        "example": "I |have| |a| |fever|.",
+        "example_translation": "熱があるんだ。",
+        "sound": "have a fever",
+        "json": {
+            "english": "have a fever",
+            "pronunciation": "həv-ə-fíːvər",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To experience a higher than normal body temperature, often indicating illness or infection."
+        }
+    },
+    {
+        "id": "11076",
+        "english": "leave for",
+        "translation": "～に向けて出発する",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1127,
+        "example": "I'll |leave| |for| Paris tomorrow.",
+        "example_translation": "明日、パリに向けて出発します。",
+        "sound": "leave for",
+        "json": {
+            "english": "leave for",
+            "pronunciation": "líːv-fər",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To start a journey or travel to a specific place."
+        }
+    },
+    {
+        "id": "14437",
+        "english": "take a trip",
+        "translation": "旅行をする",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1128,
+        "example": "I want to |take| |a| |trip|.",
+        "example_translation": "旅行に行きたい。",
+        "sound": "take a trip",
+        "json": {
+            "english": "take a trip",
+            "pronunciation": "téik-ə-trip",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To go on a journey or travel to a different place for leisure or enjoyment."
+        }
+    },
+    {
+        "id": "6802",
+        "english": "at noon",
+        "translation": "正午に",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1129,
+        "example": "|At| |noon|, we will have lunch.",
+        "example_translation": "私たちは正午に昼食をとります。",
+        "sound": "at noon",
+        "json": {
+            "english": "at noon",
+            "pronunciation": "ət-núːn",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "|At| |noon|, the sun is at its highest point in the sky.",
+                    "translation": "正午には、太陽が空の最も高い位置にあります。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The time of day when the sun is at its highest point, typically around 12:00 PM."
+        }
+    },
+    {
+        "id": "7049",
+        "english": "because of",
+        "translation": "～のために",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1130,
+        "example": "I couldn't go out |because| |of| the rain.",
+        "example_translation": "雨で外に出られなかった。",
+        "sound": "because of",
+        "json": {
+            "english": "because of",
+            "pronunciation": "bikɔ́z-əv",
+            "other_translations": [
+                {
+                    "translation": "〜が原因で",
+                    "part_of_speech": "idiom"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The match was postponed |because| |of| heavy snow.",
+                    "translation": "試合は大雪のために延期された。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "owing to",
+                    "description": "「because of」と「owing to」は共に「〜のために」という意味を持つが、前者は口語的でカジュアルな場面でよく使われるのに対し、後者はよりフォーマルな文脈で用いられることが多い。また、「because of」は原因を強調するのに対し、「owing to」は結果や状況に焦点を当てる傾向がある。"
+                }
+            ],
+            "english_meaning": "Due to a specific reason or cause; as a result of something happening."
+        }
+    },
+    {
+        "id": "10152",
+        "english": "have a test",
+        "translation": "テストを受ける",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1131,
+        "example": "I |have| |a| |test| tomorrow.",
+        "example_translation": "明日テストがある。",
+        "sound": "have a test",
+        "json": {
+            "english": "have a test",
+            "pronunciation": "həv-ə-test",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I |have| |a| math |test| next week.",
+                    "translation": "来週、数学のテストがあります。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To take an examination or assessment to measure knowledge or skills in a particular subject."
+        }
+    },
+    {
+        "id": "13453",
+        "english": "say hello to",
+        "translation": "～によろしくと言う",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1132,
+        "example": "|Say| |hello| |to| your teacher for me.",
+        "example_translation": "先生によろしく伝えて。",
+        "sound": "say hello to",
+        "json": {
+            "english": "say hello to",
+            "pronunciation": "sei-helóu-túː",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "say hi to",
+                    "description": "「say hello to」と「say hi to」は共に「〜によろしくと言う」という意味を持つが、前者はよりフォーマルで丁寧な印象を与え、後者はカジュアルで親しい関係を示すことが多い。"
+                }
+            ],
+            "english_meaning": "To greet someone or send good wishes to them, often on behalf of another person."
+        }
+    },
+    {
+        "id": "14438",
+        "english": "take a walk",
+        "translation": "散歩をする",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1133,
+        "example": "We |take| |a| |walk| in the park everyday.",
+        "example_translation": "私たちは毎日公園を散歩する。",
+        "sound": "take a walk",
+        "json": {
+            "english": "take a walk",
+            "pronunciation": "téik-ə-wɔk",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I often |take| |a| |walk| after dinner to relax.",
+                    "translation": "夕食の後にリラックスするために散歩をすることがよくあります。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To go outside and walk for pleasure or exercise."
+        }
+    },
+    {
+        "id": "6992",
+        "english": "be full of",
+        "translation": "～でいっぱいである",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1134,
+        "example": "The room |was| |full| |of| laughter.",
+        "example_translation": "会場は笑いであふれていた。",
+        "sound": "be full of",
+        "json": {
+            "english": "be full of",
+            "pronunciation": "bíː-fúl-əv",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The garden |was| |full| |of| colorful flowers.",
+                    "translation": "その庭は色とりどりの花でいっぱいだった。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "be empty of",
+                    "part_of_speech": "idiom",
+                    "translation": "〜が空である, 不足している"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To have a lot of something inside or to contain many things."
+        }
+    },
+    {
+        "id": "7024",
+        "english": "be ready to",
+        "translation": "～する準備ができている",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1135,
+        "example": "I |am| |ready| |to| play soccer.",
+        "example_translation": "サッカーをする準備はできている。",
+        "sound": "be ready to"
+    },
+    {
+        "id": "10161",
+        "english": "have to",
+        "translation": "～しなければならない",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1136,
+        "example": "I |have| |to| finish my homework today.",
+        "example_translation": "今日、宿題を終わらせないと。",
+        "sound": "have to"
+    },
+    {
+        "id": "14111",
+        "english": "stay with",
+        "translation": "～のところに泊まる",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1137,
+        "example": "I will |stay| |with| my friend.",
+        "example_translation": "私は友人のところに泊まる。",
+        "sound": "stay with"
+    },
+    {
+        "id": "15331",
+        "english": "work for",
+        "translation": "～で働いている",
+        "part_of_speech": "idiom",
+        "course": "eiken",
+        "importance": 1138,
+        "example": "I |work| |for| foreign company.",
+        "example_translation": "私は海外の会社で働いている。",
+        "sound": "work for"
+    }
+]

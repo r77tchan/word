@@ -1,0 +1,5718 @@
+[
+    {
+        "id": "11435",
+        "english": "medication",
+        "translation": "薬",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4342,
+        "example": "I need to take my |medication|.",
+        "example_translation": "私は薬を飲む必要がある。",
+        "sound": "medication",
+        "json": {
+            "english": "medication",
+            "pronunciation": "mèdəkéiʃən",
+            "other_translations": [
+                {
+                    "translation": "薬物",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "medical",
+                    "part_of_speech": "adjective",
+                    "translation": "医学の, 医療の"
+                },
+                {
+                    "english": "medicated",
+                    "part_of_speech": "adjective",
+                    "translation": "薬を使った, 薬で治療された"
+                },
+                {
+                    "english": "medicine",
+                    "part_of_speech": "noun",
+                    "translation": "医学, 薬"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "be on |medication| (for something)",
+                    "translation": "(〈病気など〉の)薬物治療を受けている"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "medicine",
+                    "description": "「medication」と「medicine」は共に「薬」という意味を持つが、前者は主に治療のために使用される薬剤やその投与を指し、後者は一般的に薬全般やその成分を指す。"
+                }
+            ],
+            "english_meaning": "Substances used to treat or prevent illness in people."
+        }
+    },
+    {
+        "id": "12739",
+        "english": "protein",
+        "translation": "タンパク質",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4343,
+        "example": "|Protein| is important for our bodies.",
+        "example_translation": "タンパク質は私たちの体にとって重要だ。",
+        "sound": "protein",
+        "json": {
+            "english": "protein",
+            "pronunciation": "[US] próutìn | próutiin [UK] prə́utiːn",
+            "other_translations": [
+                {
+                    "translation": "プロテイン",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Eggs are a great source of |protein|.",
+                    "translation": "卵は優れたタンパク質源です。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A natural substance found in foods like meat, eggs, and beans that is essential for your body to grow, stay strong, and be healthy."
+        }
+    },
+    {
+        "id": "6376",
+        "english": "adolescent",
+        "translation": "青年期の人",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4344,
+        "example": "The |adolescent| played basketball with friends.",
+        "example_translation": "その青年は友人たちとバスケットボールをした。",
+        "sound": "adolescent",
+        "json": {
+            "english": "adolescent",
+            "pronunciation": "æ̀dəlés(ə)nt",
+            "other_translations": [
+                {
+                    "translation": "思春期の若者",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The |adolescent| struggled to find his identity during high school.",
+                    "translation": "その青年は高校時代に自分のアイデンティティを見つけるのに苦労した。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "adult",
+                    "part_of_speech": "noun",
+                    "translation": "大人"
+                },
+                {
+                    "english": "child",
+                    "part_of_speech": "noun",
+                    "translation": "子供"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A young person, typically aged 12 to 18, who is growing and changing as they move toward adulthood."
+        }
+    },
+    {
+        "id": "8942",
+        "english": "election",
+        "translation": "選挙",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4345,
+        "example": "I will vote in the |election|.",
+        "example_translation": "私は選挙で投票する。",
+        "sound": "election",
+        "json": {
+            "english": "election",
+            "pronunciation": "ilékʃən",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The |election| will take place in the spring.",
+                    "translation": "選挙は春に行われる。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "elector",
+                    "part_of_speech": "noun",
+                    "translation": "選挙人"
+                },
+                {
+                    "english": "electoral",
+                    "part_of_speech": "adjective",
+                    "translation": "選挙の"
+                },
+                {
+                    "english": "electorate",
+                    "part_of_speech": "noun",
+                    "translation": "有権者"
+                },
+                {
+                    "english": "re-election",
+                    "part_of_speech": "noun",
+                    "translation": "再選"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a presidential |election|",
+                    "translation": "大統領選挙"
+                },
+                {
+                    "english": "hold an |election|",
+                    "translation": "選挙を行う"
+                },
+                {
+                    "english": "win/lose an |election|",
+                    "translation": "選挙に勝つ[負ける], 当選[落選]する"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A process in which people vote to select someone for an official job or position."
+        }
+    },
+    {
+        "id": "11345",
+        "english": "mammal",
+        "translation": "哺乳動物",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4346,
+        "example": "Dolphins are |mammals|.",
+        "example_translation": "イルカは哺乳類である。",
+        "sound": "mammal",
+        "json": {
+            "english": "mammal",
+            "pronunciation": "mǽməl",
+            "other_translations": [
+                {
+                    "translation": "哺乳類",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Whales are large |mammals| that live in the ocean.",
+                    "translation": "クジラは海に住む大きな哺乳動物です。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "mammalian",
+                    "part_of_speech": "adjective",
+                    "translation": "哺乳類の"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A kind of animal that feeds on milk produced by its mother when it is young. Examples include humans, dogs, and whales."
+        }
+    },
+    {
+        "id": "6454",
+        "english": "aid",
+        "translation": "援助",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4349,
+        "example": "We donated money to |aid| them.",
+        "example_translation": "私たちは彼らを援助するために寄付をした。",
+        "sound": "aid",
+        "json": {
+            "english": "aid",
+            "pronunciation": "éid",
+            "other_translations": [
+                {
+                    "translation": "助け",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "〜を手助けする",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "助ける",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The organization provided |aid| to those affected by the earthquake.",
+                    "translation": "その団体は地震の影響を受けた人々に援助を提供した。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "obstruction",
+                    "part_of_speech": "noun",
+                    "translation": "妨害"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|aid| program",
+                    "translation": "援助計画"
+                },
+                {
+                    "english": "humanitarian |aid|",
+                    "translation": "人道的支援"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Support or assistance provided to individuals or groups in need, often in the form of money, food, or resources, especially during difficult times or emergencies."
+        }
+    },
+    {
+        "id": "10635",
+        "english": "infect",
+        "translation": "～を感染させる",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4350,
+        "example": "The flu can |infect| anyone easily.",
+        "example_translation": "インフルエンザは誰にでも簡単に感染する。",
+        "sound": "infect",
+        "json": {
+            "english": "infect",
+            "pronunciation": "infékt",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "infected",
+                    "part_of_speech": "adjective",
+                    "translation": "感染した"
+                },
+                {
+                    "english": "infection",
+                    "part_of_speech": "noun",
+                    "translation": "感染"
+                },
+                {
+                    "english": "infectious",
+                    "part_of_speech": "adjective",
+                    "translation": "感染性の"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "disinfect",
+                    "part_of_speech": "verb",
+                    "translation": "～を消毒する"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "be |infected| with something",
+                    "translation": "〈病気・ウイルスなど〉に感染している"
+                },
+                {
+                    "english": "|infect| somebody with something",
+                    "translation": "〈人〉に〈感情・関心など〉をもたらす"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To cause a person or living thing to become sick with a disease; to introduce something harmful into a place or thing; to spread a feeling or interest to others, making them feel or think the same way."
+        }
+    },
+    {
+        "id": "12505",
+        "english": "pose",
+        "translation": "～を引き起こす",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4352,
+        "example": "The new law |poses| a challenge.",
+        "example_translation": "新法は難題を投げかけている。",
+        "sound": "pose",
+        "json": {
+            "english": "pose",
+            "pronunciation": "póuz",
+            "other_translations": [
+                {
+                    "translation": "ポーズをとる",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Rising temperatures |pose| a threat to many animal species.",
+                    "translation": "上昇する気温は多くの動物種に脅威をもたらしている。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|pose| a danger/risk/hazard/threat",
+                    "translation": "危険をもたらす"
+                },
+                {
+                    "english": "|pose| a problem/difficulty/challenge",
+                    "translation": "問題[困難, 難題]をもたらす"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "cause",
+                    "description": "「pose」と「cause」は共に「〜を引き起こす」という意味を持つが、前者は主に問題や危険を「引き起こす」というニュアンスが強く、後者は一般的に「原因となる」という意味合いが強い。"
+                }
+            ],
+            "english_meaning": "To exist in a way that may create a problem, danger, or difficulty."
+        }
+    },
+    {
+        "id": "12861",
+        "english": "radical",
+        "translation": "根本的な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4353,
+        "example": "The change brought about a |radical| transformation in her personality.",
+        "example_translation": "この変化は彼女の性格に根本的な変革をもたらした。",
+        "sound": "radical",
+        "json": {
+            "english": "radical",
+            "pronunciation": "rǽdikəl",
+            "other_translations": [
+                {
+                    "translation": "急進的な",
+                    "part_of_speech": "adjective"
+                },
+                {
+                    "translation": "過激な",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "radicalism",
+                    "part_of_speech": "noun",
+                    "translation": "急進主義"
+                },
+                {
+                    "english": "radicalize",
+                    "part_of_speech": "verb",
+                    "translation": "急進的にする"
+                },
+                {
+                    "english": "radically",
+                    "part_of_speech": "adverb",
+                    "translation": "根本的に"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "conservative",
+                    "part_of_speech": "adjective",
+                    "translation": "保守的な, 根本的でない"
+                },
+                {
+                    "english": "superficial",
+                    "part_of_speech": "adjective",
+                    "translation": "表面的な, 根本的でない"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "underlying",
+                    "description": "「radical」と「underlying」は共に「根本的な」という意味を持つが、前者は変革や根本的な変化を伴うことが多く、後者は物事の基盤や隠れた要因を指すことが多い。"
+                }
+            ],
+            "english_meaning": "Very significant and important; involving new and different ideas that challenge traditional beliefs or practices; often related to major social or political changes."
+        }
+    },
+    {
+        "id": "6318",
+        "english": "acquire",
+        "translation": "～を習得する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4354,
+        "example": "I want to |acquire| new dance moves.",
+        "example_translation": "新しいダンスを習得したい。",
+        "sound": "acquire",
+        "json": {
+            "english": "acquire",
+            "pronunciation": "əkwáiər",
+            "other_translations": [
+                {
+                    "translation": "獲得する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "She |acquired| a deep understanding of mathematics.",
+                    "translation": "彼女は数学の深い理解を身につけた。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "acquisition",
+                    "part_of_speech": "noun",
+                    "translation": "獲得, 取得"
+                },
+                {
+                    "english": "acquisitive",
+                    "part_of_speech": "adjective",
+                    "translation": "獲得することに関心がある, 物欲の強い"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|acquire| a reputation",
+                    "translation": "評判を得る"
+                },
+                {
+                    "english": "|acquire| something from somebody/something",
+                    "translation": "〜を〜から習得する"
+                },
+                {
+                    "english": "|acquire| something from somebody",
+                    "translation": "〜を〈人〉から入手する"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "master",
+                    "description": "「acquire」と「master」は共に「〜を習得する」という意味を持つが、前者は新しい知識やスキルを得ることに重点を置き、後者はその知識やスキルを完全に理解し、使いこなすレベルに達することを指す。"
+                }
+            ],
+            "english_meaning": "To get something, especially through effort or by learning. This can include gaining knowledge or skills."
+        }
+    },
+    {
+        "id": "8021",
+        "english": "consult",
+        "translation": "～に相談する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4355,
+        "example": "I will |consult| my teacher.",
+        "example_translation": "先生に相談します。",
+        "sound": "consult",
+        "json": {
+            "english": "consult",
+            "pronunciation": "kənsʌ́lt",
+            "other_translations": [
+                {
+                    "translation": "と相談する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "I decided to |consult| my friend before making a decision.",
+                    "translation": "決定する前に友達に相談することにした。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "consultancy",
+                    "part_of_speech": "noun",
+                    "translation": "コンサルタント業, コンサルティング業"
+                },
+                {
+                    "english": "consultant",
+                    "part_of_speech": "noun",
+                    "translation": "コンサルタント, 相談役"
+                },
+                {
+                    "english": "consultation",
+                    "part_of_speech": "noun",
+                    "translation": "相談, 協議"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|consult| somebody about something",
+                    "translation": "〈専門家など〉に〜について相談する"
+                },
+                {
+                    "english": "|consult| with somebody",
+                    "translation": "〈専門家など〉と相談する"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To ask someone for advice or information because they are knowledgeable about a topic, or to talk with someone to make a decision together."
+        }
+    },
+    {
+        "id": "10769",
+        "english": "interact",
+        "translation": "交流する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4356,
+        "example": "Let's |interact| with each other more.",
+        "example_translation": "もっとお互いに交流しよう。",
+        "sound": "interact",
+        "json": {
+            "english": "interact",
+            "pronunciation": "ìntərǽkt",
+            "other_translations": [
+                {
+                    "translation": "影響し合う",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Students often |interact| during group projects.",
+                    "translation": "学生たちはグループプロジェクト中によく交流します。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "interaction",
+                    "part_of_speech": "noun",
+                    "translation": "相互作用"
+                },
+                {
+                    "english": "interactive",
+                    "part_of_speech": "adjective",
+                    "translation": "相互作用する"
+                },
+                {
+                    "english": "interactivity",
+                    "part_of_speech": "noun",
+                    "translation": "相互作用性"
+                },
+                {
+                    "english": "reactive",
+                    "part_of_speech": "adjective",
+                    "translation": "反応的な"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|interact| with somebody",
+                    "translation": "〈人〉と交流する"
+                },
+                {
+                    "english": "|interact| with something",
+                    "translation": "〜と相互に作用し合う"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "mingle",
+                    "description": "「interact」と「mingle」は共に「交流する」という意味を持つが、前者は相手との直接的なやり取りや影響を強調し、後者はよりカジュアルで広範囲な人々との混ざり合いや社交的な場面を指す。"
+                }
+            ],
+            "english_meaning": "When people talk or work together, they connect and influence each other."
+        }
+    },
+    {
+        "id": "11308",
+        "english": "mainland",
+        "translation": "本土",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4357,
+        "example": "The island is not connected to the |mainland|.",
+        "example_translation": "その島は本土とつながっていない。",
+        "sound": "mainland",
+        "json": {
+            "english": "mainland",
+            "pronunciation": "[US] méinlæ̀nd | méinlʌ̀nd [UK] méinlʌ̀nd",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The largest area of land that makes up a country, excluding any nearby islands that are part of that country."
+        }
+    },
+    {
+        "id": "12831",
+        "english": "quantity",
+        "translation": "量",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4358,
+        "example": "The ramen is large in |quantity|.",
+        "example_translation": "そのラーメンは量が多い。",
+        "sound": "quantity",
+        "json": {
+            "english": "quantity",
+            "pronunciation": "[US] kwɑ́ntəti [UK] kwɔ́ntiti",
+            "other_translations": [
+                {
+                    "translation": "数量",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Many students struggle to manage their study |quantity| during exam season.",
+                    "translation": "多くの学生は試験期間中に勉強の量を管理するのに苦労する。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "amount",
+                    "description": "「quantity」と「amount」は共に「量」という意味を持つが、前者は数えられるものに対して使われることが多く、後者は数えられないものや抽象的な概念に対して使われることが一般的である。"
+                }
+            ],
+            "english_meaning": "A certain amount of something that can be counted or measured, often referring to how much there is of it."
+        }
+    },
+    {
+        "id": "11643",
+        "english": "mud",
+        "translation": "ぬかるみ",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4362,
+        "example": "The car got stuck in the |mud|.",
+        "example_translation": "車はぬかるみにはまってしまった。",
+        "sound": "mud",
+        "json": {
+            "english": "mud",
+            "pronunciation": "mʌ́d",
+            "other_translations": [
+                {
+                    "translation": "泥",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "caked with |mud|",
+                    "translation": "泥が厚くこびりついて"
+                },
+                {
+                    "english": "covered in |mud|",
+                    "translation": "泥だらけで"
+                },
+                {
+                    "english": "|mud| hut",
+                    "translation": "泥を固めて作った小屋"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Soft and sticky earth that is wet, often found after rain."
+        }
+    },
+    {
+        "id": "6460",
+        "english": "aircraft",
+        "translation": "航空機",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4364,
+        "example": "The |aircraft| flew across the sky.",
+        "example_translation": "航空機は空を飛んでいた。",
+        "sound": "aircraft",
+        "json": {
+            "english": "aircraft",
+            "pronunciation": "έərkræ̀ft",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The |aircraft| landed safely at the airport.",
+                    "translation": "その航空機は空港に無事着陸した。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "military/civilian/commercial |aircraft|",
+                    "translation": "軍用[民間, 商用]機"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A vehicle that is designed to travel through the air."
+        }
+    },
+    {
+        "id": "11259",
+        "english": "lottery",
+        "translation": "宝くじ",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4366,
+        "example": "I won the |lottery| yesterday!",
+        "example_translation": "私は昨日、宝くじが当たったんだ！",
+        "sound": "lottery",
+        "json": {
+            "english": "lottery",
+            "pronunciation": "[US] lɑ́təri [UK] lɔ́təri",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|lottery| ticket",
+                    "translation": "宝くじ(の券)"
+                },
+                {
+                    "english": "play the |lottery|",
+                    "translation": "宝くじを買う"
+                },
+                {
+                    "english": "win the |lottery|",
+                    "translation": "宝くじが当たる"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "sweepstakes",
+                    "description": "「lottery」と「sweepstakes」は共に「宝くじ」という意味を持つが、前者は通常、購入したチケットに基づいて当選者が決まる形式で、資金が特定の目的に使われることが多い。一方、後者は無料で参加できる抽選で、主にマーケティング目的で行われることが一般的である。"
+                }
+            ],
+            "english_meaning": "A game where people buy tickets with numbers, and if their number is chosen by chance, they can win money or prizes. It is often used to raise money for the government or charities."
+        }
+    },
+    {
+        "id": "11874",
+        "english": "obstacle",
+        "translation": "障害",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4367,
+        "example": "That rock was an |obstacle| to passage.",
+        "example_translation": "岩は通行の障害となっていた。",
+        "sound": "obstacle",
+        "json": {
+            "english": "obstacle",
+            "pronunciation": "[US] ɑ́bstəkl [UK] ɔ́bstəkl",
+            "other_translations": [
+                {
+                    "translation": "妨げ",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "障害物",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "pathway",
+                    "part_of_speech": "noun",
+                    "translation": "小道"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "an |obstacle| in the way (of something)",
+                    "translation": "(〜の)行く手に立ちふさがる障害"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "disorder",
+                    "description": "「obstacle」と「disorder」は共に「障害」という意味を持つが、前者は物理的または状況的な妨げを指し、後者は健康や機能に関する問題や乱れを示す。"
+                }
+            ],
+            "english_meaning": "Something that prevents you from doing something or makes it hard to reach a goal; an object or situation that stands in your way, requiring you to find another path."
+        }
+    },
+    {
+        "id": "13659",
+        "english": "shift",
+        "translation": "変化",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4368,
+        "example": "I noticed his |shift|.",
+        "example_translation": "私は彼の変化に気付きました。",
+        "sound": "shift",
+        "json": {
+            "english": "shift",
+            "pronunciation": "ʃíft",
+            "other_translations": [
+                {
+                    "translation": "シフトキー",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "シフトドレス",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "移動する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|shift| from something to something",
+                    "translation": "〜から〜へと移る"
+                },
+                {
+                    "english": "|shift| something (from something) to something",
+                    "translation": "(〜から)〜に〜を移す"
+                },
+                {
+                    "english": "|shift| the blame/responsibility (onto somebody)",
+                    "translation": "責任を(〈人〉に)転嫁する"
+                },
+                {
+                    "english": "|shift| your gaze",
+                    "translation": "視線を移す"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A change in position, situation, or opinion; a movement from one place to another; or a different way of thinking or doing something."
+        }
+    },
+    {
+        "id": "6641",
+        "english": "appearance",
+        "translation": "外観",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4369,
+        "example": "His |appearance| is always neat and tidy.",
+        "example_translation": "彼の身なりはいつもきちんとしている。",
+        "sound": "appearance",
+        "json": {
+            "english": "appearance",
+            "pronunciation": "əpíərəns",
+            "other_translations": [
+                {
+                    "translation": "出現",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "外見",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "disappearance",
+                    "part_of_speech": "noun",
+                    "translation": "消失"
+                },
+                {
+                    "english": "reappearance",
+                    "part_of_speech": "noun",
+                    "translation": "再出現"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "in |appearance|",
+                    "translation": "見かけは"
+                },
+                {
+                    "english": "personal |appearance|",
+                    "translation": "身なり, 身だしなみ"
+                },
+                {
+                    "english": "a personal |appearance|",
+                    "translation": "出演"
+                },
+                {
+                    "english": "physical |appearance|",
+                    "translation": "外見, 容姿"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "guise",
+                    "description": "「appearance」と「guise」は共に「外観」という意味を持つが、前者は物理的な見た目や印象を指し、後者は特定の意図や目的のために装った外見や偽装を意味する。"
+                }
+            ],
+            "english_meaning": "The way someone or something looks to others, including the first impression they create. It can also refer to the participation of a famous person in public events or the start of something new."
+        }
+    },
+    {
+        "id": "8820",
+        "english": "drone",
+        "translation": "ドローン",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4370,
+        "example": "The |drone| flew high in the sky.",
+        "example_translation": "ドローンは空高く飛んだ。",
+        "sound": "drone",
+        "json": {
+            "english": "drone",
+            "pronunciation": "dróun",
+            "other_translations": [
+                {
+                    "translation": "無人機",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A flying machine that is controlled by radio and does not have a pilot on board."
+        }
+    },
+    {
+        "id": "9516",
+        "english": "firm",
+        "translation": "会社",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4371,
+        "example": "Which |firm| do you want to work for?",
+        "example_translation": "どの会社で働きたいですか？",
+        "sound": "firm",
+        "json": {
+            "english": "firm",
+            "pronunciation": "[US] fə́ːrm [UK] fə́ːm",
+            "other_translations": [
+                {
+                    "translation": "確固たる",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "firmness",
+                    "part_of_speech": "noun",
+                    "translation": "堅さ, 確固たること"
+                },
+                {
+                    "english": "infirmity",
+                    "part_of_speech": "noun",
+                    "translation": "虚弱, 病弱"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a |firm| of accountants/lawyers/builders",
+                    "translation": "会計事務所[法律事務所, 建築会社]"
+                },
+                {
+                    "english": "a large/major/local |firm|",
+                    "translation": "大企業[大手企業, 地元企業]"
+                },
+                {
+                    "english": "an investment/accounting/electronics |firm|",
+                    "translation": "投資会社[会計事務所, 電子機器会社]"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "office",
+                    "description": "「firm」と「office」は共に「会社」という意味を持つが、前者は主に法律や会計などの専門的な業種を指すことが多く、後者は一般的に事務所や職場を指し、企業の業務が行われる場所を意味する。"
+                }
+            ],
+            "english_meaning": "A business or company, particularly a small one."
+        }
+    },
+    {
+        "id": "7408",
+        "english": "bystander",
+        "translation": "傍観者",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4374,
+        "example": "Many |bystanders| watched as the fight.",
+        "example_translation": "多くの傍観者がその喧嘩を見ていた。",
+        "sound": "bystander",
+        "json": {
+            "english": "bystander",
+            "pronunciation": "báistæ̀ndər",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The |bystanders| were shocked by the sudden accident.",
+                    "translation": "傍観者たちは突然の事故に驚いた。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "innocent |bystanders|",
+                    "translation": "たまたま居合わせた[ただの通りすがりの]人"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A person who observes an event or situation but does not get involved."
+        }
+    },
+    {
+        "id": "8900",
+        "english": "economist",
+        "translation": "経済学者",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4375,
+        "example": "He is a well-known |economist| studying global markets.",
+        "example_translation": "彼はグローバル市場を研究する著名な経済学者だ。",
+        "sound": "economist",
+        "json": {
+            "english": "economist",
+            "pronunciation": "[US] ikɑ́nəmist [UK] ikɔ́nəmist",
+            "other_translations": [
+                {
+                    "translation": "経済専門家",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The chief |economist| of the government gave a speech about the economy.",
+                    "translation": "政府のチーフエコノミストが経済についての演説を行った。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "economic",
+                    "part_of_speech": "adjective",
+                    "translation": "経済の"
+                },
+                {
+                    "english": "economics",
+                    "part_of_speech": "noun",
+                    "translation": "経済学"
+                },
+                {
+                    "english": "economy",
+                    "part_of_speech": "noun",
+                    "translation": "経済"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A person who studies how money and goods are created, used, and exchanged, as well as the systems that govern these activities."
+        }
+    },
+    {
+        "id": "12475",
+        "english": "political",
+        "translation": "政治の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4377,
+        "example": "The |political| issue affected economic activities.",
+        "example_translation": "政治的な問題が経済活動に影響を及ぼした。",
+        "sound": "political",
+        "json": {
+            "english": "political",
+            "pronunciation": "[US] pəlítikəl [UK] pəlítikəl",
+            "other_translations": [
+                {
+                    "translation": "政治的な",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The two candidates are discussing their |political| views.",
+                    "translation": "2人の候補者は自分たちの政治的見解について話し合っている。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "politically",
+                    "part_of_speech": "adverb",
+                    "translation": "政治的に"
+                },
+                {
+                    "english": "politician",
+                    "part_of_speech": "noun",
+                    "translation": "政治家"
+                },
+                {
+                    "english": "politics",
+                    "part_of_speech": "noun",
+                    "translation": "政治"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a |political| party",
+                    "translation": "政党"
+                },
+                {
+                    "english": "a |political| system",
+                    "translation": "政治体制"
+                },
+                {
+                    "english": "|political| power",
+                    "translation": "政治権力"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Connected to the government, politics, and public matters of a country; concerning how power is shared among people in a group or organization; involved in or concerned with political activities."
+        }
+    },
+    {
+        "id": "13224",
+        "english": "resume",
+        "translation": "履歴書",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4382,
+        "example": "My |resume| is ready for submission.",
+        "example_translation": "私の履歴書は提出の準備ができています。",
+        "sound": "resume_2",
+        "json": {
+            "english": "resume",
+            "pronunciation": "[US] rizúːm [UK] rizjúːm",
+            "other_translations": [
+                {
+                    "translation": "を再開する",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "再開される",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "要約",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "I need to update my |resume| before the job interview.",
+                    "translation": "面接の前に履歴書を更新する必要がある。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|resume| your seat/place/position",
+                    "translation": "元の座席[場所, 位置]に戻る"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A short written document that outlines your education, work experience, and skills, which you send to a potential employer when applying for a job."
+        }
+    },
+    {
+        "id": "6341",
+        "english": "ad",
+        "translation": "広告",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4384,
+        "example": "Please check the |ad| in the newspaper.",
+        "example_translation": "新聞広告をご覧ください。",
+        "sound": "ad",
+        "json": {
+            "english": "ad",
+            "pronunciation": "ǽd",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I found an |ad| for a new restaurant online.",
+                    "translation": "新しいレストランの広告をオンラインで見つけた。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|ad| agency",
+                    "translation": "広告代理店"
+                },
+                {
+                    "english": "put/place an |ad| in a newspaper/magazine",
+                    "translation": "新聞[雑誌]に広告を出す"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A message or announcement that promotes a product, service, or event to attract people's attention and encourage them to buy or participate."
+        }
+    },
+    {
+        "id": "14180",
+        "english": "strategy",
+        "translation": "戦略",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4388,
+        "example": "Our team needs a winning |strategy|.",
+        "example_translation": "チームには勝利への戦略が必要だ。",
+        "sound": "strategy",
+        "json": {
+            "english": "strategy",
+            "pronunciation": "strǽtədʒi",
+            "other_translations": [
+                {
+                    "translation": "(戦略的)計画",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "A good |strategy| for studying is important for success.",
+                    "translation": "成功するためには良い勉強の戦略が重要です。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "strategic",
+                    "part_of_speech": "adjective",
+                    "translation": "戦略的な"
+                },
+                {
+                    "english": "strategically",
+                    "part_of_speech": "adverb",
+                    "translation": "戦略的に"
+                },
+                {
+                    "english": "strategist",
+                    "part_of_speech": "noun",
+                    "translation": "戦略家"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a |strategy| for doing something",
+                    "translation": "〜するための戦略"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A careful plan or set of actions designed to achieve a specific goal, often used in business or military contexts. It involves thinking ahead and organizing resources effectively to reach desired outcomes."
+        }
+    },
+    {
+        "id": "7479",
+        "english": "cargo",
+        "translation": "積荷",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4390,
+        "example": "The |cargo| is ready for shipping.",
+        "example_translation": "貨物は出荷準備が整った。",
+        "sound": "cargo",
+        "json": {
+            "english": "cargo",
+            "pronunciation": "[US] kɑ́rgou [UK] kɑ́ːgou",
+            "other_translations": [
+                {
+                    "translation": "貨物",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The ship can transport a large amount of |cargo|.",
+                    "translation": "その船は大量の積荷を運ぶことができる。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "shipment",
+                    "description": "「cargo」と「shipment」は共に「積荷」という意味を持つが、前者は主に輸送中の貨物や積み荷を指し、後者は出荷や配送の過程を強調し、特定の荷物が運ばれることを示す。"
+                }
+            ],
+            "english_meaning": "Items or goods that are transported by a ship, plane, truck, or other vehicles."
+        }
+    },
+    {
+        "id": "7208",
+        "english": "boost",
+        "translation": "～を増加させる",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4394,
+        "example": "The government will |boost| a tax soon.",
+        "example_translation": "政府はまもなく増税をするだろう。",
+        "sound": "boost",
+        "json": {
+            "english": "boost",
+            "pronunciation": "búːst",
+            "other_translations": [
+                {
+                    "translation": "〜の人気[評判]を高める",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "lower",
+                    "part_of_speech": "verb",
+                    "translation": "～を下げる"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|boost| sales/earnings/profits",
+                    "translation": "売り上げ[所得, 利益]を伸ばす"
+                },
+                {
+                    "english": "|boost| somebody's confidence/morale/ego",
+                    "translation": "〈人〉の自信[士気, 自尊心]を高める"
+                },
+                {
+                    "english": "give somebody a |boost|",
+                    "translation": "〈人〉を励ます, 元気づける, やる気にさせる"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "augment",
+                    "description": "「boost」と「augment」は共に「〜を増加させる」という意味を持つが、前者は主に力や効果を高めることに焦点を当てており、後者は数量や程度を増やすことに重点を置いている。"
+                }
+            ],
+            "english_meaning": "To increase or improve something, making it more successful or effective; to help someone or something reach a higher level or position; to provide support that leads to growth or enhancement."
+        }
+    },
+    {
+        "id": "10988",
+        "english": "labor",
+        "translation": "労働",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4401,
+        "example": "|Labor| is essential for economic growth.",
+        "example_translation": "経済成長には労働力が不可欠である。",
+        "sound": "labor",
+        "json": {
+            "english": "labor",
+            "pronunciation": "léibər",
+            "other_translations": [
+                {
+                    "translation": "仕事",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "努力する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "labour",
+                    "part_of_speech": "noun",
+                    "translation": "労働"
+                },
+                {
+                    "english": "labourer",
+                    "part_of_speech": "noun",
+                    "translation": "労働者"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "manual |labor|",
+                    "translation": "手作業, 肉体労働"
+                },
+                {
+                    "english": "physical |labor|",
+                    "translation": "肉体労働"
+                },
+                {
+                    "english": "skilled |labor|",
+                    "translation": "熟練労働者"
+                },
+                {
+                    "english": "unskilled |labor|",
+                    "translation": "未熟練労働者"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Physical or mental work done to achieve a goal or produce something, often in exchange for payment."
+        }
+    },
+    {
+        "id": "9992",
+        "english": "grant",
+        "translation": "助成金",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4405,
+        "example": "He received a |grant| for his study.",
+        "example_translation": "彼は研究のための助成金を受け取った。",
+        "sound": "grant",
+        "json": {
+            "english": "grant",
+            "pronunciation": "grǽnt",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The university awarded a |grant| to support environmental studies.",
+                    "translation": "大学は環境研究を支援するための助成金を授与した。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "I/I'll |grant| you (that)",
+                    "translation": "〜という点は認めよう"
+                },
+                {
+                    "english": "apply for a |grant|",
+                    "translation": "助成金[奨学金]を申請する"
+                },
+                {
+                    "english": "|grant| somebody something",
+                    "translation": "〈人〉に〈権利・許可など〉を与える"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "subsidy",
+                    "description": "「grant」と「subsidy」は共に「助成金」という意味を持つが、前者は特定の目的のために無償で提供される資金を指し、後者は一般的に政府や団体が特定の活動やプロジェクトを支援するために提供する金銭的援助を指す。"
+                }
+            ],
+            "english_meaning": "An amount of money provided to a person or organization, usually by the government, to help them achieve a specific goal or project."
+        }
+    },
+    {
+        "id": "11841",
+        "english": "nutrient",
+        "translation": "栄養分",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4407,
+        "example": "Vegetables give us essential |nutrients|.",
+        "example_translation": "野菜は私たちに必要な栄養素を与えてくれる。",
+        "sound": "nutrient",
+        "json": {
+            "english": "nutrient",
+            "pronunciation": "[US] núːtriənt [UK] njúːtriənt",
+            "other_translations": [
+                {
+                    "translation": "栄養(のあるもの)",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A substance in food that helps living things, like plants and animals, to grow and stay healthy."
+        }
+    },
+    {
+        "id": "8341",
+        "english": "decline",
+        "translation": "減少する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4409,
+        "example": "The tree's health |declined| after the storm.",
+        "example_translation": "その木の健康状態は嵐の後に悪化しました。",
+        "sound": "decline",
+        "json": {
+            "english": "decline",
+            "pronunciation": "dikláin",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The number of visitors to the museum has |declined| this year.",
+                    "translation": "今年の博物館の訪問者数は減少した。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "declining",
+                    "part_of_speech": "adjective",
+                    "translation": "減少している, 衰退している"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "rise",
+                    "part_of_speech": "noun",
+                    "translation": "上昇"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "a rapid/sharp/steep/dramatic |decline|",
+                    "translation": "急速な[急激な, 急な, 劇的な]減少"
+                },
+                {
+                    "english": "a steady/gradual/long-term |decline|",
+                    "translation": "着実な[緩やかな, 長期にわたる]減少"
+                },
+                {
+                    "english": "go/fall into |decline|",
+                    "translation": "衰退する"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "decrease",
+                    "description": "「decline」と「decrease」は共に「減少する」という意味を持つが、前者は主に「徐々に減少する」や「衰退する」というニュアンスがあり、特に品質や価値の低下を示すことが多い。一方、後者は「数量が減る」という直接的な意味合いが強く、数値的な減少を表す際に使われることが一般的である。"
+                }
+            ],
+            "english_meaning": "To become smaller, weaker, or less in number, quality, or importance; to politely refuse an offer or invitation."
+        }
+    },
+    {
+        "id": "6313",
+        "english": "acknowledge",
+        "translation": "～と認める",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4414,
+        "example": "I |acknowledged| my mistake.",
+        "example_translation": "私は自分の過ちを認めた。",
+        "sound": "acknowledge",
+        "json": {
+            "english": "acknowledge",
+            "pronunciation": "[US] æknɑ́lidʒ [UK] əknɔ́lidʒ",
+            "other_translations": [
+                {
+                    "translation": "を承認する",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "を認める",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "を認識する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "I |acknowledge| the importance of teamwork in our project.",
+                    "translation": "私たちのプロジェクトにおけるチームワークの重要性を認めています。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "acknowledgement",
+                    "part_of_speech": "noun",
+                    "translation": "認識, 承認"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "ignore",
+                    "part_of_speech": "verb",
+                    "translation": "～を無視する"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|acknowledge| receipt of something",
+                    "translation": "〜の受け取りを通知する"
+                },
+                {
+                    "english": "be |acknowledged| as something",
+                    "translation": "〜として認識されている"
+                },
+                {
+                    "english": "be widely/generally |acknowledged|",
+                    "translation": "広く[一般に]認識されている"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To accept or recognize that something is true or that a situation is real; to show appreciation for someone's help; to let someone know you have received something; to acknowledge someone's presence or words."
+        }
+    },
+    {
+        "id": "9233",
+        "english": "executive",
+        "translation": "重役",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4415,
+        "example": "The |executives| make decisions in a closed manner.",
+        "example_translation": "重役たちは閉鎖的な意思決定をしている。",
+        "sound": "executive",
+        "json": {
+            "english": "executive",
+            "pronunciation": "igzékjətiv",
+            "other_translations": [
+                {
+                    "translation": "幹部",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The young |executive| presented a new marketing strategy to the board.",
+                    "translation": "若い重役が取締役会に新しいマーケティング戦略を提案した。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "subordinate",
+                    "part_of_speech": "noun",
+                    "translation": "部下"
+                },
+                {
+                    "english": "underling",
+                    "part_of_speech": "noun",
+                    "translation": "下位の者"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "a sales/a marketing/an advertising |executive|",
+                    "translation": "販売[マーケティング, 広告]担当重役"
+                },
+                {
+                    "english": "a top/senior/junior |executive|",
+                    "translation": "最高[上級, 下級]幹部"
+                },
+                {
+                    "english": "an |executive| director",
+                    "translation": "常務取締役"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A person who holds a high position in a company or organization and is responsible for making important decisions and managing operations."
+        }
+    },
+    {
+        "id": "12618",
+        "english": "previously",
+        "translation": "以前に",
+        "part_of_speech": "adverb",
+        "course": "eiken",
+        "importance": 4417,
+        "example": "I met her |previously| at the party.",
+        "example_translation": "彼女とは以前、パーティーで会った。",
+        "sound": "previously",
+        "json": {
+            "english": "previously",
+            "pronunciation": "príːviəsli",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "She had visited the museum |previously| during her trip to Paris.",
+                    "translation": "彼女はパリ旅行中に以前その博物館を訪れたことがあった。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "previous",
+                    "part_of_speech": "adjective",
+                    "translation": "前の, 以前の"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "subsequently",
+                    "part_of_speech": "adverb",
+                    "translation": "その後に"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "At a time that is earlier than now or before a specific moment."
+        }
+    },
+    {
+        "id": "9825",
+        "english": "genome",
+        "translation": "ゲノム",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4420,
+        "example": "I'm studying |genome| biology.",
+        "example_translation": "ゲノム生物学を研究している。",
+        "sound": "genome",
+        "json": {
+            "english": "genome",
+            "pronunciation": "dʒíːnoum",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The study of the human |genome| helps us understand genetic diseases.",
+                    "translation": "ヒトゲノムの研究は、遺伝病を理解するのに役立ちます。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The complete set of genetic material in a living organism, including all its genes."
+        }
+    },
+    {
+        "id": "13449",
+        "english": "saving",
+        "translation": "節約",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4421,
+        "example": "I am |saving| money for a bike.",
+        "example_translation": "私は自転車を買うために節約をしているんだ。",
+        "sound": "saving",
+        "json": {
+            "english": "saving",
+            "pronunciation": "séiviŋ",
+            "other_translations": [
+                {
+                    "translation": "貯金",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "saver",
+                    "part_of_speech": "noun",
+                    "translation": "貯蓄者, 助ける人"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a |saving| of something",
+                    "translation": "〈ある金額・数量〉の節約"
+                },
+                {
+                    "english": "make |savings|",
+                    "translation": "節約をする"
+                },
+                {
+                    "english": "somebody's life |savings|",
+                    "translation": "〈人〉の生涯の蓄え, 有り金すべて"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "It is the money or resources that you do not spend, keeping them for future use instead. This can also refer to the practice of using less money or resources than you could have, allowing you to save for later."
+        }
+    },
+    {
+        "id": "12008",
+        "english": "organism",
+        "translation": "有機体",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4425,
+        "example": "The human body is a complex |organism| made up of trillions of cells.",
+        "example_translation": "人間の体は、数兆の細胞からなる複雑な有機体です。",
+        "sound": "organism",
+        "json": {
+            "english": "organism",
+            "pronunciation": "[US] ɔ́rgənìzəm [UK] ɔ́ːgənìzəm",
+            "other_translations": [
+                {
+                    "translation": "生物",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A living thing, such as an animal, plant, or human, that consists of different parts working together and depending on each other."
+        }
+    },
+    {
+        "id": "13728",
+        "english": "significant",
+        "translation": "重要な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4426,
+        "example": "This discovery is very |significant|.",
+        "example_translation": "この発見は非常に重要だ。",
+        "sound": "significant",
+        "json": {
+            "english": "significant",
+            "pronunciation": "signífikənt",
+            "other_translations": [
+                {
+                    "translation": "著しい",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "significance",
+                    "part_of_speech": "noun",
+                    "translation": "重要性"
+                },
+                {
+                    "english": "significantly",
+                    "part_of_speech": "adverb",
+                    "translation": "重要に"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "insignificant",
+                    "part_of_speech": "adjective",
+                    "translation": "重要でない, 取るに足らない"
+                },
+                {
+                    "english": "trivial",
+                    "part_of_speech": "adjective",
+                    "translation": "ささいな, 重要でない"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "it is |significant| that",
+                    "translation": "〜ということが重要である"
+                },
+                {
+                    "english": "statistically |significant|",
+                    "translation": "統計的に有意な"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "important",
+                    "description": "「significant」と「important」は共に「重要な」という意味を持つが、前者は特に影響や結果が大きい場合に使われることが多く、後者は一般的に価値や必要性を示す際に用いられる。"
+                }
+            ],
+            "english_meaning": "Having an important effect or influence, especially on future events; large enough to be noticed or to have noticeable effects; something that carries a special meaning not understood by everyone."
+        }
+    },
+    {
+        "id": "7990",
+        "english": "consequently",
+        "translation": "その結果",
+        "part_of_speech": "adverb",
+        "course": "eiken",
+        "importance": 4429,
+        "example": "I ate too much and |consequently| gained weight.",
+        "example_translation": "私は食べ過ぎて、その結果太った。",
+        "sound": "consequently",
+        "json": {
+            "english": "consequently",
+            "pronunciation": "[US] kɑ́nsəkwèntli [UK] kɔ́nsəkwèntli",
+            "other_translations": [
+                {
+                    "translation": "したがって",
+                    "part_of_speech": "adverb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "She studied hard for the exam, and |consequently|, she passed with high marks.",
+                    "translation": "彼女は試験のために一生懸命勉強し、その結果、高得点で合格した。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "consequence",
+                    "part_of_speech": "noun",
+                    "translation": "結果, 影響"
+                },
+                {
+                    "english": "consequent",
+                    "part_of_speech": "adjective",
+                    "translation": "結果として生じる"
+                },
+                {
+                    "english": "consequential",
+                    "part_of_speech": "adjective",
+                    "translation": "結果としての, 重要な"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "As a result of something that has happened before."
+        }
+    },
+    {
+        "id": "12159",
+        "english": "paradox",
+        "translation": "パラドックス",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4431,
+        "example": "The saying is an example of |paradox|.",
+        "example_translation": "このことわざはパラドックスの例だ。",
+        "sound": "paradox",
+        "json": {
+            "english": "paradox",
+            "pronunciation": "[US] pǽrədɑ̀ks [UK] pǽrədɔ̀ks",
+            "other_translations": [
+                {
+                    "translation": "矛盾した状態",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "逆説",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "It is a |paradox| that the more we learn, the more we realize how little we know.",
+                    "translation": "学べば学ぶほど、私たちが知らないことがどれだけ多いかを実感するのは矛盾している。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "paradoxical",
+                    "part_of_speech": "adjective",
+                    "translation": "逆説的な"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A situation or statement that appears strange or impossible because it combines two opposing ideas or qualities that are both true."
+        }
+    },
+    {
+        "id": "13340",
+        "english": "root",
+        "translation": "根本",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4432,
+        "example": "The |root| of the problem is communication.",
+        "example_translation": "問題の根本はコミュニケーションだ。",
+        "sound": "root",
+        "json": {
+            "english": "root",
+            "pronunciation": "rúːt",
+            "other_translations": [
+                {
+                    "translation": "根",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "根源",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "累乗根",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "根づく",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "根を下ろす",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The |roots| of the tree spread deep into the ground.",
+                    "translation": "その木の根は地面に深く広がっている。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "get to the |root| of the problem",
+                    "translation": "問題の原因を突き止める"
+                },
+                {
+                    "english": "have its |roots| in something",
+                    "translation": "〜を起源としている, に端を発している"
+                },
+                {
+                    "english": "|root| cause",
+                    "translation": "根本原因"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The part of a plant that grows underground and absorbs water from the soil; the main cause or origin of a problem; the basic part of something from which other things develop; the part of a tooth or hair that connects it to the body; the basic part of a word that shows its main meaning."
+        }
+    },
+    {
+        "id": "9043",
+        "english": "enforce",
+        "translation": "～を実施する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4434,
+        "example": "A police officer's duty is to |enforce| the laws.",
+        "example_translation": "警察官の任務は法を実施することだ。",
+        "sound": "enforce",
+        "json": {
+            "english": "enforce",
+            "pronunciation": "[US] enfɔ́rs [UK] enfɔ́ːs",
+            "other_translations": [
+                {
+                    "translation": "を施行する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The school principal decided to |enforce| new rules for student behavior.",
+                    "translation": "校長は生徒の行動に関する新しい規則を実施することに決めた。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "enforceable",
+                    "part_of_speech": "adjective",
+                    "translation": "法的に強制できる"
+                },
+                {
+                    "english": "enforcement",
+                    "part_of_speech": "noun",
+                    "translation": "施行, 執行"
+                },
+                {
+                    "english": "enforcer",
+                    "part_of_speech": "noun",
+                    "translation": "施行者, 執行者"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|enforce| a law/ban",
+                    "translation": "法律[禁止令]を守らせる"
+                },
+                {
+                    "english": "|enforce| something on somebody",
+                    "translation": "〈人〉に〈規律など〉を押しつける"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "conduct",
+                    "description": "「enforce」と「conduct」は共に「〜を実施する」という意味を持つが、前者は法律や規則を強制的に実施することを指し、後者は計画や活動を進行させることを指す。"
+                }
+            ],
+            "english_meaning": "To make sure that people follow a rule or law, or to ensure that something takes place or that someone does something."
+        }
+    },
+    {
+        "id": "10752",
+        "english": "intake",
+        "translation": "摂取",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4435,
+        "example": "I need to control salt |intake|.",
+        "example_translation": "塩の摂取量をコントロールする必要がある。",
+        "sound": "intake",
+        "json": {
+            "english": "intake",
+            "pronunciation": "íntèik",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "A good way to improve your health is to monitor your water |intake|.",
+                    "translation": "健康を改善する良い方法は、水分の摂取量を管理することである。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The amount of food or drink that you consume, or the number of people who join a group or organization at a specific time."
+        }
+    },
+    {
+        "id": "12265",
+        "english": "per",
+        "translation": "～につき",
+        "part_of_speech": "preposition",
+        "course": "eiken",
+        "importance": 4436,
+        "example": "I pay the rent |per| month.",
+        "example_translation": "月ごとに家賃を支払う。",
+        "sound": "per",
+        "json": {
+            "english": "per",
+            "pronunciation": "(弱) pər (強) pə́ːr",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "You can take one book |per| student.",
+                    "translation": "学生1人につき1冊の本を取ることができます。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "as |per|",
+                    "translation": "〜に従って[応じて]"
+                },
+                {
+                    "english": "|per| head",
+                    "translation": "1人につき"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "for each; used to indicate a specific amount or rate related to something, often in terms of time or quantity."
+        }
+    },
+    {
+        "id": "13929",
+        "english": "soul",
+        "translation": "魂",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4437,
+        "example": "Her |soul| is pure and kind.",
+        "example_translation": "彼女の魂は純粋で優しい。",
+        "sound": "soul",
+        "json": {
+            "english": "soul",
+            "pronunciation": "sóul",
+            "other_translations": [
+                {
+                    "translation": "心",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "精神",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "His art reflects the true |soul| of the city.",
+                    "translation": "彼のアートはその街の真の魂を反映している。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "be good for the |soul|",
+                    "translation": "心を鎮める, 心を安らかにする"
+                },
+                {
+                    "english": "in somebody's |soul|",
+                    "translation": "〈人〉の内心では, 心の中では"
+                },
+                {
+                    "english": "poor |soul|",
+                    "translation": "かわいそうな人"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The non-physical part of a person that includes their character, thoughts, and feelings. It is often believed to continue existing after death. It can also refer to the emotional quality in art or music that deeply affects people."
+        }
+    },
+    {
+        "id": "7335",
+        "english": "bulb",
+        "translation": "電球",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4438,
+        "example": "The |bulb| gave off a bright light.",
+        "example_translation": "電球は明るい光を放っていた。",
+        "sound": "bulb",
+        "json": {
+            "english": "bulb",
+            "pronunciation": "bʌ́lb",
+            "other_translations": [
+                {
+                    "translation": "球根",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A round glass container that produces light when electricity passes through it, or a rounded part of a plant that can grow into a flower or another plant."
+        }
+    },
+    {
+        "id": "8195",
+        "english": "critic",
+        "translation": "批判する人",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4439,
+        "example": "My mother-in-law is always a |critic| of me.",
+        "example_translation": "姑はいつも私の批判ばかりする人だ。",
+        "sound": "critic",
+        "json": {
+            "english": "critic",
+            "pronunciation": "krítik",
+            "other_translations": [
+                {
+                    "translation": "批評家",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "|Critics| often focus on the flaws in a movie.",
+                    "translation": "批判者たちはしばしば映画の欠点に注目する。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "critical",
+                    "part_of_speech": "adjective",
+                    "translation": "批判的な"
+                },
+                {
+                    "english": "criticism",
+                    "part_of_speech": "noun",
+                    "translation": "批判, 評論"
+                },
+                {
+                    "english": "criticize",
+                    "part_of_speech": "verb",
+                    "translation": "批判する"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "sympathizer",
+                    "part_of_speech": "noun",
+                    "translation": "支持者"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "a movie/a music/an art |critic|",
+                    "translation": "映画[音楽, 美術]評論家"
+                },
+                {
+                    "english": "a literary |critic|",
+                    "translation": "文芸評論家"
+                },
+                {
+                    "english": "a fierce/a harsh/an outspoken |critic|",
+                    "translation": "厳しく[辛辣に, 歯に衣を着せないで]批評する人"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A person who evaluates and expresses opinions about the quality of art, music, films, or other subjects, often pointing out what is good or bad."
+        }
+    },
+    {
+        "id": "11702",
+        "english": "navigate",
+        "translation": "操舵する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4440,
+        "example": "The captain |navigates| the ship.",
+        "example_translation": "船長が船を操舵する。",
+        "sound": "navigate",
+        "json": {
+            "english": "navigate",
+            "pronunciation": "nǽvigèit",
+            "other_translations": [
+                {
+                    "translation": "を航行する",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "をうまく[どうにか]進む",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To determine the direction to go when traveling from one location to another, to manage or understand something complex, or to steer a boat along a river or body of water."
+        }
+    },
+    {
+        "id": "13640",
+        "english": "shallow",
+        "translation": "浅薄な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4446,
+        "example": "Her |shallow| speech made us upset.",
+        "example_translation": "彼女の浅はかな発言は周りを苛立たせた。",
+        "sound": "shallow",
+        "json": {
+            "english": "shallow",
+            "pronunciation": "[US] ʃǽlou [UK] ʃǽləu",
+            "other_translations": [
+                {
+                    "translation": "浅い",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Many people believe that his |shallow| opinions are not worth considering.",
+                    "translation": "彼の浅薄な意見は考慮する価値がないと多くの人が思っている。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "shallowly",
+                    "part_of_speech": "adverb",
+                    "translation": "浅く"
+                },
+                {
+                    "english": "shallowness",
+                    "part_of_speech": "noun",
+                    "translation": "浅さ"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "deep",
+                    "part_of_speech": "adjective",
+                    "translation": "深い, 奥深い"
+                },
+                {
+                    "english": "profound",
+                    "part_of_speech": "adjective",
+                    "translation": "深い, 深遠な"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Having a small depth or distance from the top to the bottom; lacking depth in thought or understanding, often indicating a lack of seriousness or importance."
+        }
+    },
+    {
+        "id": "7090",
+        "english": "beneath",
+        "translation": "～の下に",
+        "part_of_speech": "preposition",
+        "course": "eiken",
+        "importance": 4448,
+        "example": "The cat is |beneath| the table.",
+        "example_translation": "猫はテーブルの下にいる。",
+        "sound": "beneath",
+        "json": {
+            "english": "beneath",
+            "pronunciation": "biníːθ",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The dog found a bone |beneath| the dirt.",
+                    "translation": "犬は土の下に骨を見つけた。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|beneath| the surface",
+                    "translation": "表に出さずに, 隠して"
+                },
+                {
+                    "english": "buried |beneath| something",
+                    "translation": "〜に埋もれて"
+                },
+                {
+                    "english": "from |beneath| something",
+                    "translation": "〜の下から"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "under",
+                    "description": "「beneath」と「under」は共に「〜の下に」という意味を持つが、前者は物理的な位置だけでなく、比喩的な意味でも使われることが多く、感情や状態の深さを表すことがある。一方、後者は主に物理的な位置を示す際に使われ、より具体的なイメージを持つ。"
+                }
+            ],
+            "english_meaning": "In a lower position than something or directly under it; covered by something."
+        }
+    },
+    {
+        "id": "8727",
+        "english": "divorce",
+        "translation": "離婚",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4449,
+        "example": "My parents decided to get a |divorce|.",
+        "example_translation": "両親は離婚を決意した。",
+        "sound": "divorce",
+        "json": {
+            "english": "divorce",
+            "pronunciation": "[US] divɔ́rs [UK] divɔ́ːs",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "divorced",
+                    "part_of_speech": "adjective",
+                    "translation": "離婚した"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "wedding",
+                    "part_of_speech": "noun",
+                    "translation": "結婚式"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "file for |divorce|",
+                    "translation": "離婚を申請する"
+                },
+                {
+                    "english": "get a |divorce|",
+                    "translation": "離婚する"
+                },
+                {
+                    "english": "grounds for |divorce|",
+                    "translation": "離婚の法的根拠"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A legal process that ends a marriage, where a husband and wife officially separate and no longer live together as a married couple."
+        }
+    },
+    {
+        "id": "14892",
+        "english": "undergo",
+        "translation": "～を経験する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4452,
+        "example": "I |underwent| many hardships last year.",
+        "example_translation": "私は去年、多くの苦難を経験した。",
+        "sound": "undergo",
+        "json": {
+            "english": "undergo",
+            "pronunciation": "ʌ̀ndərgóu",
+            "other_translations": [
+                {
+                    "translation": "を受ける",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|undergo| surgery/treatment/tests",
+                    "translation": "手術[治療, 検査]を受ける"
+                },
+                {
+                    "english": "|undergo| training",
+                    "translation": "訓練[研修]を受ける"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "experience",
+                    "description": "「undergo」と「experience」は共に「〜を経験する」という意味を持つが、前者は主に変化やプロセスを伴う出来事に対して使われるのに対し、後者は一般的な出来事や感情を体験する際に用いられる。"
+                }
+            ],
+            "english_meaning": "To experience something, especially a change or an unpleasant event, that happens to you or is done to you."
+        }
+    },
+    {
+        "id": "13400",
+        "english": "rust",
+        "translation": "さび",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4455,
+        "example": "The old car had |rust| on it.",
+        "example_translation": "その古い車には錆びがあった。",
+        "sound": "rust",
+        "json": {
+            "english": "rust",
+            "pronunciation": "rʌ́st",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "There was some |rust| on the bicycle.",
+                    "translation": "自転車にさびがあった。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A reddish-brown substance that appears on iron or steel when it gets wet."
+        }
+    },
+    {
+        "id": "14282",
+        "english": "sue",
+        "translation": "～を訴える",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4456,
+        "example": "I will |sue| you for damages.",
+        "example_translation": "損害賠償であなたを告訴する。",
+        "sound": "sue",
+        "json": {
+            "english": "sue",
+            "pronunciation": "[US] súː [UK] sjúː",
+            "other_translations": [
+                {
+                    "translation": "を告訴する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|sue| somebody for damages/$500,000 etc.",
+                    "translation": "〈人〉に損害賠償[50万ドル]を求める訴訟を起こす"
+                },
+                {
+                    "english": "|sue| somebody for divorce",
+                    "translation": "〈人〉に離婚訴訟を起こす"
+                },
+                {
+                    "english": "|sue| somebody for libel/negligence etc.",
+                    "translation": "〈人〉を名誉棄損[過失]で告訴する"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To take legal action against someone, usually asking for money, because they have caused you harm."
+        }
+    },
+    {
+        "id": "14362",
+        "english": "survival",
+        "translation": "生き残ること",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4457,
+        "example": "He learned |survival| skills in the woods.",
+        "example_translation": "彼は森の中で生き残るすべを学んだ。",
+        "sound": "survival",
+        "json": {
+            "english": "survival",
+            "pronunciation": "sərváivəl",
+            "other_translations": [
+                {
+                    "translation": "生存",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "|Survival| in the wild requires knowledge and preparation.",
+                    "translation": "野生での生き残りには知識と準備が必要です。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "surviving",
+                    "part_of_speech": "adjective",
+                    "translation": "生き残った"
+                },
+                {
+                    "english": "survivor",
+                    "part_of_speech": "noun",
+                    "translation": "生存者"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The condition of staying alive or existing, especially in difficult situations, where only the strongest or most capable can continue to survive."
+        }
+    },
+    {
+        "id": "6817",
+        "english": "athletics",
+        "translation": "スポーツ",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4459,
+        "example": "I enjoy watching |athletics| on television.",
+        "example_translation": "テレビでスポーツを見るのが好きなんだ。",
+        "sound": "athletics",
+        "json": {
+            "english": "athletics",
+            "pronunciation": "æθlétiks",
+            "other_translations": [
+                {
+                    "translation": "陸上競技",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|athletics| meeting",
+                    "translation": "陸上競技大会"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "sport",
+                    "description": "「athletics」と「sport」は共に「スポーツ」という意味を持つが、前者は主に陸上競技や競技会を指し、後者は広く様々な種類の運動や競技全般を含む。"
+                }
+            ],
+            "english_meaning": "A group of sports that includes running, jumping, and other physical activities."
+        }
+    },
+    {
+        "id": "8726",
+        "english": "division",
+        "translation": "部",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4460,
+        "example": "There is a meeting of the sales |division| today.",
+        "example_translation": "今日は営業部門の会議がある。",
+        "sound": "division",
+        "json": {
+            "english": "division",
+            "pronunciation": "divíʒən",
+            "other_translations": [
+                {
+                    "translation": "分割",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "分裂",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "部門",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The |division| of tasks among team members is important for success.",
+                    "translation": "チームメンバー間の作業の分担は成功にとって重要です。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "divisible",
+                    "part_of_speech": "adjective",
+                    "translation": "割り切れる"
+                },
+                {
+                    "english": "divisive",
+                    "part_of_speech": "adjective",
+                    "translation": "分裂を引き起こす"
+                },
+                {
+                    "english": "subdivision",
+                    "part_of_speech": "noun",
+                    "translation": "細分化, 区分"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "unity",
+                    "part_of_speech": "noun",
+                    "translation": "一致"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|division| of something between/among somebody",
+                    "translation": "〜の〈人々〉の間での分割"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "department",
+                    "description": "「division」と「department」は共に「部」という意味を持つが、前者は主に組織や機関の中での大きな区分やセクションを指し、後者は特定の機能や業務を持つ小さなグループや部門を指すことが多い。"
+                }
+            ],
+            "english_meaning": "The act of separating something into two or more parts, or how these parts are shared or organized. It can also refer to a disagreement within a group that leads to smaller opposing groups, or a specific group within a larger organization that has a particular function."
+        }
+    },
+    {
+        "id": "14345",
+        "english": "surgeon",
+        "translation": "外科医",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4462,
+        "example": "The |surgeon| operated on the patient.",
+        "example_translation": "外科医は患者を手術した。",
+        "sound": "surgeon",
+        "json": {
+            "english": "surgeon",
+            "pronunciation": "[US] sə́ːrdʒən [UK] sə́ːdʒən",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The |surgeon| explained the procedure to the family.",
+                    "translation": "外科医は家族に手術の手順を説明した。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A medical doctor who performs surgical procedures to treat injuries, diseases, or deformities in a hospital setting."
+        }
+    },
+    {
+        "id": "8895",
+        "english": "ecologist",
+        "translation": "生態学者",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4465,
+        "example": "An |ecologist| studies the environment.",
+        "example_translation": "生態学者は環境を研究する。",
+        "sound": "ecologist",
+        "json": {
+            "english": "ecologist",
+            "pronunciation": "[US] ikɑ́lədʒist [UK] ikɔ́lədʒist",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "|Ecologists| often work to protect endangered species.",
+                    "translation": "生態学者たちはしばしば絶滅危惧種を保護するために働いている。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A scientist who studies the relationships between living things and their environment."
+        }
+    },
+    {
+        "id": "11312",
+        "english": "maintenance",
+        "translation": "保守",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4466,
+        "example": "Regular |maintenance| is necessary for machines.",
+        "example_translation": "機械には定期的な保守作業が必要だ。",
+        "sound": "maintenance",
+        "json": {
+            "english": "maintenance",
+            "pronunciation": "méintənəns",
+            "other_translations": [
+                {
+                    "translation": "メンテナンス",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "整備",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "管理",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "維持",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|maintenance| costs",
+                    "translation": "維持管理費"
+                },
+                {
+                    "english": "|maintenance| work",
+                    "translation": "整備作業, 保守作業"
+                },
+                {
+                    "english": "|maintenance| worker",
+                    "translation": "用務員, 整備員"
+                },
+                {
+                    "english": "routine |maintenance|",
+                    "translation": "定期整備"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The actions and efforts needed to keep something in good working order or to ensure it remains in the same condition over time."
+        }
+    },
+    {
+        "id": "14094",
+        "english": "statistics",
+        "translation": "統計",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4467,
+        "example": "I need help with |statistics| homework.",
+        "example_translation": "統計の宿題を手伝ってほしい。",
+        "sound": "statistics",
+        "json": {
+            "english": "statistics",
+            "pronunciation": "stətístiks",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A collection of numbers that show information or measurements, along with the study of how to gather and analyze these numbers."
+        }
+    },
+    {
+        "id": "10417",
+        "english": "immediate",
+        "translation": "即座の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4470,
+        "example": "An |immediate| response is required now.",
+        "example_translation": "早急な対応が今求められている。",
+        "sound": "immediate",
+        "json": {
+            "english": "immediate",
+            "pronunciation": "imíːdiət",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|immediate| future",
+                    "translation": "近い将来"
+                },
+                {
+                    "english": "|immediate| plans",
+                    "translation": "直ちに実行する計画[予定]"
+                },
+                {
+                    "english": "the |immediate| aftermath of something",
+                    "translation": "〈事件など〉の直後の時期"
+                },
+                {
+                    "english": "the |immediate| vicinity",
+                    "translation": "すぐ近く"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "prompt",
+                    "description": "「immediate」と「prompt」は共に「即座の」という意味を持つが、前者は「時間的に遅れがない」ことを強調し、後者は「迅速な反応や行動」を強調する。"
+                }
+            ],
+            "english_meaning": "Happening right away and without waiting; something that needs to be taken care of quickly; occurring just before or just after something else; located very close to a specific place."
+        }
+    },
+    {
+        "id": "8196",
+        "english": "critical",
+        "translation": "批判的な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4474,
+        "example": "The teacher gave me |critical| feedback about my grades.",
+        "example_translation": "先生は私の成績について批判的な意見を述べた。",
+        "sound": "critical",
+        "json": {
+            "english": "critical",
+            "pronunciation": "krítikəl",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "critic",
+                    "part_of_speech": "noun",
+                    "translation": "批評家"
+                },
+                {
+                    "english": "critically",
+                    "part_of_speech": "adverb",
+                    "translation": "批判的に"
+                },
+                {
+                    "english": "criticism",
+                    "part_of_speech": "noun",
+                    "translation": "批評, 批判"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a |critical| success",
+                    "translation": "評論家の評価が高いこと"
+                },
+                {
+                    "english": "with a |critical| eye",
+                    "translation": "批判的な目で, 鑑識眼を持って, 注意深く"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Expressing disapproval or judgment about someone or something; very important because future outcomes rely on it; a serious situation that could quickly worsen; involving careful evaluation of quality or value, often related to art, literature, or performance."
+        }
+    },
+    {
+        "id": "6416",
+        "english": "affordable",
+        "translation": "手ごろな",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4478,
+        "example": "Those shoes are not in an |affordable| price.",
+        "example_translation": "その靴は手頃な価格ではない。",
+        "sound": "affordable",
+        "json": {
+            "english": "affordable",
+            "pronunciation": "əfɔ́ːrdəbl",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The restaurant offers |affordable| meals for families.",
+                    "translation": "そのレストランは家族向けに手ごろな食事を提供しています。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "expensive",
+                    "part_of_speech": "adjective",
+                    "translation": "高価な"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "reasonable",
+                    "description": "「affordable」と「reasonable」は共に「手ごろな」という意味を持つが、前者は主に価格が手に入れやすいことを強調し、後者は価格が妥当であることや価値に見合っていることを示す。"
+                }
+            ],
+            "english_meaning": "Reasonably priced so that most people can buy it without financial difficulty."
+        }
+    },
+    {
+        "id": "10868",
+        "english": "isolated",
+        "translation": "独立した",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4480,
+        "example": "I saw an |isolated| island.",
+        "example_translation": "私は孤島を見た。",
+        "sound": "isolated",
+        "json": {
+            "english": "isolated",
+            "pronunciation": "áisəlèitəd",
+            "other_translations": [
+                {
+                    "translation": "孤独な",
+                    "part_of_speech": "adjective"
+                },
+                {
+                    "translation": "孤立した",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "isolation",
+                    "part_of_speech": "noun",
+                    "translation": "孤立, 隔離"
+                },
+                {
+                    "english": "isolationism",
+                    "part_of_speech": "noun",
+                    "translation": "孤立主義"
+                },
+                {
+                    "english": "isolationist",
+                    "part_of_speech": "adjective",
+                    "translation": "孤立主義の"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "an |isolated| case/incident/event",
+                    "translation": "単独の事例[事件, 出来事]"
+                },
+                {
+                    "english": "|isolated| showers/thunderstorms",
+                    "translation": "局地的なにわか雨[雷雨]"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "independent",
+                    "description": "「isolated」と「independent」は共に「独立した」という意味を持つが、前者は「孤立した」や「他から切り離された」というニュアンスが強く、後者は「自立している」や「他に依存しない」という意味合いが強い。"
+                }
+            ],
+            "english_meaning": "Far away from others; feeling alone and unable to connect with people; something that happens only once and is not expected to happen again."
+        }
+    },
+    {
+        "id": "12638",
+        "english": "prisoner",
+        "translation": "囚人",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4481,
+        "example": "The |prisoner| escaped from the jail.",
+        "example_translation": "囚人が刑務所から脱走した。",
+        "sound": "prisoner",
+        "json": {
+            "english": "prisoner",
+            "pronunciation": "príznər",
+            "other_translations": [
+                {
+                    "translation": "捕虜",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "imprison",
+                    "part_of_speech": "verb",
+                    "translation": "投獄する"
+                },
+                {
+                    "english": "imprisonment",
+                    "part_of_speech": "noun",
+                    "translation": "投獄"
+                },
+                {
+                    "english": "prison",
+                    "part_of_speech": "noun",
+                    "translation": "刑務所"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a convicted |prisoner|",
+                    "translation": "既決囚"
+                },
+                {
+                    "english": "a remand |prisoner|",
+                    "translation": "再拘留者"
+                },
+                {
+                    "english": "an escaped |prisoner|",
+                    "translation": "脱獄囚"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A person who is held in a jail as punishment for a crime or while waiting for a trial, or someone who is taken and kept against their will in a place they cannot leave."
+        }
+    },
+    {
+        "id": "7557",
+        "english": "CEO",
+        "translation": "最高経営責任者",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4483,
+        "example": "The |CEO| runs the company.",
+        "example_translation": "最高責任者は会社を経営している。",
+        "sound": "CEO",
+        "json": {
+            "english": "CEO",
+            "pronunciation": "siːíːóu",
+            "other_translations": [
+                {
+                    "translation": "CEO",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The |CEO| of the company has to make important decisions.",
+                    "translation": "その会社のCEOは重要な決定をしなければならない。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The person who has the highest level of responsibility and decision-making power in a large company."
+        }
+    },
+    {
+        "id": "11198",
+        "english": "livestock",
+        "translation": "家畜",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4485,
+        "example": "The farm has many |livestock| animals.",
+        "example_translation": "農場にはたくさんの家畜がいる。",
+        "sound": "livestock",
+        "json": {
+            "english": "livestock",
+            "pronunciation": "[US] láivstɑ̀k [UK] láivstɔ̀k",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Farm animals like cows and sheep that are raised for profit or for use in farming."
+        }
+    },
+    {
+        "id": "9498",
+        "english": "finance",
+        "translation": "金融",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4490,
+        "example": "I want to learn about |finance|.",
+        "example_translation": "金融について学びたい。",
+        "sound": "finance",
+        "json": {
+            "english": "finance",
+            "pronunciation": "[US] fainǽns | fənǽns | finǽns [UK] finǽns | fainǽns",
+            "other_translations": [
+                {
+                    "translation": "財務",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "財務状態",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The company is looking for ways to improve its |finance| management.",
+                    "translation": "その会社は財務管理を改善する方法を探しています。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "financial",
+                    "part_of_speech": "adjective",
+                    "translation": "財政の, 金融の"
+                },
+                {
+                    "english": "financially",
+                    "part_of_speech": "adverb",
+                    "translation": "財政的に, 金銭的に"
+                },
+                {
+                    "english": "financing",
+                    "part_of_speech": "noun",
+                    "translation": "資金調達"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|finance| committee",
+                    "translation": "財務委員会"
+                },
+                {
+                    "english": "|finance| director",
+                    "translation": "財務担当重役, 財務部長"
+                },
+                {
+                    "english": "|finance| minister",
+                    "translation": "財務大臣"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The management and study of money, including how it is used, provided, and lent by banks and other institutions. It involves the handling of funds for investment or consumption by individuals, organizations, and governments."
+        }
+    },
+    {
+        "id": "9719",
+        "english": "frequency",
+        "translation": "頻度",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4491,
+        "example": "What is the |frequency| of earthquakes?",
+        "example_translation": "地震の発生頻度は？",
+        "sound": "frequency",
+        "json": {
+            "english": "frequency",
+            "pronunciation": "fríːkwənsi",
+            "other_translations": [
+                {
+                    "translation": "周波数",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The |frequency| of train delays has increased this year.",
+                    "translation": "今年は電車の遅延が増加している。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "frequent",
+                    "part_of_speech": "adjective",
+                    "translation": "頻繁な"
+                },
+                {
+                    "english": "frequently",
+                    "part_of_speech": "adverb",
+                    "translation": "頻繁に"
+                },
+                {
+                    "english": "infrequency",
+                    "part_of_speech": "noun",
+                    "translation": "稀少性"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The number of times something occurs in a specific time period or among a certain group of people; how often something happens."
+        }
+    },
+    {
+        "id": "6942",
+        "english": "barely",
+        "translation": "かろうじて",
+        "part_of_speech": "adverb",
+        "course": "eiken",
+        "importance": 4493,
+        "example": "I can |barely| see without my glasses.",
+        "example_translation": "メガネなしではかろうじて見える。",
+        "sound": "barely",
+        "json": {
+            "english": "barely",
+            "pronunciation": "bέərli",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "She |barely| finished her homework before dinner.",
+                    "translation": "彼女は夕食の前にかろうじて宿題を終えた。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|barely| audible/visible/perceptible",
+                    "translation": "ほとんど聞こえない[見えない, 感じ取れない]"
+                },
+                {
+                    "english": "|barely| enough",
+                    "translation": "かつかつの, ぎりぎりの"
+                },
+                {
+                    "english": "somebody can |barely| do something",
+                    "translation": "〈人〉がかろうじて〜することができる"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "narrowly",
+                    "description": "「barely」と「narrowly」は共に「かろうじて」という意味を持つが、前者は「ほとんどない状態で何かを達成する」ニュアンスが強く、後者は「ぎりぎりの状況で特定の条件を満たす」ニュアンスが強い。"
+                }
+            ],
+            "english_meaning": "Only with a lot of difficulty or effort; almost not at all; used to show that something happens right after something else; used before amounts or numbers to highlight that they are very small."
+        }
+    },
+    {
+        "id": "8156",
+        "english": "coworker",
+        "translation": "同僚",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4494,
+        "example": "My |coworker| is very helpful.",
+        "example_translation": "同僚はとても親切だ。",
+        "sound": "coworker",
+        "json": {
+            "english": "coworker",
+            "pronunciation": "kóʊwə̀ːrkər",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "I often have lunch with my |coworker|.",
+                    "translation": "私はよく同僚と昼食を食べます。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A person who works with you in the same place or organization."
+        }
+    },
+    {
+        "id": "10426",
+        "english": "immune",
+        "translation": "免疫の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4496,
+        "example": "We have |immune| systems naturally.",
+        "example_translation": "私たちには生まれつき免疫システムが備わっている。",
+        "sound": "immune",
+        "json": {
+            "english": "immune",
+            "pronunciation": "imjúːn",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "Some children are |immune| to certain allergies.",
+                    "translation": "一部の子供は特定のアレルギーに免疫がある。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "vulnerable",
+                    "part_of_speech": "adjective",
+                    "translation": "影響を受けやすい"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|immune| from something",
+                    "translation": "〜を免れる, から保護される"
+                },
+                {
+                    "english": "|immune| response",
+                    "translation": "免疫反応"
+                },
+                {
+                    "english": "|immune| to something",
+                    "translation": "〜に影響を受けない"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Not able to get a particular disease or illness; not affected by something harmful or unpleasant; specially protected from negative effects."
+        }
+    },
+    {
+        "id": "11653",
+        "english": "murder",
+        "translation": "殺人",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4497,
+        "example": "The detective solved the |murder| case.",
+        "example_translation": "探偵は殺人事件を解決した。",
+        "sound": "murder",
+        "json": {
+            "english": "murder",
+            "pronunciation": "mə́ːrdər",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "murderer",
+                    "part_of_speech": "noun",
+                    "translation": "殺人者"
+                },
+                {
+                    "english": "murderous",
+                    "part_of_speech": "adjective",
+                    "translation": "殺人的な"
+                },
+                {
+                    "english": "murderously",
+                    "part_of_speech": "adverb",
+                    "translation": "殺人のように"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "attempted |murder|",
+                    "translation": "殺人未遂"
+                },
+                {
+                    "english": "commit a |murder|",
+                    "translation": "殺人を犯す"
+                },
+                {
+                    "english": "|murder| case",
+                    "translation": "殺人事件"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "homicide",
+                    "description": "「murder」と「homicide」は共に「殺人」という意味を持つが、前者は故意に他人を殺すことを指し、後者は他人を殺す行為全般を指すため、故意か過失かを問わない広い意味を持つ。"
+                }
+            ],
+            "english_meaning": "Deliberately and illegally taking the life of another person."
+        }
+    },
+    {
+        "id": "11428",
+        "english": "mechanical",
+        "translation": "機械の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4501,
+        "example": "The machine moved with |mechanical| precision.",
+        "example_translation": "そのマシンは機械的な精度で動いていた。",
+        "sound": "mechanical",
+        "json": {
+            "english": "mechanical",
+            "pronunciation": "[US] məkǽnikəl [UK] mikǽnikəl",
+            "other_translations": [
+                {
+                    "translation": "機械的な",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "mechanically",
+                    "part_of_speech": "adverb",
+                    "translation": "機械的に"
+                },
+                {
+                    "english": "mechanism",
+                    "part_of_speech": "noun",
+                    "translation": "機構, 仕組み"
+                },
+                {
+                    "english": "mechanization",
+                    "part_of_speech": "noun",
+                    "translation": "機械化"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "manual",
+                    "part_of_speech": "adjective",
+                    "translation": "手動の, 機械を使わない"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "a |mechanical| fault/problem/failure",
+                    "translation": "機械の欠陥[問題, 故障]"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Related to or involving machines; using power from engines or machines to perform specific tasks; actions or responses that are done automatically and repetitively, often without conscious thought; someone who understands how machines operate; connected to physical forces."
+        }
+    },
+    {
+        "id": "12112",
+        "english": "ownership",
+        "translation": "所有権",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4502,
+        "example": "I have |ownership| of these buildings.",
+        "example_translation": "これらビルの所有権は私にある。",
+        "sound": "ownership",
+        "json": {
+            "english": "ownership",
+            "pronunciation": "óunərʃìp",
+            "other_translations": [
+                {
+                    "translation": "所有",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "所有者(グループ)",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "own",
+                    "part_of_speech": "adjective",
+                    "translation": "所有の"
+                },
+                {
+                    "english": "owner",
+                    "part_of_speech": "noun",
+                    "translation": "所有者"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "private |ownership|",
+                    "translation": "私有"
+                },
+                {
+                    "english": "public/state |ownership|",
+                    "translation": "国有"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The condition of having legal rights to something, meaning you possess it and can use it as you wish."
+        }
+    },
+    {
+        "id": "10131",
+        "english": "harsh",
+        "translation": "厳しい",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4504,
+        "example": "The teacher didn't stop the |harsh| scolding.",
+        "example_translation": "先生は厳しい叱責をやめなかった。",
+        "sound": "harsh",
+        "json": {
+            "english": "harsh",
+            "pronunciation": "[US] hɑrʃ [UK] hɑːʃ",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "harshly",
+                    "part_of_speech": "adverb",
+                    "translation": "厳しく"
+                },
+                {
+                    "english": "harshness",
+                    "part_of_speech": "noun",
+                    "translation": "厳しさ"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "lenient",
+                    "part_of_speech": "adjective",
+                    "translation": "寛大な"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "strict",
+                    "description": "「harsh」と「strict」は共に「厳しい」という意味を持つが、前者は主に環境や状況が厳しいことを指し、冷たさや厳しさを伴う場合が多い。一方、後者はルールや規則に対して厳格であることを示し、主に人やその態度に関連する。"
+                }
+            ],
+            "english_meaning": "Difficult to endure or live in; severe and unkind; unpleasantly loud or rough; too strong and likely to cause damage."
+        }
+    },
+    {
+        "id": "12590",
+        "english": "presence",
+        "translation": "存在",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4505,
+        "example": "The |presence| of the big name surprised the attendees.",
+        "example_translation": "有名人の存在は出席者を驚かせた。",
+        "sound": "presence",
+        "json": {
+            "english": "presence",
+            "pronunciation": "prézns",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "absence",
+                    "part_of_speech": "noun",
+                    "translation": "欠席"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "existence",
+                    "description": "「presence」と「existence」は共に「存在」という意味を持つが、前者は「その場にいること」や「存在感」を強調し、後者は「単に存在していること」や「実在」を指す。"
+                }
+            ],
+            "english_meaning": "The state of being in a specific location or area; the quality of having a strong or impressive appearance that affects others; a group of individuals, often in a military context, positioned to oversee or manage a situation; an unseen influence that is felt to be nearby."
+        }
+    },
+    {
+        "id": "13311",
+        "english": "risky",
+        "translation": "危険な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4507,
+        "example": "It's |risky| to ignore the traffic light.",
+        "example_translation": "信号を無視するのは危険だ。",
+        "sound": "risky",
+        "json": {
+            "english": "risky",
+            "pronunciation": "ríski",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "Taking a shortcut through the dark alley can be quite |risky|.",
+                    "translation": "暗い路地をショートカットするのは非常に危険なことがある。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "riskiness",
+                    "part_of_speech": "noun",
+                    "translation": "危険性"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "safe",
+                    "part_of_speech": "adjective",
+                    "translation": "安全な, 無害な"
+                },
+                {
+                    "english": "secure",
+                    "part_of_speech": "adjective",
+                    "translation": "安全な, 確保された"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "a |risky| business",
+                    "translation": "危険なこと"
+                },
+                {
+                    "english": "it is |risky| to do something",
+                    "translation": "〜することは危険である"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "dangerous",
+                    "description": "「risky」と「dangerous」は共に「危険な」という意味を持つが、前者は主に「リスクがある」ことを強調し、結果が不確実である状況を指す。一方、後者は「実際に危険が存在する」ことを示し、直接的な危害や損害の可能性が高い状況を指す。"
+                }
+            ],
+            "english_meaning": "involving the chance of something harmful or dangerous occurring"
+        }
+    },
+    {
+        "id": "12670",
+        "english": "productivity",
+        "translation": "生産性",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4510,
+        "example": "His |productivity| at work was impressive.",
+        "example_translation": "彼の仕事における生産性には目を見張るものがあった。",
+        "sound": "productivity",
+        "json": {
+            "english": "productivity",
+            "pronunciation": "pròudʌktívəti",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "We should focus on improving our |productivity| in the project.",
+                    "translation": "プロジェクトでの生産性を向上させることに集中すべきです。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "producer",
+                    "part_of_speech": "noun",
+                    "translation": "生産者"
+                },
+                {
+                    "english": "production",
+                    "part_of_speech": "noun",
+                    "translation": "生産"
+                },
+                {
+                    "english": "productive",
+                    "part_of_speech": "adjective",
+                    "translation": "生産的な"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The measure of how efficiently goods are made, considering the amount produced compared to the work, time, and money used in the process."
+        }
+    },
+    {
+        "id": "14858",
+        "english": "typically",
+        "translation": "通常",
+        "part_of_speech": "adverb",
+        "course": "eiken",
+        "importance": 4512,
+        "example": "I |typically| go to bed at nine.",
+        "example_translation": "私は通常9時に寝る。",
+        "sound": "typically",
+        "json": {
+            "english": "typically",
+            "pronunciation": "típikəli",
+            "other_translations": [
+                {
+                    "translation": "典型的に",
+                    "part_of_speech": "adverb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "typical",
+                    "part_of_speech": "adjective",
+                    "translation": "典型的な"
+                },
+                {
+                    "english": "typify",
+                    "part_of_speech": "verb",
+                    "translation": "象徴する"
+                },
+                {
+                    "english": "typology",
+                    "part_of_speech": "noun",
+                    "translation": "類型学"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "infrequently",
+                    "part_of_speech": "adverb",
+                    "translation": "稀に, 通常ではない"
+                },
+                {
+                    "english": "rarely",
+                    "part_of_speech": "adverb",
+                    "translation": "めったに〜ない, 通常ではない"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "In a manner that is common or expected for a person, group, or thing, showing the usual characteristics or behaviors."
+        }
+    },
+    {
+        "id": "9290",
+        "english": "exposure",
+        "translation": "身を晒すこと",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4513,
+        "example": "I avoid |exposure| to sunlight.",
+        "example_translation": "私は日光に当たるのを避けている。",
+        "sound": "exposure",
+        "json": {
+            "english": "exposure",
+            "pronunciation": "ikspóuʒər | ekspóuʒər",
+            "other_translations": [
+                {
+                    "translation": "露出",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "concealment",
+                    "part_of_speech": "noun",
+                    "translation": "隠すこと"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|exposure| of something",
+                    "translation": "〜の公開"
+                },
+                {
+                    "english": "|exposure| to something",
+                    "translation": "〈異文化など〉に触れること"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Being in a situation where one is not protected from something harmful or unpleasant, or revealing the truth about someone or something, especially if it is negative. It can also refer to the opportunity to encounter new experiences or ideas."
+        }
+    },
+    {
+        "id": "12952",
+        "english": "reception",
+        "translation": "歓迎会",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4516,
+        "example": "Welcome to the |reception| party!",
+        "example_translation": "歓迎会へようこそ！",
+        "sound": "reception",
+        "json": {
+            "english": "reception",
+            "pronunciation": "risépʃən",
+            "other_translations": [
+                {
+                    "translation": "反応",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "受付",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "receptionist",
+                    "part_of_speech": "noun",
+                    "translation": "受付係"
+                },
+                {
+                    "english": "receptive",
+                    "part_of_speech": "adjective",
+                    "translation": "受容的な"
+                },
+                {
+                    "english": "receptiveness",
+                    "part_of_speech": "noun",
+                    "translation": "受容性"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a cool/chilly |reception|",
+                    "translation": "冷ややかなもてなし"
+                },
+                {
+                    "english": "a mixed |reception|",
+                    "translation": "さまざまな反響"
+                },
+                {
+                    "english": "a warm/an enthusiastic |reception|",
+                    "translation": "温かい[熱烈な]歓迎"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A large formal gathering to celebrate an event or to welcome someone."
+        }
+    },
+    {
+        "id": "14919",
+        "english": "union",
+        "translation": "組合",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4517,
+        "example": "The |union| helps workers negotiate for better conditions.",
+        "example_translation": "組合は労働者がより良い条件を求めて交渉するのを助ける。",
+        "sound": "union",
+        "json": {
+            "english": "union",
+            "pronunciation": "júːnjən",
+            "other_translations": [
+                {
+                    "translation": "協会",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "連合",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "連合(体)",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The workers formed a |union| to protect their rights.",
+                    "translation": "労働者たちは自分たちの権利を守るために組合を結成した。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "unionist",
+                    "part_of_speech": "noun",
+                    "translation": "連合主義者, 労働組合員"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "division",
+                    "part_of_speech": "noun",
+                    "translation": "分割, 分離"
+                },
+                {
+                    "english": "separation",
+                    "part_of_speech": "noun",
+                    "translation": "分離, 隔離"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "join a |union|",
+                    "translation": "労働組合に入る[加入する]"
+                },
+                {
+                    "english": "|union| dues",
+                    "translation": "労働組合費"
+                },
+                {
+                    "english": "|union| leader",
+                    "translation": "労働組合のリーダー[幹部]"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A group formed by workers to defend their rights, or the act of bringing two or more things together."
+        }
+    },
+    {
+        "id": "6887",
+        "english": "awareness",
+        "translation": "認識",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4518,
+        "example": "|Awareness| to a new idea of others develops your brain.",
+        "example_translation": "他人の新しい考えを認識することは脳を育てます。",
+        "sound": "awareness",
+        "json": {
+            "english": "awareness",
+            "pronunciation": "əwέərnəs",
+            "other_translations": [
+                {
+                    "translation": "意識",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "aware",
+                    "part_of_speech": "adjective",
+                    "translation": "気づいている"
+                },
+                {
+                    "english": "unaware",
+                    "part_of_speech": "adjective",
+                    "translation": "気づいていない"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "growing/increasing/heightened |awareness|",
+                    "translation": "高まりつつある意識"
+                },
+                {
+                    "english": "public/consumer |awareness|",
+                    "translation": "国民の[消費者]意識"
+                },
+                {
+                    "english": "raise |awareness| (of/about something)",
+                    "translation": "(〜についての)意識を高める"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "cognition",
+                    "description": "「awareness」と「cognition」は共に「認識」という意味を持つが、前者は自分や周囲の状況に対する気づきや意識を指し、後者は情報を理解し処理する能力や思考過程を指す。"
+                }
+            ],
+            "english_meaning": "The state of having knowledge or understanding about something, or being able to notice things around you."
+        }
+    },
+    {
+        "id": "11271",
+        "english": "loyal",
+        "translation": "忠実な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4520,
+        "example": "My dog is |loyal| to me.",
+        "example_translation": "私の犬は忠実だ。",
+        "sound": "loyal",
+        "json": {
+            "english": "loyal",
+            "pronunciation": "lɔ́iəl",
+            "other_translations": [
+                {
+                    "translation": "忠誠な",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "She is a |loyal| supporter of the team.",
+                    "translation": "彼女はそのチームの忠実なサポーターです。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "loyally",
+                    "part_of_speech": "adverb",
+                    "translation": "忠実に"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "disloyal",
+                    "part_of_speech": "adjective",
+                    "translation": "忠実でない"
+                },
+                {
+                    "english": "unfaithful",
+                    "part_of_speech": "adjective",
+                    "translation": "不誠実な"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "remain |loyal| (to somebody/something)",
+                    "translation": "(〈人・信条など〉に)忠誠であり続ける"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "faithful",
+                    "description": "「loyal」と「faithful」は共に「忠実な」という意味を持つが、前者は特定の人や組織に対する支持や献身を強調し、後者は約束や義務に対する誠実さや持続性を強調する。"
+                }
+            ],
+            "english_meaning": "Always supporting your friends, beliefs, or country, and not changing to something else."
+        }
+    },
+    {
+        "id": "12213",
+        "english": "patch",
+        "translation": "小区画の土地",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4521,
+        "example": "The farmer planted seeds in the |patch|.",
+        "example_translation": "農夫は畑に種を蒔いた。",
+        "sound": "patch",
+        "json": {
+            "english": "patch",
+            "pronunciation": "pætʃ",
+            "other_translations": [
+                {
+                    "translation": "パッチ",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "部分",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A small area of land that is different from the surrounding land, often used for growing plants or vegetables."
+        }
+    },
+    {
+        "id": "13642",
+        "english": "shame",
+        "translation": "残念なこと",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4522,
+        "example": "What a |shame|, the picnic was cancelled.",
+        "example_translation": "残念なことに、ピクニックは中止になってしまった。",
+        "sound": "shame",
+        "json": {
+            "english": "shame",
+            "pronunciation": "ʃéim",
+            "other_translations": [
+                {
+                    "translation": "恥ずかしい思い",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "羞恥(しゅうち)心",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "に恥をかかせる",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "ashamed",
+                    "part_of_speech": "adjective",
+                    "translation": "恥じている"
+                },
+                {
+                    "english": "shameful",
+                    "part_of_speech": "adjective",
+                    "translation": "恥ずべき"
+                },
+                {
+                    "english": "shameless",
+                    "part_of_speech": "adjective",
+                    "translation": "恥知らずの"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "it would be a |shame| to do something",
+                    "translation": "〜したら残念なことだ[もったいない]"
+                },
+                {
+                    "english": "it's a real/terrible |shame|",
+                    "translation": "〜なのは本当に残念である"
+                },
+                {
+                    "english": "it's a |shame| (that)",
+                    "translation": "〜なのは残念である"
+                },
+                {
+                    "english": "what a |shame|",
+                    "translation": "それは残念だ"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "pity",
+                    "description": "「shame」と「pity」は共に「残念なこと」という意味を持つが、前者は主に自分や他人の行動に対する恥や後悔を表し、後者は他人の不幸や苦しみに対する同情や哀れみを示す。"
+                }
+            ],
+            "english_meaning": "A feeling of guilt and embarrassment that arises when you or someone close to you has done something wrong, often leading to a sense of loss of honor and respect."
+        }
+    },
+    {
+        "id": "8094",
+        "english": "copper",
+        "translation": "銅",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4523,
+        "example": "|Copper| is used to make coins.",
+        "example_translation": "銅は硬貨を作るのに使われる。",
+        "sound": "copper",
+        "json": {
+            "english": "copper",
+            "pronunciation": "[US] kɑ́pər [UK] kɔ́pə",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "coppery",
+                    "part_of_speech": "adjective",
+                    "translation": "銅のような, 銅色の"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A soft, reddish-brown metal that conducts electricity and heat well, commonly used for making electrical wires and water pipes. It is a chemical element with the symbol Cu."
+        }
+    },
+    {
+        "id": "8543",
+        "english": "diagram",
+        "translation": "図",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4528,
+        "example": "His report has a lot of |diagrams|.",
+        "example_translation": "彼の報告書は図が多い。",
+        "sound": "diagram",
+        "json": {
+            "english": "diagram",
+            "pronunciation": "dáiəgræ̀m",
+            "other_translations": [
+                {
+                    "translation": "図表",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "She created a |diagram| to explain the water cycle.",
+                    "translation": "彼女は水の循環を説明するための図を作成した。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "diagrammatic",
+                    "part_of_speech": "adjective",
+                    "translation": "図解の"
+                },
+                {
+                    "english": "diagrammatically",
+                    "part_of_speech": "adverb",
+                    "translation": "図解的に"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "draw a |diagram|",
+                    "translation": "図をかく"
+                },
+                {
+                    "english": "in a |diagram|",
+                    "translation": "図表で"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "figure",
+                    "description": "「diagram」と「figure」は共に「図」という意味を持つが、前者は主に構造や関係を示すための図であり、後者は一般的な形やイラストを指すことが多い。"
+                }
+            ],
+            "english_meaning": "A simple drawing or plan that clearly shows the position, appearance, or function of something."
+        }
+    },
+    {
+        "id": "13455",
+        "english": "scale",
+        "translation": "規模",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4536,
+        "example": "The |scale| of the earthquake was massive.",
+        "example_translation": "地震の規模は大きかった。",
+        "sound": "scale",
+        "json": {
+            "english": "scale",
+            "pronunciation": "skeil",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The |scale| of the project surprised everyone involved.",
+                    "translation": "そのプロジェクトの規模は関わった全員を驚かせた。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "on a global/international/world |scale|",
+                    "translation": "地球的[国際的, 世界的]な規模で"
+                },
+                {
+                    "english": "on a large/small/grand/massive |scale|",
+                    "translation": "大[小, 雄大な, 巨大な]規模で"
+                },
+                {
+                    "english": "the full |scale| of something",
+                    "translation": "〜の全体の規模"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The size or level of something, especially when it is large, or the amount that something is happening. It can also refer to a range of different types of people or things, from the lowest to the highest level."
+        }
+    },
+    {
+        "id": "13995",
+        "english": "spiritual",
+        "translation": "精神的な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4537,
+        "example": "He believes in a |spiritual| power.",
+        "example_translation": "彼は精神的な力を信じている。",
+        "sound": "spiritual",
+        "json": {
+            "english": "spiritual",
+            "pronunciation": "spíritʃuəl",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "|Spiritual| practices can help people find inner peace.",
+                    "translation": "精神的な実践は人々が内なる平和を見つけるのに役立つ。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "spiritually",
+                    "part_of_speech": "adverb",
+                    "translation": "精神的に"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "bodily",
+                    "part_of_speech": "adjective",
+                    "translation": "肉体的な"
+                },
+                {
+                    "english": "material",
+                    "part_of_speech": "adjective",
+                    "translation": "物質的な"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Connected to your inner self or feelings rather than your physical body or thoughts; associated with religion or beliefs."
+        }
+    },
+    {
+        "id": "8989",
+        "english": "emerge",
+        "translation": "明らかになる",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4539,
+        "example": "Her talent |emerged| during the performance.",
+        "example_translation": "演奏する中で彼女の才能が明らかになった。",
+        "sound": "emerge",
+        "json": {
+            "english": "emerge",
+            "pronunciation": "[US] imə́ːrdʒ [UK] imə́ːdʒ",
+            "other_translations": [
+                {
+                    "translation": "現れる",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "New information |emerged| during the investigation.",
+                    "translation": "調査中に新しい情報が明らかになった。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "emergence",
+                    "part_of_speech": "noun",
+                    "translation": "出現, 現れ"
+                },
+                {
+                    "english": "emergent",
+                    "part_of_speech": "adjective",
+                    "translation": "現れつつある, 緊急の"
+                },
+                {
+                    "english": "emerging",
+                    "part_of_speech": "adjective",
+                    "translation": "新たに現れた, 発展途上の"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "disappear",
+                    "part_of_speech": "verb",
+                    "translation": "消える, 姿を消す"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|emerge| as something",
+                    "translation": "〈勝者・リーダーなど〉になる"
+                },
+                {
+                    "english": "it |emerges| that",
+                    "translation": "〜ということが明らかになる"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "unfold",
+                    "description": "「emerge」と「unfold」は共に「明らかになる」という意味を持つが、前者は何かが隠れていたものが現れる、または新たに出てくることを強調し、後者は段階的に展開される過程や詳細が明らかになることを強調する。"
+                }
+            ],
+            "english_meaning": "To come into view or become known after being hidden or secret. It can also mean to come out of a difficult situation or to start being recognized."
+        }
+    },
+    {
+        "id": "9572",
+        "english": "flu",
+        "translation": "インフルエンザ",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4544,
+        "example": "I caught the |flu| last week.",
+        "example_translation": "先週、インフルエンザにかかったんだ。",
+        "sound": "flu",
+        "json": {
+            "english": "flu",
+            "pronunciation": "flúː",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "Many students are getting the |flu| this season.",
+                    "translation": "今シーズン、多くの生徒がインフルエンザにかかっている。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a bout of (the) |flu|",
+                    "translation": "インフルエンザの発作"
+                },
+                {
+                    "english": "|flu| shot",
+                    "translation": "インフルエンザの予防接種"
+                },
+                {
+                    "english": "get/have (the) |flu|",
+                    "translation": "インフルエンザにかかる[かかっている]"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A common illness that causes tiredness, weakness, a sore throat, coughing, and a runny nose."
+        }
+    },
+    {
+        "id": "15248",
+        "english": "wheelchair",
+        "translation": "車椅子",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4547,
+        "example": "She uses a |wheelchair| to move.",
+        "example_translation": "彼女は移動に車椅子を使う。",
+        "sound": "wheelchair",
+        "json": {
+            "english": "wheelchair",
+            "pronunciation": "hwíːltʃὲər",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "be confined to a |wheelchair|",
+                    "translation": "車いすでの生活を余儀なくされている"
+                },
+                {
+                    "english": "in a |wheelchair|",
+                    "translation": "車いすに乗って, 車いすで"
+                },
+                {
+                    "english": "|wheelchair| user",
+                    "translation": "車いす利用者"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A chair that has wheels and is designed for individuals who are unable to walk."
+        }
+    },
+    {
+        "id": "6827",
+        "english": "attendance",
+        "translation": "出席",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4548,
+        "example": "I have perfect |attendance| at school.",
+        "example_translation": "私は学校を欠席したことがない。",
+        "sound": "attendance",
+        "json": {
+            "english": "attendance",
+            "pronunciation": "əténdəns",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "|Attendance| at the meeting was higher than expected.",
+                    "translation": "会議の出席者数は予想以上に多かった。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "absence",
+                    "part_of_speech": "noun",
+                    "translation": "不在"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "take |attendance|",
+                    "translation": "出欠を取る"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The act of being present at a place, such as a class, meeting, or event, and the number of people who are there."
+        }
+    },
+    {
+        "id": "8043",
+        "english": "continent",
+        "translation": "大陸",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4549,
+        "example": "Australia is the smallest |continent|.",
+        "example_translation": "オーストラリアは最も小さな大陸である。",
+        "sound": "continent",
+        "json": {
+            "english": "continent",
+            "pronunciation": "[US] kɑ́ntənənt [UK] kɔ́ntənənt",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The |continent| of Africa is known for its diverse wildlife.",
+                    "translation": "アフリカ大陸は多様な野生動物で知られています。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "continental",
+                    "part_of_speech": "adjective",
+                    "translation": "大陸の"
+                },
+                {
+                    "english": "intercontinental",
+                    "part_of_speech": "adjective",
+                    "translation": "大陸間の"
+                },
+                {
+                    "english": "transcontinental",
+                    "part_of_speech": "adjective",
+                    "translation": "横断大陸の"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A large area of land that is surrounded by oceans, and one of the seven main parts of the Earth's land surface."
+        }
+    },
+    {
+        "id": "10907",
+        "english": "journal",
+        "translation": "雑誌",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4561,
+        "example": "I read a |journal| every month.",
+        "example_translation": "毎月雑誌を読んでいる。",
+        "sound": "journal"
+    },
+    {
+        "id": "14286",
+        "english": "sufficient",
+        "translation": "十分な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4562,
+        "example": "The water supply is |sufficient| for everyone.",
+        "example_translation": "全員への給水量は十分だ。",
+        "sound": "sufficient"
+    },
+    {
+        "id": "6864",
+        "english": "automatic",
+        "translation": "自動の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4563,
+        "example": "The |automatic| door opened quickly.",
+        "example_translation": "自動ドアがすぐに開いた。",
+        "sound": "automatic"
+    },
+    {
+        "id": "7757",
+        "english": "coastal",
+        "translation": "沿岸の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4564,
+        "example": "The |coastal| town is beautiful.",
+        "example_translation": "海岸沿いの町は美しい。",
+        "sound": "coastal"
+    },
+    {
+        "id": "9431",
+        "english": "federal",
+        "translation": "連邦政府の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4566,
+        "example": "The |federal| government made new laws.",
+        "example_translation": "連邦政府は新しい法律を制定した。",
+        "sound": "federal"
+    },
+    {
+        "id": "13105",
+        "english": "remote",
+        "translation": "人里離れた",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4567,
+        "example": "The cabin is in a |remote| mountain.",
+        "example_translation": "山小屋は人里離れた山中にある。",
+        "sound": "remote"
+    },
+    {
+        "id": "9213",
+        "english": "exceed",
+        "translation": "～を超える",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4570,
+        "example": "The car |exceeded| the speed limit.",
+        "example_translation": "車は制限速度を超えていた。",
+        "sound": "exceed"
+    },
+    {
+        "id": "10310",
+        "english": "hostile",
+        "translation": "敵意のある",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4571,
+        "example": "The |hostile| dog growled at me.",
+        "example_translation": "敵意のある犬が私にうなり声を上げた。",
+        "sound": "hostile"
+    },
+    {
+        "id": "15286",
+        "english": "willing",
+        "translation": "～するのをいとわない",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4572,
+        "example": "She is |willing| to help others.",
+        "example_translation": "彼女は進んで他人を助ける。",
+        "sound": "willing"
+    },
+    {
+        "id": "6961",
+        "english": "basis",
+        "translation": "根拠",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4574,
+        "example": "He explained his logic with a solid |basis|.",
+        "example_translation": "彼はしっかりとした根拠を持って自分の論理を説明した。",
+        "sound": "basis"
+    },
+    {
+        "id": "8966",
+        "english": "elsewhere",
+        "translation": "どこか他のところに",
+        "part_of_speech": "adverb",
+        "course": "eiken",
+        "importance": 4575,
+        "example": "I must have put my key |elsewhere|.",
+        "example_translation": "鍵はどこか別の所に置いてしまったに違いない。",
+        "sound": "elsewhere"
+    },
+    {
+        "id": "10758",
+        "english": "intellectual",
+        "translation": "知的な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4576,
+        "example": "She is a very |intellectual| person.",
+        "example_translation": "彼女はとても知的な人だ。",
+        "sound": "intellectual"
+    },
+    {
+        "id": "15350",
+        "english": "worsen",
+        "translation": "悪化する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4577,
+        "example": "His condition began to |worsen| quickly.",
+        "example_translation": "彼の状態は急速に悪化し始めた。",
+        "sound": "worsen"
+    },
+    {
+        "id": "8572",
+        "english": "digestive",
+        "translation": "消化の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4579,
+        "example": "Herbal tea aids in |digestive| health.",
+        "example_translation": "ハーブティーは消化を助ける。",
+        "sound": "digestive"
+    },
+    {
+        "id": "12679",
+        "english": "profitable",
+        "translation": "利益になる",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4581,
+        "example": "This business is very |profitable|.",
+        "example_translation": "この事業は非常に収益性が高い。",
+        "sound": "profitable"
+    },
+    {
+        "id": "8949",
+        "english": "element",
+        "translation": "要素",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4584,
+        "example": "Hydrogen and oxygen are the two |elements| of water.",
+        "example_translation": "水素と酸素は水を構成する2つの要素だ。",
+        "sound": "element"
+    },
+    {
+        "id": "14424",
+        "english": "tailor",
+        "translation": "～を合わせて作る",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4587,
+        "example": "Chinese medicine is |tailored| for each patient.",
+        "example_translation": "漢方薬はそれぞれの患者に合わせて作られる。",
+        "sound": "tailor"
+    },
+    {
+        "id": "11529",
+        "english": "minor",
+        "translation": "小さい",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4596,
+        "example": "I noticed the |minor| change.",
+        "example_translation": "私は小さい変化に気づいた。",
+        "sound": "minor"
+    },
+    {
+        "id": "12526",
+        "english": "pottery",
+        "translation": "陶器類",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4597,
+        "example": "I made |pottery| in art class.",
+        "example_translation": "私は美術の授業で陶器を作った。",
+        "sound": "pottery"
+    },
+    {
+        "id": "7798",
+        "english": "combat",
+        "translation": "～を撲滅しようとする",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4598,
+        "example": "Let's |combat| bullying together!",
+        "example_translation": "一緒にいじめに立ち向かおう！",
+        "sound": "combat"
+    },
+    {
+        "id": "12619",
+        "english": "prey",
+        "translation": "獲物",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4602,
+        "example": "The tiger is on its |prey|.",
+        "example_translation": "虎が獲物の上に乗っている。",
+        "sound": "prey"
+    },
+    {
+        "id": "8782",
+        "english": "dozen",
+        "translation": "12",
+        "part_of_speech": "number",
+        "course": "eiken",
+        "importance": 4604,
+        "example": "Each pack has a |dozen| of eggs.",
+        "example_translation": "1パックに卵が12個入っている。",
+        "sound": "dozen"
+    },
+    {
+        "id": "11836",
+        "english": "numerous",
+        "translation": "非常に数の多い",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4606,
+        "example": "There are |numerous| books in the library.",
+        "example_translation": "図書館には非常に数多くの本がある。",
+        "sound": "numerous"
+    },
+    {
+        "id": "14819",
+        "english": "tuition",
+        "translation": "授業料",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4612,
+        "example": "My parents pay |tuition| every month.",
+        "example_translation": "両親は毎月授業料を払っている。",
+        "sound": "tuition"
+    },
+    {
+        "id": "12826",
+        "english": "qualified",
+        "translation": "有能な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4617,
+        "example": "He is a |qualified| businessman.",
+        "example_translation": "彼は有能なビジネスマンだ。",
+        "sound": "qualified"
+    },
+    {
+        "id": "9269",
+        "english": "experienced",
+        "translation": "熟練した",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4625,
+        "example": "He is an |experienced| guitar player.",
+        "example_translation": "彼は熟練したギタリストだ。",
+        "sound": "experienced"
+    },
+    {
+        "id": "9140",
+        "english": "eruption",
+        "translation": "勃発",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4635,
+        "example": "The volcano |eruption| was sudden.",
+        "example_translation": "火山の噴火は突然だった。",
+        "sound": "eruption"
+    },
+    {
+        "id": "10962",
+        "english": "kidney",
+        "translation": "腎臓",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4637,
+        "example": "We have two |kidneys| in our body.",
+        "example_translation": "私たちの体には腎臓が二つある。",
+        "sound": "kidney"
+    },
+    {
+        "id": "10664",
+        "english": "inhabitant",
+        "translation": "居住者",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4640,
+        "example": "The |inhabitants| of the house were friendly.",
+        "example_translation": "その家の住人は親切だった。",
+        "sound": "inhabitant"
+    },
+    {
+        "id": "12041",
+        "english": "outbreak",
+        "translation": "突発",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4641,
+        "example": "The |outbreak| of flu spread quickly.",
+        "example_translation": "インフルエンザの流行は瞬く間に広がった。",
+        "sound": "outbreak"
+    },
+    {
+        "id": "6439",
+        "english": "aging",
+        "translation": "高齢化が進む",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4648,
+        "example": "The population is rapidly |aging|.",
+        "example_translation": "人口は高齢化が進んでいる。",
+        "sound": "aging"
+    },
+    {
+        "id": "11573",
+        "english": "moisture",
+        "translation": "湿気",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4650,
+        "example": "The plant needs |moisture| to grow.",
+        "example_translation": "植物の成長には水分が必要だ。",
+        "sound": "moisture"
+    },
+    {
+        "id": "10719",
+        "english": "inspection",
+        "translation": "検査",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4654,
+        "example": "The |inspection| of the building began.",
+        "example_translation": "建物の検査が始まった。",
+        "sound": "inspection"
+    },
+    {
+        "id": "13814",
+        "english": "slight",
+        "translation": "わずかな",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4662,
+        "example": "There was a |slight| drizzle outside.",
+        "example_translation": "外はわずかに雨が降っていた。",
+        "sound": "slight"
+    },
+    {
+        "id": "12654",
+        "english": "proceed",
+        "translation": "向かう",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4665,
+        "example": "We |proceeded| to the exit.",
+        "example_translation": "私たちは出口へと進んだ。",
+        "sound": "proceed"
+    },
+    {
+        "id": "13621",
+        "english": "settlement",
+        "translation": "開拓地",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4666,
+        "example": "The |settlement| was a new town.",
+        "example_translation": "入植地はニュータウンだった。",
+        "sound": "settlement"
+    },
+    {
+        "id": "14133",
+        "english": "sticky",
+        "translation": "ネバネバの",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4667,
+        "example": "Okura is |sticky| and healthy.",
+        "example_translation": "オクラはねばねばして体にいい。",
+        "sound": "sticky"
+    },
+    {
+        "id": "13169",
+        "english": "reschedule",
+        "translation": "～の日時を変更する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4671,
+        "example": "Can we |reschedule| our meeting later?",
+        "example_translation": "ミーティングを後日に変更することはできますか？",
+        "sound": "reschedule"
+    },
+    {
+        "id": "8270",
+        "english": "dairy",
+        "translation": "ミルクから作れる",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4673,
+        "example": "|Dairy| products are good for you.",
+        "example_translation": "乳製品は体に良い。",
+        "sound": "dairy"
+    },
+    {
+        "id": "15196",
+        "english": "waterfall",
+        "translation": "滝",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4677,
+        "example": "The |waterfall| was beautiful.",
+        "example_translation": "その滝は美しかった。",
+        "sound": "waterfall"
+    },
+    {
+        "id": "9409",
+        "english": "fatal",
+        "translation": "致命的な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4685,
+        "example": "The doctor said the injury is |fatal| without operation.",
+        "example_translation": "医者はこの怪我は手術しなければ致命的だと言った。",
+        "sound": "fatal"
+    },
+    {
+        "id": "7965",
+        "english": "congestion",
+        "translation": "混雑",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4698,
+        "example": "The traffic |congestion| was terrible.",
+        "example_translation": "交通の混雑はひどかった。",
+        "sound": "congestion"
+    },
+    {
+        "id": "13302",
+        "english": "riot",
+        "translation": "暴動",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4702,
+        "example": "The police stopped the |riot|.",
+        "example_translation": "警察は暴動を止めた。",
+        "sound": "riot"
+    },
+    {
+        "id": "11158",
+        "english": "likewise",
+        "translation": "同じように",
+        "part_of_speech": "adverb",
+        "course": "eiken",
+        "importance": 4706,
+        "example": "I like ice cream, and my younger brother does |likewise|.",
+        "example_translation": "僕はアイスが好きだ。弟も同じようにアイスが好きだ。",
+        "sound": "likewise"
+    },
+    {
+        "id": "11843",
+        "english": "nutritious",
+        "translation": "栄養になる",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4725,
+        "example": "This salad is |nutritious| and delicious.",
+        "example_translation": "このサラダは栄養になるしおいしい。",
+        "sound": "nutritious"
+    },
+    {
+        "id": "7316",
+        "english": "browse",
+        "translation": "～を見て歩く",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4738,
+        "example": "I like to |browse| new shops.",
+        "example_translation": "新しい店を見るのが好きなんだ。",
+        "sound": "browse"
+    },
+    {
+        "id": "9264",
+        "english": "expend",
+        "translation": "〜を費やす",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4745,
+        "example": "The company |expends| large amount of money for ads.",
+        "example_translation": "同社は広告に大金を費やしている。",
+        "sound": "expend"
+    },
+    {
+        "id": "9984",
+        "english": "grain",
+        "translation": "穀物",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4750,
+        "example": "Wheat and rice are |grain|.",
+        "example_translation": "むぎや米は穀物だ。",
+        "sound": "grain"
+    },
+    {
+        "id": "15337",
+        "english": "workforce",
+        "translation": "総従業員",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4752,
+        "example": "The company has a great |workforce|.",
+        "example_translation": "この会社には優れた従業員がいる。",
+        "sound": "workforce"
+    },
+    {
+        "id": "13439",
+        "english": "satisfaction",
+        "translation": "満足",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4756,
+        "example": "I feel |satisfaction| after finishing my homework.",
+        "example_translation": "私は宿題を終えると満足感を感じる。",
+        "sound": "satisfaction"
+    },
+    {
+        "id": "7690",
+        "english": "classify",
+        "translation": "～を分類する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4758,
+        "example": "It is important to |classify| data accurately for the research.",
+        "example_translation": "研究のためにデータを正確に分類することが重要です。",
+        "sound": "classify"
+    },
+    {
+        "id": "12397",
+        "english": "placement",
+        "translation": "斡旋",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4770,
+        "example": "I helped with job |placement|.",
+        "example_translation": "私は就職斡旋を手伝った。",
+        "sound": "placement"
+    },
+    {
+        "id": "14244",
+        "english": "subscription",
+        "translation": "予約購読",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4812,
+        "example": "I have a movie |subscription|.",
+        "example_translation": "映画を予約購読している。",
+        "sound": "subscription"
+    },
+    {
+        "id": "14772",
+        "english": "tremendous",
+        "translation": "途方もない",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4817,
+        "example": "The storm caused |tremendous| damage.",
+        "example_translation": "嵐は途方もない被害をもたらした。",
+        "sound": "tremendous"
+    },
+    {
+        "id": "11154",
+        "english": "likelihood",
+        "translation": "可能性",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4820,
+        "example": "There is no |likelihood| of raining in the following hours.",
+        "example_translation": "この数時間では雨の可能性はありません。",
+        "sound": "likelihood"
+    },
+    {
+        "id": "6943",
+        "english": "bargain",
+        "translation": "格安の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 4843,
+        "example": "The |bargain| price was too good.",
+        "example_translation": "格安価格が良すぎた。",
+        "sound": "bargain"
+    },
+    {
+        "id": "12440",
+        "english": "plot",
+        "translation": "小区画",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4861,
+        "example": "The |plot| of land is small.",
+        "example_translation": "その土地区画は狭い。",
+        "sound": "plot"
+    },
+    {
+        "id": "9248",
+        "english": "existence",
+        "translation": "存在",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4879,
+        "example": "Many people believe in the |existence| of God.",
+        "example_translation": "多くの人は神の存在を信じている。",
+        "sound": "existence"
+    },
+    {
+        "id": "9679",
+        "english": "foster",
+        "translation": "～を促進する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4889,
+        "example": "It's important to |foster| healthy habits.",
+        "example_translation": "健康的な習慣を促進することは重要だ。",
+        "sound": "foster"
+    },
+    {
+        "id": "15065",
+        "english": "vessel",
+        "translation": "船",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4892,
+        "example": "A |vessel| is sailing across the ocean.",
+        "example_translation": "船が海を航海している。",
+        "sound": "vessel"
+    },
+    {
+        "id": "7312",
+        "english": "brochure",
+        "translation": "パンフレット",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4894,
+        "example": "Please take a |brochure| from there.",
+        "example_translation": "そこからパンフレットをお取りください。",
+        "sound": "brochure"
+    },
+    {
+        "id": "15339",
+        "english": "workout",
+        "translation": "運動",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4937,
+        "example": "I always do |workout| after school.",
+        "example_translation": "いつも放課後に運動をするんだ。",
+        "sound": "workout"
+    },
+    {
+        "id": "11303",
+        "english": "magnify",
+        "translation": "～を拡大する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4940,
+        "example": "This glass lens |magnifies| images of small things.",
+        "example_translation": "このガラスのレンズは小さなものの見え方を拡大する。",
+        "sound": "magnify"
+    },
+    {
+        "id": "11044",
+        "english": "lawsuit",
+        "translation": "訴訟",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4949,
+        "example": "The |lawsuit| lasted for months.",
+        "example_translation": "訴訟は数カ月に及んだ。",
+        "sound": "lawsuit"
+    },
+    {
+        "id": "13017",
+        "english": "refugee",
+        "translation": "難民",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4961,
+        "example": "The |refugee| could receive some supply at the shelter.",
+        "example_translation": "難民は避難所で物資をもらうことができた。",
+        "sound": "refugee"
+    },
+    {
+        "id": "13051",
+        "english": "reintroduce",
+        "translation": "～を再導入する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4966,
+        "example": "The teacher |reintroduced| the rules of the class.",
+        "example_translation": "先生はクラスのルールをあらためて導入した。",
+        "sound": "reintroduce"
+    },
+    {
+        "id": "13082",
+        "english": "relocate",
+        "translation": "～を移住させる",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 4975,
+        "example": "The beautiful nature made us |relocate|.",
+        "example_translation": "美しい自然は私たちを移住させた。",
+        "sound": "relocate"
+    },
+    {
+        "id": "8977",
+        "english": "embassy",
+        "translation": "大使館",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 4985,
+        "example": "An |embassy| is where diplomats work.",
+        "example_translation": "大使館は外交官が働く場所だ。",
+        "sound": "embassy"
+    },
+    {
+        "id": "8538",
+        "english": "diabetes",
+        "translation": "糖尿病",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5019,
+        "example": "My grandpa has |diabetes|.",
+        "example_translation": "僕のおじいちゃんは糖尿病なんだ。",
+        "sound": "diabetes"
+    },
+    {
+        "id": "15308",
+        "english": "withdraw",
+        "translation": "～を引き出す",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5026,
+        "example": "Please |withdraw| money from the ATM.",
+        "example_translation": "ATMでお金を引き出してください。",
+        "sound": "withdraw"
+    },
+    {
+        "id": "8193",
+        "english": "crisis",
+        "translation": "危機",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5027,
+        "example": "The area is in |crisis| of flooding.",
+        "example_translation": "その地域は洪水の危機に瀕している。",
+        "sound": "crisis"
+    },
+    {
+        "id": "12568",
+        "english": "preference",
+        "translation": "ほかより好むこと",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5050,
+        "example": "I have a |preference| for salty snacks rather than sweet ones.",
+        "example_translation": "私は甘い菓子よりもしょっぱい菓子の方が好みだ。",
+        "sound": "preference"
+    },
+    {
+        "id": "12936",
+        "english": "rebel",
+        "translation": "反抗する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5060,
+        "example": "The students |rebel| against the strict rules.",
+        "example_translation": "生徒たちは厳しい規則に反発する。",
+        "sound": "rebel_2"
+    },
+    {
+        "id": "9167",
+        "english": "evacuate",
+        "translation": "～から避難する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5082,
+        "example": "The announcement said to |evacuate| the building immediately.",
+        "example_translation": "直ちに建物から避難するようアナウンスされた。",
+        "sound": "evacuate"
+    },
+    {
+        "id": "14714",
+        "english": "toxic",
+        "translation": "有害な",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 5086,
+        "example": "The chemicals are |toxic| to humans.",
+        "example_translation": "化学物質は人体に有毒である。",
+        "sound": "toxic"
+    },
+    {
+        "id": "12084",
+        "english": "overhear",
+        "translation": "～を偶然耳にする",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5095,
+        "example": "I |overheard| their secret conversation yesterday.",
+        "example_translation": "私は昨日、彼らの秘密の会話を耳にした。",
+        "sound": "overhear"
+    },
+    {
+        "id": "7793",
+        "english": "colonize",
+        "translation": "～を植民地化する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5097,
+        "example": "The explorers planned to |colonize| the island.",
+        "example_translation": "探検家たちは島の植民地化を計画した。",
+        "sound": "colonize"
+    },
+    {
+        "id": "11310",
+        "english": "mainstream",
+        "translation": "主流の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 5125,
+        "example": "The |mainstream| transportation in a big city is trains.",
+        "example_translation": "大都市の主要な交通手段は電車です。",
+        "sound": "mainstream"
+    },
+    {
+        "id": "8171",
+        "english": "crawl",
+        "translation": "はって進む",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5127,
+        "example": "The baby begins to |crawl| slowly.",
+        "example_translation": "赤ちゃんはゆっくりと這って進みハイハイを始める。",
+        "sound": "crawl"
+    },
+    {
+        "id": "15231",
+        "english": "welfare",
+        "translation": "福祉",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5161,
+        "example": "She works for |welfare| for the elder.",
+        "example_translation": "彼女は高齢者の福祉のために働いている。",
+        "sound": "welfare"
+    },
+    {
+        "id": "8679",
+        "english": "disprove",
+        "translation": "～の誤りを証明する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5168,
+        "example": "A young scientist |disproved| the long-believed theory.",
+        "example_translation": "若き科学者が長く信じられきた理論の誤りを証明した。",
+        "sound": "disprove"
+    },
+    {
+        "id": "12186",
+        "english": "particle",
+        "translation": "微粒子",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5203,
+        "example": "The |particle| was too tiny.",
+        "example_translation": "粒子が小さすぎた。",
+        "sound": "particle"
+    },
+    {
+        "id": "12957",
+        "english": "recipient",
+        "translation": "受取人",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5204,
+        "example": "The |recipient| of the gift was grateful.",
+        "example_translation": "贈られた相手は感謝していた。",
+        "sound": "recipient"
+    },
+    {
+        "id": "12860",
+        "english": "radiation",
+        "translation": "放射線",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5241,
+        "example": "The sun gives off |radiation|.",
+        "example_translation": "太陽は放射線を出している。",
+        "sound": "radiation"
+    },
+    {
+        "id": "7355",
+        "english": "burial",
+        "translation": "埋葬",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5257,
+        "example": "The |burial| will be held tomorrow.",
+        "example_translation": "埋葬は明日行なわれる。",
+        "sound": "burial"
+    },
+    {
+        "id": "15173",
+        "english": "warehouse",
+        "translation": "倉庫",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5281,
+        "example": "The |warehouse| is full of boxes.",
+        "example_translation": "倉庫は箱でいっぱいだ。",
+        "sound": "warehouse"
+    },
+    {
+        "id": "10114",
+        "english": "harass",
+        "translation": "～を絶えず悩ます",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5293,
+        "example": "This customer always |harasses| me.",
+        "example_translation": "この顧客はいつも嫌がらせをしてくる。",
+        "sound": "harass"
+    },
+    {
+        "id": "12064",
+        "english": "outsider",
+        "translation": "部外者",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5299,
+        "example": "The |outsider| watched the game quietly.",
+        "example_translation": "部外者は静かに試合を見ていた。",
+        "sound": "outsider"
+    },
+    {
+        "id": "11574",
+        "english": "mold",
+        "translation": "カビ",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5314,
+        "example": "The bread had |mold| on it.",
+        "example_translation": "パンにカビが生えていた。",
+        "sound": "mold"
+    },
+    {
+        "id": "7117",
+        "english": "biased",
+        "translation": "偏った",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 5342,
+        "example": "Her |biased| love affected his character.",
+        "example_translation": "彼女の偏った愛情は彼の性格に影響した。",
+        "sound": "biased"
+    },
+    {
+        "id": "14678",
+        "english": "toll",
+        "translation": "使用料",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5355,
+        "example": "The |toll| for the bridge is expensive.",
+        "example_translation": "橋の通行料は高い。",
+        "sound": "toll"
+    },
+    {
+        "id": "10176",
+        "english": "headquarters",
+        "translation": "本社",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5364,
+        "example": "Our company |headquarters| is in Tokyo.",
+        "example_translation": "私たちの本社は東京にある。",
+        "sound": "headquarters"
+    },
+    {
+        "id": "13851",
+        "english": "sneak",
+        "translation": "こっそり動く",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5371,
+        "example": "She tried to |sneak| out quietly.",
+        "example_translation": "彼女はそっと外に出ようとした。",
+        "sound": "sneak"
+    },
+    {
+        "id": "6399",
+        "english": "advocate",
+        "translation": "～を主張する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5387,
+        "example": "They |advocate| equal rights.",
+        "example_translation": "彼らは平等な権利を主張する。",
+        "sound": "advocate"
+    },
+    {
+        "id": "10233",
+        "english": "highlight",
+        "translation": "～を強調する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5404,
+        "example": "I |highlight| important points with a marker.",
+        "example_translation": "重要なポイントをマーカーで強調する。",
+        "sound": "highlight"
+    },
+    {
+        "id": "8152",
+        "english": "coverage",
+        "translation": "報道",
+        "part_of_speech": "noun",
+        "course": "eiken",
+        "importance": 5418,
+        "example": "The |coverage| of the event was extensive.",
+        "example_translation": "このイベントについて広く報道がなされた。",
+        "sound": "coverage"
+    },
+    {
+        "id": "11646",
+        "english": "multiple",
+        "translation": "多数の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 5425,
+        "example": "There are |multiple| books on the shelf.",
+        "example_translation": "本棚には多数の本が並んでいる。",
+        "sound": "multiple"
+    },
+    {
+        "id": "14182",
+        "english": "stray",
+        "translation": "迷い出る",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5426,
+        "example": "The cat will |stray| from home.",
+        "example_translation": "猫は家から迷い出る。",
+        "sound": "stray"
+    },
+    {
+        "id": "13588",
+        "english": "sensory",
+        "translation": "感覚の",
+        "part_of_speech": "adjective",
+        "course": "eiken",
+        "importance": 5446,
+        "example": "The |sensory| experience was overwhelming and intense.",
+        "example_translation": "その感覚体験は圧倒的で強烈だった。",
+        "sound": "sensory"
+    },
+    {
+        "id": "8051",
+        "english": "contradict",
+        "translation": "～と矛盾する",
+        "part_of_speech": "verb",
+        "course": "eiken",
+        "importance": 5547,
+        "example": "Her actions sometimes |contradict| her words.",
+        "example_translation": "彼女の行動は時として言葉と矛盾する。",
+        "sound": "contradict"
+    }
+]
