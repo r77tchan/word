@@ -1,13 +1,61 @@
 import data from "@/lib/英検_2級_頻出_200.json";
 
 // 型定義
+type OtherTranslation = {
+  translation?: string;
+  part_of_speech?: string;
+};
+
+type OtherExample = {
+  english?: string;
+  translation?: string;
+};
+
+type Derivative = {
+  english?: string;
+  part_of_speech?: string;
+  translation?: string;
+};
+
+type Antonym = {
+  english?: string;
+  part_of_speech?: string;
+  translation?: string;
+};
+
+type Phrase = {
+  english?: string;
+  translation?: string;
+};
+
+type Synonym = {
+  english?: string;
+  description?: string;
+};
+
+type JsonData = {
+  english?: string;
+  pronunciation?: string;
+  other_translations?: OtherTranslation[];
+  other_examples?: OtherExample[];
+  derivatives?: Derivative[];
+  antonyms?: Antonym[];
+  phrases?: Phrase[];
+  synonyms?: Synonym[];
+  english_meaning?: string;
+};
+
 type Item = {
   id: string;
   english: string;
   translation?: string;
+  part_of_speech?: string;
+  course?: string;
+  importance?: number;
   example?: string;
   example_translation?: string;
-  part_of_speech?: string;
+  sound?: string;
+  json?: JsonData;
 };
 
 // 変換辞書
@@ -28,6 +76,19 @@ function mapPos(pos?: unknown): string | undefined {
 function normalize(raw: any): Item | null {
   if (!raw || typeof raw.id !== "string" || typeof raw.english !== "string")
     return null;
+
+  const importance =
+    typeof raw.importance === "number"
+      ? raw.importance
+      : typeof raw.importance === "string" && /^\d+$/.test(raw.importance)
+      ? parseInt(raw.importance, 10)
+      : undefined;
+
+  const json: JsonData | undefined =
+    raw && typeof raw.json === "object" && raw.json !== null
+      ? raw.json
+      : undefined;
+
   return {
     id: raw.id,
     english: raw.english,
@@ -39,6 +100,10 @@ function normalize(raw: any): Item | null {
         ? raw.example_translation
         : undefined,
     part_of_speech: mapPos(raw.part_of_speech),
+    course: typeof raw.course === "string" ? raw.course : undefined,
+    importance,
+    sound: typeof raw.sound === "string" ? raw.sound : undefined,
+    json,
   };
 }
 
