@@ -30,4 +30,5 @@ body {
 
 main {
   background: var(--background);
+  min-height: 100vh;
 }
