@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
+      <div className="bg-gray-300 w-full h-96"></div>
       <div className="flex justify-center mt-32 gap-5">
         <Link href="/lesson" className="bg-red-300 p-4">
           レッスン
