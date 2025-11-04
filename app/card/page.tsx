@@ -43,7 +43,32 @@ type Item = {
   };
 };
 
-const items = data as unknown as Item[];
+const posMap: Record<string, string> = {
+  noun: "名",
+  adjective: "形",
+  verb: "動",
+  adverb: "副",
+};
+
+const items = (data as unknown as Item[]).map(item => ({
+  ...item,
+  part_of_speech: item.part_of_speech ? posMap[item.part_of_speech] || item.part_of_speech : undefined,
+  json: item.json ? {
+    ...item.json,
+    derivatives: item.json.derivatives?.map(d => ({
+      ...d,
+      part_of_speech: posMap[d.part_of_speech] || d.part_of_speech
+    })),
+    other_translations: item.json.other_translations?.map(t => ({
+      ...t,
+      part_of_speech: posMap[t.part_of_speech] || t.part_of_speech
+    })),
+    antonyms: item.json.antonyms?.map(a => ({
+      ...a,
+      part_of_speech: posMap[a.part_of_speech] || a.part_of_speech
+    }))
+  } : undefined
+}));
 
 export default function cardPage() {
   return (
