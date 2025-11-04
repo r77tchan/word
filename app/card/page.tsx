@@ -11,7 +11,7 @@ type Item = {
 
 const items = data as unknown as Item[];
 
-export default function listPage() {
+export default function cardPage() {
   return (
     <main>
       <div className="mx-auto max-w-4xl p-6">

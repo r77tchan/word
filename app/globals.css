@@ -31,4 +31,5 @@ body {
 main {
   background: var(--background);
   min-height: 100vh;
+  padding-bottom: 64px;
 }
