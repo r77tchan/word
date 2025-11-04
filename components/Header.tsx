@@ -12,7 +12,7 @@ export default function Header() {
         <nav className="">
           <ul className="flex">
             <li>
-              <Link href="/" className="text-lg block p-4 hover:bg-gray-500">
+              <Link href="/" className="block p-4 text-lg hover:bg-gray-500">
                 ログイン
               </Link>
             </li>
