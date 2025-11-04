@@ -4874,7 +4874,23 @@
         "importance": 3395,
         "example": "I started exercising and my body shape changed |dramatically|.",
         "example_translation": "エクササイズを始めて、体型が劇的に変わった。",
-        "sound": "dramatically"
+        "sound": "dramatically",
+        "json": {
+            "english": "dramatically",
+            "pronunciation": "drəmǽtikəli",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The weather changed |dramatically| overnight.",
+                    "translation": "天気が一晩で劇的に変わった。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "In a way that is very noticeable and happens suddenly, often making a strong impression on people."
+        }
     },
     {
         "id": "13113",
@@ -4885,7 +4901,62 @@
         "importance": 3397,
         "example": "Please |renew| your driving licence soon.",
         "example_translation": "運転免許証の更新はお早めにお願いします。",
-        "sound": "renew"
+        "sound": "renew",
+        "json": {
+            "english": "renew",
+            "pronunciation": "[US] rinúː [UK] rinjúː",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "renewable",
+                    "part_of_speech": "adjective",
+                    "translation": "再生可能な"
+                },
+                {
+                    "english": "renewal",
+                    "part_of_speech": "noun",
+                    "translation": "更新, 再生"
+                },
+                {
+                    "english": "renewed",
+                    "part_of_speech": "adjective",
+                    "translation": "再生された, 更新された"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "cancel",
+                    "part_of_speech": "verb",
+                    "translation": "取り消す, 無効にする"
+                },
+                {
+                    "english": "discontinue",
+                    "part_of_speech": "verb",
+                    "translation": "中止する, 続けない"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|renew| a contract/license/lease",
+                    "translation": "契約[ライセンス, リース]を更新する"
+                },
+                {
+                    "english": "|renew| a friendship/acquaintance",
+                    "translation": "旧交を温める"
+                },
+                {
+                    "english": "|renew| your efforts to do something",
+                    "translation": "〜する努力を再開する"
+                },
+                {
+                    "english": "|renew| your subscription",
+                    "translation": "定期購読契約を更新する"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To make something new again or to replace something old or broken with something new. It can also mean to continue an agreement or document for a longer time or to start doing something again after stopping for a while."
+        }
     },
     {
         "id": "12006",
@@ -4896,7 +4967,45 @@
         "importance": 3400,
         "example": "We have many |organs|.",
         "example_translation": "私たちは臓器がいくつもある。",
-        "sound": "organ"
+        "sound": "organ",
+        "json": {
+            "english": "organ",
+            "pronunciation": "[US] ɔ́rgn [UK] ɔ́ːgn",
+            "other_translations": [
+                {
+                    "translation": "器官",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "機関紙[誌]",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The heart is one of the most important |organs| in our body.",
+                    "translation": "心臓は私たちの体の中で最も重要な臓器の一つです。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "internal |organs|",
+                    "translation": "内臓"
+                },
+                {
+                    "english": "|organ| donation",
+                    "translation": "臓器提供"
+                },
+                {
+                    "english": "vital |organs|",
+                    "translation": "生命維持に不可欠の臓器"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A body part that has a specific function, like the heart or lungs."
+        }
     },
     {
         "id": "14550",
@@ -4907,7 +5016,53 @@
         "importance": 3401,
         "example": "The |term| is one year long.",
         "example_translation": "期間は1年間。",
-        "sound": "term"
+        "sound": "term",
+        "json": {
+            "english": "term",
+            "pronunciation": "[US] tə́ːrm [UK] tə́ːm",
+            "other_translations": [
+                {
+                    "translation": "条件",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "支払い条件",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "(専門)用語",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a |term| of/in office",
+                    "translation": "任期"
+                },
+                {
+                    "english": "in |terms| of something",
+                    "translation": "〜の点で, に関して〜の点から〜を説明する[述べる, 評価する]何を[どのように, だれが]〜かという点で〜(すること)に関して考える[話す]"
+                },
+                {
+                    "english": "explain/describe/measure something in |terms| of something",
+                    "translation": "〜の点から〜を説明する[述べる, 評価する]"
+                },
+                {
+                    "english": "the summer/fall/winter/spring |term|",
+                    "translation": "夏[秋, 冬, 春]の学期"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "span",
+                    "description": "「term」と「span」は共に「期間」という意味を持つが、前者は特定の条件や状況に基づく期間を指し、後者は時間の長さや広がりを強調するニュアンスがある。"
+                }
+            ],
+            "english_meaning": "A fixed period during which something occurs or is done, often used in the context of school or university schedules."
+        }
     },
     {
         "id": "7761",
@@ -4918,7 +5073,65 @@
         "importance": 3403,
         "example": "What's the |code| to open it?",
         "example_translation": "それを開くための暗証番号は何ですか？",
-        "sound": "code"
+        "sound": "code",
+        "json": {
+            "english": "code",
+            "pronunciation": "kóud",
+            "other_translations": [
+                {
+                    "translation": "コード",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "にコードをつける",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "をコード化する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The secret |code| was hidden in the message.",
+                    "translation": "その秘密の暗号はメッセージの中に隠されていた。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "coded",
+                    "part_of_speech": "adjective",
+                    "translation": "符号化された"
+                },
+                {
+                    "english": "coding",
+                    "part_of_speech": "noun",
+                    "translation": "コーディング"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a |code| of conduct/behavior",
+                    "translation": "行動規範"
+                },
+                {
+                    "english": "a |code| of ethics",
+                    "translation": "倫理規範"
+                },
+                {
+                    "english": "break/crack a |code|",
+                    "translation": "暗号を解く"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "cipher",
+                    "description": "「code」と「cipher」は共に「暗号」という意味を持つが、前者は特定のルールやシステムに基づいて情報を変換する方法を指し、後者は文字や記号を特定の方法で置き換える技術を指す。"
+                }
+            ],
+            "english_meaning": "A system of words, letters, or symbols used to keep information secret, so that only those who understand the system can read it. It can also refer to a set of rules or principles that guide behavior or a way to represent information."
+        }
     },
     {
         "id": "13030",
@@ -4929,7 +5142,49 @@
         "importance": 3405,
         "example": "The |region| has the largest population.",
         "example_translation": "その地域は人口が一番多い。",
-        "sound": "region"
+        "sound": "region",
+        "json": {
+            "english": "region",
+            "pronunciation": "ríːdʒən",
+            "other_translations": [
+                {
+                    "translation": "地方",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The |region| is known for its beautiful landscapes.",
+                    "translation": "その地域は美しい風景で知られています。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "regional",
+                    "part_of_speech": "adjective",
+                    "translation": "地域の"
+                },
+                {
+                    "english": "regionalism",
+                    "part_of_speech": "noun",
+                    "translation": "地域主義"
+                },
+                {
+                    "english": "regionally",
+                    "part_of_speech": "adverb",
+                    "translation": "地域的に"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "district",
+                    "description": "「region」と「district」は共に「地域」という意味を持つが、前者は広範囲で自然や文化的な特徴を持つエリアを指し、後者は行政や管理の目的で区分された特定のエリアを指す。"
+                }
+            ],
+            "english_meaning": "A large area that is part of a country or the world, often without clear boundaries."
+        }
     },
     {
         "id": "14969",
@@ -4940,7 +5195,41 @@
         "importance": 3406,
         "example": "You need to |update| your phone to use the app.",
         "example_translation": "そのアプリを使うためには携帯をアップデートしてください。",
-        "sound": "update"
+        "sound": "update",
+        "json": {
+            "english": "update",
+            "pronunciation": "(動) ʌ̀pdéit (名) ʌ́pdèit",
+            "other_translations": [
+                {
+                    "translation": "改訂する",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "を更新する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Can you |update| the software on your computer?",
+                    "translation": "あなたのコンピュータのソフトウェアをアップデートできますか？"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "give (somebody) an |update|",
+                    "translation": "(〈人〉に)最新情報を提供する"
+                },
+                {
+                    "english": "|update| somebody on something",
+                    "translation": "〈人〉に〈最新情報など〉について伝える"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To add the latest information to something or to make it more modern in appearance or function. It can also mean to inform someone about the most recent developments regarding a situation."
+        }
     },
     {
         "id": "8514",
@@ -4951,7 +5240,56 @@
         "importance": 3408,
         "example": "I |determine| my goals for the year.",
         "example_translation": "私は1年の目標を決める。",
-        "sound": "determine"
+        "sound": "determine",
+        "json": {
+            "english": "determine",
+            "pronunciation": "[US] ditə́ːrmin [UK] ditə́ːmin",
+            "other_translations": [
+                {
+                    "translation": "を決める",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "特定する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "determination",
+                    "part_of_speech": "noun",
+                    "translation": "決定, 決意"
+                },
+                {
+                    "english": "determined",
+                    "part_of_speech": "adjective",
+                    "translation": "決意した, 断固とした"
+                },
+                {
+                    "english": "predetermined",
+                    "part_of_speech": "adjective",
+                    "translation": "あらかじめ決められた"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|determine| how/what/who etc.",
+                    "translation": "どのように[何が, だれが]〜かを確定する"
+                },
+                {
+                    "english": "|determine| that",
+                    "translation": "〜ということを確定する"
+                },
+                {
+                    "english": "|determine| to do something",
+                    "translation": "〜することを決心する"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To find out the facts about something or to officially decide something. It can also mean to influence or decide the outcome of something else."
+        }
     },
     {
         "id": "6343",
@@ -4962,7 +5300,56 @@
         "importance": 3412,
         "example": "He had to |adapt| himself to new school.",
         "example_translation": "彼は新しい学校に適応しなければならなかった。",
-        "sound": "adapt"
+        "sound": "adapt",
+        "json": {
+            "english": "adapt",
+            "pronunciation": "ədǽpt",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The students had to |adapt| to the new teaching methods.",
+                    "translation": "生徒たちは新しい教授法に適応しなければならなかった。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "adaptability",
+                    "part_of_speech": "noun",
+                    "translation": "適応能力"
+                },
+                {
+                    "english": "adaptable",
+                    "part_of_speech": "adjective",
+                    "translation": "適応できる"
+                },
+                {
+                    "english": "adaptation",
+                    "part_of_speech": "noun",
+                    "translation": "適応, 適合"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|adapt| to something",
+                    "translation": "〈環境など〉に順応する"
+                },
+                {
+                    "english": "|adapt| yourself to something",
+                    "translation": "自分自身を〈環境など〉に順応させる"
+                },
+                {
+                    "english": "be |adapted| for somebody/something",
+                    "translation": "〜のために改造されている"
+                },
+                {
+                    "english": "be |adapted| to do something",
+                    "translation": "〜するために改造されている"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To change your behavior or ideas so you can succeed in a new situation, or to modify something so it can be used for a different purpose."
+        }
     },
     {
         "id": "10100",
@@ -4973,7 +5360,28 @@
         "importance": 3414,
         "example": "Her |handwriting| is easy to read.",
         "example_translation": "彼女の手書きの文字は読みやすい。",
-        "sound": "handwriting"
+        "sound": "handwriting",
+        "json": {
+            "english": "handwriting",
+            "pronunciation": "hǽndràitiŋ",
+            "other_translations": [
+                {
+                    "translation": "筆跡",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "in somebody's |handwriting|",
+                    "translation": "〈人〉の筆跡で"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The way a person writes by hand, showing their unique style and characteristics."
+        }
     },
     {
         "id": "15256",
@@ -4984,7 +5392,27 @@
         "importance": 3416,
         "example": "|Whether| to go to the drinking party is a personal choice.",
         "example_translation": "飲み会に行くかどうかは個人の自由だ。",
-        "sound": "whether"
+        "sound": "whether",
+        "json": {
+            "english": "whether",
+            "pronunciation": "hwéðər",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|whether| or not",
+                    "translation": "〜かどうか, 〜か否か"
+                },
+                {
+                    "english": "|whether| to do something",
+                    "translation": "〜するべきかどうか"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "used to introduce a choice or to express uncertainty about something; indicates that something may or may not happen."
+        }
     },
     {
         "id": "12145",
@@ -4995,7 +5423,33 @@
         "importance": 3420,
         "example": "Please take a |pamphlet| from me.",
         "example_translation": "パンフレットを受け取ってください。",
-        "sound": "pamphlet"
+        "sound": "pamphlet",
+        "json": {
+            "english": "pamphlet",
+            "pronunciation": "pǽmflət",
+            "other_translations": [
+                {
+                    "translation": "小冊子",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The school distributed a |pamphlet| about the upcoming events.",
+                    "translation": "学校は今後のイベントについてのパンフレットを配布した。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "brochure",
+                    "description": "「pamphlet」と「brochure」は共に「パンフレット」という意味を持つが、前者は一般的に情報提供を目的とした簡易的な冊子であり、後者はよりデザイン性が高く、商業的な目的で作成されることが多い。"
+                }
+            ],
+            "english_meaning": "A small book with paper covers that provides information about a specific topic or subject."
+        }
     },
     {
         "id": "11420",
@@ -5006,7 +5460,46 @@
         "importance": 3424,
         "example": "Studying hard is the only |means| to success.",
         "example_translation": "一生懸命勉強することが成功の唯一の手段です。",
-        "sound": "means"
+        "sound": "means",
+        "json": {
+            "english": "means",
+            "pronunciation": "míːnz",
+            "other_translations": [
+                {
+                    "translation": "方法",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Traveling by train is a popular |means| of getting around in Japan.",
+                    "translation": "日本では、電車で移動することが一般的な手段です。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a |means| of doing something",
+                    "translation": "〜する手段"
+                },
+                {
+                    "english": "|means| of communication",
+                    "translation": "コミュニケーション[(情報)伝達, 通信]手段"
+                },
+                {
+                    "english": "|means| of transportation/transport",
+                    "translation": "交通手段"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "medium",
+                    "description": "「means」と「medium」は共に「手段」という意味を持つが、前者は目的を達成するための方法や手段を指し、後者は情報や表現を伝えるための媒介や手段を指す。"
+                }
+            ],
+            "english_meaning": "A method or way to accomplish something; the resources or money that a person or organization has to use."
+        }
     },
     {
         "id": "12206",
@@ -5017,7 +5510,23 @@
         "importance": 3425,
         "example": "What is the |password| for Wi-Fi?",
         "example_translation": "Wi-Fiのパスワードは何ですか？",
-        "sound": "password"
+        "sound": "password",
+        "json": {
+            "english": "password",
+            "pronunciation": "[US] pǽswəː`rd [UK] pɑ́ːswəː`rd",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "Keep your |password| safe and do not share it with others.",
+                    "translation": "パスワードは安全に保管し、他の人と共有しないでください。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A secret combination of letters or numbers that you need to enter into a computer or system to gain access."
+        }
     },
     {
         "id": "12463",
@@ -5028,7 +5537,45 @@
         "importance": 3426,
         "example": "This plant is |poisonous|, so avoid touching it.",
         "example_translation": "この植物は有毒なので、触らないように。",
-        "sound": "poisonous"
+        "sound": "poisonous",
+        "json": {
+            "english": "poisonous",
+            "pronunciation": "pɔ́izənəs",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "poisonously",
+                    "part_of_speech": "adverb",
+                    "translation": "毒性を持って"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "beneficial",
+                    "part_of_speech": "adjective",
+                    "translation": "有益な, 利益をもたらす"
+                },
+                {
+                    "english": "harmless",
+                    "part_of_speech": "adjective",
+                    "translation": "無害な, 害を及ぼさない"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "highly |poisonous|",
+                    "translation": "猛毒の"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "toxic",
+                    "description": "「poisonous」と「toxic」は共に「有毒な」という意味を持つが、前者は主に生物が持つ毒性を指し、後者は化学物質や環境における有害性を強調する。"
+                }
+            ],
+            "english_meaning": "Having the ability to cause harm or illness due to the presence of poison; harmful or dangerous to health."
+        }
     },
     {
         "id": "7710",
@@ -5039,7 +5586,45 @@
         "importance": 3432,
         "example": "|Click| the button to search.",
         "example_translation": "ボタンをクリックして検索する。",
-        "sound": "click"
+        "sound": "click",
+        "json": {
+            "english": "click",
+            "pronunciation": "klík",
+            "other_translations": [
+                {
+                    "translation": "クリック(すること)",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "カチッ[カチャッ]と鳴る",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "|Click| on the link to download the file.",
+                    "translation": "そのリンクをクリックしてファイルをダウンロードしてください。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|click| on something",
+                    "translation": "〜をクリックする"
+                },
+                {
+                    "english": "it/everything |clicked| (into place)",
+                    "translation": "突然わかった, ぴんときた"
+                },
+                {
+                    "english": "right-|click|/left-|click| (on something)",
+                    "translation": "(〜を)右[左]クリックする"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To press a button on a computer mouse to select something on the screen that you want the computer to do."
+        }
     },
     {
         "id": "10987",
@@ -5050,7 +5635,36 @@
         "importance": 3434,
         "example": "Please read the |label| before using.",
         "example_translation": "使用前にラベルをお読みください。",
-        "sound": "label"
+        "sound": "label",
+        "json": {
+            "english": "label",
+            "pronunciation": "léibl",
+            "other_translations": [
+                {
+                    "translation": "表示をつける",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a designer |label|",
+                    "translation": "デザイナーズブランド"
+                },
+                {
+                    "english": "bear/carry a |label|",
+                    "translation": "ラベルが付いている"
+                },
+                {
+                    "english": "|label| somebody/something (as) something",
+                    "translation": "〜に〜とレッテルをはる"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A piece of paper or material that is attached to an object to provide information about it, or a word or phrase used to describe someone or something, often in a way that is not fair or accurate."
+        }
     },
     {
         "id": "12684",
@@ -5061,7 +5675,28 @@
         "importance": 3435,
         "example": "The |programmer| wrote a new code.",
         "example_translation": "プログラマーは新しいコードを書いた。",
-        "sound": "programmer"
+        "sound": "programmer",
+        "json": {
+            "english": "programmer",
+            "pronunciation": "próugræ̀mər",
+            "other_translations": [
+                {
+                    "translation": "プログラム作成者",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "A skilled |programmer| can solve complex problems.",
+                    "translation": "熟練したプログラマーは複雑な問題を解決できる。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A person whose job is to create and write instructions for computers to follow in order to perform specific tasks."
+        }
     },
     {
         "id": "13203",
@@ -5072,7 +5707,74 @@
         "importance": 3436,
         "example": "Please |respond| to the teacher's question.",
         "example_translation": "先生の質問に答えてください。",
-        "sound": "respond"
+        "sound": "respond",
+        "json": {
+            "english": "respond",
+            "pronunciation": "[US] rispɑ́nd [UK] rispɔ́nd",
+            "other_translations": [
+                {
+                    "translation": "反応する",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "応答する",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "〜と応答する",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "返答する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "I waited for her to |respond| to my invitation.",
+                    "translation": "私は彼女が私の招待に答えるのを待った。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "respondent",
+                    "part_of_speech": "noun",
+                    "translation": "回答者"
+                },
+                {
+                    "english": "response",
+                    "part_of_speech": "noun",
+                    "translation": "返答, 応答"
+                },
+                {
+                    "english": "responsive",
+                    "part_of_speech": "adjective",
+                    "translation": "反応する, 応答性のある"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|respond| by doing something",
+                    "translation": "〜して対応する"
+                },
+                {
+                    "english": "|respond| to something",
+                    "translation": "〜に対応[反応]する"
+                },
+                {
+                    "english": "|respond| with something",
+                    "translation": "〜で応じる, こたえる"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "answer",
+                    "description": "「respond」と「answer」は共に「答える」という意味を持つが、前者は質問や要求に対して反応することを強調し、後者は具体的な質問に対して直接的に返事をすることを指す。"
+                }
+            ],
+            "english_meaning": "To say or write something in reply to what someone has said or done; to take action as a reaction to an event or situation; to improve because of a specific treatment."
+        }
     },
     {
         "id": "6934",
@@ -5083,7 +5785,28 @@
         "importance": 3437,
         "example": "I learn about |banking| at school.",
         "example_translation": "学校では銀行業について学ぶ。",
-        "sound": "banking"
+        "sound": "banking",
+        "json": {
+            "english": "banking",
+            "pronunciation": "bǽŋkiŋ",
+            "other_translations": [
+                {
+                    "translation": "銀行業務",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Online |banking| has made it easier for people to manage their money.",
+                    "translation": "オンラインバンキングは、人々が自分のお金を管理するのを簡単にしました。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The activity of managing money, including services like saving, lending, and exchanging money, provided by banks and similar organizations."
+        }
     },
     {
         "id": "11001",
@@ -5094,7 +5817,27 @@
         "importance": 3439,
         "example": "I switched on a table |lamp|.",
         "example_translation": "私は卓上ランプのスイッチを入れた。",
-        "sound": "lamp"
+        "sound": "lamp",
+        "json": {
+            "english": "lamp",
+            "pronunciation": "lǽmp",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a desk/table/bedside |lamp|",
+                    "translation": "机上[卓上, まくら元の]スタンド"
+                },
+                {
+                    "english": "an electric/a gas/an oil |lamp|",
+                    "translation": "電灯[ガス灯, 石油ランプ]"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A device that gives off light by using electricity, oil, or gas."
+        }
     },
     {
         "id": "12284",
@@ -5105,7 +5848,54 @@
         "importance": 3440,
         "example": "Japan was poor during the war |period|.",
         "example_translation": "日本は戦争の間まずしかった。",
-        "sound": "period"
+        "sound": "period",
+        "json": {
+            "english": "period",
+            "pronunciation": "píəriəd",
+            "other_translations": [
+                {
+                    "translation": "時代",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "ある時代(特有)の",
+                    "part_of_speech": "adjective"
+                },
+                {
+                    "translation": "時代物の",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The project will take a long |period| to complete.",
+                    "translation": "そのプロジェクトは完成までに長い期間がかかるだろう。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a |period| in somebody's life/development",
+                    "translation": "〈人〉の人生[成長]における時期"
+                },
+                {
+                    "english": "a |period| of time",
+                    "translation": "期間"
+                },
+                {
+                    "english": "a trial |period|",
+                    "translation": "試用期間"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "term",
+                    "description": "「period」と「term」は共に「期間」という意味を持つが、前者は特定の時間の長さや段階を指し、後者は特定の目的や状況に関連した期間を指すことが多い。"
+                }
+            ],
+            "english_meaning": "A specific length of time that has a start and an end, often used to describe a stage in someone's life or a historical time."
+        }
     },
     {
         "id": "13646",
@@ -5116,7 +5906,28 @@
         "importance": 3446,
         "example": "The |shark| swam in the ocean.",
         "example_translation": "サメは海で泳いでいた。",
-        "sound": "shark"
+        "sound": "shark",
+        "json": {
+            "english": "shark",
+            "pronunciation": "[US] ʃɑ́rk [UK] ʃɑ́ːk",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "A |shark| can be very dangerous to swimmers.",
+                    "translation": "サメは泳いでいる人たちにとって非常に危険なことがあります。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a card/pool |shark|",
+                    "translation": "トランプ[玉突き]のいかさま師"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A big fish that lives in the ocean, has many sharp teeth, and is often seen as dangerous to people."
+        }
     },
     {
         "id": "8845",
@@ -5127,7 +5938,52 @@
         "importance": 3449,
         "example": "The assignment is |due| tomorrow.",
         "example_translation": "課題の提出期限は明日だ。",
-        "sound": "due"
+        "sound": "due",
+        "json": {
+            "english": "due",
+            "pronunciation": "[US] dúː [UK] djúː",
+            "other_translations": [
+                {
+                    "translation": "当然の",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "duly",
+                    "part_of_speech": "adverb",
+                    "translation": "適切に"
+                },
+                {
+                    "english": "undue",
+                    "part_of_speech": "adjective",
+                    "translation": "過度の"
+                },
+                {
+                    "english": "unduly",
+                    "part_of_speech": "adverb",
+                    "translation": "過度に"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "be |due| for something",
+                    "translation": "そろそろ〜を得てもいいころである"
+                },
+                {
+                    "english": "be |due| to do something",
+                    "translation": "〜する予定である"
+                },
+                {
+                    "english": "fall |due|",
+                    "translation": "期限になる"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "expected to happen or arrive at a certain time; something that must be paid or done at a specific time; proper and suitable according to rules or laws."
+        }
     },
     {
         "id": "11422",
@@ -5138,7 +5994,23 @@
         "importance": 3455,
         "example": "My baby is sleeping; |meanwhile|, I can work on my task.",
         "example_translation": "子供が寝ている。その間に仕事に取りかかれる。",
-        "sound": "meanwhile"
+        "sound": "meanwhile",
+        "json": {
+            "english": "meanwhile",
+            "pronunciation": "míːnhwàil",
+            "other_translations": [
+                {
+                    "translation": "一方(では)",
+                    "part_of_speech": "adverb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "During the time when something else is happening or in the time between two events. It can also be used to compare two different things that occur at the same time."
+        }
     },
     {
         "id": "15040",
@@ -5149,7 +6021,23 @@
         "importance": 3456,
         "example": "I am a |vegetarian| and do not eat animals.",
         "example_translation": "私はベジタリアンなので動物は食べない。",
-        "sound": "vegetarian"
+        "sound": "vegetarian",
+        "json": {
+            "english": "vegetarian",
+            "pronunciation": "vèdʒətέəriən",
+            "other_translations": [
+                {
+                    "translation": "菜食主義者",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A person who does not eat meat or fish."
+        }
     },
     {
         "id": "13018",
@@ -5160,7 +6048,23 @@
         "importance": 3459,
         "example": "The store |refunded| my purchase.",
         "example_translation": "店は買ったものを払い戻してくれた。",
-        "sound": "refund_2"
+        "sound": "refund_2",
+        "json": {
+            "english": "refund",
+            "pronunciation": "(動) rifʌ́nd (名) ríːfʌ̀nd",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The company will |refund| your ticket price.",
+                    "translation": "その会社はチケット代を払い戻します。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To give back money to someone when they are unhappy with what they bought or received."
+        }
     },
     {
         "id": "12601",
@@ -5171,7 +6075,60 @@
         "importance": 3463,
         "example": "The |pressure| of the water increased.",
         "example_translation": "水の圧力が高まった。",
-        "sound": "pressure"
+        "sound": "pressure",
+        "json": {
+            "english": "pressure",
+            "pronunciation": "préʃər",
+            "other_translations": [
+                {
+                    "translation": "プレッシャー",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "プレッシャーをかける",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "圧迫",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "pressing",
+                    "part_of_speech": "adjective",
+                    "translation": "切迫した"
+                },
+                {
+                    "english": "pressured",
+                    "part_of_speech": "adjective",
+                    "translation": "圧力を受けた"
+                },
+                {
+                    "english": "pressurize",
+                    "part_of_speech": "verb",
+                    "translation": "圧力をかける"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "give in to |pressure|",
+                    "translation": "圧力に屈する"
+                },
+                {
+                    "english": "put |pressure| on somebody (to do something)",
+                    "translation": "(〜するように)〈人〉に圧力をかける"
+                },
+                {
+                    "english": "under |pressure| to do something",
+                    "translation": "〜するように圧力をかけられて"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A physical force that is applied to an object or surface, often causing it to change shape or position. It can also refer to the influence or stress that makes someone feel anxious or pressured to act in a certain way."
+        }
     },
     {
         "id": "13032",
@@ -5182,7 +6139,39 @@
         "importance": 3464,
         "example": "Please |register| your personal information.",
         "example_translation": "個人情報の登録をお願いします。",
-        "sound": "register"
+        "sound": "register",
+        "json": {
+            "english": "register",
+            "pronunciation": "rédʒistər",
+            "other_translations": [
+                {
+                    "translation": "記録する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "You need to |register| for the event by next week.",
+                    "translation": "来週までにそのイベントに登録する必要があります。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "registration",
+                    "part_of_speech": "noun",
+                    "translation": "登録"
+                },
+                {
+                    "english": "registry",
+                    "part_of_speech": "noun",
+                    "translation": "登録簿"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To add someone's name or information to an official list, or to officially express an opinion or feeling so that others are aware of it."
+        }
     },
     {
         "id": "14346",
@@ -5193,7 +6182,32 @@
         "importance": 3465,
         "example": "She needed |surgery| for cancer.",
         "example_translation": "彼女はがんの手術が必要だった。",
-        "sound": "surgery"
+        "sound": "surgery",
+        "json": {
+            "english": "surgery",
+            "pronunciation": "[US] sə́ːrdʒəri [UK] sə́ːdʒəri",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The patient had to have |surgery| on his shoulder.",
+                    "translation": "患者は肩の手術を受けなければならなかった。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "have/undergo |surgery|",
+                    "translation": "手術を受ける"
+                },
+                {
+                    "english": "major |surgery|",
+                    "translation": "大手術"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A medical procedure where a doctor cuts open the body to fix or take out something inside. It can also refer to the location in a hospital where these operations happen."
+        }
     },
     {
         "id": "12771",
@@ -5204,7 +6218,34 @@
         "importance": 3469,
         "example": "The |publisher| printed the new books.",
         "example_translation": "出版社は新刊本を印刷した。",
-        "sound": "publisher"
+        "sound": "publisher",
+        "json": {
+            "english": "publisher",
+            "pronunciation": "pʌ́bliʃər",
+            "other_translations": [
+                {
+                    "translation": "出版社[業者]",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "publishing",
+                    "part_of_speech": "noun",
+                    "translation": "出版"
+                },
+                {
+                    "english": "unpublished",
+                    "part_of_speech": "adjective",
+                    "translation": "未発表の"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A person or company that organizes the creation, production, and selling of books, newspapers, and other printed materials."
+        }
     },
     {
         "id": "6558",
@@ -5215,7 +6256,34 @@
         "importance": 3472,
         "example": "Please |analyze| the data carefully.",
         "example_translation": "データを細かく分析してください。",
-        "sound": "analyze"
+        "sound": "analyze",
+        "json": {
+            "english": "analyze",
+            "pronunciation": "ǽnəlàiz",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "analysis",
+                    "part_of_speech": "noun",
+                    "translation": "分析"
+                },
+                {
+                    "english": "analyst",
+                    "part_of_speech": "noun",
+                    "translation": "分析者"
+                },
+                {
+                    "english": "analytical",
+                    "part_of_speech": "adjective",
+                    "translation": "分析的な"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To carefully examine or think about something in order to understand its nature or to break it down into parts for better understanding and decision-making."
+        }
     },
     {
         "id": "7925",
@@ -5226,7 +6294,58 @@
         "importance": 3473,
         "example": "What is the |conclusion| of the story?",
         "example_translation": "その話の結論は何ですか？",
-        "sound": "conclusion"
+        "sound": "conclusion",
+        "json": {
+            "english": "conclusion",
+            "pronunciation": "kənklúːʒən",
+            "other_translations": [
+                {
+                    "translation": "結末",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "conclusive",
+                    "part_of_speech": "adjective",
+                    "translation": "決定的な"
+                },
+                {
+                    "english": "conclusively",
+                    "part_of_speech": "adverb",
+                    "translation": "決定的に"
+                },
+                {
+                    "english": "inconclusive",
+                    "part_of_speech": "adjective",
+                    "translation": "決定的でない"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "beginning",
+                    "part_of_speech": "noun",
+                    "translation": "初め"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "a logical |conclusion|",
+                    "translation": "理にかなった結論"
+                },
+                {
+                    "english": "come to the |conclusion| that",
+                    "translation": "〜という結論に達する"
+                },
+                {
+                    "english": "reach/draw a |conclusion|",
+                    "translation": "結論を出す"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A decision made after thinking about all the information available; the final part of something."
+        }
     },
     {
         "id": "10232",
@@ -5237,7 +6356,24 @@
         "importance": 3475,
         "example": "This is a |high-quality| diamond.",
         "example_translation": "これは高品質のダイヤだ。",
-        "sound": "high-quality"
+        "sound": "high-quality",
+        "json": {
+            "english": "high-quality",
+            "pronunciation": "hai kwɔ́liti",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "poor quality",
+                    "part_of_speech": "adjective",
+                    "translation": "低品質の"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Having excellent standards or characteristics; made with great care and skill, resulting in superior performance or durability."
+        }
     },
     {
         "id": "14327",
@@ -5248,7 +6384,56 @@
         "importance": 3476,
         "example": "I take a |supplement| every morning.",
         "example_translation": "毎朝サプリメントを飲んでいる。",
-        "sound": "supplement"
+        "sound": "supplement",
+        "json": {
+            "english": "supplement",
+            "pronunciation": "(動) sʌ́pləmènt (名) sʌ́pləmənt",
+            "other_translations": [
+                {
+                    "translation": "補充(するもの)",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "補足",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "追加料金",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "He uses a protein |supplement| to help build muscle.",
+                    "translation": "彼は筋肉をつけるためにプロテインサプリメントを使っている。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "supplementary",
+                    "part_of_speech": "adjective",
+                    "translation": "補足的な"
+                },
+                {
+                    "english": "supplementation",
+                    "part_of_speech": "noun",
+                    "translation": "補足"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|supplement| somebody's income/salary/pension",
+                    "translation": "〈人〉の収入[給与, 年金]を補う"
+                },
+                {
+                    "english": "|supplement| something with something",
+                    "translation": "〜を〜で補う"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Something added to improve or complete something else; an extra part found at the end of a book or in a magazine; an additional amount of money added to the cost of a service."
+        }
     },
     {
         "id": "7799",
@@ -5259,7 +6444,31 @@
         "importance": 3478,
         "example": "What is the best |combination|?",
         "example_translation": "ベストな組み合わせは何ですか？",
-        "sound": "combination"
+        "sound": "combination",
+        "json": {
+            "english": "combination",
+            "pronunciation": "[US] kɑ̀mbənéiʃən [UK] kɔ̀mbinéiʃən",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a |combination| of factors",
+                    "translation": "さまざまな要因の組み合わせ"
+                },
+                {
+                    "english": "a |combination| of something and something",
+                    "translation": "〜と〜の組み合わせ"
+                },
+                {
+                    "english": "in |combination| (with something)",
+                    "translation": "(〜と)組み合わせて"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Two or more different things that are put together or used together."
+        }
     },
     {
         "id": "8923",
@@ -5270,7 +6479,53 @@
         "importance": 3479,
         "example": "The new machine is very |efficient|.",
         "example_translation": "新しいマシンはとても効率的だ。",
-        "sound": "efficient"
+        "sound": "efficient",
+        "json": {
+            "english": "efficient",
+            "pronunciation": "ifíʃənt",
+            "other_translations": [
+                {
+                    "translation": "効率的な",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "efficiently",
+                    "part_of_speech": "adverb",
+                    "translation": "効率的に"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "ineffective",
+                    "part_of_speech": "adjective",
+                    "translation": "効果がない"
+                },
+                {
+                    "english": "inefficient",
+                    "part_of_speech": "adjective",
+                    "translation": "能率が悪い"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "an |efficient| system",
+                    "translation": "効率的なシステム"
+                },
+                {
+                    "english": "an |efficient| way/method",
+                    "translation": "効率的な手段"
+                },
+                {
+                    "english": "highly |efficient|",
+                    "translation": "非常に効率的[有能]な"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Works well and effectively without wasting time, money, or energy; achieves results quickly and with minimal resources."
+        }
     },
     {
         "id": "7321",
@@ -5281,7 +6536,23 @@
         "importance": 3483,
         "example": "The |bubble| popped when she touched it.",
         "example_translation": "彼女が泡に触れると、泡は弾けた。",
-        "sound": "bubble"
+        "sound": "bubble",
+        "json": {
+            "english": "bubble",
+            "pronunciation": "bʌ́bl",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The children watched the |bubbles| float in the air.",
+                    "translation": "子供たちは泡が空中に浮かぶのを見ていた。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A round pocket of air in a liquid or a solid, often seen in drinks or soap. It can also refer to a situation where prices rise quickly and become too high, leading to a sudden drop."
+        }
     },
     {
         "id": "9090",
@@ -5292,7 +6563,39 @@
         "importance": 3484,
         "example": "I |entirely| finished my homework.",
         "example_translation": "私は宿題を完全に終えた。",
-        "sound": "entirely"
+        "sound": "entirely",
+        "json": {
+            "english": "entirely",
+            "pronunciation": "entáiərli",
+            "other_translations": [
+                {
+                    "translation": "すっかり",
+                    "part_of_speech": "adverb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "She was |entirely| satisfied with the results.",
+                    "translation": "彼女は結果に完全に満足していた。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "partially",
+                    "part_of_speech": "adverb",
+                    "translation": "部分的に"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "completely",
+                    "description": "「entirely」と「completely」は共に「完全に」という意味を持つが、前者は「全体として」や「まったく」というニュアンスが強く、後者は「欠けることなく」や「全ての部分が揃っている」というニュアンスが強い。"
+                }
+            ],
+            "english_meaning": "In every way possible and without anything left out."
+        }
     },
     {
         "id": "7625",
@@ -5303,7 +6606,18 @@
         "importance": 3487,
         "example": "I love helping with |childcare|.",
         "example_translation": "育児のお手伝いが大好きです。",
-        "sound": "childcare"
+        "sound": "childcare",
+        "json": {
+            "english": "childcare",
+            "pronunciation": "tʃáildkὲər",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A service where a trained person takes care of children while their parents are busy, such as at work."
+        }
     },
     {
         "id": "9260",
@@ -5314,7 +6628,61 @@
         "importance": 3488,
         "example": "My |expectation| is that I win today.",
         "example_translation": "私の思惑では今日は勝つよ。",
-        "sound": "expectation"
+        "sound": "expectation",
+        "json": {
+            "english": "expectation",
+            "pronunciation": "èkspektéiʃən",
+            "other_translations": [
+                {
+                    "translation": "期待",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "expectancy",
+                    "part_of_speech": "noun",
+                    "translation": "期待, 予期"
+                },
+                {
+                    "english": "expectant",
+                    "part_of_speech": "adjective",
+                    "translation": "期待している"
+                },
+                {
+                    "english": "unexpected",
+                    "part_of_speech": "adjective",
+                    "translation": "予期しない"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "above/beyond (somebody's) |expectations|",
+                    "translation": "(〈人〉の)予想以上に"
+                },
+                {
+                    "english": "fall short of (somebody's) |expectations|",
+                    "translation": "(〈人〉の)期待はずれになる"
+                },
+                {
+                    "english": "high |expectations|",
+                    "translation": "大きな期待"
+                },
+                {
+                    "english": "meet (somebody's) |expectations|",
+                    "translation": "(〈人〉の)期待に添う"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "forecast",
+                    "description": "「expectation」と「forecast」は共に「予想」という意味を持つが、前者は主に個人の期待や希望に基づく予想を指し、後者はデータや分析に基づいた客観的な予測を指す。"
+                }
+            ],
+            "english_meaning": "A belief or thought about what will happen in the future, often based on what you want or hope to occur."
+        }
     },
     {
         "id": "10180",
@@ -5325,7 +6693,39 @@
         "importance": 3489,
         "example": "She eats |healthily| every day.",
         "example_translation": "彼女は毎日健康的な食事をしている。",
-        "sound": "healthily"
+        "sound": "healthily",
+        "json": {
+            "english": "healthily",
+            "pronunciation": "hélθili",
+            "other_translations": [
+                {
+                    "translation": "健全に",
+                    "part_of_speech": "adverb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "health",
+                    "part_of_speech": "noun",
+                    "translation": "健康"
+                },
+                {
+                    "english": "healthy",
+                    "part_of_speech": "adjective",
+                    "translation": "健康的な"
+                },
+                {
+                    "english": "unhealthy",
+                    "part_of_speech": "adjective",
+                    "translation": "不健康な"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "In a way that promotes good health or well-being; in a manner that is beneficial to physical or mental condition."
+        }
     },
     {
         "id": "11462",
@@ -5336,7 +6736,56 @@
         "importance": 3490,
         "example": "His |mental| health has been improving.",
         "example_translation": "彼の精神状態は良くなってきている。",
-        "sound": "mental"
+        "sound": "mental",
+        "json": {
+            "english": "mental",
+            "pronunciation": "méntəl",
+            "other_translations": [
+                {
+                    "translation": "精神的な",
+                    "part_of_speech": "adjective"
+                },
+                {
+                    "translation": "頭のおかしい",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "mentality",
+                    "part_of_speech": "noun",
+                    "translation": "精神性, 考え方"
+                },
+                {
+                    "english": "mentally",
+                    "part_of_speech": "adverb",
+                    "translation": "精神的に, 心の中で"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|mental| health",
+                    "translation": "精神的健康"
+                },
+                {
+                    "english": "|mental| illness/disorder",
+                    "translation": "精神障害"
+                },
+                {
+                    "english": "somebody's |mental| state",
+                    "translation": "〈人〉の精神状態"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "psychic",
+                    "description": "「mental」と「psychic」は共に「精神の」という意味を持つが、前者は主に思考や知能に関連する事柄を指し、後者は超自然的な能力や心の状態に関連する事柄を指す。"
+                }
+            ],
+            "english_meaning": "Connected to the condition or well-being of a person's mind; involving thoughts and feelings, or occurring only in the mind."
+        }
     },
     {
         "id": "8227",
@@ -5347,7 +6796,57 @@
         "importance": 3492,
         "example": "This museum has many |cultural| artifacts.",
         "example_translation": "この博物館には多くの文化遺産がある。",
-        "sound": "cultural"
+        "sound": "cultural",
+        "json": {
+            "english": "cultural",
+            "pronunciation": "kʌ́ltʃərəl",
+            "other_translations": [
+                {
+                    "translation": "文化的な",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The festival showcases many |cultural| performances.",
+                    "translation": "その祭りは多くの文化的なパフォーマンスを披露します。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "culturally",
+                    "part_of_speech": "adverb",
+                    "translation": "文化的に"
+                },
+                {
+                    "english": "culture",
+                    "part_of_speech": "noun",
+                    "translation": "文化"
+                },
+                {
+                    "english": "cultured",
+                    "part_of_speech": "adjective",
+                    "translation": "教養のある"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|cultural| background",
+                    "translation": "文化的背景"
+                },
+                {
+                    "english": "|cultural| diversity",
+                    "translation": "文化の多様性"
+                },
+                {
+                    "english": "|cultural| heritage",
+                    "translation": "文化遺産"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Connected to the customs, beliefs, and practices of a specific society, as well as to the fields of art, literature, and music."
+        }
     },
     {
         "id": "9266",
@@ -5358,7 +6857,72 @@
         "importance": 3493,
         "example": "Our monthly |expenses| are increasing rapidly.",
         "example_translation": "毎月の出費はどんどん増えている。",
-        "sound": "expense"
+        "sound": "expense",
+        "json": {
+            "english": "expense",
+            "pronunciation": "ikspéns | ekspéns",
+            "other_translations": [
+                {
+                    "translation": "出費",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "(所要)経費",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "He had to save money to cover his living |expenses|.",
+                    "translation": "彼は生活費をまかなうためにお金を貯めなければならなかった。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "expenditure",
+                    "part_of_speech": "noun",
+                    "translation": "支出"
+                },
+                {
+                    "english": "expensive",
+                    "part_of_speech": "adjective",
+                    "translation": "高価な"
+                },
+                {
+                    "english": "inexpensive",
+                    "part_of_speech": "adjective",
+                    "translation": "安価な"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "income",
+                    "part_of_speech": "noun",
+                    "translation": "収入"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "a business |expense|",
+                    "translation": "事業活動費"
+                },
+                {
+                    "english": "legal |expenses|",
+                    "translation": "弁護士[訴訟]費用"
+                },
+                {
+                    "english": "living/medical |expenses|",
+                    "translation": "生活[医療]費"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "expenditure",
+                    "description": "「expense」と「expenditure」は共に「費用」という意味を持つが、前者は日常的な支出や個人の費用を指すことが多く、後者はより公式な文脈での総支出や予算に関連する費用を指すことが多い。"
+                }
+            ],
+            "english_meaning": "A sum of money that is used to pay for something, including costs that a business or organization must cover, or money spent by an employee for work-related purposes, which can be reimbursed by their employer."
+        }
     },
     {
         "id": "10429",
@@ -5369,7 +6933,46 @@
         "importance": 3494,
         "example": "The earthquake had a big |impact|.",
         "example_translation": "震災の影響は大きかった。",
-        "sound": "impact"
+        "sound": "impact",
+        "json": {
+            "english": "impact",
+            "pronunciation": "(動) impǽkt (名) ímpækt",
+            "other_translations": [
+                {
+                    "translation": "衝撃",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The |impact| of social media on young people is significant.",
+                    "translation": "ソーシャルメディアが若者に与える影響は大きい。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a major/significant/profound |impact|",
+                    "translation": "大きな[重大な, 深刻な]影響"
+                },
+                {
+                    "english": "have an |impact| on somebody/something",
+                    "translation": "〜に影響を及ぼす"
+                },
+                {
+                    "english": "the |impact| of something (on somebody/something)",
+                    "translation": "(〜に及ぼす)〜の影響"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "effect",
+                    "description": "「impact」と「effect」は共に「影響」という意味を持つが、前者は主に強い衝撃や直接的な影響を指し、後者は結果や効果としての影響を示す。"
+                }
+            ],
+            "english_meaning": "A strong effect or influence that an event or situation has on someone or something, or the force created when one object hits another."
+        }
     },
     {
         "id": "6366",
@@ -5380,7 +6983,52 @@
         "importance": 3497,
         "example": "Please |adjust| the volume on the TV.",
         "example_translation": "テレビの音量を調節してください。",
-        "sound": "adjust"
+        "sound": "adjust",
+        "json": {
+            "english": "adjust",
+            "pronunciation": "ədʒʌ́st",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "She needed to |adjust| her schedule to fit in more study time.",
+                    "translation": "彼女はもっと勉強する時間を確保するためにスケジュールを調整する必要があった。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "adjustable",
+                    "part_of_speech": "adjective",
+                    "translation": "調整可能な"
+                },
+                {
+                    "english": "adjustment",
+                    "part_of_speech": "noun",
+                    "translation": "調整, 修正"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|adjust| to doing something",
+                    "translation": "〜することに慣れる"
+                },
+                {
+                    "english": "|adjust| to something",
+                    "translation": "〜に慣れる"
+                },
+                {
+                    "english": "|adjust| yourself to something",
+                    "translation": "〈環境など〉に順応する"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "coordinate",
+                    "description": "「adjust」と「coordinate」は共に「〜を調整する」という意味を持つが、前者は個々の要素や状況に対して微調整を行うことを指し、後者は複数の要素や人々の間での調和や整合性を図ることを指す。"
+                }
+            ],
+            "english_meaning": "To change or move something a little to make it better or more suitable for a specific purpose; to become familiar with a new situation over time."
+        }
     },
     {
         "id": "11365",
@@ -5391,7 +7039,18 @@
         "importance": 3499,
         "example": "The |manufacturer| produces electric parts for cars.",
         "example_translation": "その製造業者は車の電気部品を生産しています。",
-        "sound": "manufacturer"
+        "sound": "manufacturer",
+        "json": {
+            "english": "manufacturer",
+            "pronunciation": "[US] mæ̀njəfǽktʃərər [UK] mæ̀njufǽktʃərə",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A company that produces a lot of products."
+        }
     },
     {
         "id": "13180",
@@ -5402,7 +7061,23 @@
         "importance": 3501,
         "example": "Please |reset| the password for me.",
         "example_translation": "パスワードを再設定してください。",
-        "sound": "reset"
+        "sound": "reset",
+        "json": {
+            "english": "reset",
+            "pronunciation": "(動) rìːsét (名) ríːsèt",
+            "other_translations": [
+                {
+                    "translation": "をリセットする",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To change a device or system so that it is ready to be used again or shows a new setting, or to fix something that is broken by returning it to its correct position."
+        }
     },
     {
         "id": "6769",
@@ -5413,7 +7088,31 @@
         "importance": 3507,
         "example": "We |associate| cherry blossom with spring.",
         "example_translation": "私たちは桜と春を結びつける。",
-        "sound": "associate_2"
+        "sound": "associate_2",
+        "json": {
+            "english": "associate",
+            "pronunciation": "(名・形) əsóuʃiət (動) əsóuʃièit",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|associate| somebody/something with something",
+                    "translation": "〜と〜を結びつける[関連づける], 〜で〜を連想する"
+                },
+                {
+                    "english": "|associate| with somebody",
+                    "translation": "〈人〉と交際する, つきあう"
+                },
+                {
+                    "english": "|associated| with something",
+                    "translation": "〜と関係している"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To connect one thing or person in your mind with another, often by recognizing a relationship or similarity between them."
+        }
     },
     {
         "id": "13320",
@@ -5424,7 +7123,50 @@
         "importance": 3511,
         "example": "He tried to |rob| the bank.",
         "example_translation": "彼は銀行から金を奪おうとした。",
-        "sound": "rob"
+        "sound": "rob",
+        "json": {
+            "english": "rob",
+            "pronunciation": "[US] rɑ́b [UK] rɔ́b",
+            "other_translations": [
+                {
+                    "translation": "から(金を)奪う",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "を盗む",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The man attempted to |rob| a jewelry store.",
+                    "translation": "その男は宝石店を襲おうとした。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "be |robbed| at gunpoint/knifepoint",
+                    "translation": "銃[ナイフ]を突きつけられて奪われる"
+                },
+                {
+                    "english": "|rob| somebody of somebody/something",
+                    "translation": "〈人〉から〈人・機会など〉を失わせる, 奪う"
+                },
+                {
+                    "english": "|rob| somebody of something",
+                    "translation": "〈人〉から〜を奪う"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "deprive",
+                    "description": "「rob」と「deprive」は共に「〜から奪う」という意味を持つが、前者は通常、暴力や脅迫を伴って物理的に奪うことを指し、後者は権利や必要なものを取り上げることを意味し、必ずしも暴力的な行為を伴わない。"
+                }
+            ],
+            "english_meaning": "To take money or property away from someone, such as a person or a bank, without their permission."
+        }
     },
     {
         "id": "7274",
@@ -5435,7 +7177,57 @@
         "importance": 3512,
         "example": "She took a deep |breath| and relaxed.",
         "example_translation": "彼女は深呼吸をしてリラックスした。",
-        "sound": "breath"
+        "sound": "breath",
+        "json": {
+            "english": "breath",
+            "pronunciation": "bréθ",
+            "other_translations": [
+                {
+                    "translation": "呼吸",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "breathe",
+                    "part_of_speech": "verb",
+                    "translation": "息をする"
+                },
+                {
+                    "english": "breather",
+                    "part_of_speech": "noun",
+                    "translation": "一息つく人"
+                },
+                {
+                    "english": "breathing",
+                    "part_of_speech": "noun",
+                    "translation": "呼吸"
+                },
+                {
+                    "english": "breathless",
+                    "part_of_speech": "adjective",
+                    "translation": "息切れした"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "bad |breath|",
+                    "translation": "臭い息"
+                },
+                {
+                    "english": "hold your |breath|",
+                    "translation": "息を止める"
+                },
+                {
+                    "english": "take a deep/big |breath|",
+                    "translation": "深く息を吸う, 深呼吸する"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The air that you take in and send out when you breathe; a small amount of air."
+        }
     },
     {
         "id": "8000",
@@ -5446,7 +7238,18 @@
         "importance": 3517,
         "example": "The team |consists| of eleven players.",
         "example_translation": "チームは11人の選手で成り立っている。",
-        "sound": "consist"
+        "sound": "consist",
+        "json": {
+            "english": "consist",
+            "pronunciation": "kənsíst",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "To be made up of certain parts or elements."
+        }
     },
     {
         "id": "13167",
@@ -5457,7 +7260,27 @@
         "importance": 3520,
         "example": "My |requirement| for job hunting is time or salary.",
         "example_translation": "私の仕事探しの必要条件は時間か給料だ。",
-        "sound": "requirement"
+        "sound": "requirement",
+        "json": {
+            "english": "requirement",
+            "pronunciation": "rikwáiərmənt",
+            "other_translations": [
+                {
+                    "translation": "要件",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "要求されるもの",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Something that is necessary for someone to have or do; a condition that must be met according to a law, rule, or requirement set by an organization, such as a school or employer."
+        }
     },
     {
         "id": "14613",
@@ -5468,7 +7291,52 @@
         "importance": 3521,
         "example": "The tiger is a |threat|.",
         "example_translation": "虎は脅威だ。",
-        "sound": "threat"
+        "sound": "threat",
+        "json": {
+            "english": "threat",
+            "pronunciation": "θrét",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "Pollution in the air is a serious |threat| to our health.",
+                    "translation": "空気の汚染は私たちの健康に対する深刻な脅威です。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "threatening",
+                    "part_of_speech": "adjective",
+                    "translation": "脅かすような, 威圧的な"
+                },
+                {
+                    "english": "threateningly",
+                    "part_of_speech": "adverb",
+                    "translation": "脅かすように"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a bomb |threat|",
+                    "translation": "爆破予告[脅迫]"
+                },
+                {
+                    "english": "a death |threat|",
+                    "translation": "殺害予告[脅迫]"
+                },
+                {
+                    "english": "pose/present a |threat| (to somebody/something)",
+                    "translation": "(〜に)脅威を与えている"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "menace",
+                    "description": "「threat」と「menace」は共に「脅威」という意味を持つが、前者は具体的な危険や攻撃の可能性を示すのに対し、後者はより抽象的で、恐れや不安を引き起こす存在や状況を指すことが多い。"
+                }
+            ],
+            "english_meaning": "A warning that you will cause harm or trouble if someone does not follow your wishes, or the chance that something harmful or dangerous may occur. It can also refer to a person or thing that is seen as a potential danger."
+        }
     },
     {
         "id": "8012",
@@ -5479,7 +7347,53 @@
         "importance": 3522,
         "example": "He is annoyed by the |constant| noise.",
         "example_translation": "彼は絶えず続く騒音に悩まされている。",
-        "sound": "constant"
+        "sound": "constant",
+        "json": {
+            "english": "constant",
+            "pronunciation": "[US] kɑ́nstənt [UK] kɔ́nstənt",
+            "other_translations": [
+                {
+                    "translation": "一定の",
+                    "part_of_speech": "adjective"
+                },
+                {
+                    "translation": "不変の",
+                    "part_of_speech": "adjective"
+                },
+                {
+                    "translation": "不変のもの",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The teacher gave us |constant| support during the project.",
+                    "translation": "先生はプロジェクトの間、絶えずサポートをしてくれた。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "constancy",
+                    "part_of_speech": "noun",
+                    "translation": "不変性, 持続性"
+                },
+                {
+                    "english": "constantly",
+                    "part_of_speech": "adverb",
+                    "translation": "常に, 絶えず"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "inconstant",
+                    "part_of_speech": "adjective",
+                    "translation": "不安定な, 変わりやすい"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Always happening or existing without change; remaining the same over time; not varying or fluctuating."
+        }
     },
     {
         "id": "14072",
@@ -5490,7 +7404,64 @@
         "importance": 3530,
         "example": "The car must meet the safety |standard|.",
         "example_translation": "車は安全水準を満たさなければいけない。",
-        "sound": "standard"
+        "sound": "standard",
+        "json": {
+            "english": "standard",
+            "pronunciation": "stǽndərd",
+            "other_translations": [
+                {
+                    "translation": "標準",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "標準規格の",
+                    "part_of_speech": "adjective"
+                },
+                {
+                    "translation": "標準的な",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "standardization",
+                    "part_of_speech": "noun",
+                    "translation": "標準化"
+                },
+                {
+                    "english": "substandard",
+                    "part_of_speech": "adjective",
+                    "translation": "基準以下の, 劣った"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a high/good |standard|",
+                    "translation": "高い水準"
+                },
+                {
+                    "english": "maintain a |standard|",
+                    "translation": "基準[水準]を保つ"
+                },
+                {
+                    "english": "meet/reach a |standard|",
+                    "translation": "基準を満たす[に達する]"
+                },
+                {
+                    "english": "set a |standard|",
+                    "translation": "基準を設ける"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "yardstick",
+                    "description": "「standard」と「yardstick」は共に「基準」という意味を持つが、前者は一般的に受け入れられた基準や規範を指し、後者は特定の測定や評価のための具体的な基準や尺度を示す。"
+                }
+            ],
+            "english_meaning": "A level that is accepted as normal or usual, used to measure quality, skill, or achievement. It can also refer to a fixed rule or measure for things like weight or value, and is often used to compare different items or to define what is correct in language or other subjects."
+        }
     },
     {
         "id": "14117",
@@ -5501,7 +7472,36 @@
         "importance": 3531,
         "example": "The bridge is made of |steel|.",
         "example_translation": "橋は鋼鉄製だ。",
-        "sound": "steel"
+        "sound": "steel",
+        "json": {
+            "english": "steel",
+            "pronunciation": "stíːl",
+            "other_translations": [
+                {
+                    "translation": "鉄鋼産業",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "鋼鉄(製)の",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|steel| industry",
+                    "translation": "鉄鋼産業"
+                },
+                {
+                    "english": "|steel| yourself",
+                    "translation": "覚悟を決める"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A strong metal that is made from iron and carbon, which can be easily shaped and is used in many products."
+        }
     },
     {
         "id": "13441",
@@ -5512,7 +7512,63 @@
         "importance": 3536,
         "example": "The delicious cake will |satisfy| my hunger.",
         "example_translation": "おいしいケーキが私の空腹を満たしてくれる。",
-        "sound": "satisfy"
+        "sound": "satisfy",
+        "json": {
+            "english": "satisfy",
+            "pronunciation": "sǽtisfài",
+            "other_translations": [
+                {
+                    "translation": "を満足させる",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "satisfaction",
+                    "part_of_speech": "noun",
+                    "translation": "満足"
+                },
+                {
+                    "english": "satisfactory",
+                    "part_of_speech": "adjective",
+                    "translation": "満足のいく"
+                },
+                {
+                    "english": "satisfied",
+                    "part_of_speech": "adjective",
+                    "translation": "満足した"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "dissatisfy",
+                    "part_of_speech": "verb",
+                    "translation": "〜を満たさない, 不満にさせる"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|satisfy| a desire/need",
+                    "translation": "欲求[必要]を満たす"
+                },
+                {
+                    "english": "|satisfy| a requirement/condition/criteria",
+                    "translation": "要件[条件, 基準]を満たす"
+                },
+                {
+                    "english": "|satisfy| demand",
+                    "translation": "需要を満たす"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "fill",
+                    "description": "「satisfy」と「fill」は共に「〜を満たす」という意味を持つが、前者は主に感情や要求を満たすことに使われ、後者は物理的に空間や量を満たすことに使われる。"
+                }
+            ],
+            "english_meaning": "To make someone feel pleased by meeting their wants or needs; to provide what is required or desired; to ensure that something is acceptable or meets a certain standard."
+        }
     },
     {
         "id": "7416",
@@ -5523,7 +7579,57 @@
         "importance": 3537,
         "example": "The |calculation| was difficult for me.",
         "example_translation": "計算が難しかった。",
-        "sound": "calculation"
+        "sound": "calculation",
+        "json": {
+            "english": "calculation",
+            "pronunciation": "kæ̀lkjuléiʃən",
+            "other_translations": [
+                {
+                    "translation": "算出",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "I made a |calculation| to find out how much money I need.",
+                    "translation": "どれくらいのお金が必要かを知るために計算をしました。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "calculable",
+                    "part_of_speech": "adjective",
+                    "translation": "計算できる"
+                },
+                {
+                    "english": "calculated",
+                    "part_of_speech": "adjective",
+                    "translation": "計算された"
+                },
+                {
+                    "english": "calculator",
+                    "part_of_speech": "noun",
+                    "translation": "計算機"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "by somebody's/some/most |calculations|",
+                    "translation": "〈人〉の[いくつかの, 多くの]計算によると"
+                },
+                {
+                    "english": "do/make a |calculation|",
+                    "translation": "計算する"
+                },
+                {
+                    "english": "without |calculation|",
+                    "translation": "よく考えずに, 打算のない"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The process of using numbers to determine an amount, price, or value, often involving careful planning to achieve a desired outcome while considering the possible effects of actions."
+        }
     },
     {
         "id": "14971",
@@ -5534,7 +7640,46 @@
         "importance": 3546,
         "example": "You can |upgrade| your room for an extra fee.",
         "example_translation": "追加料金を支払えば、部屋をアップグレードできます。",
-        "sound": "upgrade"
+        "sound": "upgrade",
+        "json": {
+            "english": "upgrade",
+            "pronunciation": "(動) ʌ̀pgréid (名) ʌ́pgrèid",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "decrease",
+                    "part_of_speech": "verb",
+                    "translation": "減少させる, 質を低下させる"
+                },
+                {
+                    "english": "downgrade",
+                    "part_of_speech": "verb",
+                    "translation": "格下げする, 質を低下させる"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|upgrade| somebody to something",
+                    "translation": "〈人〉の座席[部屋]を〈上のクラス〉に上げる"
+                },
+                {
+                    "english": "|upgrade| something to something",
+                    "translation": "〜を〜にアップグレードする"
+                },
+                {
+                    "english": "|upgrade| to something",
+                    "translation": "〜にアップグレードする"
+                },
+                {
+                    "english": "|upgrade| your skills",
+                    "translation": "技能を高める, スキルアップする"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To improve something, making it better or more modern, often to provide a higher quality service or experience. This can involve enhancing a machine, software, or even giving someone a better position or service than they originally had."
+        }
     },
     {
         "id": "9137",
@@ -5545,7 +7690,67 @@
         "importance": 3549,
         "example": "Making |errors| may be a chance for you to learn.",
         "example_translation": "失敗をすることは学ぶチャンスになりえます。",
-        "sound": "error"
+        "sound": "error",
+        "json": {
+            "english": "error",
+            "pronunciation": "érər",
+            "other_translations": [
+                {
+                    "translation": "エラー",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "間違い",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "erroneous",
+                    "part_of_speech": "adjective",
+                    "translation": "誤った"
+                },
+                {
+                    "english": "erroneously",
+                    "part_of_speech": "adverb",
+                    "translation": "誤って"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "accuracy",
+                    "part_of_speech": "noun",
+                    "translation": "正確さ"
+                },
+                {
+                    "english": "correctness",
+                    "part_of_speech": "noun",
+                    "translation": "正しさ"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "a serious/grave/fatal |error|",
+                    "translation": "深刻な[重大な, 致命的な]間違い"
+                },
+                {
+                    "english": "human |error|",
+                    "translation": "人為的ミス, 人災"
+                },
+                {
+                    "english": "make/commit an |error|",
+                    "translation": "間違いをする[犯す]"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "mistake",
+                    "description": "「error」と「mistake」は共に「誤り」という意味を持つが、前者は主に計算や判断の過程で生じる技術的な誤りを指し、後者は判断や行動に基づく人的な誤りを指す。"
+                }
+            ],
+            "english_meaning": "A mistake or something incorrect that happens when doing something, often causing a problem or preventing the desired result."
+        }
     },
     {
         "id": "9550",
@@ -5556,7 +7761,34 @@
         "importance": 3554,
         "example": "|Flexibility| is important to the human body.",
         "example_translation": "人間の身体にとって柔軟性は重要だ。",
-        "sound": "flexibility"
+        "sound": "flexibility",
+        "json": {
+            "english": "flexibility",
+            "pronunciation": "flèksəbíləti",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "flexible",
+                    "part_of_speech": "adjective",
+                    "translation": "柔軟な"
+                },
+                {
+                    "english": "inflexibility",
+                    "part_of_speech": "noun",
+                    "translation": "柔軟性の欠如"
+                },
+                {
+                    "english": "inflexible",
+                    "part_of_speech": "adjective",
+                    "translation": "柔軟でない"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The quality of being able to adapt to new conditions or situations easily, as well as the capacity to bend or be bent without breaking."
+        }
     },
     {
         "id": "11063",
@@ -5567,7 +7799,49 @@
         "importance": 3555,
         "example": "The soccer |league| starts next week.",
         "example_translation": "来週からサッカーリーグが始まる。",
-        "sound": "league"
+        "sound": "league",
+        "json": {
+            "english": "league",
+            "pronunciation": "líːg",
+            "other_translations": [
+                {
+                    "translation": "同盟",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "同盟する",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "を同盟[団結]させる",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The basketball |league| has many talented players.",
+                    "translation": "そのバスケットボールリーグには多くの才能ある選手がいる。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "be (at the) top/bottom of the |league|",
+                    "translation": "リーグ首位[最下位]である"
+                },
+                {
+                    "english": "be in a different |league| (from somebody/something)",
+                    "translation": "(〜とは)格が違う, 部類が異なる"
+                },
+                {
+                    "english": "|league| championship",
+                    "translation": "リーグ選手権"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A group of sports teams or players that compete against each other to determine who is the best, or a group of people or countries that come together because they share similar goals or beliefs."
+        }
     },
     {
         "id": "14210",
@@ -5578,7 +7852,47 @@
         "importance": 3556,
         "example": "I |struggled| to finish my homework.",
         "example_translation": "私は宿題を終わらせるのに苦労した。",
-        "sound": "struggle"
+        "sound": "struggle",
+        "json": {
+            "english": "struggle",
+            "pronunciation": "strʌ́gl",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "She |struggled| to keep her balance on the icy sidewalk.",
+                    "translation": "彼女は凍った歩道でバランスを保つのに奮闘した。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "give in",
+                    "part_of_speech": "verb",
+                    "translation": "屈する, 妥協する"
+                },
+                {
+                    "english": "surrender",
+                    "part_of_speech": "verb",
+                    "translation": "降伏する, 放棄する"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|struggle| for something",
+                    "translation": "〈自由・生存など〉を求めて奮闘する, を得ようと懸命に努力する"
+                },
+                {
+                    "english": "|struggle| to do something",
+                    "translation": "〜するのに奮闘する"
+                },
+                {
+                    "english": "|struggle| with something",
+                    "translation": "〈難題・病気など〉と奮闘する, に懸命に取り組む"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To try very hard to achieve something that is difficult, to fight against someone or something that is holding you back, or to move with great difficulty. It can also mean facing a long and tough challenge while trying to solve a problem or gain something important."
+        }
     },
     {
         "id": "7434",
@@ -5589,7 +7903,44 @@
         "importance": 3557,
         "example": "Join the clean-up |campaign| this weekend!",
         "example_translation": "今週末の清掃活動に参加しよう！",
-        "sound": "campaign"
+        "sound": "campaign",
+        "json": {
+            "english": "campaign",
+            "pronunciation": "kæmpéin",
+            "other_translations": [
+                {
+                    "translation": "キャンペーン",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "運動[キャンペーン]を行う",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "運動",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a |campaign| to do something",
+                    "translation": "〜するためのキャンペーン"
+                },
+                {
+                    "english": "launch/mount a |campaign|",
+                    "translation": "キャンペーンを開始する"
+                },
+                {
+                    "english": "run/fight a |campaign|",
+                    "translation": "運動を展開する"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A planned series of actions aimed at achieving a specific goal, often related to politics, business, or social change."
+        }
     },
     {
         "id": "9562",
@@ -5600,7 +7951,41 @@
         "importance": 3559,
         "example": "The rain will |flood| the streets.",
         "example_translation": "雨で道路が冠水するだろう。",
-        "sound": "flood"
+        "sound": "flood",
+        "json": {
+            "english": "flood",
+            "pronunciation": "flʌd",
+            "other_translations": [
+                {
+                    "translation": "浸水させる",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|flood| damage",
+                    "translation": "洪水による被害"
+                },
+                {
+                    "english": "|flood| victim",
+                    "translation": "洪水被災者"
+                },
+                {
+                    "english": "|flood| warning",
+                    "translation": "洪水警報"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "submerge",
+                    "description": "「flood」と「submerge」は共に「〜を水浸しにする」という意味を持つが、前者は大量の水が一気に押し寄せる状況を指し、後者は物体が水の中に完全に沈むことを強調する。"
+                }
+            ],
+            "english_meaning": "To cover an area with water, making it wet or submerged, often due to excessive rainfall or overflowing rivers."
+        }
     },
     {
         "id": "9810",
@@ -5611,7 +7996,41 @@
         "importance": 3564,
         "example": "Which is your |gender|, male or female?",
         "example_translation": "あなたの性別は男性と女性のどちらですか？",
-        "sound": "gender"
+        "sound": "gender",
+        "json": {
+            "english": "gender",
+            "pronunciation": "[US] dʒéndər [UK] dʒéndə",
+            "other_translations": [
+                {
+                    "translation": "ジェンダー",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Discrimination based on |gender| is a serious issue.",
+                    "translation": "性別に基づく差別は深刻な問題です。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|gender| differences",
+                    "translation": "性差"
+                },
+                {
+                    "english": "|gender| role",
+                    "translation": "性役割"
+                },
+                {
+                    "english": "|gender| stereotype",
+                    "translation": "ジェンダーステレオタイプ"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The state of being male or female, or the classification of people into groups based on their sex."
+        }
     },
     {
         "id": "12530",
@@ -5622,7 +8041,32 @@
         "importance": 3566,
         "example": "The baby |powder| smells really nice.",
         "example_translation": "ベビーパウダーは本当にいい香りだ。",
-        "sound": "powder"
+        "sound": "powder",
+        "json": {
+            "english": "powder",
+            "pronunciation": "páudər",
+            "other_translations": [
+                {
+                    "translation": "粉末",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "in |powder| form",
+                    "translation": "粉状で, 粉末で"
+                },
+                {
+                    "english": "milk/coffee/cocoa |powder|",
+                    "translation": "粉ミルク[粉末コーヒー, 粉末ココア]"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A dry substance made up of very small grains, often used for various purposes such as cosmetics, cooking, or as an ingredient in other products."
+        }
     },
     {
         "id": "9003",
@@ -5633,7 +8077,64 @@
         "importance": 3567,
         "example": "The teacher |emphasized| the importance of learning.",
         "example_translation": "先生は勉強の重要性を強調した。",
-        "sound": "emphasize"
+        "sound": "emphasize",
+        "json": {
+            "english": "emphasize",
+            "pronunciation": "émfəsàiz",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "The coach |emphasized| the need for teamwork during practice.",
+                    "translation": "コーチは練習中にチームワークの必要性を強調した。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "emphasis",
+                    "part_of_speech": "noun",
+                    "translation": "強調"
+                },
+                {
+                    "english": "emphatic",
+                    "part_of_speech": "adjective",
+                    "translation": "強調された"
+                },
+                {
+                    "english": "emphatically",
+                    "part_of_speech": "adverb",
+                    "translation": "強調して"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "deemphasize",
+                    "part_of_speech": "verb",
+                    "translation": "〜を軽視する, 強調しない"
+                },
+                {
+                    "english": "play down",
+                    "part_of_speech": "verb",
+                    "translation": "〜を控えめに扱う, 軽視する"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|emphasize| that",
+                    "translation": "〜ということを強調する"
+                },
+                {
+                    "english": "it should/must be |emphasized| (that)",
+                    "translation": "〜ということを銘記すべきである"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "highlight",
+                    "description": "「emphasize」と「highlight」は共に「〜を強調する」という意味を持つが、前者は特定のポイントや重要性を強調する際に使われ、後者は視覚的に目立たせることや注目を集めるために使われる。"
+                }
+            ],
+            "english_meaning": "To make something stand out or more important by saying it strongly or clearly."
+        }
     },
     {
         "id": "9678",
@@ -5644,7 +8145,18 @@
         "importance": 3568,
         "example": "The museum displayed a large |fossil|.",
         "example_translation": "博物館は大きな化石を展示した。",
-        "sound": "fossil"
+        "sound": "fossil",
+        "json": {
+            "english": "fossil",
+            "pronunciation": "[US] fɑ́səl [UK] fɔ́səl",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A preserved remains or shape of an animal or plant that existed many thousands of years ago, often found in rock."
+        }
     },
     {
         "id": "10248",
@@ -5655,7 +8167,39 @@
         "importance": 3569,
         "example": "I visited |historic| spots in Kyoto.",
         "example_translation": "私は京都の歴史的に有名な場所を訪れた。",
-        "sound": "historic"
+        "sound": "historic",
+        "json": {
+            "english": "historic",
+            "pronunciation": "[US] histɔ́ːrik [UK] histɔ́rik",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "A |historic| event took place in the city last year.",
+                    "translation": "昨年、その街で歴史的な出来事が起こった。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "historian",
+                    "part_of_speech": "noun",
+                    "translation": "歴史家"
+                },
+                {
+                    "english": "historical",
+                    "part_of_speech": "adjective",
+                    "translation": "歴史的な"
+                },
+                {
+                    "english": "history",
+                    "part_of_speech": "noun",
+                    "translation": "歴史"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Very important in history; something that is famous because it happened in the past or is significant enough to be remembered."
+        }
     },
     {
         "id": "12529",
@@ -5666,7 +8210,48 @@
         "importance": 3570,
         "example": "There is a lot of |poverty| in this neighborhood.",
         "example_translation": "この辺りは貧困が多い。",
-        "sound": "poverty"
+        "sound": "poverty",
+        "json": {
+            "english": "poverty",
+            "pronunciation": "[US] pɑ́vərti [UK] pɔ́vəti",
+            "other_translations": [
+                {
+                    "translation": "貧乏",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Many families struggle with |poverty| every day.",
+                    "translation": "多くの家族が毎日貧困に苦しんでいる。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "abundance",
+                    "part_of_speech": "noun",
+                    "translation": "豊富さ, 多量"
+                },
+                {
+                    "english": "affluence",
+                    "part_of_speech": "noun",
+                    "translation": "裕福さ, 豊かさ"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "fight |poverty|",
+                    "translation": "貧困と闘う"
+                },
+                {
+                    "english": "in |poverty|",
+                    "translation": "貧乏して"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A condition where a person or group lacks enough money or resources to meet basic needs, such as food, shelter, and clothing. It often involves living below a certain income level that is recognized as very low, making it difficult to improve one's situation without assistance."
+        }
     },
     {
         "id": "7184",
@@ -5677,7 +8262,58 @@
         "importance": 3572,
         "example": "The |board| will meet tomorrow morning.",
         "example_translation": "明日の朝、委員会が開かれる。",
-        "sound": "board"
+        "sound": "board",
+        "json": {
+            "english": "board",
+            "pronunciation": "[US] bɔ́rd [UK] bɔ́ːd",
+            "other_translations": [
+                {
+                    "translation": "ボード",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "掲示板",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "黒板",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "板",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The committee will discuss the new policy at the next |board| meeting.",
+                    "translation": "委員会は次の理事会で新しい方針について話し合います。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|board| meeting",
+                    "translation": "取締役会"
+                },
+                {
+                    "english": "|board| of directors",
+                    "translation": "取締役[役員]会"
+                },
+                {
+                    "english": "have a seat on the |board|",
+                    "translation": "委員会の一員である"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "committee",
+                    "description": "「board」と「committee」は共に「委員会」という意味を持つが、前者は通常、特定の組織や企業の運営を監督するための正式なグループを指し、後者は特定の目的や課題に対処するために設けられた一時的または専門的なグループを指す。"
+                }
+            ],
+            "english_meaning": "A group of people who are chosen to make important decisions and rules for an organization or institution, ensuring that these rules are followed."
+        }
     },
     {
         "id": "10746",
@@ -5688,7 +8324,18 @@
         "importance": 3574,
         "example": "I got |insurance| for my car.",
         "example_translation": "車の保険に入った。",
-        "sound": "insurance"
+        "sound": "insurance",
+        "json": {
+            "english": "insurance",
+            "pronunciation": "inʃúərəns",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A system where you pay money to a company regularly, and in return, they help cover costs if something bad happens, like an accident or damage. It provides protection against financial loss and includes different types such as health, life, and car insurance."
+        }
     },
     {
         "id": "11878",
@@ -5699,7 +8346,53 @@
         "importance": 3575,
         "example": "I want to |obtain| a pet.",
         "example_translation": "ペットを飼いたい。",
-        "sound": "obtain"
+        "sound": "obtain",
+        "json": {
+            "english": "obtain",
+            "pronunciation": "əbtéin",
+            "other_translations": [
+                {
+                    "translation": "〜を手に入れる",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "You need to |obtain| a ticket before entering the concert.",
+                    "translation": "コンサートに入る前にチケットを取得する必要があります。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "obtainable",
+                    "part_of_speech": "adjective",
+                    "translation": "得られる"
+                },
+                {
+                    "english": "unobtainable",
+                    "part_of_speech": "adjective",
+                    "translation": "得られない"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|obtain| something from somebody",
+                    "translation": "〜を〈人〉から手に入れる"
+                },
+                {
+                    "english": "|obtain| something from something",
+                    "translation": "〜を〜から手に入れる, 〈食品・薬品など〉を〜からとる"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "get",
+                    "description": "「obtain」と「get」は共に「〜を得る」という意味を持つが、「obtain」は公式な手続きや努力を通じて手に入れることを強調し、「get」はよりカジュアルで、日常的な状況で使われることが多い。"
+                }
+            ],
+            "english_meaning": "To get something you desire, usually by putting in effort or using your skills."
+        }
     },
     {
         "id": "13437",
@@ -5710,7 +8403,31 @@
         "importance": 3576,
         "example": "The artificial |satellite| orbits around the Earth.",
         "example_translation": "人工衛星は地球の周りを回っている。",
-        "sound": "satellite"
+        "sound": "satellite",
+        "json": {
+            "english": "satellite",
+            "pronunciation": "sǽtəlàit",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|satellite| broadcast",
+                    "translation": "衛星放送(番組)"
+                },
+                {
+                    "english": "|satellite| channel",
+                    "translation": "衛星チャンネル"
+                },
+                {
+                    "english": "via/by |satellite|",
+                    "translation": "衛星で, 衛星を通じて"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A machine sent into space that orbits a planet, like Earth or the Moon, and is used for communication, such as radio and television. It can also refer to a natural object that moves around a planet."
+        }
     },
     {
         "id": "6764",
@@ -5721,7 +8438,60 @@
         "importance": 3577,
         "example": "The |assignment| is due next Monday.",
         "example_translation": "課題の提出期限は来週の月曜日です。",
-        "sound": "assignment"
+        "sound": "assignment",
+        "json": {
+            "english": "assignment",
+            "pronunciation": "əsáinmənt",
+            "other_translations": [
+                {
+                    "translation": "任務",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "割り当て",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "割り当て分",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The teacher explained the |assignment| clearly to the students.",
+                    "translation": "教師は生徒たちに課題を明確に説明した。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "assign",
+                    "part_of_speech": "verb",
+                    "translation": "〜を割り当てる"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "a history/an English/a math |assignment|",
+                    "translation": "歴史[英語, 数学]の宿題"
+                },
+                {
+                    "english": "the |assignment| of somebody to something",
+                    "translation": "〈部署など〉への〈人〉の任命[配属]"
+                },
+                {
+                    "english": "the |assignment| of something to somebody/something",
+                    "translation": "〜の〜への割り当て"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "challenge",
+                    "description": "「assignment」と「challenge」は共に「課題」という意味を持つが、前者は特定の目的のために与えられた仕事や課題を指し、後者は困難さや試練を伴う課題を指す。"
+                }
+            ],
+            "english_meaning": "A task or piece of work that is given to someone, especially a student, to complete as part of their studies or job responsibilities."
+        }
     },
     {
         "id": "11226",
@@ -5732,7 +8502,44 @@
         "importance": 3580,
         "example": "The project requires |long-term| commitment.",
         "example_translation": "このプロジェクトには長期的な責任が必要だ。",
-        "sound": "long-term"
+        "sound": "long-term",
+        "json": {
+            "english": "long-term",
+            "pronunciation": "lɔ́ŋ-tə́ːrm",
+            "other_translations": [
+                {
+                    "translation": "長期的な",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Many students aim for |long-term| goals in their studies.",
+                    "translation": "多くの生徒は学業において長期的な目標を持っています。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "ephemeral",
+                    "part_of_speech": "adjective",
+                    "translation": "短命の, 一時的な"
+                },
+                {
+                    "english": "short-lived",
+                    "part_of_speech": "adjective",
+                    "translation": "短命の, 一時的な"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "prolonged",
+                    "description": "「long-term」と「prolonged」は共に「長期の」という意味を持つが、前者は計画や目標に関連して持続的な期間を示すのに対し、後者は何かが意図的に延長された結果としての長さを強調する。"
+                }
+            ],
+            "english_meaning": "Continuing for a long time or connected to events or situations that will occur in the distant future."
+        }
     },
     {
         "id": "9551",
@@ -5743,7 +8550,45 @@
         "importance": 3583,
         "example": "She is |flexible| with her schedule.",
         "example_translation": "彼女はスケジュールの融通が利く。",
-        "sound": "flexible"
+        "sound": "flexible",
+        "json": {
+            "english": "flexible",
+            "pronunciation": "fléksəbl",
+            "other_translations": [
+                {
+                    "translation": "柔軟な",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "flexibility",
+                    "part_of_speech": "noun",
+                    "translation": "柔軟性"
+                },
+                {
+                    "english": "flexibly",
+                    "part_of_speech": "adverb",
+                    "translation": "柔軟に"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "inflexible",
+                    "part_of_speech": "adjective",
+                    "translation": "融通が利かない, 柔軟性がない"
+                },
+                {
+                    "english": "rigid",
+                    "part_of_speech": "adjective",
+                    "translation": "厳格な, 硬直した"
+                }
+            ],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "Able to adapt or change easily to fit new conditions or situations; can be bent or shaped without breaking."
+        }
     },
     {
         "id": "10609",
@@ -5754,7 +8599,50 @@
         "importance": 3584,
         "example": "Each |individual| student must submit their assignment.",
         "example_translation": "学生たちはそれぞれ個々で課題を提出しなければならない。",
-        "sound": "individual"
+        "sound": "individual",
+        "json": {
+            "english": "individual",
+            "pronunciation": "ìndəvídʒuəl",
+            "other_translations": [
+                {
+                    "translation": "独自の",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "individuality",
+                    "part_of_speech": "noun",
+                    "translation": "個性, 独自性"
+                },
+                {
+                    "english": "individualized",
+                    "part_of_speech": "adjective",
+                    "translation": "個別化された, 個人に合わせた"
+                },
+                {
+                    "english": "individually",
+                    "part_of_speech": "adverb",
+                    "translation": "個別に, 個々に"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "collective",
+                    "part_of_speech": "adjective",
+                    "translation": "集団の, 共同の"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "a private |individual|",
+                    "translation": "個人, 私人"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "Considered separately from others in a group, meant for one person instead of a group, or having a unique style or way of doing things that is different from others."
+        }
     },
     {
         "id": "10705",
@@ -5765,7 +8653,50 @@
         "importance": 3585,
         "example": "Please |insert| the key to unlock.",
         "example_translation": "キーを差し込んでロックを解除してください。",
-        "sound": "insert"
+        "sound": "insert",
+        "json": {
+            "english": "insert",
+            "pronunciation": "(動) insə́ːrt (名) ínsəːrt",
+            "other_translations": [
+                {
+                    "translation": "書き入れる",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "|Insert| the card into the reader to access the files.",
+                    "translation": "ファイルにアクセスするためにカードをリーダーに挿入してください。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "insertion",
+                    "part_of_speech": "noun",
+                    "translation": "挿入"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "detach",
+                    "part_of_speech": "verb",
+                    "translation": "引き離す"
+                },
+                {
+                    "english": "remove",
+                    "part_of_speech": "verb",
+                    "translation": "取り除く"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|insert| something in/into something",
+                    "translation": "〜に〜を挿入する"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To place something within another object or to add something to the middle of a document or text."
+        }
     },
     {
         "id": "11618",
@@ -5776,7 +8707,50 @@
         "importance": 3586,
         "example": "His cheers |motivated| us.",
         "example_translation": "彼の応援が私たちを元気付けた。",
-        "sound": "motivate"
+        "sound": "motivate",
+        "json": {
+            "english": "motivate",
+            "pronunciation": "[US] móutəvèit [UK] mə́utivèit",
+            "other_translations": [],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "motivated",
+                    "part_of_speech": "adjective",
+                    "translation": "やる気のある"
+                },
+                {
+                    "english": "motivation",
+                    "part_of_speech": "noun",
+                    "translation": "動機"
+                },
+                {
+                    "english": "motivational",
+                    "part_of_speech": "adjective",
+                    "translation": "動機づけの"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "discourage",
+                    "part_of_speech": "verb",
+                    "translation": "やる気を失わせる"
+                },
+                {
+                    "english": "dissuade",
+                    "part_of_speech": "verb",
+                    "translation": "思いとどまらせる"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|motivate| somebody to do something",
+                    "translation": "〈人〉に〜する意欲を起こさせる"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To inspire someone to take action or to encourage them to work hard towards a goal."
+        }
     },
     {
         "id": "10316",
@@ -5787,7 +8761,50 @@
         "importance": 3595,
         "example": "There are five members in our |household|.",
         "example_translation": "我が家は5人家族です。",
-        "sound": "household"
+        "sound": "household",
+        "json": {
+            "english": "household",
+            "pronunciation": "háushòuld",
+            "other_translations": [
+                {
+                    "translation": "世帯",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "(一)世帯の",
+                    "part_of_speech": "adjective"
+                },
+                {
+                    "translation": "家庭(用)の",
+                    "part_of_speech": "adjective"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Many |households| now have pets as part of their family.",
+                    "translation": "多くの家庭が家族の一員としてペットを飼っている。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|household| products/goods/items",
+                    "translation": "家庭用品"
+                },
+                {
+                    "english": "the head of the |household|",
+                    "translation": "世帯主, 家長"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "family",
+                    "description": "「household」と「family」は共に「家族」という意味を持つが、前者は住居を共にする人々を指し、経済的・社会的な単位としての側面が強い。一方、後者は血縁や親密な関係に基づく人々を指し、感情的なつながりが重視される。"
+                }
+            ],
+            "english_meaning": "A group of people who live together in the same home, often sharing responsibilities and caring for each other."
+        }
     },
     {
         "id": "6749",
@@ -5798,7 +8815,33 @@
         "importance": 3602,
         "example": "The |aspect| of the game changed.",
         "example_translation": "試合の局面が変わった。",
-        "sound": "aspect"
+        "sound": "aspect",
+        "json": {
+            "english": "aspect",
+            "pronunciation": "ǽspekt",
+            "other_translations": [
+                {
+                    "translation": "側面",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The environmental |aspect| of the project is very important.",
+                    "translation": "プロジェクトの環境面は非常に重要です。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [
+                {
+                    "english": "dimension",
+                    "description": "「aspect」と「dimension」は共に「局面」という意味を持つが、前者は物事の特定の見方や特徴を強調し、後者は物事の広がりや範囲、または多面的な性質を示す。"
+                }
+            ],
+            "english_meaning": "A part or feature of a situation, idea, or plan that has many different parts; the way something looks or appears; the direction something faces."
+        }
     },
     {
         "id": "6611",
@@ -5809,7 +8852,57 @@
         "importance": 3607,
         "example": "I have |anxiety| about the test.",
         "example_translation": "テストに対する不安がある。",
-        "sound": "anxiety"
+        "sound": "anxiety",
+        "json": {
+            "english": "anxiety",
+            "pronunciation": "æŋzáiəti",
+            "other_translations": [
+                {
+                    "translation": "心配事",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "懸念",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "I often feel |anxiety| when I meet new people.",
+                    "translation": "新しい人に会うとき、私はしばしば不安を感じる。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [
+                {
+                    "english": "assurance",
+                    "part_of_speech": "noun",
+                    "translation": "自信, 確信"
+                },
+                {
+                    "english": "calmness",
+                    "part_of_speech": "noun",
+                    "translation": "冷静, 落ち着き"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "your |anxiety| to do something",
+                    "translation": "〜したいという熱い思い"
+                },
+                {
+                    "english": "in your |anxiety| to do something",
+                    "translation": "〜したいと気が焦って"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "angst",
+                    "description": "「anxiety」と「angst」は共に「不安」という意味を持つが、前者は主に具体的な不安や心配を指し、後者はより抽象的で存在的な不安や不満を表すことが多い。"
+                }
+            ],
+            "english_meaning": "A state of worry or fear about something that may happen, often accompanied by a strong desire to take action or change the situation."
+        }
     },
     {
         "id": "14187",
@@ -5820,7 +8913,72 @@
         "importance": 3626,
         "example": "|Strengthen| your muscles by lifting weights.",
         "example_translation": "ウェイトリフティングで筋肉を強化しなさい。",
-        "sound": "strengthen"
+        "sound": "strengthen",
+        "json": {
+            "english": "strengthen",
+            "pronunciation": "stréŋkθn",
+            "other_translations": [
+                {
+                    "translation": "を強める",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "を強化する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Regular practice can help |strengthen| your language skills.",
+                    "translation": "定期的な練習はあなたの言語スキルを強化するのに役立ちます。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "strength",
+                    "part_of_speech": "noun",
+                    "translation": "強さ"
+                },
+                {
+                    "english": "strong",
+                    "part_of_speech": "adjective",
+                    "translation": "強い"
+                },
+                {
+                    "english": "strongly",
+                    "part_of_speech": "adverb",
+                    "translation": "強く"
+                }
+            ],
+            "antonyms": [
+                {
+                    "english": "debilitate",
+                    "part_of_speech": "verb",
+                    "translation": "〜を衰弱させる"
+                },
+                {
+                    "english": "weaken",
+                    "part_of_speech": "verb",
+                    "translation": "〜を弱める"
+                }
+            ],
+            "phrases": [
+                {
+                    "english": "|strengthen| somebody's hand",
+                    "translation": "〈人〉の立場を有利にする, 支配力を強化する"
+                },
+                {
+                    "english": "|strengthen| somebody's resolve/determination/conviction",
+                    "translation": "〈人〉の意志[決意, 確信]を強める"
+                },
+                {
+                    "english": "|strengthen| ties/bonds/links",
+                    "translation": "結びつきを強くする, きずなを深める"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "To make something more powerful or to become more powerful; to improve the strength or value of something; to enhance the quality or effectiveness of an organization, body, or situation."
+        }
     },
     {
         "id": "13927",
@@ -5831,7 +8989,50 @@
         "importance": 3630,
         "example": "Please |sort| the books by genre.",
         "example_translation": "ジャンル別に本を分類してください。",
-        "sound": "sort"
+        "sound": "sort",
+        "json": {
+            "english": "sort",
+            "pronunciation": "[US] sɔrt [UK] sɔːt",
+            "other_translations": [
+                {
+                    "translation": "整理する",
+                    "part_of_speech": "verb"
+                },
+                {
+                    "translation": "種類",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "She |sorted| the documents into different categories.",
+                    "translation": "彼女は書類を異なるカテゴリーに分類した。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "all |sorts| of something",
+                    "translation": "あらゆる[さまざまな]〜"
+                },
+                {
+                    "english": "of this/that |sort|",
+                    "translation": "この[その]種の"
+                },
+                {
+                    "english": "|sort| something into something",
+                    "translation": "〜を分けて〜にする"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "categorize",
+                    "description": "「sort」と「categorize」は共に「〜を分類する」という意味を持つが、前者は主に物理的なものやデータを整理する際に使われ、後者はより体系的に、特定の基準に基づいて分類することを強調する。"
+                }
+            ],
+            "english_meaning": "To arrange items or people into groups based on shared characteristics or qualities, or to organize them in a specific order."
+        }
     },
     {
         "id": "14208",
@@ -5842,7 +9043,43 @@
         "importance": 3631,
         "example": "The |structure| of the building is strong.",
         "example_translation": "建物の構造は強固だ。",
-        "sound": "structure"
+        "sound": "structure",
+        "json": {
+            "english": "structure",
+            "pronunciation": "strʌ́ktʃər",
+            "other_translations": [
+                {
+                    "translation": "構成",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "〜を構成する",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "restructuring",
+                    "part_of_speech": "noun",
+                    "translation": "再構築"
+                },
+                {
+                    "english": "structural",
+                    "part_of_speech": "adjective",
+                    "translation": "構造の"
+                },
+                {
+                    "english": "structuralism",
+                    "part_of_speech": "noun",
+                    "translation": "構造主義"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "The arrangement and connection of parts that create a whole, or a large built object like a building or bridge. It can also refer to the organized way in which activities or systems are planned and structured."
+        }
     },
     {
         "id": "8030",
@@ -5853,7 +9090,41 @@
         "importance": 3633,
         "example": "I'll keep the leftovers in a |container|.",
         "example_translation": "食べ残しを容器に入れておこう。",
-        "sound": "container"
+        "sound": "container",
+        "json": {
+            "english": "container",
+            "pronunciation": "kəntéinər",
+            "other_translations": [
+                {
+                    "translation": "コンテナ",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "入れ物",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|container| port",
+                    "translation": "コンテナ港"
+                },
+                {
+                    "english": "|container| ship",
+                    "translation": "コンテナ船"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "case",
+                    "description": "「container」と「case」は共に「容器」という意味を持つが、前者は物を入れるための一般的な入れ物を指し、後者は特定の目的や形状に合わせた入れ物や収納具を指すことが多い。"
+                }
+            ],
+            "english_meaning": "A thing like a box or bottle that is used to hold or store items. It can also refer to a large metal box designed for transporting goods easily."
+        }
     },
     {
         "id": "12827",
@@ -5864,7 +9135,62 @@
         "importance": 3635,
         "example": "They are |qualified| for the job.",
         "example_translation": "彼女たちはその仕事の資格を持っている。",
-        "sound": "qualify"
+        "sound": "qualify",
+        "json": {
+            "english": "qualify",
+            "pronunciation": "kwɔ́lifài",
+            "other_translations": [
+                {
+                    "translation": "出場資格を得る",
+                    "part_of_speech": "verb"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "She needs to |qualify| for the scholarship.",
+                    "translation": "彼女は奨学金の資格を得る必要がある。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "disqualification",
+                    "part_of_speech": "noun",
+                    "translation": "失格"
+                },
+                {
+                    "english": "qualification",
+                    "part_of_speech": "noun",
+                    "translation": "資格"
+                },
+                {
+                    "english": "qualified",
+                    "part_of_speech": "adjective",
+                    "translation": "資格のある"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|qualify| for something",
+                    "translation": "〜の[を得る]資格がある"
+                },
+                {
+                    "english": "|qualify| somebody for something",
+                    "translation": "〈人〉に〜をする資格を与える"
+                },
+                {
+                    "english": "|qualify| to do something",
+                    "translation": "〜する資格がある"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "entitle",
+                    "description": "「qualify」と「entitle」は共に「〜に資格を与える」という意味を持つが、前者は特定の基準や条件を満たすことによって資格を得ることを指し、後者は特定の権利や特典を得ることを指す。"
+                }
+            ],
+            "english_meaning": "To give someone the right to do something or to have something, often by meeting certain requirements or standards. This can include passing an exam, completing a course, or having the necessary skills and knowledge for a specific role or activity."
+        }
     },
     {
         "id": "14705",
@@ -5875,7 +9201,28 @@
         "importance": 3641,
         "example": "I love |tourism| in Japan!",
         "example_translation": "私は日本の観光が大好きだ！",
-        "sound": "tourism"
+        "sound": "tourism",
+        "json": {
+            "english": "tourism",
+            "pronunciation": "túərìzm",
+            "other_translations": [
+                {
+                    "translation": "観光業",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|tourism| industry",
+                    "translation": "観光産業"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The activity of traveling to different places for pleasure, including the services and facilities like hotels, entertainment, and meals that support this travel."
+        }
     },
     {
         "id": "9099",
@@ -5886,7 +9233,51 @@
         "importance": 3674,
         "example": "You have free |entry| to the museum.",
         "example_translation": "あなたはその美術館への無料入場権を持っています。",
-        "sound": "entry"
+        "sound": "entry",
+        "json": {
+            "english": "entry",
+            "pronunciation": "éntri",
+            "other_translations": [
+                {
+                    "translation": "入場",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "参加",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [
+                {
+                    "english": "entrance",
+                    "part_of_speech": "noun",
+                    "translation": "入り口, 入場"
+                },
+                {
+                    "english": "entrant",
+                    "part_of_speech": "noun",
+                    "translation": "参加者, 出場者"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "gain |entry| (to something)",
+                    "translation": "(〈場所〉に)侵入する"
+                },
+                {
+                    "english": "no |entry|",
+                    "translation": "立ち入り[進入]禁止"
+                },
+                {
+                    "english": "refuse/deny somebody |entry|",
+                    "translation": "〈人〉が入ることを認めない"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The act of going into a place or system; the permission needed to participate in something; a record or submission made to enter a competition; a way to access a location; or the arrival of people or goods in a new area."
+        }
     },
     {
         "id": "8037",
@@ -5897,7 +9288,44 @@
         "importance": 3677,
         "example": "The |content| of the book is very interesting.",
         "example_translation": "本の中身はとても面白い。",
-        "sound": "content"
+        "sound": "content",
+        "json": {
+            "english": "content",
+            "pronunciation": "[US] kɑ́ntènt [UK] kɔ́ntent",
+            "other_translations": [
+                {
+                    "translation": "内容",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "目次",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "not |content| with something",
+                    "translation": "〜に満足していない, を不満に思う"
+                },
+                {
+                    "english": "|content| to do something",
+                    "translation": "〜するだけで満足である"
+                },
+                {
+                    "english": "|content| for somebody to do something",
+                    "translation": "〈人〉が〜してもいとわない"
+                },
+                {
+                    "english": "|content| yourself with something",
+                    "translation": "〜で満足する, に甘んじる"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "The amount of something that is inside another thing, such as food or drink, as well as the ideas, facts, or opinions found in a speech, writing, or other forms of media. It also refers to the information on a website, separate from its design, and includes the items found in a container or the text in a document or book."
+        }
     },
     {
         "id": "9763",
@@ -5908,7 +9336,56 @@
         "importance": 3688,
         "example": "I need the |fund| for the school trip.",
         "example_translation": "修学旅行の資金が必要だ。",
-        "sound": "fund"
+        "sound": "fund",
+        "json": {
+            "english": "fund",
+            "pronunciation": "fʌ́nd",
+            "other_translations": [
+                {
+                    "translation": "基金",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "財源",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The charity event raised a large |fund| for the local community.",
+                    "translation": "そのチャリティイベントは地域社会のために大きな資金を集めた。"
+                }
+            ],
+            "derivatives": [
+                {
+                    "english": "funding",
+                    "part_of_speech": "noun",
+                    "translation": "資金提供"
+                },
+                {
+                    "english": "refund",
+                    "part_of_speech": "noun",
+                    "translation": "返金"
+                }
+            ],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "publicly/privately/federally |funded|",
+                    "translation": "公的[民間, 連邦政府]資金による"
+                },
+                {
+                    "english": "raise |funds|",
+                    "translation": "資金を調達する"
+                },
+                {
+                    "english": "a |fund| of something",
+                    "translation": "〈知識など〉の蓄え"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "An amount of money that is collected and kept for a specific purpose, often used to support activities, organizations, or events. It can also refer to an organization that gathers and manages money for a particular aim."
+        }
     },
     {
         "id": "8069",
@@ -5919,7 +9396,45 @@
         "importance": 3712,
         "example": "I |converted| the music to an MP3.",
         "example_translation": "音楽をMP3に変換した。",
-        "sound": "convert"
+        "sound": "convert",
+        "json": {
+            "english": "convert",
+            "pronunciation": "[US](動) kənvə́ːrt (名) kɑ́nvə̀ːrt [UK](動) kənvə́ːt (名) kɔ́nvəːt",
+            "other_translations": [],
+            "other_examples": [
+                {
+                    "english": "They |converted| the old factory into a modern art gallery.",
+                    "translation": "彼らは古い工場を現代アートギャラリーに改装した。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|convert| (from something) to something",
+                    "translation": "(〈考えなど〉から)〈別の考えなど〉に転向する"
+                },
+                {
+                    "english": "|convert| into/to something",
+                    "translation": "〜に変わる, 変換[転換]する"
+                },
+                {
+                    "english": "|convert| something into/to something",
+                    "translation": "〜を〜に変換する"
+                },
+                {
+                    "english": "|convert| to something",
+                    "translation": "〈別の宗教〉に改宗する"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "transform",
+                    "description": "「convert」と「transform」は共に「〜を変える」という意味を持つが、前者は主に形や形式を変えることに焦点を当てており、後者は本質的な性質や状態を根本的に変えることを指す。"
+                }
+            ],
+            "english_meaning": "To change something into a different form or to make it suitable for a different purpose or use."
+        }
     },
     {
         "id": "10733",
@@ -5930,7 +9445,28 @@
         "importance": 3724,
         "example": "His |instinct| told him to run.",
         "example_translation": "本能が彼に逃げろと言ったのだ。",
-        "sound": "instinct"
+        "sound": "instinct",
+        "json": {
+            "english": "instinct",
+            "pronunciation": "(名) ínstiŋkt (形) instíŋkt",
+            "other_translations": [
+                {
+                    "translation": "直感",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "Dogs have a strong |instinct| to protect their owners.",
+                    "translation": "犬は飼い主を守る本能が強い。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A natural ability to act or respond in a certain way without needing to learn it."
+        }
     },
     {
         "id": "11519",
@@ -5941,7 +9477,33 @@
         "importance": 3748,
         "example": "This rock is a rare |mineral|.",
         "example_translation": "この岩は希少な鉱物だ。",
-        "sound": "mineral"
+        "sound": "mineral",
+        "json": {
+            "english": "mineral",
+            "pronunciation": "mínərəl",
+            "other_translations": [
+                {
+                    "translation": "ミネラル",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [
+                {
+                    "english": "The soil in this region contains many important |minerals|.",
+                    "translation": "この地域の土壌には多くの重要な鉱物が含まれています。"
+                }
+            ],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "|mineral| resources",
+                    "translation": "鉱物資源"
+                }
+            ],
+            "synonyms": [],
+            "english_meaning": "A naturally occurring substance found in the earth, like coal, salt, stone, or gold, that can be extracted and used. Some minerals, like iron, are also important for health and can be found in certain foods."
+        }
     },
     {
         "id": "8123",
@@ -5952,7 +9514,57 @@
         "importance": 3752,
         "example": "They discussed it in |council|.",
         "example_translation": "彼らは議会で話し合った。",
-        "sound": "council"
+        "sound": "council",
+        "json": {
+            "english": "council",
+            "pronunciation": "káunsl",
+            "other_translations": [
+                {
+                    "translation": "諮問委員会",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "評議会",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "議会",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "市[町，村]議会",
+                    "part_of_speech": "noun"
+                },
+                {
+                    "translation": "協議会",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [
+                {
+                    "english": "be on the |council|",
+                    "translation": "議員に選ばれている"
+                },
+                {
+                    "english": "|council| meeting",
+                    "translation": "議会"
+                },
+                {
+                    "english": "|council| member",
+                    "translation": "議会議員"
+                }
+            ],
+            "synonyms": [
+                {
+                    "english": "conference",
+                    "description": "「council」と「conference」は共に「会議」という意味を持つが、前者は特定の目的を持った組織や団体のメンバーが集まる公式な会議を指し、後者は広範なテーマについて多くの人々が集まって議論する場を指す。"
+                }
+            ],
+            "english_meaning": "A group of people selected to create rules, laws, or decisions, or to provide advice, often related to local government."
+        }
     },
     {
         "id": "10989",
@@ -5963,6 +9575,22 @@
         "importance": 3763,
         "example": "The scientists work in the |laboratory|.",
         "example_translation": "科学者たちは研究所で働いている。",
-        "sound": "laboratory"
+        "sound": "laboratory",
+        "json": {
+            "english": "laboratory",
+            "pronunciation": "[US] lǽbrətɔ̀ri [UK] ləbɔ́rətri",
+            "other_translations": [
+                {
+                    "translation": "実験室",
+                    "part_of_speech": "noun"
+                }
+            ],
+            "other_examples": [],
+            "derivatives": [],
+            "antonyms": [],
+            "phrases": [],
+            "synonyms": [],
+            "english_meaning": "A special room or building where scientists conduct experiments or prepare materials for research."
+        }
     }
 ]
