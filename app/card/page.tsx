@@ -59,6 +59,39 @@ function mapPosLabel(pos?: string) {
   return posMap[pos] || pos;
 }
 
+// --- Status types and constants (pulled out for reuse) ---
+type Status = "unknown" | "learning" | "review" | "known" | "done";
+
+const STATUS_ORDER: Status[] = [
+  "unknown",
+  "learning",
+  "review",
+  "known",
+  "done",
+];
+
+const STATUS_LABELS: Record<Status, string> = {
+  unknown: "未習得",
+  learning: "習得中",
+  review: "復習中",
+  known: "覚えた",
+  done: "もういい",
+};
+
+const STATUS_BADGE_CLASS: Record<Status, string> = {
+  unknown: "bg-red-100 text-red-800",
+  learning: "bg-blue-100 text-blue-800",
+  review: "bg-yellow-100 text-yellow-800",
+  known: "bg-green-100 text-green-800",
+  done: "bg-gray-200 text-gray-700",
+};
+
+const LOCAL_STORAGE_KEY = "wordStatuses";
+
+function cx(...parts: Array<string | false | null | undefined>) {
+  return parts.filter(Boolean).join(" ");
+}
+
 const items: Item[] = (data as unknown as Item[]).map((item) => ({
   ...item,
   part_of_speech: mapPosLabel(item.part_of_speech),
@@ -118,9 +151,245 @@ function SectionList<T>({ title, items, renderItem }: SectionListProps<T>) {
   );
 }
 
-export default function CardPage() {
-  type Status = "unknown" | "learning" | "review" | "known" | "done";
+type CardItemProps = {
+  item: Item;
+  revealed: boolean;
+  toggleReveal: (id: string) => void;
+  statuses: Record<string, Status>;
+  onChangeStatus: (id: string, val: Status) => void;
+};
 
+function CardItem({
+  item,
+  revealed,
+  toggleReveal,
+  statuses,
+  onChangeStatus,
+}: CardItemProps) {
+  const pointerDownRef = React.useRef<{ x: number; y: number } | null>(null);
+
+  const onPointerDown = (e: React.PointerEvent) => {
+    pointerDownRef.current = { x: e.clientX, y: e.clientY };
+  };
+
+  const onPointerUp = (e: React.PointerEvent) => {
+    const start = pointerDownRef.current;
+    pointerDownRef.current = null;
+    if (!start) return;
+    const dx = Math.abs(e.clientX - start.x);
+    const dy = Math.abs(e.clientY - start.y);
+    if (dx < 6 && dy < 6) {
+      if (!revealed) toggleReveal(item.id);
+    }
+  };
+
+  const curStatus = (statuses[item.id] as Status) || "unknown";
+
+  return (
+    <li
+      key={item.id}
+      className={cx(
+        "transform rounded-lg border bg-white p-4 shadow-sm transition duration-150",
+        revealed
+          ? "cursor-text"
+          : "cursor-pointer hover:-translate-y-0.5 hover:shadow-md",
+      )}
+      onPointerDown={onPointerDown}
+      onPointerUp={onPointerUp}
+    >
+      <div className="mb-2">
+        <div className="flex items-start gap-3">
+          <button
+            type="button"
+            className={cx(
+              "mr-2 text-left text-xl leading-tight font-semibold text-gray-900 focus:outline-none sm:text-2xl",
+              revealed ? "cursor-text select-text" : "hover:cursor-pointer",
+            )}
+            style={revealed ? { userSelect: "text" as const } : undefined}
+            onClick={(e) => {
+              e.stopPropagation();
+              if (!revealed) toggleReveal(item.id);
+            }}
+            aria-expanded={!!revealed}
+          >
+            {renderPipeText(item.english)}
+          </button>
+        </div>
+      </div>
+
+      {revealed && (
+        <div className="cursor-text select-text" style={{ userSelect: "text" }}>
+          {item.translation && (
+            <div className="mb-4 text-base text-gray-700">
+              <div>
+                <span className="font-medium">
+                  {renderPipeText(item.translation)}
+                </span>
+                {item.part_of_speech && (
+                  <span className="ml-2 text-xs text-gray-400 select-none">
+                    ({item.part_of_speech})
+                  </span>
+                )}
+              </div>
+
+              <div className="mt-1 text-sm text-gray-600">
+                <SectionList
+                  title=""
+                  items={item.json?.other_translations}
+                  renderItem={(trans: any) => (
+                    <span>
+                      {renderPipeText(trans.translation)}
+                      {trans.part_of_speech ? (
+                        <span className="ml-1 text-xs text-gray-400 select-none">
+                          ({trans.part_of_speech})
+                        </span>
+                      ) : null}
+                    </span>
+                  )}
+                />
+              </div>
+            </div>
+          )}
+
+          <div className="mb-4 space-y-2">
+            {(item.example || item.example_translation) && (
+              <div>
+                {item.example && (
+                  <div className="text-sm text-gray-600 italic">
+                    {renderPipeText(item.example)}
+                  </div>
+                )}
+                {item.example_translation && (
+                  <div className="text-sm text-gray-500">
+                    {renderPipeText(item.example_translation)}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {item.json?.other_examples?.map((ex, idx) => (
+              <div key={idx}>
+                <div className="text-sm text-gray-600 italic">
+                  {renderPipeText(ex.english)}
+                </div>
+                <div className="text-sm text-gray-500">
+                  {renderPipeText(ex.translation)}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {item.json &&
+            ((item.json.derivatives?.length ?? 0) > 0 ||
+              (item.json.antonyms?.length ?? 0) > 0 ||
+              (item.json.phrases?.length ?? 0) > 0 ||
+              (item.json.synonyms?.length ?? 0) > 0) && (
+              <div className="mt-3 space-y-2 border-t pt-3 text-sm">
+                <SectionList
+                  title="派生語:"
+                  items={item.json.derivatives}
+                  renderItem={(d: any) => (
+                    <div>
+                      <span className="font-medium">
+                        {renderPipeText(d.english)}
+                      </span>
+                      {d.translation && (
+                        <span className="ml-2 text-gray-600">
+                          {renderPipeText(d.translation)}
+                        </span>
+                      )}
+                      {d.part_of_speech && (
+                        <span className="ml-2 text-xs text-gray-400 select-none">
+                          ({d.part_of_speech})
+                        </span>
+                      )}
+                    </div>
+                  )}
+                />
+
+                <SectionList
+                  title="反意語:"
+                  items={item.json.antonyms}
+                  renderItem={(a: any) => (
+                    <div>
+                      <span className="font-medium">
+                        {renderPipeText(a.english)}
+                      </span>
+                      {a.translation && (
+                        <span className="ml-2 text-gray-600">
+                          {renderPipeText(a.translation)}
+                        </span>
+                      )}
+                      {a.part_of_speech && (
+                        <span className="ml-2 text-xs text-gray-400 select-none">
+                          ({a.part_of_speech})
+                        </span>
+                      )}
+                    </div>
+                  )}
+                />
+
+                <SectionList
+                  title="フレーズ:"
+                  items={item.json.phrases}
+                  renderItem={(p: any) => (
+                    <div>
+                      <div className="font-medium">
+                        {renderPipeText(p.english)}
+                      </div>
+                      <div className="text-sm text-gray-600">
+                        {renderPipeText(p.translation)}
+                      </div>
+                    </div>
+                  )}
+                />
+
+                <SectionList
+                  title="類義語（説明）:"
+                  items={item.json.synonyms}
+                  renderItem={(s: any) => (
+                    <div className="text-sm text-gray-600">
+                      {renderPipeText(s.description)}
+                    </div>
+                  )}
+                />
+              </div>
+            )}
+
+          <div className="mt-3 flex items-center justify-end gap-2">
+            <span
+              className={cx(
+                "inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium select-none",
+                STATUS_BADGE_CLASS[curStatus],
+              )}
+            >
+              {STATUS_LABELS[curStatus]}
+            </span>
+            <select
+              aria-label="ステータス"
+              className="rounded border bg-white px-2 py-1 text-sm text-gray-700 select-none"
+              value={curStatus}
+              onClick={(e) => e.stopPropagation()}
+              onChange={(e) => {
+                e.stopPropagation();
+                const val = e.target.value as Status;
+                onChangeStatus(item.id, val);
+              }}
+            >
+              <option value="unknown">未習得</option>
+              <option value="learning">習得中</option>
+              <option value="review">復習中</option>
+              <option value="known">覚えた</option>
+              <option value="done">もういい</option>
+            </select>
+          </div>
+        </div>
+      )}
+    </li>
+  );
+}
+
+export default function CardPage() {
   const PAGE_SIZE = 10;
 
   const [statuses, setStatuses] = useState<Record<string, Status>>({});
@@ -136,7 +405,7 @@ export default function CardPage() {
 
   useEffect(() => {
     try {
-      const raw = localStorage.getItem("wordStatuses") || "{}";
+      const raw = localStorage.getItem(LOCAL_STORAGE_KEY) || "{}";
       const obj = JSON.parse(raw) as Record<string, Status>;
       setStatuses(obj || {});
     } catch (e) {
@@ -146,71 +415,24 @@ export default function CardPage() {
 
   const saveStatuses = useCallback((obj: Record<string, Status>) => {
     try {
-      localStorage.setItem("wordStatuses", JSON.stringify(obj));
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(obj));
     } catch (e) {
       // ignore
     }
   }, []);
 
-  const cycleStatus = useCallback(
-    (id: string) => {
+  // handler to update a single status from child components
+  const handleChangeStatus = useCallback(
+    (id: string, val: Status) => {
       setStatuses((prev) => {
-        const cur = prev[id] || "unknown";
-        // cycle: unknown -> learning -> review -> known -> done -> unknown
-        const nextStatus: Status =
-          cur === "unknown"
-            ? "learning"
-            : cur === "learning"
-              ? "review"
-              : cur === "review"
-                ? "known"
-                : cur === "known"
-                  ? "done"
-                  : "unknown";
-        const next = { ...prev, [id]: nextStatus };
-        // nextStatus が "unknown" の場合、保存領域を小さくするためキーを削除します
-        if (nextStatus === "unknown") delete next[id];
+        const next = { ...prev, [id]: val };
+        if (val === "unknown") delete next[id];
         saveStatuses(next);
         return next;
       });
     },
     [saveStatuses],
   );
-
-  const getStatusLabel = useCallback((s: Status) => {
-    switch (s) {
-      case "unknown":
-        return "未習得";
-      case "learning":
-        return "習得中";
-      case "review":
-        return "復習中";
-      case "known":
-        return "覚えた";
-      case "done":
-        return "もういい";
-      default:
-        return "";
-    }
-  }, []);
-
-  // ステータスバッジの色クラスを返すユーティリティ
-  const statusBadgeClass = useCallback((s: Status) => {
-    switch (s) {
-      case "unknown":
-        return "bg-red-100 text-red-800";
-      case "learning":
-        return "bg-blue-100 text-blue-800";
-      case "review":
-        return "bg-yellow-100 text-yellow-800";
-      case "known":
-        return "bg-green-100 text-green-800";
-      case "done":
-        return "bg-gray-200 text-gray-700";
-      default:
-        return "bg-gray-100 text-gray-700";
-    }
-  }, []);
 
   const counts = useMemo(() => {
     const out: Record<Status, number> = {
@@ -293,248 +515,7 @@ export default function CardPage() {
     setRevealed({});
   }, []);
 
-  // Extract card rendering into a small component to improve readability and reduce top-level complexity
-  type CardItemProps = {
-    item: Item;
-    revealed: boolean;
-    toggleReveal: (id: string) => void;
-    statuses: Record<string, Status>;
-    cycleStatus: (id: string) => void;
-  };
-
-  function CardItem({
-    item,
-    revealed,
-    toggleReveal,
-    statuses,
-    cycleStatus,
-  }: CardItemProps) {
-    // ポインタでの押下位置を覚えて移動量でクリックかドラッグか判定する
-    const pointerDownRef = React.useRef<{ x: number; y: number } | null>(null);
-
-    const onPointerDown = (e: React.PointerEvent) => {
-      // store initial pointer position
-      pointerDownRef.current = { x: e.clientX, y: e.clientY };
-    };
-
-    const onPointerUp = (e: React.PointerEvent) => {
-      const start = pointerDownRef.current;
-      pointerDownRef.current = null;
-      if (!start) return;
-      const dx = Math.abs(e.clientX - start.x);
-      const dy = Math.abs(e.clientY - start.y);
-      // small movement => treat as click/tap; threshold tuned for touch/pen
-      if (dx < 6 && dy < 6) {
-        // If already revealed, don't call toggle — avoids forcing a re-render
-        // that clears selection (double-click selection gets cancelled).
-        if (!revealed) {
-          toggleReveal(item.id);
-        }
-      }
-    };
-
-    return (
-      <li
-        key={item.id}
-        className={`transform rounded-lg border bg-white p-4 shadow-sm transition duration-150 ${revealed ? "cursor-text" : "cursor-pointer hover:-translate-y-0.5 hover:shadow-md"}`}
-        onPointerDown={onPointerDown}
-        onPointerUp={onPointerUp}
-      >
-        <div className="mb-2">
-          <div className="flex items-start gap-3">
-            <button
-              type="button"
-              className={`mr-2 text-left text-xl leading-tight font-semibold text-gray-900 focus:outline-none sm:text-2xl ${revealed ? "cursor-text select-text" : "hover:cursor-pointer"}`}
-              style={revealed ? { userSelect: "text" as const } : undefined}
-              onClick={(e) => {
-                e.stopPropagation();
-                // only open on click when not already revealed —
-                // prevents clearing selection on double-click inside revealed content
-                if (!revealed) toggleReveal(item.id);
-              }}
-              aria-expanded={!!revealed}
-            >
-              {renderPipeText(item.english)}
-            </button>
-          </div>
-        </div>
-
-        {revealed && (
-          <div
-            className="cursor-text select-text"
-            style={{ userSelect: "text" }}
-          >
-            {item.translation && (
-              <div className="mb-4 text-base text-gray-700">
-                <div>
-                  <span className="font-medium">
-                    {renderPipeText(item.translation)}
-                  </span>
-                  {item.part_of_speech && (
-                    <span className="ml-2 text-xs text-gray-400 select-none">
-                      ({item.part_of_speech})
-                    </span>
-                  )}
-                </div>
-
-                <div className="mt-1 text-sm text-gray-600">
-                  <SectionList
-                    title=""
-                    items={item.json?.other_translations}
-                    renderItem={(trans: any) => (
-                      <span>
-                        {renderPipeText(trans.translation)}
-                        {trans.part_of_speech ? (
-                          <span className="ml-1 text-xs text-gray-400 select-none">
-                            ({trans.part_of_speech})
-                          </span>
-                        ) : null}
-                      </span>
-                    )}
-                  />
-                </div>
-              </div>
-            )}
-
-            <div className="mb-4 space-y-2">
-              {(item.example || item.example_translation) && (
-                <div>
-                  {item.example && (
-                    <div className="text-sm text-gray-600 italic">
-                      {renderPipeText(item.example)}
-                    </div>
-                  )}
-                  {item.example_translation && (
-                    <div className="text-sm text-gray-500">
-                      {renderPipeText(item.example_translation)}
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {item.json?.other_examples?.map((ex, idx) => (
-                <div key={idx}>
-                  <div className="text-sm text-gray-600 italic">
-                    {renderPipeText(ex.english)}
-                  </div>
-                  <div className="text-sm text-gray-500">
-                    {renderPipeText(ex.translation)}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {item.json &&
-              ((item.json.derivatives?.length ?? 0) > 0 ||
-                (item.json.antonyms?.length ?? 0) > 0 ||
-                (item.json.phrases?.length ?? 0) > 0 ||
-                (item.json.synonyms?.length ?? 0) > 0) && (
-                <div className="mt-3 space-y-2 border-t pt-3 text-sm">
-                  <SectionList
-                    title="派生語:"
-                    items={item.json.derivatives}
-                    renderItem={(d: any) => (
-                      <div>
-                        <span className="font-medium">
-                          {renderPipeText(d.english)}
-                        </span>
-                        {d.translation && (
-                          <span className="ml-2 text-gray-600">
-                            {renderPipeText(d.translation)}
-                          </span>
-                        )}
-                        {d.part_of_speech && (
-                          <span className="ml-2 text-xs text-gray-400 select-none">
-                            ({d.part_of_speech})
-                          </span>
-                        )}
-                      </div>
-                    )}
-                  />
-
-                  <SectionList
-                    title="反意語:"
-                    items={item.json.antonyms}
-                    renderItem={(a: any) => (
-                      <div>
-                        <span className="font-medium">
-                          {renderPipeText(a.english)}
-                        </span>
-                        {a.translation && (
-                          <span className="ml-2 text-gray-600">
-                            {renderPipeText(a.translation)}
-                          </span>
-                        )}
-                        {a.part_of_speech && (
-                          <span className="ml-2 text-xs text-gray-400 select-none">
-                            ({a.part_of_speech})
-                          </span>
-                        )}
-                      </div>
-                    )}
-                  />
-
-                  <SectionList
-                    title="フレーズ:"
-                    items={item.json.phrases}
-                    renderItem={(p: any) => (
-                      <div>
-                        <div className="font-medium">
-                          {renderPipeText(p.english)}
-                        </div>
-                        <div className="text-sm text-gray-600">
-                          {renderPipeText(p.translation)}
-                        </div>
-                      </div>
-                    )}
-                  />
-
-                  <SectionList
-                    title="類義語（説明）:"
-                    items={item.json.synonyms}
-                    renderItem={(s: any) => (
-                      <div className="text-sm text-gray-600">
-                        {renderPipeText(s.description)}
-                      </div>
-                    )}
-                  />
-                </div>
-              )}
-
-            <div className="mt-3 flex items-center justify-end gap-2">
-              <span
-                className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium select-none ${statusBadgeClass((statuses[item.id] as Status) || "unknown")}`}
-              >
-                {getStatusLabel((statuses[item.id] as Status) || "unknown")}
-              </span>
-              <select
-                aria-label="ステータス"
-                className="rounded border bg-white px-2 py-1 text-sm text-gray-700 select-none"
-                value={(statuses[item.id] as Status) || "unknown"}
-                onClick={(e) => e.stopPropagation()}
-                onChange={(e) => {
-                  e.stopPropagation();
-                  const val = e.target.value as Status;
-                  setStatuses((prev) => {
-                    const next = { ...prev, [item.id]: val };
-                    if (val === "unknown") delete next[item.id];
-                    saveStatuses(next);
-                    return next;
-                  });
-                }}
-              >
-                <option value="unknown">未習得</option>
-                <option value="learning">習得中</option>
-                <option value="review">復習中</option>
-                <option value="known">覚えた</option>
-                <option value="done">もういい</option>
-              </select>
-            </div>
-          </div>
-        )}
-      </li>
-    );
-  }
+  // CardItem is defined above as a top-level component to reduce re-creation on each render
 
   return (
     <main>
@@ -606,7 +587,7 @@ export default function CardPage() {
                   revealed={!!revealed[item.id]}
                   toggleReveal={toggleReveal}
                   statuses={statuses}
-                  cycleStatus={cycleStatus}
+                  onChangeStatus={handleChangeStatus}
                 />
               ))
           ) : (
