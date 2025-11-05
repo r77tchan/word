@@ -1,24 +1,22 @@
 import Link from "next/link";
 
-const cardLinks = [
+const listLinks = [
   {
-    href: "/card",
-    label: "英検-準2級-200語-ランダム",
-    className: "bg-yellow-300",
+    href: "/list",
+    label: "英検-2級-頻出200語",
+    className: "bg-red-300",
   },
-  { href: "/", label: "ダミー", className: "bg-yellow-300" },
   { href: "/", label: "ダミー", className: "bg-yellow-300" },
   { href: "/", label: "ダミー", className: "bg-yellow-300" },
 ];
 
-const listLinks = [
-  { href: "/lesson", label: "レッスン一覧", className: "bg-red-300" },
-  { href: "/list", label: "リスト一覧", className: "bg-blue-300" },
+const cardLinks = [
   { href: "/", label: "ダミー", className: "bg-yellow-300" },
   { href: "/", label: "ダミー", className: "bg-yellow-300" },
   { href: "/", label: "ダミー", className: "bg-yellow-300" },
   { href: "/", label: "ダミー", className: "bg-yellow-300" },
-  { href: "/", label: "英検5級-200語-一覧", className: "bg-yellow-300" },
+  { href: "/", label: "ダミー", className: "bg-yellow-300" },
+  { href: "/", label: "ダミー", className: "bg-yellow-300" },
 ];
 
 export default function Home() {
@@ -30,10 +28,10 @@ export default function Home() {
           <span className="border-b-2 border-green-300">Home</span>
         </h1>
         <h2 className="py-4">
-          <span className="border-b-2 border-green-300">単発カード</span>
+          <span className="border-b-2 border-green-300">単語リスト</span>
         </h2>
         <div className="grid auto-rows-fr grid-cols-2 gap-4 pb-8 md:grid-cols-3 lg:grid-cols-4">
-          {cardLinks.map((link, index) => (
+          {listLinks.map((link, index) => (
             <Link
               key={index}
               href={link.href}
@@ -44,10 +42,10 @@ export default function Home() {
           ))}
         </div>
         <h2 className="py-4">
-          <span className="border-b-2 border-green-300">単語リスト</span>
+          <span className="border-b-2 border-green-300">単発カード</span>
         </h2>
         <div className="grid auto-rows-fr grid-cols-2 gap-4 pb-8 md:grid-cols-3 lg:grid-cols-4">
-          {listLinks.map((link, index) => (
+          {cardLinks.map((link, index) => (
             <Link
               key={index}
               href={link.href}
