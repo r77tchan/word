@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-black text-white select-none">
+    <header className="bg-bar text-white select-none">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-lg font-bold">
           <Link href="/" className="block p-4 hover:bg-gray-500">

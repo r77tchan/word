@@ -190,7 +190,7 @@ function CardItem({
       key={item.id}
       className={cx(
         // モバイルでは p-2、sm（≥640px）以降は p-4 を維持
-        "transform rounded-lg border bg-white p-2 shadow-sm transition duration-150 sm:p-4",
+        "bg-background border-foreground transform rounded-lg border p-2 shadow-sm transition duration-150 sm:p-4",
         revealed
           ? "cursor-text"
           : "cursor-pointer hover:-translate-y-0.5 hover:shadow-md",

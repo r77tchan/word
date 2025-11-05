@@ -4,19 +4,19 @@ const listLinks = [
   {
     href: "/list",
     label: "英検-2級-頻出200語",
-    className: "bg-red-300",
+    className: "bg-red",
   },
-  { href: "/", label: "ダミー", className: "bg-yellow-300" },
-  { href: "/", label: "ダミー", className: "bg-yellow-300" },
+  { href: "/", label: "ダミー", className: "bg-blue" },
+  { href: "/", label: "ダミー", className: "bg-yellow" },
 ];
 
 const cardLinks = [
-  { href: "/", label: "ダミー", className: "bg-yellow-300" },
-  { href: "/", label: "ダミー", className: "bg-yellow-300" },
-  { href: "/", label: "ダミー", className: "bg-yellow-300" },
-  { href: "/", label: "ダミー", className: "bg-yellow-300" },
-  { href: "/", label: "ダミー", className: "bg-yellow-300" },
-  { href: "/", label: "ダミー", className: "bg-yellow-300" },
+  { href: "/", label: "ダミー", className: "bg-green" },
+  { href: "/", label: "ダミー", className: "bg-gray" },
+  { href: "/", label: "ダミー", className: "bg-red" },
+  { href: "/", label: "ダミー", className: "bg-blue" },
+  { href: "/", label: "ダミー", className: "bg-yellow" },
+  { href: "/", label: "ダミー", className: "bg-green" },
 ];
 
 export default function Home() {

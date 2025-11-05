@@ -4,12 +4,22 @@
   --background: #ffffff;
   --foreground: #000000;
   --bar: #000000;
+  --red: #fee2e2; /* -100 */
+  --blue: #dbeafe;
+  --yellow: #fef3c7;
+  --green: #dcfce7;
+  --gray: #e5e7eb; /* -200 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-bar: var(--bar);
+  --color-red: var(--red);
+  --color-blue: var(--blue);
+  --color-yellow: var(--yellow);
+  --color-green: var(--green);
+  --color-gray: var(--gray);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -19,6 +29,11 @@
     --background: #000000;
     --foreground: #ffffff;
     --bar: #1e2939;
+    --red: #991b1b; /* -800 */
+    --blue: #1e40af;
+    --yellow: #92400e;
+    --green: #166534;
+    --gray: #374151; /* -700 */
   }
 }
 
