@@ -48,27 +48,50 @@ const posMap: Record<string, string> = {
   adjective: "形",
   verb: "動",
   adverb: "副",
+  conjunction: "接",
+  preposition: "前",
 };
 
-const items = (data as unknown as Item[]).map(item => ({
+const items = (data as unknown as Item[]).map((item) => ({
   ...item,
-  part_of_speech: item.part_of_speech ? posMap[item.part_of_speech] || item.part_of_speech : undefined,
-  json: item.json ? {
-    ...item.json,
-    derivatives: item.json.derivatives?.map(d => ({
-      ...d,
-      part_of_speech: posMap[d.part_of_speech] || d.part_of_speech
-    })),
-    other_translations: item.json.other_translations?.map(t => ({
-      ...t,
-      part_of_speech: posMap[t.part_of_speech] || t.part_of_speech
-    })),
-    antonyms: item.json.antonyms?.map(a => ({
-      ...a,
-      part_of_speech: posMap[a.part_of_speech] || a.part_of_speech
-    }))
-  } : undefined
+  part_of_speech: item.part_of_speech
+    ? posMap[item.part_of_speech] || item.part_of_speech
+    : undefined,
+  json: item.json
+    ? {
+        ...item.json,
+        derivatives: item.json.derivatives?.map((d) => ({
+          ...d,
+          part_of_speech: posMap[d.part_of_speech] || d.part_of_speech,
+        })),
+        other_translations: item.json.other_translations?.map((t) => ({
+          ...t,
+          part_of_speech: posMap[t.part_of_speech] || t.part_of_speech,
+        })),
+        antonyms: item.json.antonyms?.map((a) => ({
+          ...a,
+          part_of_speech: posMap[a.part_of_speech] || a.part_of_speech,
+        })),
+      }
+    : undefined,
 }));
+
+function renderPipeText(text?: string | null) {
+  if (!text) return null;
+  const parts = text.split(/(\|[^|]+\|)/g);
+  return parts.map((part, idx) => {
+    if (!part) return null;
+    if (part.startsWith("|") && part.endsWith("|")) {
+      const inner = part.slice(1, -1);
+      return (
+        <span key={idx} className="font-medium text-indigo-600">
+          {inner}
+        </span>
+      );
+    }
+    return <span key={idx}>{part}</span>;
+  });
+}
 
 export default function cardPage() {
   return (
@@ -76,7 +99,7 @@ export default function cardPage() {
       <div className="mx-auto max-w-4xl p-6">
         <h1 className="mb-2 text-2xl font-bold">英検2級 - 頻出200</h1>
         <p className="mb-6 text-sm text-gray-600">
-          一覧：id / English / 日本語訳 / 例文 / 例文の訳
+          一覧：English / 日本語訳 / 例文 / 例文の訳
         </p>
 
         <ul className="space-y-4">
@@ -86,49 +109,40 @@ export default function cardPage() {
                 key={item.id}
                 className="rounded-lg border bg-white p-4 shadow-sm"
               >
-                <div className="mb-2 flex items-center justify-between">
-                  <div>
-                    <span className="mr-2 text-sm text-gray-500">
-                      ID: {item.id}
-                    </span>
-                    {item.importance !== undefined && (
-                      <span className="text-sm text-gray-500">
-                        重要度: {item.importance}
-                      </span>
-                    )}
-                  </div>
-                  <div>
-                    {item.part_of_speech && (
-                      <span className="mr-2 text-xs text-gray-400 capitalize">
-                        {item.part_of_speech}
-                      </span>
-                    )}
-                    {item.course && (
-                      <span className="text-xs text-gray-400">
-                        {item.course}
-                      </span>
-                    )}
-                  </div>
-                </div>
-
                 <div className="mb-2">
                   <span className="mr-2 text-lg font-semibold text-gray-900">
-                    {item.english}
+                    {renderPipeText(item.english)}
                   </span>
-                  {item.json?.pronunciation && (
-                    <span className="text-sm text-gray-600">
-                      {item.json.pronunciation}
-                    </span>
-                  )}
                 </div>
+
                 {item.translation && (
                   <div className="mb-4 text-base text-gray-700">
-                    {item.translation}
-                    {item.json?.other_translations?.map((trans, idx) => (
-                      <span key={idx} className="ml-2 text-gray-600">
-                        / {trans.translation}
+                    <div>
+                      <span className="font-medium">
+                        {renderPipeText(item.translation)}
                       </span>
-                    ))}
+                      {item.part_of_speech && (
+                        <span className="ml-2 text-xs text-gray-400">
+                          ({item.part_of_speech})
+                        </span>
+                      )}
+                    </div>
+
+                    {item.json?.other_translations &&
+                      item.json.other_translations.length > 0 && (
+                        <div className="mt-1 text-sm text-gray-600">
+                          {item.json.other_translations.map((trans, idx) => (
+                            <span key={idx}>
+                              {renderPipeText(trans.translation)}
+                              {trans.part_of_speech ? (
+                                <span className="ml-1 text-xs text-gray-400">
+                                  ({trans.part_of_speech})
+                                </span>
+                              ) : null}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                   </div>
                 )}
 
@@ -137,43 +151,55 @@ export default function cardPage() {
                     <div>
                       {item.example && (
                         <div className="text-sm text-gray-600 italic">
-                          例: {item.example}
+                          {renderPipeText(item.example)}
                         </div>
                       )}
                       {item.example_translation && (
                         <div className="text-sm text-gray-500">
-                          訳: {item.example_translation}
+                          {renderPipeText(item.example_translation)}
                         </div>
                       )}
                     </div>
                   )}
+
                   {item.json?.other_examples?.map((ex, idx) => (
                     <div key={idx}>
                       <div className="text-sm text-gray-600 italic">
-                        例{idx + 2}: {ex.english}
+                        {renderPipeText(ex.english)}
                       </div>
                       <div className="text-sm text-gray-500">
-                        訳: {ex.translation}
+                        {renderPipeText(ex.translation)}
                       </div>
                     </div>
                   ))}
                 </div>
 
                 {item.json &&
-                  (item.json.derivatives?.length ||
-                    item.json.antonyms?.length ||
-                    item.json.phrases?.length ||
-                    item.json.synonyms?.length ||
-                    item.json.english_meaning) && (
+                  ((item.json.derivatives?.length ?? 0) > 0 ||
+                    (item.json.antonyms?.length ?? 0) > 0 ||
+                    (item.json.phrases?.length ?? 0) > 0 ||
+                    (item.json.synonyms?.length ?? 0) > 0) && (
                     <div className="mt-3 space-y-2 border-t pt-3 text-sm">
                       {item.json?.derivatives &&
                         item.json.derivatives.length > 0 && (
                           <div>
                             <span className="font-medium">派生語:</span>
                             {item.json.derivatives.map((d, idx) => (
-                              <span key={idx} className="ml-2">
-                                {d.english} ({d.translation})
-                              </span>
+                              <div key={idx} className="ml-3">
+                                <span className="font-medium">
+                                  {renderPipeText(d.english)}
+                                </span>
+                                {d.translation && (
+                                  <span className="ml-2 text-gray-600">
+                                    {renderPipeText(d.translation)}
+                                  </span>
+                                )}
+                                {d.part_of_speech && (
+                                  <span className="ml-2 text-xs text-gray-400">
+                                    ({d.part_of_speech})
+                                  </span>
+                                )}
+                              </div>
                             ))}
                           </div>
                         )}
@@ -182,9 +208,21 @@ export default function cardPage() {
                         <div>
                           <span className="font-medium">反意語:</span>
                           {item.json.antonyms.map((a, idx) => (
-                            <span key={idx} className="ml-2">
-                              {a.english} ({a.translation})
-                            </span>
+                            <div key={idx} className="ml-3">
+                              <span className="font-medium">
+                                {renderPipeText(a.english)}
+                              </span>
+                              {a.translation && (
+                                <span className="ml-2 text-gray-600">
+                                  {renderPipeText(a.translation)}
+                                </span>
+                              )}
+                              {a.part_of_speech && (
+                                <span className="ml-2 text-xs text-gray-400">
+                                  ({a.part_of_speech})
+                                </span>
+                              )}
+                            </div>
                           ))}
                         </div>
                       )}
@@ -193,8 +231,13 @@ export default function cardPage() {
                         <div>
                           <span className="font-medium">フレーズ:</span>
                           {item.json.phrases.map((p, idx) => (
-                            <div key={idx} className="ml-2">
-                              {p.english} - {p.translation}
+                            <div key={idx} className="ml-3">
+                              <div className="font-medium">
+                                {renderPipeText(p.english)}
+                              </div>
+                              <div className="text-sm text-gray-600">
+                                {renderPipeText(p.translation)}
+                              </div>
                             </div>
                           ))}
                         </div>
@@ -202,21 +245,15 @@ export default function cardPage() {
 
                       {item.json?.synonyms && item.json.synonyms.length > 0 && (
                         <div>
-                          <span className="font-medium">類義語:</span>
+                          <span className="font-medium">類義語（説明）:</span>
                           {item.json.synonyms.map((s, idx) => (
-                            <div key={idx} className="ml-2">
-                              {s.english} - {s.description}
+                            <div
+                              key={idx}
+                              className="ml-3 text-sm text-gray-600"
+                            >
+                              {renderPipeText(s.description)}
                             </div>
                           ))}
-                        </div>
-                      )}
-
-                      {item.json.english_meaning && (
-                        <div>
-                          <span className="font-medium">英語の意味:</span>
-                          <span className="ml-2">
-                            {item.json.english_meaning}
-                          </span>
                         </div>
                       )}
                     </div>
