@@ -143,7 +143,7 @@ function SectionList<T>({ title, items, renderItem }: SectionListProps<T>) {
     <div>
       <span className="font-medium select-none">{title}</span>
       {items.map((it, idx) => (
-        <div key={idx} className="ml-3">
+        <div key={idx} className="ml-2 sm:ml-3">
           {renderItem(it, idx)}
         </div>
       ))}
@@ -189,7 +189,8 @@ function CardItem({
     <li
       key={item.id}
       className={cx(
-        "transform rounded-lg border bg-white p-4 shadow-sm transition duration-150",
+        // モバイルでは p-2、sm（≥640px）以降は p-4 を維持
+        "transform rounded-lg border bg-white p-2 shadow-sm transition duration-150 sm:p-4",
         revealed
           ? "cursor-text"
           : "cursor-pointer hover:-translate-y-0.5 hover:shadow-md",
@@ -197,12 +198,18 @@ function CardItem({
       onPointerDown={onPointerDown}
       onPointerUp={onPointerUp}
     >
-      <div className="mb-2">
-        <div className="flex items-start gap-3">
+      {/* 詳細を閉じているときは縦中央、開いているときは上寄せ＋余白 */}
+      <div className={revealed ? "mb-2" : "flex items-center"}>
+        <div
+          className={cx(
+            "flex gap-3",
+            revealed ? "items-start" : "items-center",
+          )}
+        >
           <button
             type="button"
             className={cx(
-              "mr-2 text-left text-xl leading-tight font-semibold text-gray-900 focus:outline-none sm:text-2xl",
+              "mr-2 text-2xl leading-tight font-semibold text-gray-900 focus:outline-none sm:text-3xl",
               revealed ? "cursor-text select-text" : "hover:cursor-pointer",
             )}
             style={revealed ? { userSelect: "text" as const } : undefined}
@@ -220,7 +227,7 @@ function CardItem({
       {revealed && (
         <div className="cursor-text select-text" style={{ userSelect: "text" }}>
           {item.translation && (
-            <div className="mb-4 text-base text-gray-700">
+            <div className="mb-4 text-lg text-gray-700">
               <div>
                 <span className="font-medium">
                   {renderPipeText(item.translation)}
@@ -232,7 +239,7 @@ function CardItem({
                 )}
               </div>
 
-              <div className="mt-1 text-sm text-gray-600">
+              <div className="mt-1 text-base text-gray-600">
                 <SectionList
                   title=""
                   items={item.json?.other_translations}
@@ -255,12 +262,12 @@ function CardItem({
             {(item.example || item.example_translation) && (
               <div>
                 {item.example && (
-                  <div className="text-sm text-gray-600 italic">
+                  <div className="text-base text-gray-600 italic">
                     {renderPipeText(item.example)}
                   </div>
                 )}
                 {item.example_translation && (
-                  <div className="text-sm text-gray-500">
+                  <div className="text-base text-gray-500">
                     {renderPipeText(item.example_translation)}
                   </div>
                 )}
@@ -269,10 +276,10 @@ function CardItem({
 
             {item.json?.other_examples?.map((ex, idx) => (
               <div key={idx}>
-                <div className="text-sm text-gray-600 italic">
+                <div className="text-base text-gray-600 italic">
                   {renderPipeText(ex.english)}
                 </div>
-                <div className="text-sm text-gray-500">
+                <div className="text-base text-gray-500">
                   {renderPipeText(ex.translation)}
                 </div>
               </div>
@@ -284,7 +291,7 @@ function CardItem({
               (item.json.antonyms?.length ?? 0) > 0 ||
               (item.json.phrases?.length ?? 0) > 0 ||
               (item.json.synonyms?.length ?? 0) > 0) && (
-              <div className="mt-3 space-y-2 border-t pt-3 text-sm">
+              <div className="mt-3 space-y-2 border-t pt-3 text-base">
                 <SectionList
                   title="派生語:"
                   items={item.json.derivatives}
@@ -337,7 +344,7 @@ function CardItem({
                       <div className="font-medium">
                         {renderPipeText(p.english)}
                       </div>
-                      <div className="text-sm text-gray-600">
+                      <div className="text-base text-gray-600">
                         {renderPipeText(p.translation)}
                       </div>
                     </div>
@@ -348,7 +355,7 @@ function CardItem({
                   title="類義語（説明）:"
                   items={item.json.synonyms}
                   renderItem={(s: any) => (
-                    <div className="text-sm text-gray-600">
+                    <div className="text-base text-gray-600">
                       {renderPipeText(s.description)}
                     </div>
                   )}
@@ -359,7 +366,7 @@ function CardItem({
           <div className="mt-3 flex items-center justify-end gap-2">
             <span
               className={cx(
-                "inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium select-none",
+                "inline-flex items-center rounded-full px-2 py-0.5 text-sm font-medium select-none",
                 STATUS_BADGE_CLASS[curStatus],
               )}
             >
@@ -367,7 +374,7 @@ function CardItem({
             </span>
             <select
               aria-label="ステータス"
-              className="rounded border bg-white px-2 py-1 text-sm text-gray-700 select-none"
+              className="rounded border bg-white px-2 py-1 text-base text-gray-700 select-none"
               value={curStatus}
               onClick={(e) => e.stopPropagation()}
               onChange={(e) => {
@@ -519,7 +526,8 @@ export default function ListPage() {
 
   return (
     <main>
-      <div className="mx-auto max-w-4xl p-6">
+      {/* 横の余白をモバイルで小さく、上下は十分確保 */}
+      <div className="mx-auto max-w-4xl px-2 py-6 sm:px-6">
         <h1 className="mb-2 text-2xl font-bold">英検-2級-頻出200語</h1>
 
         {/* ステータスでフィルタするボタン群 */}
@@ -576,7 +584,8 @@ export default function ListPage() {
           {/* 非表示カウントは表示していません（要望により非表示） */}
         </div>
 
-        <ul className="space-y-4">
+        {/* リスト間隔をモバイルでやや詰める */}
+        <ul className="space-y-3 sm:space-y-4">
           {visibleItemsOrdered.length > 0 ? (
             visibleItemsOrdered
               .slice(0, displayedCount)
