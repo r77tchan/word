@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useMemo, useCallback } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import data from "@/lib/英検_2級_頻出_200.json";
 
 type Item = {
@@ -151,6 +151,55 @@ function SectionList<T>({ title, items, renderItem }: SectionListProps<T>) {
   );
 }
 
+type WordWithTranslationProps = {
+  english?: string;
+  translation?: string;
+  partOfSpeech?: string;
+};
+
+function WordWithTranslation({
+  english,
+  translation,
+  partOfSpeech,
+}: WordWithTranslationProps) {
+  return (
+    <div>
+      <span className="font-medium">{renderPipeText(english)}</span>
+      {translation && (
+        <span className="ml-2">{renderPipeText(translation)}</span>
+      )}
+      {partOfSpeech && (
+        <span className="text-gray-fore ml-2 text-xs select-none">
+          ({partOfSpeech})
+        </span>
+      )}
+    </div>
+  );
+}
+
+type FilterButtonProps = {
+  label: string;
+  count: number;
+  isActive: boolean;
+  onClick: () => void;
+};
+
+function FilterButton({ label, count, isActive, onClick }: FilterButtonProps) {
+  return (
+    <button
+      className={cx(
+        "border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer",
+        isActive
+          ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700"
+          : "bg-background hover:bg-gray-back",
+      )}
+      onClick={onClick}
+    >
+      {label} ({count})
+    </button>
+  );
+}
+
 type CardItemProps = {
   item: Item;
   revealed: boolean;
@@ -187,7 +236,6 @@ function CardItem({
 
   return (
     <li
-      key={item.id}
       className={cx(
         // モバイルでは p-2、sm（≥640px）以降は p-4 を維持
         "bg-background border-foreground transform rounded-lg border p-2 shadow-sm transition duration-150 sm:p-4",
@@ -293,21 +341,11 @@ function CardItem({
                   title="派生語:"
                   items={item.json.derivatives}
                   renderItem={(d: any) => (
-                    <div>
-                      <span className="font-medium">
-                        {renderPipeText(d.english)}
-                      </span>
-                      {d.translation && (
-                        <span className="ml-2">
-                          {renderPipeText(d.translation)}
-                        </span>
-                      )}
-                      {d.part_of_speech && (
-                        <span className="text-gray-fore ml-2 text-xs select-none">
-                          ({d.part_of_speech})
-                        </span>
-                      )}
-                    </div>
+                    <WordWithTranslation
+                      english={d.english}
+                      translation={d.translation}
+                      partOfSpeech={d.part_of_speech}
+                    />
                   )}
                 />
 
@@ -315,21 +353,11 @@ function CardItem({
                   title="反意語:"
                   items={item.json.antonyms}
                   renderItem={(a: any) => (
-                    <div>
-                      <span className="font-medium">
-                        {renderPipeText(a.english)}
-                      </span>
-                      {a.translation && (
-                        <span className="ml-2">
-                          {renderPipeText(a.translation)}
-                        </span>
-                      )}
-                      {a.part_of_speech && (
-                        <span className="text-gray-fore ml-2 text-xs select-none">
-                          ({a.part_of_speech})
-                        </span>
-                      )}
-                    </div>
+                    <WordWithTranslation
+                      english={a.english}
+                      translation={a.translation}
+                      partOfSpeech={a.part_of_speech}
+                    />
                   )}
                 />
 
@@ -539,44 +567,23 @@ export default function ListPage() {
 
         {/* ステータスでフィルタするボタン群 */}
         <div className="mb-4 flex flex-wrap items-center gap-2">
-          <button
-            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === null || filter === "all" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
+          <FilterButton
+            label="全て"
+            count={items.length}
+            isActive={filter === null || filter === "all"}
             onClick={() => setFilterAndClose("all")}
-          >
-            全て ({items.length})
-          </button>
+          />
 
           {/* フィルタ順: 未習得 -> 習得中 -> 復習中 -> 覚えた -> もういい */}
-          <button
-            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === "unknown" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
-            onClick={() => setFilterAndClose("unknown")}
-          >
-            未習得 ({counts.unknown})
-          </button>
-          <button
-            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === "learning" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
-            onClick={() => setFilterAndClose("learning")}
-          >
-            習得中 ({counts.learning})
-          </button>
-          <button
-            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === "review" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
-            onClick={() => setFilterAndClose("review")}
-          >
-            復習中 ({counts.review})
-          </button>
-          <button
-            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === "known" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
-            onClick={() => setFilterAndClose("known")}
-          >
-            覚えた ({counts.known})
-          </button>
-          <button
-            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === "done" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
-            onClick={() => setFilterAndClose("done")}
-          >
-            もういい ({counts.done})
-          </button>
+          {STATUS_ORDER.map((status) => (
+            <FilterButton
+              key={status}
+              label={STATUS_LABELS[status]}
+              count={counts[status]}
+              isActive={filter === status}
+              onClick={() => setFilterAndClose(status)}
+            />
+          ))}
 
           {/* 表示中ラベルは表示していません（要望により非表示） */}
         </div>
