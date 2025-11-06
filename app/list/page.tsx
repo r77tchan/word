@@ -609,6 +609,15 @@ export default function ListPage() {
     });
   }, [bulkOpen, displayedCount, visibleItemsOrdered]);
 
+  // ページトップへスクロール
+  const handleScrollTop = useCallback(() => {
+    try {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch {
+      window.scrollTo(0, 0);
+    }
+  }, []);
+
   const shuffleOrder = useCallback(() => {
     const visibleIds = visibleItems.map((it) => it.id);
     const arr = [...visibleIds];
@@ -699,6 +708,24 @@ export default function ListPage() {
           {displayedCount < visibleItemsOrdered.length && (
             <li className="text-center text-sm">
               下にスクロールするとさらに読み込みます…
+            </li>
+          )}
+          {/* ページトップボタン（カードと同じ横幅で下部に表示） */}
+          {visibleItemsOrdered.length > 0 && (
+            <li
+              role="button"
+              tabIndex={0}
+              className={cx(
+                "bg-background border-foreground transform rounded-lg border p-2 shadow-sm transition duration-150 sm:p-4",
+                "cursor-pointer text-center select-none hover:-translate-y-0.5 hover:shadow-md",
+              )}
+              onClick={handleScrollTop}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") handleScrollTop();
+              }}
+              aria-label="ページトップへ戻る"
+            >
+              ページトップへ戻る
             </li>
           )}
         </ul>
