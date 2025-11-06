@@ -2,7 +2,6 @@
 
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import defaultData from "@/lib/new_9184.json";
 
 type Item = {
   id: string;
@@ -117,9 +116,6 @@ function normalizeItems(raw: any[]): Item[] {
       : undefined,
   }));
 }
-
-// 既定データ（フォールバック）
-const defaultItems: Item[] = normalizeItems(defaultData as any);
 
 // 利用可能なデータセット一覧（必要に応じて追加）
 const DATASETS: Record<
@@ -595,14 +591,7 @@ const MemoCardItem = React.memo(CardItem);
 
 const PAGE_SIZE = 20;
 
-// ネストした JSON の型ヘルパー
-type JsonData = NonNullable<Item["json"]>;
-type OtherTranslation = NonNullable<JsonData["other_translations"]>[number];
-type OtherExample = NonNullable<JsonData["other_examples"]>[number];
-type Derivative = NonNullable<JsonData["derivatives"]>[number];
-type Antonym = NonNullable<JsonData["antonyms"]>[number];
-type Phrase = NonNullable<JsonData["phrases"]>[number];
-type Synonym = NonNullable<JsonData["synonyms"]>[number];
+// （不要な型エイリアスは削除）
 
 export default function ListPage() {
   const searchParams = useSearchParams();
@@ -611,11 +600,11 @@ export default function ListPage() {
   const [datasetLabel, setDatasetLabel] = useState<string>(
     DATASETS[datasetKey]?.label || DATASETS["new9184"].label,
   );
-  const [items, setItems] = useState<Item[]>(defaultItems);
+  const [items, setItems] = useState<Item[]>([]);
 
   const [statuses, setStatuses] = useState<Record<string, Status>>({});
   const [filter, setFilter] = useState<"all" | Status | null>(null);
-  const [order, setOrder] = useState<string[]>(defaultItems.map((it) => it.id));
+  const [order, setOrder] = useState<string[]>([]);
   const [revealed, setRevealed] = useState<Record<string, boolean>>({});
   const [displayedCount, setDisplayedCount] = useState<number>(PAGE_SIZE);
   const [bulkOpen, setBulkOpen] = useState<boolean>(false);
@@ -631,10 +620,11 @@ export default function ListPage() {
   // データセット切替
   useEffect(() => {
     let mounted = true;
-    const ds = DATASETS[datasetKey] || DATASETS["new9184"];
-    setDatasetLabel(ds.label);
-    ds.loader()
-      .then((mod) => {
+    const run = async () => {
+      const ds = DATASETS[datasetKey] || DATASETS["new9184"];
+      setDatasetLabel(ds.label);
+      try {
+        const mod = await ds.loader();
         if (!mounted) return;
         const next = normalizeItems(mod.default as any);
         setItems(next);
@@ -644,13 +634,27 @@ export default function ListPage() {
         setBulkOpen(false);
         setSelected({});
         setItemDisplayModes({});
-      })
-      .catch(() => {
-        if (!mounted) return;
-        setItems(defaultItems);
-        setOrder(defaultItems.map((it) => it.id));
-        setDatasetLabel(DATASETS["new9184"].label);
-      });
+      } catch {
+        try {
+          const mod = await DATASETS["new9184"].loader();
+          if (!mounted) return;
+          const next = normalizeItems(mod.default as any);
+          setItems(next);
+          setOrder(next.map((it) => it.id));
+          setDatasetLabel(DATASETS["new9184"].label);
+          setRevealed({});
+          setDisplayedCount(PAGE_SIZE);
+          setBulkOpen(false);
+          setSelected({});
+          setItemDisplayModes({});
+        } catch {
+          if (!mounted) return;
+          setItems([]);
+          setOrder([]);
+        }
+      }
+    };
+    run();
     return () => {
       mounted = false;
     };
@@ -738,7 +742,7 @@ export default function ListPage() {
     return [
       ...orderedVisibleIds
         .map((id) => ITEM_BY_ID[id])
-        .filter(Boolean as unknown as (v: Item | undefined) => v is Item),
+        .filter((v): v is Item => Boolean(v)),
       ...remainingVisible,
     ];
   }, [visibleItems, order, items]);
