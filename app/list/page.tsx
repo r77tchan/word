@@ -206,6 +206,7 @@ type CardItemProps = {
   toggleReveal: (id: string) => void;
   statuses: Record<string, Status>;
   onChangeStatus: (id: string, val: Status) => void;
+  onClose: (id: string) => void; // 追加
 };
 
 function CardItem({
@@ -214,6 +215,7 @@ function CardItem({
   toggleReveal,
   statuses,
   onChangeStatus,
+  onClose, // 追加
 }: CardItemProps) {
   const pointerDownRef = React.useRef<{ x: number; y: number } | null>(null);
 
@@ -388,42 +390,57 @@ function CardItem({
               </div>
             )}
 
-          <div className="mt-3 flex items-center justify-end gap-2">
-            <span
-              className={cx(
-                "inline-flex items-center rounded-full px-2 py-0.5 text-sm font-medium select-none",
-                STATUS_BADGE_CLASS[curStatus],
-              )}
-            >
-              {STATUS_LABELS[curStatus]}
-            </span>
-            <select
-              aria-label="ステータス"
-              className="border-fore rounded border px-2 py-1 text-base select-none"
-              value={curStatus}
-              onClick={(e) => e.stopPropagation()}
-              onChange={(e) => {
+          {/* 下部操作エリアを左右に分割: 左=閉じる, 右=ステータス */}
+          <div className="mt-3 flex items-center justify-between">
+            <button
+              type="button"
+              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+              onClick={(e) => {
                 e.stopPropagation();
-                const val = e.target.value as Status;
-                onChangeStatus(item.id, val);
+                onClose(item.id);
               }}
+              aria-label="閉じる"
             >
-              <option value="unknown" className="bg-background">
-                未習得
-              </option>
-              <option value="learning" className="bg-background">
-                習得中
-              </option>
-              <option value="review" className="bg-background">
-                復習中
-              </option>
-              <option value="known" className="bg-background">
-                覚えた
-              </option>
-              <option value="done" className="bg-background">
-                もういい
-              </option>
-            </select>
+              閉じる
+            </button>
+
+            <div className="flex items-center gap-2">
+              <span
+                className={cx(
+                  "inline-flex items-center rounded-full px-2 py-0.5 text-sm font-medium select-none",
+                  STATUS_BADGE_CLASS[curStatus],
+                )}
+              >
+                {STATUS_LABELS[curStatus]}
+              </span>
+              <select
+                aria-label="ステータス"
+                className="border-fore rounded border px-2 py-1 text-base select-none"
+                value={curStatus}
+                onClick={(e) => e.stopPropagation()}
+                onChange={(e) => {
+                  e.stopPropagation();
+                  const val = e.target.value as Status;
+                  onChangeStatus(item.id, val);
+                }}
+              >
+                <option value="unknown" className="bg-background">
+                  未習得
+                </option>
+                <option value="learning" className="bg-background">
+                  習得中
+                </option>
+                <option value="review" className="bg-background">
+                  復習中
+                </option>
+                <option value="known" className="bg-background">
+                  覚えた
+                </option>
+                <option value="done" className="bg-background">
+                  もういい
+                </option>
+              </select>
+            </div>
           </div>
         </div>
       )}
@@ -439,10 +456,21 @@ export default function ListPage() {
   const [order, setOrder] = useState<string[]>(items.map((it) => it.id));
   const [revealed, setRevealed] = useState<Record<string, boolean>>({});
   const [displayedCount, setDisplayedCount] = useState<number>(PAGE_SIZE);
+  // 追加: 一括開閉の状態（デフォルト: 閉）
+  const [bulkOpen, setBulkOpen] = useState<boolean>(false);
 
   // open only — 再タップで閉じないようにする
   const toggleReveal = useCallback((id: string) => {
     setRevealed((prev) => ({ ...prev, [id]: true }));
+  }, []);
+
+  // 個別にカードを閉じる
+  const handleCloseCard = useCallback((id: string) => {
+    setRevealed((prev) => {
+      const next = { ...prev };
+      delete next[id];
+      return next;
+    });
   }, []);
 
   useEffect(() => {
@@ -537,6 +565,50 @@ export default function ListPage() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [visibleItemsOrdered.length]);
 
+  // 追加: 一括開閉のトグル
+  const handleBulkToggle = useCallback(() => {
+    const targetIds = visibleItemsOrdered
+      .slice(0, displayedCount)
+      .map((it) => it.id);
+
+    if (!bulkOpen) {
+      setBulkOpen(true);
+      setRevealed((prev) => {
+        const next = { ...prev };
+        for (const id of targetIds) next[id] = true;
+        return next;
+      });
+    } else {
+      setBulkOpen(false);
+      setRevealed((prev) => {
+        const next: Record<string, boolean> = { ...prev };
+        for (const id of targetIds) {
+          delete next[id];
+        }
+        return next;
+      });
+    }
+  }, [bulkOpen, visibleItemsOrdered, displayedCount]);
+
+  // 追加: 追加読み込みや表示対象変更時に、bulkOpen が true なら新規表示分を自動で開く
+  useEffect(() => {
+    if (!bulkOpen) return;
+    const idsToShow = new Set(
+      visibleItemsOrdered.slice(0, displayedCount).map((it) => it.id),
+    );
+    setRevealed((prev) => {
+      let changed = false;
+      const next = { ...prev };
+      idsToShow.forEach((id) => {
+        if (!next[id]) {
+          next[id] = true;
+          changed = true;
+        }
+      });
+      return changed ? next : prev;
+    });
+  }, [bulkOpen, displayedCount, visibleItemsOrdered]);
+
   const shuffleOrder = useCallback(() => {
     const visibleIds = visibleItems.map((it) => it.id);
     const arr = [...visibleIds];
@@ -544,16 +616,17 @@ export default function ListPage() {
       const j = Math.floor(Math.random() * (i + 1));
       [arr[i], arr[j]] = [arr[j], arr[i]];
     }
-    // 表示対象以外の id は相対順を維持しつつ、シャッフルした表示対象を先頭に持ってくる
     const otherIds = order.filter((id) => !visibleIds.includes(id));
     setOrder([...arr, ...otherIds]);
     // シャッフル時には開いているカードを閉じる
+    setBulkOpen(false); // 追加: 一括開閉状態もリセット
     setRevealed({});
   }, [visibleItems, order]);
 
   // フィルタを切り替える際に開いているカードを閉じるユーティリティ
   const setFilterAndClose = useCallback((val: "all" | Status | null) => {
     setFilter(val as any);
+    setBulkOpen(false); // 追加: 一括開閉状態を閉にリセット
     setRevealed({});
   }, []);
 
@@ -595,24 +668,30 @@ export default function ListPage() {
           >
             シャッフル
           </button>
+          {/* 追加: 一括開閉ボタン */}
+          <button
+            className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+            onClick={handleBulkToggle}
+          >
+            {bulkOpen ? "一括閉じる" : "一括開く"}
+          </button>
           {/* 非表示カウントは表示していません（要望により非表示） */}
         </div>
 
         {/* リスト間隔をモバイルでやや詰める */}
         <ul className="space-y-3 sm:space-y-4">
           {visibleItemsOrdered.length > 0 ? (
-            visibleItemsOrdered
-              .slice(0, displayedCount)
-              .map((item) => (
-                <CardItem
-                  key={item.id}
-                  item={item}
-                  revealed={!!revealed[item.id]}
-                  toggleReveal={toggleReveal}
-                  statuses={statuses}
-                  onChangeStatus={handleChangeStatus}
-                />
-              ))
+            visibleItemsOrdered.slice(0, displayedCount).map((item) => (
+              <CardItem
+                key={item.id}
+                item={item}
+                revealed={!!revealed[item.id]}
+                toggleReveal={toggleReveal}
+                statuses={statuses}
+                onChangeStatus={handleChangeStatus}
+                onClose={handleCloseCard} // 追加
+              />
+            ))
           ) : (
             <li>データがありません</li>
           )}
