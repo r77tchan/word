@@ -114,6 +114,11 @@ const items: Item[] = (data as unknown as Item[]).map((item) => ({
     : undefined,
 }));
 
+// id -> item のクイック参照（並び替えでの線形探索を避ける）
+const ITEM_BY_ID: Record<string, Item> = Object.fromEntries(
+  items.map((it) => [it.id, it] as const),
+);
+
 function renderPipeText(text?: string | null) {
   if (!text) return null;
   const parts = text.split(/(\|[^|]+\|)/g);
@@ -229,17 +234,14 @@ type CardItemProps = {
   item: Item;
   revealed: boolean;
   toggleReveal: (id: string) => void;
-  statuses: Record<string, Status>;
+  status: Status;
   onChangeStatus: (id: string, val: Status) => void;
-  onClose: (id: string) => void; // 追加
-  // 一括移動モード関連
+  onClose: (id: string) => void;
   bulkMoveMode?: boolean;
   selected?: boolean;
   onToggleSelect?: (id: string) => void;
-  // 表示モード
   mode: DisplayMode;
   onChangeItemMode: (id: string, mode: DisplayMode) => void;
-  // 下部操作エリアの表示/非表示（グローバル制御）
   showBottomControls?: boolean;
 };
 
@@ -247,9 +249,9 @@ function CardItem({
   item,
   revealed,
   toggleReveal,
-  statuses,
+  status,
   onChangeStatus,
-  onClose, // 追加
+  onClose,
   bulkMoveMode = false,
   selected = false,
   onToggleSelect,
@@ -271,20 +273,18 @@ function CardItem({
     const dy = Math.abs(e.clientY - start.y);
     if (dx < 6 && dy < 6) {
       if (bulkMoveMode) {
-        // 一括移動モード中は開閉ではなく選択トグル
         onToggleSelect?.(item.id);
-      } else {
-        if (!revealed) toggleReveal(item.id);
+      } else if (!revealed) {
+        toggleReveal(item.id);
       }
     }
   };
 
-  const curStatus = (statuses[item.id] as Status) || "unknown";
+  const curStatus = status || "unknown";
 
   return (
     <li
       className={cx(
-        // モバイルでは p-2、sm（≥640px）以降は p-4 を維持
         "bg-background border-foreground transform rounded-lg border p-2 shadow-sm transition duration-150 active:ring-2 active:ring-indigo-300 sm:p-4",
         revealed
           ? "cursor-text"
@@ -294,7 +294,6 @@ function CardItem({
       onPointerDown={onPointerDown}
       onPointerUp={onPointerUp}
     >
-      {/* 詳細を閉じているときは縦中央、開いているときは上寄せ＋余白 */}
       <div className={revealed ? "mb-2" : "flex items-center"}>
         <div
           className={cx(
@@ -319,7 +318,7 @@ function CardItem({
                 revealed ? "cursor-text select-text" : "hover:cursor-pointer",
               )}
               onClick={(e) => {
-                if (bulkMoveMode) return; // 一括移動モード時は何もしない（liで選択）
+                if (bulkMoveMode) return;
                 e.stopPropagation();
                 if (!revealed) toggleReveal(item.id);
               }}
@@ -333,7 +332,6 @@ function CardItem({
 
       {revealed && (
         <div className="cursor-text select-text">
-          {/* 表示モード: detail / simple / examples */}
           {(mode === "detail" || mode === "simple") && (
             <>
               {item.translation && (
@@ -353,7 +351,7 @@ function CardItem({
                     <SectionList
                       title=""
                       items={item.json?.other_translations}
-                      renderItem={(trans: any) => (
+                      renderItem={(trans) => (
                         <span>
                           {renderPipeText(trans.translation)}
                           {trans.part_of_speech ? (
@@ -408,7 +406,7 @@ function CardItem({
                 <SectionList
                   title="派生語:"
                   items={item.json.derivatives}
-                  renderItem={(d: any) => (
+                  renderItem={(d) => (
                     <WordWithTranslation
                       english={d.english}
                       translation={d.translation}
@@ -420,7 +418,7 @@ function CardItem({
                 <SectionList
                   title="反意語:"
                   items={item.json.antonyms}
-                  renderItem={(a: any) => (
+                  renderItem={(a) => (
                     <WordWithTranslation
                       english={a.english}
                       translation={a.translation}
@@ -432,7 +430,7 @@ function CardItem({
                 <SectionList
                   title="フレーズ:"
                   items={item.json.phrases}
-                  renderItem={(p: any) => (
+                  renderItem={(p) => (
                     <div>
                       <div className="font-medium">
                         {renderPipeText(p.english)}
@@ -447,7 +445,7 @@ function CardItem({
                 <SectionList
                   title="類義語（説明）:"
                   items={item.json.synonyms}
-                  renderItem={(s: any) => (
+                  renderItem={(s) => (
                     <div className="text-base">
                       {renderPipeText(s.description)}
                     </div>
@@ -486,7 +484,6 @@ function CardItem({
             </div>
           )}
 
-          {/* 下部操作エリア: 左=閉じる, 中=モードボタン, 右=ステータス */}
           {showBottomControls && (
             <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-2">
@@ -502,8 +499,6 @@ function CardItem({
                 >
                   閉じる
                 </button>
-
-                {/* 個別モード切替ボタン（※一括移動モード中は非表示） */}
                 {!bulkMoveMode && (
                   <div className="flex items-center gap-1">
                     <ModeButton
@@ -540,7 +535,7 @@ function CardItem({
                   value={curStatus}
                   onClick={(e) => e.stopPropagation()}
                   onChange={(e) => {
-                    if (bulkMoveMode) return; // 一括移動モード時は無効
+                    if (bulkMoveMode) return;
                     e.stopPropagation();
                     const val = e.target.value as Status;
                     onChangeStatus(item.id, val);
@@ -572,34 +567,39 @@ function CardItem({
   );
 }
 
-export default function ListPage() {
-  const PAGE_SIZE = 20;
+const MemoCardItem = React.memo(CardItem);
 
+const PAGE_SIZE = 20;
+
+// ネストした JSON の型ヘルパー
+type JsonData = NonNullable<Item["json"]>;
+type OtherTranslation = NonNullable<JsonData["other_translations"]>[number];
+type OtherExample = NonNullable<JsonData["other_examples"]>[number];
+type Derivative = NonNullable<JsonData["derivatives"]>[number];
+type Antonym = NonNullable<JsonData["antonyms"]>[number];
+type Phrase = NonNullable<JsonData["phrases"]>[number];
+type Synonym = NonNullable<JsonData["synonyms"]>[number];
+
+export default function ListPage() {
   const [statuses, setStatuses] = useState<Record<string, Status>>({});
   const [filter, setFilter] = useState<"all" | Status | null>(null);
   const [order, setOrder] = useState<string[]>(items.map((it) => it.id));
   const [revealed, setRevealed] = useState<Record<string, boolean>>({});
   const [displayedCount, setDisplayedCount] = useState<number>(PAGE_SIZE);
-  // 追加: 一括開閉の状態（デフォルト: 閉）
   const [bulkOpen, setBulkOpen] = useState<boolean>(false);
-  // 追加: 一括移動モードと選択状態
   const [bulkMoveMode, setBulkMoveMode] = useState<boolean>(false);
   const [selected, setSelected] = useState<Record<string, boolean>>({});
-  // 表示モード: グローバルと個別
   const [globalDisplayMode, setGlobalDisplayMode] =
     useState<DisplayMode>("detail");
   const [itemDisplayModes, setItemDisplayModes] = useState<
     Record<string, DisplayMode>
   >({});
-  // 下部操作エリアの表示/非表示（グローバル）
   const [showBottomControls, setShowBottomControls] = useState<boolean>(true);
 
-  // open only — 再タップで閉じないようにする
   const toggleReveal = useCallback((id: string) => {
     setRevealed((prev) => ({ ...prev, [id]: true }));
   }, []);
 
-  // 個別にカードを閉じる
   const handleCloseCard = useCallback((id: string) => {
     setRevealed((prev) => {
       const next = { ...prev };
@@ -665,13 +665,14 @@ export default function ListPage() {
   const visibleItemsOrdered = useMemo(() => {
     const visibleIdSet = new Set(visibleItems.map((it) => it.id));
     const orderedVisibleIds = order.filter((id) => visibleIdSet.has(id));
+    const orderedSet = new Set(orderedVisibleIds);
     const remainingVisible = visibleItems.filter(
-      (it) => !orderedVisibleIds.includes(it.id),
+      (it) => !orderedSet.has(it.id),
     );
     return [
       ...orderedVisibleIds
-        .map((id) => items.find((it) => it.id === id)!)
-        .filter(Boolean),
+        .map((id) => ITEM_BY_ID[id])
+        .filter(Boolean as unknown as (v: Item | undefined) => v is Item),
       ...remainingVisible,
     ];
   }, [visibleItems, order, items]);
@@ -681,13 +682,11 @@ export default function ListPage() {
     setDisplayedCount(Math.min(PAGE_SIZE, visibleItemsOrdered.length));
   }, [visibleItemsOrdered]);
 
-  // 無限スクロール風の読み込み: 画面下部に近づいたら表示件数を増やす
   useEffect(() => {
     const onScroll = () => {
       const scrollTop = window.scrollY || window.pageYOffset;
       const viewportHeight = window.innerHeight;
       const fullHeight = document.documentElement.scrollHeight;
-      // load more when within 300px from bottom
       if (scrollTop + viewportHeight >= fullHeight - 300) {
         setDisplayedCount((prev) => {
           if (prev >= visibleItemsOrdered.length) return prev;
@@ -700,7 +699,6 @@ export default function ListPage() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [visibleItemsOrdered.length]);
 
-  // 追加: 一括開閉のトグル
   const handleBulkToggle = useCallback(() => {
     const targetIds = visibleItemsOrdered
       .slice(0, displayedCount)
@@ -725,7 +723,6 @@ export default function ListPage() {
     }
   }, [bulkOpen, visibleItemsOrdered, displayedCount]);
 
-  // 追加: 追加読み込みや表示対象変更時に、bulkOpen が true なら新規表示分を自動で開く
   useEffect(() => {
     if (!bulkOpen) return;
     const idsToShow = new Set(
@@ -744,7 +741,6 @@ export default function ListPage() {
     });
   }, [bulkOpen, displayedCount, visibleItemsOrdered]);
 
-  // ページトップへスクロール
   const handleScrollTop = useCallback(() => {
     try {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -762,32 +758,26 @@ export default function ListPage() {
     }
     const otherIds = order.filter((id) => !visibleIds.includes(id));
     setOrder([...arr, ...otherIds]);
-    // シャッフル時には開いているカードを閉じる
-    setBulkOpen(false); // 追加: 一括開閉状態もリセット
+    setBulkOpen(false);
     setRevealed({});
   }, [visibleItems, order]);
 
-  // フィルタを切り替える際に開いているカードを閉じるユーティリティ
   const setFilterAndClose = useCallback((val: "all" | Status | null) => {
     setFilter(val as any);
-    setBulkOpen(false); // 追加: 一括開閉状態を閉にリセット
+    setBulkOpen(false);
     setRevealed({});
-    // 一括移動モードの選択はフィルタ切替でクリア
     setSelected({});
   }, []);
 
-  // 一括移動モードのトグル
   const toggleBulkMoveMode = useCallback(() => {
     setBulkMoveMode((prev) => !prev);
     setSelected({});
   }, []);
 
-  // カード選択トグル
   const toggleSelect = useCallback((id: string) => {
     setSelected((prev) => ({ ...prev, [id]: !prev[id] }));
   }, []);
 
-  // 一括移動（選択されたカードを指定ステータスへ）＋フィルタ切替
   const handleFilterClick = useCallback(
     (target: "all" | Status) => {
       if (bulkMoveMode) {
@@ -802,12 +792,10 @@ export default function ListPage() {
             return next;
           });
         }
-        // フィルタ切替 & 選択クリアし、モードは終了
         setFilterAndClose(target);
         setBulkMoveMode(false);
         return;
       }
-      // 通常モード
       setFilterAndClose(target);
     },
     [bulkMoveMode, selected, setFilterAndClose, saveStatuses],
@@ -817,7 +805,6 @@ export default function ListPage() {
 
   return (
     <main>
-      {/* 横の余白をモバイルで小さく、上下は十分確保 */}
       <div
         className={cx(
           "mx-auto max-w-4xl px-2 py-6 sm:px-6",
@@ -826,7 +813,6 @@ export default function ListPage() {
       >
         <h1 className="mb-2 text-2xl font-bold">英検-2級-頻出200語</h1>
 
-        {/* ステータスでフィルタするボタン群 */}
         <div className="mb-4 flex flex-wrap items-center gap-2">
           <FilterButton
             label="全て"
@@ -835,7 +821,6 @@ export default function ListPage() {
             onClick={() => handleFilterClick("all")}
           />
 
-          {/* フィルタ順: 未習得 -> 習得中 -> 復習中 -> 覚えた -> もういい */}
           {STATUS_ORDER.map((status) => (
             <FilterButton
               key={status}
@@ -845,8 +830,6 @@ export default function ListPage() {
               onClick={() => handleFilterClick(status)}
             />
           ))}
-
-          {/* 表示中ラベルは表示していません（要望により非表示） */}
         </div>
 
         <div className="mb-4 flex items-center gap-2">
@@ -866,7 +849,6 @@ export default function ListPage() {
               {bulkOpen ? "一括閉じる" : "一括開く"}
             </button>
           )}
-          {/* 一括開くの右に一括移動ボタン（フィルタが全てのときは非表示） */}
           {!(filter === null || filter === "all") && (
             <button
               className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
@@ -875,7 +857,6 @@ export default function ListPage() {
               {bulkMoveMode ? "一括移動モード終了" : "一括移動"}
             </button>
           )}
-          {/* 新しいトグルボタン：常に表示（※一括移動モード中は非表示）。一括移動がある場合はその右側に並ぶ */}
           {!bulkMoveMode && (
             <button
               className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
@@ -887,10 +868,8 @@ export default function ListPage() {
               {showBottomControls ? "操作非表示" : "操作表示"}
             </button>
           )}
-          {/* 非表示カウントは表示していません（要望により非表示） */}
         </div>
 
-        {/* 表示モードトグル（フィルタボタンと同じスタイル）※一括移動モード中は非表示 */}
         {!bulkMoveMode && (
           <div className="mb-4 flex flex-wrap items-center gap-2">
             <ModeButton
@@ -898,7 +877,7 @@ export default function ListPage() {
               isActive={globalDisplayMode === "detail"}
               onClick={() => {
                 setGlobalDisplayMode("detail");
-                setItemDisplayModes({}); // 既存の個別設定を全て上書き（リセット）
+                setItemDisplayModes({});
               }}
             />
             <ModeButton
@@ -920,38 +899,37 @@ export default function ListPage() {
           </div>
         )}
 
-        {/* リスト間隔をモバイルでやや詰める */}
         <ul className="space-y-3 sm:space-y-4">
           {visibleItemsOrdered.length > 0 ? (
-            visibleItemsOrdered.slice(0, displayedCount).map((item) => (
-              <CardItem
-                key={item.id}
-                item={item}
-                revealed={!!revealed[item.id]}
-                toggleReveal={toggleReveal}
-                statuses={statuses}
-                onChangeStatus={handleChangeStatus}
-                onClose={handleCloseCard} // 追加
-                bulkMoveMode={bulkMoveMode}
-                selected={!!selected[item.id]}
-                onToggleSelect={toggleSelect}
-                mode={itemDisplayModes[item.id] || globalDisplayMode}
-                onChangeItemMode={(id, m) =>
-                  setItemDisplayModes((prev) => ({ ...prev, [id]: m }))
-                }
-                showBottomControls={showBottomControls}
-              />
-            ))
+            visibleItemsOrdered
+              .slice(0, displayedCount)
+              .map((item) => (
+                <MemoCardItem
+                  key={item.id}
+                  item={item}
+                  revealed={!!revealed[item.id]}
+                  toggleReveal={toggleReveal}
+                  status={(statuses[item.id] as Status) || "unknown"}
+                  onChangeStatus={handleChangeStatus}
+                  onClose={handleCloseCard}
+                  bulkMoveMode={bulkMoveMode}
+                  selected={!!selected[item.id]}
+                  onToggleSelect={toggleSelect}
+                  mode={itemDisplayModes[item.id] || globalDisplayMode}
+                  onChangeItemMode={(id, m) =>
+                    setItemDisplayModes((prev) => ({ ...prev, [id]: m }))
+                  }
+                  showBottomControls={showBottomControls}
+                />
+              ))
           ) : (
             <li>データがありません</li>
           )}
-          {/* 追加読み込みの案内（スクロールで読み込む場合のヒント） */}
           {displayedCount < visibleItemsOrdered.length && (
             <li className="text-center text-sm">
               下にスクロールするとさらに読み込みます…
             </li>
           )}
-          {/* ページトップボタン（カードと同じ横幅で下部に表示） */}
           {visibleItemsOrdered.length > 0 && (
             <li
               role="button"
