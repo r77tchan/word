@@ -294,7 +294,14 @@ function CardItem({
       onPointerDown={onPointerDown}
       onPointerUp={onPointerUp}
     >
-      <div className={revealed ? "mb-2" : "flex items-center"}>
+      {/* 例文モードでは開閉で上部余白が変わらないように、開いたときの余白付与を抑制する */}
+      <div
+        className={
+          revealed
+            ? cx(mode === "examples" ? undefined : "mb-2")
+            : "flex items-center"
+        }
+      >
         <div
           className={cx(
             "flex gap-3",
