@@ -193,7 +193,7 @@ function FilterButton({ label, count, isActive, onClick }: FilterButtonProps) {
   return (
     <button
       className={cx(
-        "border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer",
+        "border-fore rounded border px-3 py-1 text-sm whitespace-nowrap select-none hover:cursor-pointer",
         isActive
           ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700"
           : "bg-background hover:bg-gray-back",
@@ -218,7 +218,7 @@ function ModeButton({ label, isActive, onClick }: ModeButtonProps) {
   return (
     <button
       className={cx(
-        "border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer",
+        "border-fore rounded border px-3 py-1 text-sm whitespace-nowrap select-none hover:cursor-pointer",
         isActive
           ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700"
           : "bg-background hover:bg-gray-back",
@@ -839,10 +839,10 @@ export default function ListPage() {
           ))}
         </div>
 
-        <div className="mb-4 flex items-center gap-2">
+        <div className="mb-4 flex flex-wrap items-center gap-2">
           {!bulkMoveMode && (
             <button
-              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm whitespace-nowrap select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
               onClick={() => shuffleOrder()}
             >
               シャッフル
@@ -850,7 +850,7 @@ export default function ListPage() {
           )}
           {!bulkMoveMode && (
             <button
-              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm whitespace-nowrap select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
               onClick={handleBulkToggle}
             >
               {bulkOpen ? "一括閉じる" : "一括開く"}
@@ -858,7 +858,7 @@ export default function ListPage() {
           )}
           {!(filter === null || filter === "all") && (
             <button
-              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm whitespace-nowrap select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
               onClick={toggleBulkMoveMode}
             >
               {bulkMoveMode ? "一括移動モード終了" : "一括移動"}
@@ -866,7 +866,7 @@ export default function ListPage() {
           )}
           {!bulkMoveMode && (
             <button
-              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm whitespace-nowrap select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
               onClick={() => setShowBottomControls((v) => !v)}
               aria-pressed={showBottomControls}
               aria-label="下部操作の表示切替"
