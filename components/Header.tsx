@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-bar text-white select-none">
+    <header className="bg-bar select-none">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-lg font-bold">
           <Link
             href="/"
-            className="block p-4 hover:bg-gray-500 active:bg-gray-500"
+            className="block p-4 text-white hover:bg-gray-500 active:bg-gray-500"
           >
             英単語アプリ
           </Link>
@@ -17,7 +17,7 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="block p-4 text-lg hover:bg-gray-500 active:bg-gray-500"
+                className="block p-4 text-lg text-white hover:bg-gray-500 active:bg-gray-500"
               >
                 ログイン
               </Link>
