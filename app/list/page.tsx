@@ -122,7 +122,7 @@ function renderPipeText(text?: string | null) {
     if (part.startsWith("|") && part.endsWith("|")) {
       const inner = part.slice(1, -1);
       return (
-        <span key={idx} className="font-medium text-indigo-600">
+        <span key={idx} className="text-indigo-fore font-medium">
           {inner}
         </span>
       );

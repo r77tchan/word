@@ -9,11 +9,13 @@
   --yellow-back: #fef3c7; /* -100 */
   --green-back: #dcfce7; /* -100 */
   --gray-back: #e5e7eb; /* -200 */
+  --indigo-back: #a5b4fc; /* -300 */
   --red-fore: #991b1b; /* -800 */
   --blue-fore: #1e40af; /* -800 */
   --yellow-fore: #92400e; /* -800 */
   --green-fore: #166534; /* -800 */
   --gray-fore: #374151; /* -700 */
+  --indigo-fore: #4338ca; /* -700 */
 }
 
 @theme inline {
@@ -25,11 +27,13 @@
   --color-yellow-back: var(--yellow-back);
   --color-green-back: var(--green-back);
   --color-gray-back: var(--gray-back);
+  --color-indigo-back: var(--indigo-back);
   --color-red-fore: var(--red-fore);
   --color-blue-fore: var(--blue-fore);
   --color-yellow-fore: var(--yellow-fore);
   --color-green-fore: var(--green-fore);
   --color-gray-fore: var(--gray-fore);
+  --color-indigo-fore: var(--indigo-fore);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -44,11 +48,13 @@
     --yellow-back: #92400e; /* -800 */
     --green-back: #166534; /* -800 */
     --gray-back: #374151; /* -700 */
+    --indigo-back: #4338ca; /* -700 */
     --red-fore: #fee2e2; /* -100 */
     --blue-fore: #dbeafe; /* -100 */
     --yellow-fore: #fef3c7; /* -100 */
     --green-fore: #dcfce7; /* -100 */
     --gray-fore: #e5e7eb; /* -200 */
+    --indigo-fore: #a5b4fc; /* -300 */
   }
 }
 
