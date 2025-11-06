@@ -79,11 +79,11 @@ const STATUS_LABELS: Record<Status, string> = {
 };
 
 const STATUS_BADGE_CLASS: Record<Status, string> = {
-  unknown: "bg-red-100 text-red-800",
-  learning: "bg-blue-100 text-blue-800",
-  review: "bg-yellow-100 text-yellow-800",
-  known: "bg-green-100 text-green-800",
-  done: "bg-gray-200 text-gray-700",
+  unknown: "bg-red-back text-red-fore",
+  learning: "bg-blue-back text-blue-fore",
+  review: "bg-yellow-back text-yellow-fore",
+  known: "bg-green-back text-green-fore",
+  done: "bg-gray-back text-gray-fore",
 };
 
 const LOCAL_STORAGE_KEY = "wordStatuses";
@@ -209,10 +209,9 @@ function CardItem({
           <button
             type="button"
             className={cx(
-              "mr-2 text-2xl leading-tight font-semibold text-gray-900 focus:outline-none sm:text-3xl",
+              "mr-2 text-2xl leading-tight font-semibold sm:text-3xl",
               revealed ? "cursor-text select-text" : "hover:cursor-pointer",
             )}
-            style={revealed ? { userSelect: "text" as const } : undefined}
             onClick={(e) => {
               e.stopPropagation();
               if (!revealed) toggleReveal(item.id);
@@ -225,21 +224,21 @@ function CardItem({
       </div>
 
       {revealed && (
-        <div className="cursor-text select-text" style={{ userSelect: "text" }}>
+        <div className="cursor-text select-text">
           {item.translation && (
-            <div className="mb-4 text-lg text-gray-700">
+            <div className="mb-4 text-lg">
               <div>
                 <span className="font-medium">
                   {renderPipeText(item.translation)}
                 </span>
                 {item.part_of_speech && (
-                  <span className="ml-2 text-xs text-gray-400 select-none">
+                  <span className="text-gray-fore ml-2 text-xs select-none">
                     ({item.part_of_speech})
                   </span>
                 )}
               </div>
 
-              <div className="mt-1 text-base text-gray-600">
+              <div className="mt-1 text-base">
                 <SectionList
                   title=""
                   items={item.json?.other_translations}
@@ -247,7 +246,7 @@ function CardItem({
                     <span>
                       {renderPipeText(trans.translation)}
                       {trans.part_of_speech ? (
-                        <span className="ml-1 text-xs text-gray-400 select-none">
+                        <span className="text-gray-fore ml-2 text-xs select-none">
                           ({trans.part_of_speech})
                         </span>
                       ) : null}
@@ -262,12 +261,12 @@ function CardItem({
             {(item.example || item.example_translation) && (
               <div>
                 {item.example && (
-                  <div className="text-base text-gray-600 italic">
+                  <div className="text-base">
                     {renderPipeText(item.example)}
                   </div>
                 )}
                 {item.example_translation && (
-                  <div className="text-base text-gray-500">
+                  <div className="text-base">
                     {renderPipeText(item.example_translation)}
                   </div>
                 )}
@@ -276,10 +275,8 @@ function CardItem({
 
             {item.json?.other_examples?.map((ex, idx) => (
               <div key={idx}>
-                <div className="text-base text-gray-600 italic">
-                  {renderPipeText(ex.english)}
-                </div>
-                <div className="text-base text-gray-500">
+                <div className="text-base">{renderPipeText(ex.english)}</div>
+                <div className="text-base">
                   {renderPipeText(ex.translation)}
                 </div>
               </div>
@@ -301,12 +298,12 @@ function CardItem({
                         {renderPipeText(d.english)}
                       </span>
                       {d.translation && (
-                        <span className="ml-2 text-gray-600">
+                        <span className="ml-2">
                           {renderPipeText(d.translation)}
                         </span>
                       )}
                       {d.part_of_speech && (
-                        <span className="ml-2 text-xs text-gray-400 select-none">
+                        <span className="text-gray-fore ml-2 text-xs select-none">
                           ({d.part_of_speech})
                         </span>
                       )}
@@ -323,12 +320,12 @@ function CardItem({
                         {renderPipeText(a.english)}
                       </span>
                       {a.translation && (
-                        <span className="ml-2 text-gray-600">
+                        <span className="ml-2">
                           {renderPipeText(a.translation)}
                         </span>
                       )}
                       {a.part_of_speech && (
-                        <span className="ml-2 text-xs text-gray-400 select-none">
+                        <span className="text-gray-fore ml-2 text-xs select-none">
                           ({a.part_of_speech})
                         </span>
                       )}
@@ -344,7 +341,7 @@ function CardItem({
                       <div className="font-medium">
                         {renderPipeText(p.english)}
                       </div>
-                      <div className="text-base text-gray-600">
+                      <div className="mb-2 text-base">
                         {renderPipeText(p.translation)}
                       </div>
                     </div>
@@ -355,7 +352,7 @@ function CardItem({
                   title="類義語（説明）:"
                   items={item.json.synonyms}
                   renderItem={(s: any) => (
-                    <div className="text-base text-gray-600">
+                    <div className="text-base">
                       {renderPipeText(s.description)}
                     </div>
                   )}
@@ -374,7 +371,7 @@ function CardItem({
             </span>
             <select
               aria-label="ステータス"
-              className="rounded border bg-white px-2 py-1 text-base text-gray-700 select-none"
+              className="border-fore rounded border px-2 py-1 text-base select-none"
               value={curStatus}
               onClick={(e) => e.stopPropagation()}
               onChange={(e) => {
@@ -383,11 +380,21 @@ function CardItem({
                 onChangeStatus(item.id, val);
               }}
             >
-              <option value="unknown">未習得</option>
-              <option value="learning">習得中</option>
-              <option value="review">復習中</option>
-              <option value="known">覚えた</option>
-              <option value="done">もういい</option>
+              <option value="unknown" className="bg-background">
+                未習得
+              </option>
+              <option value="learning" className="bg-background">
+                習得中
+              </option>
+              <option value="review" className="bg-background">
+                復習中
+              </option>
+              <option value="known" className="bg-background">
+                覚えた
+              </option>
+              <option value="done" className="bg-background">
+                もういい
+              </option>
             </select>
           </div>
         </div>
@@ -533,7 +540,7 @@ export default function ListPage() {
         {/* ステータスでフィルタするボタン群 */}
         <div className="mb-4 flex flex-wrap items-center gap-2">
           <button
-            className={`rounded border px-3 py-1 text-sm transition-colors duration-150 ease-in-out select-none focus:ring-2 focus:ring-indigo-300 focus:outline-none ${filter === null || filter === "all" ? "bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 active:opacity-90" : "bg-white text-gray-700 hover:bg-gray-50 active:scale-95"}`}
+            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === null || filter === "all" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
             onClick={() => setFilterAndClose("all")}
           >
             全て ({items.length})
@@ -541,31 +548,31 @@ export default function ListPage() {
 
           {/* フィルタ順: 未習得 -> 習得中 -> 復習中 -> 覚えた -> もういい */}
           <button
-            className={`rounded border px-3 py-1 text-sm transition-colors duration-150 ease-in-out select-none focus:ring-2 focus:ring-indigo-300 focus:outline-none ${filter === "unknown" ? "bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 active:opacity-90" : "bg-white text-gray-700 hover:bg-gray-50 active:scale-95"}`}
+            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === "unknown" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
             onClick={() => setFilterAndClose("unknown")}
           >
             未習得 ({counts.unknown})
           </button>
           <button
-            className={`rounded border px-3 py-1 text-sm transition-colors duration-150 ease-in-out select-none focus:ring-2 focus:ring-indigo-300 focus:outline-none ${filter === "learning" ? "bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 active:opacity-90" : "bg-white text-gray-700 hover:bg-gray-50 active:scale-95"}`}
+            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === "learning" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
             onClick={() => setFilterAndClose("learning")}
           >
             習得中 ({counts.learning})
           </button>
           <button
-            className={`rounded border px-3 py-1 text-sm transition-colors duration-150 ease-in-out select-none focus:ring-2 focus:ring-indigo-300 focus:outline-none ${filter === "review" ? "bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 active:opacity-90" : "bg-white text-gray-700 hover:bg-gray-50 active:scale-95"}`}
+            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === "review" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
             onClick={() => setFilterAndClose("review")}
           >
             復習中 ({counts.review})
           </button>
           <button
-            className={`rounded border px-3 py-1 text-sm transition-colors duration-150 ease-in-out select-none focus:ring-2 focus:ring-indigo-300 focus:outline-none ${filter === "known" ? "bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 active:opacity-90" : "bg-white text-gray-700 hover:bg-gray-50 active:scale-95"}`}
+            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === "known" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
             onClick={() => setFilterAndClose("known")}
           >
             覚えた ({counts.known})
           </button>
           <button
-            className={`rounded border px-3 py-1 text-sm transition-colors duration-150 ease-in-out select-none focus:ring-2 focus:ring-indigo-300 focus:outline-none ${filter === "done" ? "bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 active:opacity-90" : "bg-white text-gray-700 hover:bg-gray-50 active:scale-95"}`}
+            className={`border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer ${filter === "done" ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700" : "bg-background hover:bg-gray-back"}`}
             onClick={() => setFilterAndClose("done")}
           >
             もういい ({counts.done})
@@ -576,7 +583,7 @@ export default function ListPage() {
 
         <div className="mb-4 flex items-center gap-2">
           <button
-            className="transform rounded border bg-white px-3 py-1 text-sm text-gray-700 transition duration-150 ease-in-out select-none hover:bg-gray-50 hover:shadow-sm focus:ring-2 focus:ring-indigo-300 focus:outline-none active:scale-95"
+            className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
             onClick={() => shuffleOrder()}
           >
             シャッフル
@@ -600,11 +607,11 @@ export default function ListPage() {
                 />
               ))
           ) : (
-            <li className="text-gray-600">データがありません</li>
+            <li>データがありません</li>
           )}
           {/* 追加読み込みの案内（スクロールで読み込む場合のヒント） */}
           {displayedCount < visibleItemsOrdered.length && (
-            <li className="text-center text-sm text-gray-500">
+            <li className="text-center text-sm">
               下にスクロールするとさらに読み込みます…
             </li>
           )}

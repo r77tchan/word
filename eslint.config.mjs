@@ -13,6 +13,19 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  // 追加: JSX の inline style を禁止
+  {
+    rules: {
+      "no-restricted-syntax": [
+        "error",
+        {
+          selector: "JSXAttribute[name.name='style']",
+          message:
+            "インライン style は禁止です。Tailwind クラスや CSS/モジュールを使用してください。",
+        },
+      ],
+    },
+  },
 ]);
 
 export default eslintConfig;

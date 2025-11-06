@@ -4,25 +4,25 @@ const listLinks = [
   {
     href: "/list",
     label: "英検-2級-頻出200語",
-    className: "bg-red",
+    className: "bg-red-back",
   },
-  { href: "/", label: "ダミー", className: "bg-blue" },
-  { href: "/", label: "ダミー", className: "bg-yellow" },
+  { href: "/", label: "ダミー", className: "bg-blue-back" },
+  { href: "/", label: "ダミー", className: "bg-yellow-back" },
 ];
 
 const cardLinks = [
-  { href: "/", label: "ダミー", className: "bg-green" },
-  { href: "/", label: "ダミー", className: "bg-gray" },
-  { href: "/", label: "ダミー", className: "bg-red" },
-  { href: "/", label: "ダミー", className: "bg-blue" },
-  { href: "/", label: "ダミー", className: "bg-yellow" },
-  { href: "/", label: "ダミー", className: "bg-green" },
+  { href: "/", label: "ダミー", className: "bg-green-back" },
+  { href: "/", label: "ダミー", className: "bg-gray-back" },
+  { href: "/", label: "ダミー", className: "bg-red-back" },
+  { href: "/", label: "ダミー", className: "bg-blue-back" },
+  { href: "/", label: "ダミー", className: "bg-yellow-back" },
+  { href: "/", label: "ダミー", className: "bg-green-back" },
 ];
 
 export default function Home() {
   return (
     <main>
-      <div className="h-96 w-full bg-gray-300"></div>
+      <div className="bg-gray-back h-96 w-full"></div>
       <div className="mx-auto max-w-7xl p-4">
         <h1 className="py-4">
           <span className="border-b-2 border-green-300">Home</span>
