@@ -200,6 +200,31 @@ function FilterButton({ label, count, isActive, onClick }: FilterButtonProps) {
   );
 }
 
+// 表示モード
+type DisplayMode = "detail" | "simple" | "examples";
+
+type ModeButtonProps = {
+  label: string;
+  isActive: boolean;
+  onClick: () => void;
+};
+
+function ModeButton({ label, isActive, onClick }: ModeButtonProps) {
+  return (
+    <button
+      className={cx(
+        "border-fore rounded border px-3 py-1 text-sm select-none hover:cursor-pointer",
+        isActive
+          ? "bg-indigo-600 text-white ring-2 ring-indigo-300 hover:bg-indigo-700"
+          : "bg-background hover:bg-gray-back",
+      )}
+      onClick={onClick}
+    >
+      {label}
+    </button>
+  );
+}
+
 type CardItemProps = {
   item: Item;
   revealed: boolean;
@@ -211,6 +236,9 @@ type CardItemProps = {
   bulkMoveMode?: boolean;
   selected?: boolean;
   onToggleSelect?: (id: string) => void;
+  // 表示モード
+  mode: DisplayMode;
+  onChangeItemMode: (id: string, mode: DisplayMode) => void;
 };
 
 function CardItem({
@@ -223,6 +251,8 @@ function CardItem({
   bulkMoveMode = false,
   selected = false,
   onToggleSelect,
+  mode,
+  onChangeItemMode,
 }: CardItemProps) {
   const pointerDownRef = React.useRef<{ x: number; y: number } | null>(null);
 
@@ -269,85 +299,104 @@ function CardItem({
             revealed ? "items-start" : "items-center",
           )}
         >
-          <button
-            type="button"
-            className={cx(
-              "mr-2 text-2xl leading-tight font-semibold sm:text-3xl",
-              revealed ? "cursor-text select-text" : "hover:cursor-pointer",
-            )}
-            onClick={(e) => {
-              if (bulkMoveMode) return; // 一括移動モード時は何もしない（liで選択）
-              e.stopPropagation();
-              if (!revealed) toggleReveal(item.id);
-            }}
-            aria-expanded={!!revealed}
-          >
-            {renderPipeText(item.english)}
-          </button>
+          {mode === "examples" ? (
+            !revealed ? (
+              <div className="flex flex-col gap-1 text-lg sm:text-xl">
+                {item.example && <div>{renderPipeText(item.example)}</div>}
+                {item.json?.other_examples?.map((ex, idx) => (
+                  <div key={idx}>{renderPipeText(ex.english)}</div>
+                ))}
+              </div>
+            ) : null
+          ) : (
+            <button
+              type="button"
+              className={cx(
+                "mr-2 text-2xl leading-tight font-semibold sm:text-3xl",
+                revealed ? "cursor-text select-text" : "hover:cursor-pointer",
+              )}
+              onClick={(e) => {
+                if (bulkMoveMode) return; // 一括移動モード時は何もしない（liで選択）
+                e.stopPropagation();
+                if (!revealed) toggleReveal(item.id);
+              }}
+              aria-expanded={!!revealed}
+            >
+              {renderPipeText(item.english)}
+            </button>
+          )}
         </div>
       </div>
 
       {revealed && (
         <div className="cursor-text select-text">
-          {item.translation && (
-            <div className="mb-4 text-lg">
-              <div>
-                <span className="font-medium">
-                  {renderPipeText(item.translation)}
-                </span>
-                {item.part_of_speech && (
-                  <span className="text-gray-fore ml-2 text-xs select-none">
-                    ({item.part_of_speech})
-                  </span>
-                )}
-              </div>
-
-              <div className="mt-1 text-base">
-                <SectionList
-                  title=""
-                  items={item.json?.other_translations}
-                  renderItem={(trans: any) => (
-                    <span>
-                      {renderPipeText(trans.translation)}
-                      {trans.part_of_speech ? (
-                        <span className="text-gray-fore ml-2 text-xs select-none">
-                          ({trans.part_of_speech})
-                        </span>
-                      ) : null}
+          {/* 表示モード: detail / simple / examples */}
+          {(mode === "detail" || mode === "simple") && (
+            <>
+              {item.translation && (
+                <div className="mb-4 text-lg">
+                  <div>
+                    <span className="font-medium">
+                      {renderPipeText(item.translation)}
                     </span>
-                  )}
-                />
+                    {item.part_of_speech && (
+                      <span className="text-gray-fore ml-2 text-xs select-none">
+                        ({item.part_of_speech})
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="mt-1 text-base">
+                    <SectionList
+                      title=""
+                      items={item.json?.other_translations}
+                      renderItem={(trans: any) => (
+                        <span>
+                          {renderPipeText(trans.translation)}
+                          {trans.part_of_speech ? (
+                            <span className="text-gray-fore ml-2 text-xs select-none">
+                              ({trans.part_of_speech})
+                            </span>
+                          ) : null}
+                        </span>
+                      )}
+                    />
+                  </div>
+                </div>
+              )}
+
+              <div className="mb-4 space-y-2">
+                {(item.example || item.example_translation) && (
+                  <div>
+                    {item.example && (
+                      <div className="text-base">
+                        {renderPipeText(item.example)}
+                      </div>
+                    )}
+                    {item.example_translation && (
+                      <div className="text-base">
+                        {renderPipeText(item.example_translation)}
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {item.json?.other_examples?.map((ex, idx) => (
+                  <div key={idx}>
+                    <div className="text-base">
+                      {renderPipeText(ex.english)}
+                    </div>
+                    <div className="text-base">
+                      {renderPipeText(ex.translation)}
+                    </div>
+                  </div>
+                ))}
               </div>
-            </div>
+            </>
           )}
 
-          <div className="mb-4 space-y-2">
-            {(item.example || item.example_translation) && (
-              <div>
-                {item.example && (
-                  <div className="text-base">
-                    {renderPipeText(item.example)}
-                  </div>
-                )}
-                {item.example_translation && (
-                  <div className="text-base">
-                    {renderPipeText(item.example_translation)}
-                  </div>
-                )}
-              </div>
-            )}
-
-            {item.json?.other_examples?.map((ex, idx) => (
-              <div key={idx}>
-                <div className="text-base">{renderPipeText(ex.english)}</div>
-                <div className="text-base">
-                  {renderPipeText(ex.translation)}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {item.json &&
+          {mode === "detail" &&
+            item.json &&
             ((item.json.derivatives?.length ?? 0) > 0 ||
               (item.json.antonyms?.length ?? 0) > 0 ||
               (item.json.phrases?.length ?? 0) > 0 ||
@@ -404,20 +453,77 @@ function CardItem({
               </div>
             )}
 
-          {/* 下部操作エリアを左右に分割: 左=閉じる, 右=ステータス */}
-          <div className="mt-3 flex items-center justify-between">
-            <button
-              type="button"
-              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
-              disabled={bulkMoveMode}
-              onClick={(e) => {
-                e.stopPropagation();
-                onClose(item.id);
-              }}
-              aria-label="閉じる"
-            >
-              閉じる
-            </button>
+          {mode === "examples" && (
+            <div className="mb-2 space-y-2">
+              {(item.example || item.example_translation) && (
+                <div>
+                  {item.example && (
+                    <div className="text-lg sm:text-xl">
+                      {renderPipeText(item.example)}
+                    </div>
+                  )}
+                  {item.example_translation && (
+                    <div className="text-lg sm:text-xl">
+                      {renderPipeText(item.example_translation)}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {item.json?.other_examples?.map((ex, idx) => (
+                <div key={idx}>
+                  <div className="text-lg sm:text-xl">
+                    {renderPipeText(ex.english)}
+                  </div>
+                  <div className="text-lg sm:text-xl">
+                    {renderPipeText(ex.translation)}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* 下部操作エリア: 左=閉じる, 中=モードボタン, 右=ステータス */}
+          <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+                disabled={bulkMoveMode}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onClose(item.id);
+                }}
+                aria-label="閉じる"
+              >
+                閉じる
+              </button>
+
+              {/* 個別モード切替ボタン */}
+              <div className="flex items-center gap-1">
+                <ModeButton
+                  label="詳細"
+                  isActive={mode === "detail"}
+                  onClick={() =>
+                    !bulkMoveMode && onChangeItemMode(item.id, "detail")
+                  }
+                />
+                <ModeButton
+                  label="簡易"
+                  isActive={mode === "simple"}
+                  onClick={() =>
+                    !bulkMoveMode && onChangeItemMode(item.id, "simple")
+                  }
+                />
+                <ModeButton
+                  label="例文"
+                  isActive={mode === "examples"}
+                  onClick={() =>
+                    !bulkMoveMode && onChangeItemMode(item.id, "examples")
+                  }
+                />
+              </div>
+            </div>
 
             <div className="flex items-center gap-2">
               <span
@@ -478,6 +584,12 @@ export default function ListPage() {
   // 追加: 一括移動モードと選択状態
   const [bulkMoveMode, setBulkMoveMode] = useState<boolean>(false);
   const [selected, setSelected] = useState<Record<string, boolean>>({});
+  // 表示モード: グローバルと個別
+  const [globalDisplayMode, setGlobalDisplayMode] =
+    useState<DisplayMode>("detail");
+  const [itemDisplayModes, setItemDisplayModes] = useState<
+    Record<string, DisplayMode>
+  >({});
 
   // open only — 再タップで閉じないようにする
   const toggleReveal = useCallback((id: string) => {
@@ -758,6 +870,34 @@ export default function ListPage() {
           {/* 非表示カウントは表示していません（要望により非表示） */}
         </div>
 
+        {/* 表示モードトグル（フィルタボタンと同じスタイル） */}
+        <div className="mb-4 flex flex-wrap items-center gap-2">
+          <ModeButton
+            label="詳細"
+            isActive={globalDisplayMode === "detail"}
+            onClick={() => {
+              setGlobalDisplayMode("detail");
+              setItemDisplayModes({}); // 既存の個別設定を全て上書き（リセット）
+            }}
+          />
+          <ModeButton
+            label="簡易"
+            isActive={globalDisplayMode === "simple"}
+            onClick={() => {
+              setGlobalDisplayMode("simple");
+              setItemDisplayModes({});
+            }}
+          />
+          <ModeButton
+            label="例文"
+            isActive={globalDisplayMode === "examples"}
+            onClick={() => {
+              setGlobalDisplayMode("examples");
+              setItemDisplayModes({});
+            }}
+          />
+        </div>
+
         {/* リスト間隔をモバイルでやや詰める */}
         <ul className="space-y-3 sm:space-y-4">
           {visibleItemsOrdered.length > 0 ? (
@@ -773,6 +913,10 @@ export default function ListPage() {
                 bulkMoveMode={bulkMoveMode}
                 selected={!!selected[item.id]}
                 onToggleSelect={toggleSelect}
+                mode={itemDisplayModes[item.id] || globalDisplayMode}
+                onChangeItemMode={(id, m) =>
+                  setItemDisplayModes((prev) => ({ ...prev, [id]: m }))
+                }
               />
             ))
           ) : (
