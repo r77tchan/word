@@ -69,3 +69,7 @@ main {
   min-height: 100vh;
   padding-bottom: 64px;
 }
+
+a::selection {
+  color: inherit;
+}
