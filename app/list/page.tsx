@@ -815,7 +815,12 @@ export default function ListPage() {
   return (
     <main>
       {/* 横の余白をモバイルで小さく、上下は十分確保 */}
-      <div className="mx-auto max-w-4xl px-2 py-6 sm:px-6">
+      <div
+        className={cx(
+          "mx-auto max-w-4xl px-2 py-6 sm:px-6",
+          bulkMoveMode && "select-none",
+        )}
+      >
         <h1 className="mb-2 text-2xl font-bold">英検-2級-頻出200語</h1>
 
         {/* ステータスでフィルタするボタン群 */}
