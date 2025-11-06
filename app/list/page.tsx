@@ -239,6 +239,8 @@ type CardItemProps = {
   // 表示モード
   mode: DisplayMode;
   onChangeItemMode: (id: string, mode: DisplayMode) => void;
+  // 下部操作エリアの表示/非表示（グローバル制御）
+  showBottomControls?: boolean;
 };
 
 function CardItem({
@@ -253,6 +255,7 @@ function CardItem({
   onToggleSelect,
   mode,
   onChangeItemMode,
+  showBottomControls = true,
 }: CardItemProps) {
   const pointerDownRef = React.useRef<{ x: number; y: number } | null>(null);
 
@@ -484,87 +487,85 @@ function CardItem({
           )}
 
           {/* 下部操作エリア: 左=閉じる, 中=モードボタン, 右=ステータス */}
-          <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
-                disabled={bulkMoveMode}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onClose(item.id);
-                }}
-                aria-label="閉じる"
-              >
-                閉じる
-              </button>
+          {showBottomControls && (
+            <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+                  disabled={bulkMoveMode}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onClose(item.id);
+                  }}
+                  aria-label="閉じる"
+                >
+                  閉じる
+                </button>
 
-              {/* 個別モード切替ボタン */}
-              <div className="flex items-center gap-1">
-                <ModeButton
-                  label="詳細"
-                  isActive={mode === "detail"}
-                  onClick={() =>
-                    !bulkMoveMode && onChangeItemMode(item.id, "detail")
-                  }
-                />
-                <ModeButton
-                  label="簡易"
-                  isActive={mode === "simple"}
-                  onClick={() =>
-                    !bulkMoveMode && onChangeItemMode(item.id, "simple")
-                  }
-                />
-                <ModeButton
-                  label="例文"
-                  isActive={mode === "examples"}
-                  onClick={() =>
-                    !bulkMoveMode && onChangeItemMode(item.id, "examples")
-                  }
-                />
+                {/* 個別モード切替ボタン（※一括移動モード中は非表示） */}
+                {!bulkMoveMode && (
+                  <div className="flex items-center gap-1">
+                    <ModeButton
+                      label="詳細"
+                      isActive={mode === "detail"}
+                      onClick={() => onChangeItemMode(item.id, "detail")}
+                    />
+                    <ModeButton
+                      label="簡易"
+                      isActive={mode === "simple"}
+                      onClick={() => onChangeItemMode(item.id, "simple")}
+                    />
+                    <ModeButton
+                      label="例文"
+                      isActive={mode === "examples"}
+                      onClick={() => onChangeItemMode(item.id, "examples")}
+                    />
+                  </div>
+                )}
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span
+                  className={cx(
+                    "inline-flex items-center rounded-full px-2 py-0.5 text-sm font-medium select-none",
+                    STATUS_BADGE_CLASS[curStatus],
+                  )}
+                >
+                  {STATUS_LABELS[curStatus]}
+                </span>
+                <select
+                  aria-label="ステータス"
+                  className="border-fore rounded border px-2 py-1 text-base select-none"
+                  value={curStatus}
+                  onClick={(e) => e.stopPropagation()}
+                  onChange={(e) => {
+                    if (bulkMoveMode) return; // 一括移動モード時は無効
+                    e.stopPropagation();
+                    const val = e.target.value as Status;
+                    onChangeStatus(item.id, val);
+                  }}
+                  disabled={bulkMoveMode}
+                >
+                  <option value="unknown" className="bg-background">
+                    未習得
+                  </option>
+                  <option value="learning" className="bg-background">
+                    習得中
+                  </option>
+                  <option value="review" className="bg-background">
+                    復習中
+                  </option>
+                  <option value="known" className="bg-background">
+                    覚えた
+                  </option>
+                  <option value="done" className="bg-background">
+                    もういい
+                  </option>
+                </select>
               </div>
             </div>
-
-            <div className="flex items-center gap-2">
-              <span
-                className={cx(
-                  "inline-flex items-center rounded-full px-2 py-0.5 text-sm font-medium select-none",
-                  STATUS_BADGE_CLASS[curStatus],
-                )}
-              >
-                {STATUS_LABELS[curStatus]}
-              </span>
-              <select
-                aria-label="ステータス"
-                className="border-fore rounded border px-2 py-1 text-base select-none"
-                value={curStatus}
-                onClick={(e) => e.stopPropagation()}
-                onChange={(e) => {
-                  if (bulkMoveMode) return; // 一括移動モード時は無効
-                  e.stopPropagation();
-                  const val = e.target.value as Status;
-                  onChangeStatus(item.id, val);
-                }}
-                disabled={bulkMoveMode}
-              >
-                <option value="unknown" className="bg-background">
-                  未習得
-                </option>
-                <option value="learning" className="bg-background">
-                  習得中
-                </option>
-                <option value="review" className="bg-background">
-                  復習中
-                </option>
-                <option value="known" className="bg-background">
-                  覚えた
-                </option>
-                <option value="done" className="bg-background">
-                  もういい
-                </option>
-              </select>
-            </div>
-          </div>
+          )}
         </div>
       )}
     </li>
@@ -590,6 +591,8 @@ export default function ListPage() {
   const [itemDisplayModes, setItemDisplayModes] = useState<
     Record<string, DisplayMode>
   >({});
+  // 下部操作エリアの表示/非表示（グローバル）
+  const [showBottomControls, setShowBottomControls] = useState<boolean>(true);
 
   // open only — 再タップで閉じないようにする
   const toggleReveal = useCallback((id: string) => {
@@ -872,36 +875,50 @@ export default function ListPage() {
               {bulkMoveMode ? "一括移動モード終了" : "一括移動"}
             </button>
           )}
+          {/* 新しいトグルボタン：常に表示（※一括移動モード中は非表示）。一括移動がある場合はその右側に並ぶ */}
+          {!bulkMoveMode && (
+            <button
+              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+              onClick={() => setShowBottomControls((v) => !v)}
+              aria-pressed={showBottomControls}
+              aria-label="下部操作の表示切替"
+              title="開いたカードの下部操作（閉じる・モード・状態）を表示/非表示"
+            >
+              {showBottomControls ? "操作非表示" : "操作表示"}
+            </button>
+          )}
           {/* 非表示カウントは表示していません（要望により非表示） */}
         </div>
 
-        {/* 表示モードトグル（フィルタボタンと同じスタイル） */}
-        <div className="mb-4 flex flex-wrap items-center gap-2">
-          <ModeButton
-            label="詳細"
-            isActive={globalDisplayMode === "detail"}
-            onClick={() => {
-              setGlobalDisplayMode("detail");
-              setItemDisplayModes({}); // 既存の個別設定を全て上書き（リセット）
-            }}
-          />
-          <ModeButton
-            label="簡易"
-            isActive={globalDisplayMode === "simple"}
-            onClick={() => {
-              setGlobalDisplayMode("simple");
-              setItemDisplayModes({});
-            }}
-          />
-          <ModeButton
-            label="例文"
-            isActive={globalDisplayMode === "examples"}
-            onClick={() => {
-              setGlobalDisplayMode("examples");
-              setItemDisplayModes({});
-            }}
-          />
-        </div>
+        {/* 表示モードトグル（フィルタボタンと同じスタイル）※一括移動モード中は非表示 */}
+        {!bulkMoveMode && (
+          <div className="mb-4 flex flex-wrap items-center gap-2">
+            <ModeButton
+              label="詳細"
+              isActive={globalDisplayMode === "detail"}
+              onClick={() => {
+                setGlobalDisplayMode("detail");
+                setItemDisplayModes({}); // 既存の個別設定を全て上書き（リセット）
+              }}
+            />
+            <ModeButton
+              label="簡易"
+              isActive={globalDisplayMode === "simple"}
+              onClick={() => {
+                setGlobalDisplayMode("simple");
+                setItemDisplayModes({});
+              }}
+            />
+            <ModeButton
+              label="例文"
+              isActive={globalDisplayMode === "examples"}
+              onClick={() => {
+                setGlobalDisplayMode("examples");
+                setItemDisplayModes({});
+              }}
+            />
+          </div>
+        )}
 
         {/* リスト間隔をモバイルでやや詰める */}
         <ul className="space-y-3 sm:space-y-4">
@@ -922,6 +939,7 @@ export default function ListPage() {
                 onChangeItemMode={(id, m) =>
                   setItemDisplayModes((prev) => ({ ...prev, [id]: m }))
                 }
+                showBottomControls={showBottomControls}
               />
             ))
           ) : (
