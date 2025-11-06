@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const listLinks = [
   {
-    href: "/list",
+    href: "/list?set=eiken-2-freq-200",
     label: "英検-2級-頻出200語",
     className: "bg-red-back",
   },
-  { href: "/", label: "ダミー", className: "bg-blue-back" },
+  { href: "/list", label: "英検9184語", className: "bg-blue-back" },
   { href: "/", label: "ダミー", className: "bg-yellow-back" },
 ];
 

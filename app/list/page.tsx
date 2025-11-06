@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import data from "@/lib/英検_2級_頻出_200.json";
+import { useSearchParams } from "next/navigation";
+import defaultData from "@/lib/new_9184.json";
 
 type Item = {
   id: string;
@@ -52,6 +53,7 @@ const posMap: Record<string, string> = {
   adverb: "副",
   conjunction: "接",
   preposition: "前",
+  idiom: "熟",
 };
 
 function mapPosLabel(pos?: string) {
@@ -92,32 +94,47 @@ function cx(...parts: Array<string | false | null | undefined>) {
   return parts.filter(Boolean).join(" ");
 }
 
-const items: Item[] = (data as unknown as Item[]).map((item) => ({
-  ...item,
-  part_of_speech: mapPosLabel(item.part_of_speech),
-  json: item.json
-    ? {
-        ...item.json,
-        derivatives: item.json.derivatives?.map((d) => ({
-          ...d,
-          part_of_speech: mapPosLabel(d.part_of_speech),
-        })),
-        other_translations: item.json.other_translations?.map((t) => ({
-          ...t,
-          part_of_speech: mapPosLabel(t.part_of_speech),
-        })),
-        antonyms: item.json.antonyms?.map((a) => ({
-          ...a,
-          part_of_speech: mapPosLabel(a.part_of_speech),
-        })),
-      }
-    : undefined,
-}));
+function normalizeItems(raw: any[]): Item[] {
+  return (raw as unknown as Item[]).map((item) => ({
+    ...item,
+    part_of_speech: mapPosLabel(item.part_of_speech),
+    json: item.json
+      ? {
+          ...item.json,
+          derivatives: item.json.derivatives?.map((d) => ({
+            ...d,
+            part_of_speech: mapPosLabel(d.part_of_speech),
+          })),
+          other_translations: item.json.other_translations?.map((t) => ({
+            ...t,
+            part_of_speech: mapPosLabel(t.part_of_speech),
+          })),
+          antonyms: item.json.antonyms?.map((a) => ({
+            ...a,
+            part_of_speech: mapPosLabel(a.part_of_speech),
+          })),
+        }
+      : undefined,
+  }));
+}
 
-// id -> item のクイック参照（並び替えでの線形探索を避ける）
-const ITEM_BY_ID: Record<string, Item> = Object.fromEntries(
-  items.map((it) => [it.id, it] as const),
-);
+// 既定データ（フォールバック）
+const defaultItems: Item[] = normalizeItems(defaultData as any);
+
+// 利用可能なデータセット一覧（必要に応じて追加）
+const DATASETS: Record<
+  string,
+  { label: string; loader: () => Promise<{ default: any }> }
+> = {
+  new9184: {
+    label: "全9184語",
+    loader: async () => import("@/lib/new_9184.json"),
+  },
+  "eiken-2-freq-200": {
+    label: "英検-2級-頻出200語",
+    loader: async () => import("@/lib/英検_2級_頻出_200.json"),
+  },
+};
 
 function renderPipeText(text?: string | null) {
   if (!text) return null;
@@ -588,9 +605,17 @@ type Phrase = NonNullable<JsonData["phrases"]>[number];
 type Synonym = NonNullable<JsonData["synonyms"]>[number];
 
 export default function ListPage() {
+  const searchParams = useSearchParams();
+  const datasetKey = searchParams.get("set") || "new9184";
+
+  const [datasetLabel, setDatasetLabel] = useState<string>(
+    DATASETS[datasetKey]?.label || DATASETS["new9184"].label,
+  );
+  const [items, setItems] = useState<Item[]>(defaultItems);
+
   const [statuses, setStatuses] = useState<Record<string, Status>>({});
   const [filter, setFilter] = useState<"all" | Status | null>(null);
-  const [order, setOrder] = useState<string[]>(items.map((it) => it.id));
+  const [order, setOrder] = useState<string[]>(defaultItems.map((it) => it.id));
   const [revealed, setRevealed] = useState<Record<string, boolean>>({});
   const [displayedCount, setDisplayedCount] = useState<number>(PAGE_SIZE);
   const [bulkOpen, setBulkOpen] = useState<boolean>(false);
@@ -602,6 +627,40 @@ export default function ListPage() {
     Record<string, DisplayMode>
   >({});
   const [showBottomControls, setShowBottomControls] = useState<boolean>(true);
+
+  // データセット切替
+  useEffect(() => {
+    let mounted = true;
+    const ds = DATASETS[datasetKey] || DATASETS["new9184"];
+    setDatasetLabel(ds.label);
+    ds.loader()
+      .then((mod) => {
+        if (!mounted) return;
+        const next = normalizeItems(mod.default as any);
+        setItems(next);
+        setOrder(next.map((it) => it.id));
+        setRevealed({});
+        setDisplayedCount(PAGE_SIZE);
+        setBulkOpen(false);
+        setSelected({});
+        setItemDisplayModes({});
+      })
+      .catch(() => {
+        if (!mounted) return;
+        setItems(defaultItems);
+        setOrder(defaultItems.map((it) => it.id));
+        setDatasetLabel(DATASETS["new9184"].label);
+      });
+    return () => {
+      mounted = false;
+    };
+  }, [datasetKey]);
+
+  // id -> item のクイック参照（並び替えでの線形探索を避ける）
+  const ITEM_BY_ID = useMemo(
+    () => Object.fromEntries(items.map((it) => [it.id, it] as const)),
+    [items],
+  );
 
   const toggleReveal = useCallback((id: string) => {
     setRevealed((prev) => ({ ...prev, [id]: true }));
@@ -818,7 +877,7 @@ export default function ListPage() {
           bulkMoveMode && "select-none",
         )}
       >
-        <h1 className="mb-2 text-2xl font-bold">英検-2級-頻出200語</h1>
+        <h1 className="mb-2 text-2xl font-bold">{datasetLabel}</h1>
 
         <div className="mb-4 flex flex-wrap items-center gap-2">
           <FilterButton
