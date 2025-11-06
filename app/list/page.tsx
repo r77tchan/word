@@ -240,7 +240,7 @@ function CardItem({
     <li
       className={cx(
         // モバイルでは p-2、sm（≥640px）以降は p-4 を維持
-        "bg-background border-foreground transform rounded-lg border p-2 shadow-sm transition duration-150 sm:p-4",
+        "bg-background border-foreground transform rounded-lg border p-2 shadow-sm transition duration-150 active:ring-2 active:ring-indigo-300 sm:p-4",
         revealed
           ? "cursor-text"
           : "cursor-pointer hover:-translate-y-0.5 hover:shadow-md",
@@ -717,7 +717,7 @@ export default function ListPage() {
               tabIndex={0}
               className={cx(
                 "bg-background border-foreground transform rounded-lg border p-2 shadow-sm transition duration-150 sm:p-4",
-                "cursor-pointer text-center select-none hover:-translate-y-0.5 hover:shadow-md",
+                "cursor-pointer text-center select-none hover:-translate-y-0.5 hover:shadow-md active:ring-2 active:ring-indigo-300",
               )}
               onClick={handleScrollTop}
               onKeyDown={(e) => {
