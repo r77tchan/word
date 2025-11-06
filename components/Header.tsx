@@ -17,7 +17,7 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="block p-4 text-lg [-webkit-touch-callout:none] hover:bg-gray-500 active:bg-gray-500"
+                className="block p-4 text-lg [-webkit-user-select:none] hover:bg-gray-500 active:bg-gray-500"
               >
                 ログイン
               </Link>
