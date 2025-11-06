@@ -207,6 +207,10 @@ type CardItemProps = {
   statuses: Record<string, Status>;
   onChangeStatus: (id: string, val: Status) => void;
   onClose: (id: string) => void; // 追加
+  // 一括移動モード関連
+  bulkMoveMode?: boolean;
+  selected?: boolean;
+  onToggleSelect?: (id: string) => void;
 };
 
 function CardItem({
@@ -216,6 +220,9 @@ function CardItem({
   statuses,
   onChangeStatus,
   onClose, // 追加
+  bulkMoveMode = false,
+  selected = false,
+  onToggleSelect,
 }: CardItemProps) {
   const pointerDownRef = React.useRef<{ x: number; y: number } | null>(null);
 
@@ -230,7 +237,12 @@ function CardItem({
     const dx = Math.abs(e.clientX - start.x);
     const dy = Math.abs(e.clientY - start.y);
     if (dx < 6 && dy < 6) {
-      if (!revealed) toggleReveal(item.id);
+      if (bulkMoveMode) {
+        // 一括移動モード中は開閉ではなく選択トグル
+        onToggleSelect?.(item.id);
+      } else {
+        if (!revealed) toggleReveal(item.id);
+      }
     }
   };
 
@@ -244,6 +256,7 @@ function CardItem({
         revealed
           ? "cursor-text"
           : "cursor-pointer hover:-translate-y-0.5 hover:shadow-md",
+        bulkMoveMode && selected && "border-indigo-400 ring-2 ring-indigo-400",
       )}
       onPointerDown={onPointerDown}
       onPointerUp={onPointerUp}
@@ -263,6 +276,7 @@ function CardItem({
               revealed ? "cursor-text select-text" : "hover:cursor-pointer",
             )}
             onClick={(e) => {
+              if (bulkMoveMode) return; // 一括移動モード時は何もしない（liで選択）
               e.stopPropagation();
               if (!revealed) toggleReveal(item.id);
             }}
@@ -395,6 +409,7 @@ function CardItem({
             <button
               type="button"
               className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+              disabled={bulkMoveMode}
               onClick={(e) => {
                 e.stopPropagation();
                 onClose(item.id);
@@ -419,10 +434,12 @@ function CardItem({
                 value={curStatus}
                 onClick={(e) => e.stopPropagation()}
                 onChange={(e) => {
+                  if (bulkMoveMode) return; // 一括移動モード時は無効
                   e.stopPropagation();
                   const val = e.target.value as Status;
                   onChangeStatus(item.id, val);
                 }}
+                disabled={bulkMoveMode}
               >
                 <option value="unknown" className="bg-background">
                   未習得
@@ -458,6 +475,9 @@ export default function ListPage() {
   const [displayedCount, setDisplayedCount] = useState<number>(PAGE_SIZE);
   // 追加: 一括開閉の状態（デフォルト: 閉）
   const [bulkOpen, setBulkOpen] = useState<boolean>(false);
+  // 追加: 一括移動モードと選択状態
+  const [bulkMoveMode, setBulkMoveMode] = useState<boolean>(false);
+  const [selected, setSelected] = useState<Record<string, boolean>>({});
 
   // open only — 再タップで閉じないようにする
   const toggleReveal = useCallback((id: string) => {
@@ -637,7 +657,46 @@ export default function ListPage() {
     setFilter(val as any);
     setBulkOpen(false); // 追加: 一括開閉状態を閉にリセット
     setRevealed({});
+    // 一括移動モードの選択はフィルタ切替でクリア
+    setSelected({});
   }, []);
+
+  // 一括移動モードのトグル
+  const toggleBulkMoveMode = useCallback(() => {
+    setBulkMoveMode((prev) => !prev);
+    setSelected({});
+  }, []);
+
+  // カード選択トグル
+  const toggleSelect = useCallback((id: string) => {
+    setSelected((prev) => ({ ...prev, [id]: !prev[id] }));
+  }, []);
+
+  // 一括移動（選択されたカードを指定ステータスへ）＋フィルタ切替
+  const handleFilterClick = useCallback(
+    (target: "all" | Status) => {
+      if (bulkMoveMode) {
+        const ids = Object.keys(selected).filter((k) => selected[k]);
+        if (target !== "all" && ids.length > 0) {
+          setStatuses((prev) => {
+            const next = { ...prev } as Record<string, Status>;
+            for (const id of ids) {
+              next[id] = target as Status;
+            }
+            saveStatuses(next);
+            return next;
+          });
+        }
+        // フィルタ切替 & 選択クリアし、モードは終了
+        setFilterAndClose(target);
+        setBulkMoveMode(false);
+        return;
+      }
+      // 通常モード
+      setFilterAndClose(target);
+    },
+    [bulkMoveMode, selected, setFilterAndClose, saveStatuses],
+  );
 
   // CardItem is defined above as a top-level component to reduce re-creation on each render
 
@@ -653,7 +712,7 @@ export default function ListPage() {
             label="全て"
             count={items.length}
             isActive={filter === null || filter === "all"}
-            onClick={() => setFilterAndClose("all")}
+            onClick={() => handleFilterClick("all")}
           />
 
           {/* フィルタ順: 未習得 -> 習得中 -> 復習中 -> 覚えた -> もういい */}
@@ -663,7 +722,7 @@ export default function ListPage() {
               label={STATUS_LABELS[status]}
               count={counts[status]}
               isActive={filter === status}
-              onClick={() => setFilterAndClose(status)}
+              onClick={() => handleFilterClick(status)}
             />
           ))}
 
@@ -671,19 +730,31 @@ export default function ListPage() {
         </div>
 
         <div className="mb-4 flex items-center gap-2">
-          <button
-            className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
-            onClick={() => shuffleOrder()}
-          >
-            シャッフル
-          </button>
-          {/* 追加: 一括開閉ボタン */}
-          <button
-            className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
-            onClick={handleBulkToggle}
-          >
-            {bulkOpen ? "一括閉じる" : "一括開く"}
-          </button>
+          {!bulkMoveMode && (
+            <button
+              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+              onClick={() => shuffleOrder()}
+            >
+              シャッフル
+            </button>
+          )}
+          {!bulkMoveMode && (
+            <button
+              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+              onClick={handleBulkToggle}
+            >
+              {bulkOpen ? "一括閉じる" : "一括開く"}
+            </button>
+          )}
+          {/* 一括開くの右に一括移動ボタン（フィルタが全てのときは非表示） */}
+          {!(filter === null || filter === "all") && (
+            <button
+              className="bg-background border-foreground hover:bg-gray-back rounded border px-3 py-1 text-sm select-none hover:cursor-pointer active:scale-105 active:border-white active:bg-amber-200 active:ring-2 active:ring-indigo-300"
+              onClick={toggleBulkMoveMode}
+            >
+              {bulkMoveMode ? "一括移動モード終了" : "一括移動"}
+            </button>
+          )}
           {/* 非表示カウントは表示していません（要望により非表示） */}
         </div>
 
@@ -699,6 +770,9 @@ export default function ListPage() {
                 statuses={statuses}
                 onChangeStatus={handleChangeStatus}
                 onClose={handleCloseCard} // 追加
+                bulkMoveMode={bulkMoveMode}
+                selected={!!selected[item.id]}
+                onToggleSelect={toggleSelect}
               />
             ))
           ) : (
